@@ -53,6 +53,7 @@ class WhisperLiveKitConfig:
     # SimulStreaming-specific
     disable_fast_encoder: bool = False
     custom_alignment_heads: Optional[str] = None
+    border_fraction: Optional[float] = None
     frame_threshold: int = 25
     beams: int = 1
     decoder_type: Optional[str] = None

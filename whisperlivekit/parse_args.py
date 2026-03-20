@@ -147,8 +147,8 @@ def parse_args():
         "--backend",
         type=str,
         default="auto",
-        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "vllm-realtime"],
-        help="Select the ASR backend implementation. Use 'qwen3-mlx-simul' for Qwen3-ASR SimulStreaming on Apple Silicon (MLX). Use 'qwen3-mlx' for Qwen3-ASR LocalAgreement on MLX. Use 'qwen3-simul' for Qwen3-ASR SimulStreaming (PyTorch). Use 'vllm-realtime' for vLLM Realtime WebSocket.",
+        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "qwen3-simul-kv", "qwen3-streaming", "vllm-realtime", "funasr"],
+        help="Select the ASR backend. 'qwen3-streaming' for official vLLM streaming (best WER). 'funasr' for Fun-ASR-MLT-Nano (Korean). 'qwen3-simul-kv' for custom SimulStreaming.",
     )
     parser.add_argument(
         "--no-vac",
@@ -228,6 +228,14 @@ def parse_args():
         type=str,
         default=None,
         help="Use your own alignment heads, useful when `--model-dir` is used",
+    )
+
+    simulstreaming_group.add_argument(
+        "--border-fraction",
+        type=float,
+        default=None,
+        dest="border_fraction",
+        help="Fraction of audio tokens from the end at which SimulStreaming stops emitting. If not set, uses backend default (Qwen3 SimulKV: 0.15 for 0.6B, 0.20 for 1.7B). Lower = more aggressive.",
     )
 
     simulstreaming_group.add_argument(

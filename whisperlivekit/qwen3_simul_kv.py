@@ -44,7 +44,7 @@ class Qwen3SimulKVConfig:
     audio_max_len: float = 30.0
     max_context_tokens: int = 20
     init_prompt: Optional[str] = None
-    max_alignment_heads: int = 10
+    max_alignment_heads: int = 20
     min_new_seconds: float = 2.0  # minimum new audio before running inference
 
 
@@ -482,10 +482,11 @@ class Qwen3SimulKVOnlineProcessor:
         if not is_last and new_samples < int(min_new_seconds * self.SAMPLING_RATE):
             return [], self.end
 
+        new_audio_secs = new_samples / self.SAMPLING_RATE
         self.state.last_infer_samples = len(self.state.audio_buffer)
 
         try:
-            timestamped_words = self._infer(is_last)
+            timestamped_words = self._infer(is_last, new_audio_secs=new_audio_secs)
         except Exception as e:
             logger.exception("Inference error: %s", e)
             self.state.reset_kv()
@@ -497,7 +498,7 @@ class Qwen3SimulKVOnlineProcessor:
         self.buffer = []
         return timestamped_words, self.end
 
-    def _infer(self, is_last: bool) -> List[ASRToken]:
+    def _infer(self, is_last: bool, new_audio_secs: float = 0.0) -> List[ASRToken]:
         """Run inference with KV cache reuse and alignment-head stopping."""
         asr = self.asr
         state = self.state
@@ -520,8 +521,9 @@ class Qwen3SimulKVOnlineProcessor:
         n_audio_tokens = full_inputs["n_audio_tokens"]
         audio_duration = len(state.audio_buffer) / self.SAMPLING_RATE
 
-        # Step 3: Full prefill (we always re-prefill since audio tokens change)
-        # Future optimization: partial prefill when only tail audio changes
+        # Step 3: Full prefill
+        # Note: partial KV reuse was tested but cache crop overhead exceeds
+        # savings when the reusable prefix is small (< 30% of total tokens).
         out = thinker(
             input_ids=input_ids,
             inputs_embeds=inputs_embeds,
@@ -600,7 +602,6 @@ class Qwen3SimulKVOnlineProcessor:
             if is_last:
                 max_tokens = min(int(audio_duration * tokens_per_sec) + 10, 120)
             else:
-                new_audio_secs = (len(state.audio_buffer) - state.last_infer_samples) / self.SAMPLING_RATE
                 max_tokens = min(int(max(new_audio_secs, 1.0) * tokens_per_sec) + 5, 40)
 
             for step in range(max_tokens):

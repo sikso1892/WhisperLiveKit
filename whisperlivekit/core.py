@@ -124,11 +124,13 @@ class TranscriptionEngine:
             elif config.backend == "qwen3-mlx-simul":
                 from whisperlivekit.qwen3_mlx_simul import Qwen3MLXSimulStreamingASR
                 self.tokenizer = None
-                self.asr = Qwen3MLXSimulStreamingASR(
+                mlx_kwargs = {
                     **transcription_common_params,
-                    alignment_heads_path=config.custom_alignment_heads,
-                    border_fraction=getattr(config, 'border_fraction', 0.15),
-                )
+                    "alignment_heads_path": config.custom_alignment_heads,
+                }
+                if config.border_fraction is not None:
+                    mlx_kwargs["border_fraction"] = config.border_fraction
+                self.asr = Qwen3MLXSimulStreamingASR(**mlx_kwargs)
                 logger.info("Using Qwen3 MLX SimulStreaming backend")
             elif config.backend == "qwen3-mlx":
                 from whisperlivekit.qwen3_mlx_asr import Qwen3MLXASR
@@ -138,11 +140,13 @@ class TranscriptionEngine:
             elif config.backend == "qwen3-simul-kv":
                 from whisperlivekit.qwen3_simul_kv import Qwen3SimulKVASR
                 self.tokenizer = None
-                self.asr = Qwen3SimulKVASR(
+                kv_kwargs = {
                     **transcription_common_params,
-                    alignment_heads_path=config.custom_alignment_heads,
-                    border_fraction=getattr(config, 'border_fraction', 0.25),
-                )
+                    "alignment_heads_path": config.custom_alignment_heads,
+                }
+                if config.border_fraction is not None:
+                    kv_kwargs["border_fraction"] = config.border_fraction
+                self.asr = Qwen3SimulKVASR(**kv_kwargs)
                 logger.info("Using Qwen3-ASR backend with SimulStreaming+KV policy")
             elif config.backend == "qwen3-simul":
                 from whisperlivekit.qwen3_simul import Qwen3SimulStreamingASR
@@ -152,6 +156,21 @@ class TranscriptionEngine:
                     alignment_heads_path=config.custom_alignment_heads,
                 )
                 logger.info("Using Qwen3-ASR backend with SimulStreaming policy")
+            elif config.backend == "qwen3-streaming":
+                from whisperlivekit.qwen3_streaming import Qwen3StreamingASR
+                self.tokenizer = None
+                self.asr = Qwen3StreamingASR(**transcription_common_params)
+                self.asr.backend_choice = "qwen3-streaming"
+                logger.info("Using Qwen3-ASR official streaming (vLLM)")
+            elif config.backend == "funasr":
+                from whisperlivekit.funasr_backend import FunASR
+                self.asr = FunASR(**transcription_common_params)
+                self.asr.confidence_validation = config.confidence_validation
+                self.asr.tokenizer = None
+                self.asr.buffer_trimming = config.buffer_trimming
+                self.asr.buffer_trimming_sec = config.buffer_trimming_sec
+                self.asr.backend_choice = "funasr"
+                logger.info("Using FunASR backend (%s) with 3-tier draft/commit/refine policy", self.asr._model_id)
             elif config.backend == "qwen3":
                 from whisperlivekit.qwen3_asr import Qwen3ASR
                 self.asr = Qwen3ASR(**transcription_common_params)
@@ -273,6 +292,12 @@ def online_factory(args, asr, language=None):
         return VoxtralHFStreamingOnlineProcessor(asr)
     if backend == "qwen3":
         return OnlineASRProcessor(asr)
+    if backend == "qwen3-streaming":
+        from whisperlivekit.qwen3_streaming import Qwen3StreamingOnlineProcessor
+        return Qwen3StreamingOnlineProcessor(asr)
+    if backend == "funasr":
+        from whisperlivekit.funasr_online import FunASROnlineProcessor
+        return FunASROnlineProcessor(asr)
     if args.backend_policy == "simulstreaming":
         from whisperlivekit.simul_whisper import SimulStreamingOnlineProcessor
         return SimulStreamingOnlineProcessor(asr)
