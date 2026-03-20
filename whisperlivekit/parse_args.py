@@ -212,6 +212,15 @@ def parse_args():
         help="Model name to use with vLLM (e.g. Qwen/Qwen3-ASR-1.7B).",
     )
 
+    # Qwen3-streaming-specific arguments
+    parser.add_argument(
+        "--unfixed-chunk-num",
+        type=int,
+        default=4,
+        dest="unfixed_chunk_num",
+        help="Number of unfixed (self-correcting) chunks for Qwen3 streaming backend. Higher = faster (more KV cache reuse) but less correction. Default: 4 (RTF ~0.033). Use 2 for more accuracy (RTF ~0.301).",
+    )
+
     # SimulStreaming-specific arguments
     simulstreaming_group = parser.add_argument_group('SimulStreaming arguments (only used with --backend simulstreaming)')
 
