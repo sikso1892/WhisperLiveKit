@@ -44,10 +44,12 @@ class Qwen3StreamingASR:
         gpu_memory_utilization: float = 0.8,
         model_cache_dir: Optional[str] = None,
         model_path: Optional[str] = None,
+        unfixed_chunk_num: int = 6,
         **kwargs,
     ):
         self.transcribe_kargs = {}
         self.original_language = None if lan == "auto" else lan
+        self.unfixed_chunk_num = unfixed_chunk_num
 
         if model_dir:
             model_id = model_dir
@@ -115,7 +117,7 @@ class Qwen3StreamingOnlineProcessor:
     def _init_state(self):
         """Initialize or reset streaming state."""
         kwargs = {
-            "unfixed_chunk_num": 4,
+            "unfixed_chunk_num": self.asr.unfixed_chunk_num,
             "unfixed_token_num": 5,
             "chunk_size_sec": 2.0,
         }
