@@ -173,6 +173,7 @@ class TranscriptionEngine:
                     unfixed_chunk_num=config.unfixed_chunk_num,
                     chunk_size_sec=config.chunk_size_sec,
                     quantization=config.quantization,
+                    gpu_memory_utilization=config.gpu_memory_utilization,
                 )
                 self.asr.backend_choice = "qwen3-streaming"
                 logger.info("Using Qwen3-ASR official streaming (vLLM), unfixed_chunk_num=%d, chunk_size_sec=%.1f", config.unfixed_chunk_num, config.chunk_size_sec)

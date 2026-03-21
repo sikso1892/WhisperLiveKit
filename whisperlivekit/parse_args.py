@@ -241,6 +241,14 @@ def parse_args():
         help="vLLM quantization method for Qwen3 streaming backend (e.g. 'fp8'). FP8 gives ~24%% throughput improvement on Ada Lovelace GPUs (L40S, RTX 4090) with no quality loss.",
     )
 
+    parser.add_argument(
+        "--gpu-memory-utilization",
+        type=float,
+        default=0.35,
+        dest="gpu_memory_utilization",
+        help="Fraction of GPU memory for vLLM KV cache (default: 0.35). FP8 models need less. Increase if long sequences fail.",
+    )
+
     # Nemotron-streaming-specific arguments
     parser.add_argument(
         "--nemotron-chunk-mode",

@@ -1,0 +1,32 @@
+{
+  "0.45": {
+    "vram_gib": 21.5712890625,
+    "load_time_s": 48.132228751666844,
+    "en": {
+      "wer": 1.9867549668874174,
+      "rtf": 0.0519052333090201
+    },
+    "ko": {
+      "cer": 2.301255230125523,
+      "rtf": 0.05226781267321668
+    }
+  },
+  "0.35": {
+    "vram_gib": 17.1416015625,
+    "load_time_s": 45.95114865899086,
+    "en": {
+      "wer": 1.9867549668874174,
+      "rtf": 0.051341959584175034
+    },
+    "ko": {
+      "cer": 2.301255230125523,
+      "rtf": 0.0517688478661058
+    }
+  },
+  "0.25": {
+    "error": "Engine core initialization failed. See root cause above. Failed core proc(s): {}"
+  },
+  "0.2": {
+    "error": "Engine core initialization failed. See root cause above. Failed core proc(s): {}"
+  }
+}
