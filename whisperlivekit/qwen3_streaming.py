@@ -30,6 +30,29 @@ QWEN3_MODEL_MAPPING = {
     "1.7b": "Qwen/Qwen3-ASR-1.7B",
 }
 
+# Map ISO 639-1 codes to Qwen3 SDK full language names
+_LANG_CODE_TO_NAME = {
+    "ar": "Arabic", "zh": "Chinese", "yue": "Cantonese", "cs": "Czech",
+    "da": "Danish", "nl": "Dutch", "en": "English", "fil": "Filipino",
+    "fi": "Finnish", "fr": "French", "de": "German", "el": "Greek",
+    "hi": "Hindi", "hu": "Hungarian", "id": "Indonesian", "it": "Italian",
+    "ja": "Japanese", "ko": "Korean", "mk": "Macedonian", "ms": "Malay",
+    "fa": "Persian", "pl": "Polish", "pt": "Portuguese", "ro": "Romanian",
+    "ru": "Russian", "es": "Spanish", "sv": "Swedish", "th": "Thai",
+    "tr": "Turkish", "vi": "Vietnamese",
+}
+
+
+def _normalize_language(lan: str) -> Optional[str]:
+    """Convert language code/name to Qwen3 SDK format."""
+    if not lan or lan == "auto":
+        return None
+    # Already a full name (e.g. "Korean")
+    if lan.capitalize() in _LANG_CODE_TO_NAME.values():
+        return lan.capitalize()
+    # ISO code (e.g. "ko")
+    return _LANG_CODE_TO_NAME.get(lan.lower())
+
 
 class Qwen3StreamingASR:
     """Shared ASR backend using Qwen3-ASR official streaming API (vLLM)."""
@@ -48,7 +71,7 @@ class Qwen3StreamingASR:
         **kwargs,
     ):
         self.transcribe_kargs = {}
-        self.original_language = None if lan == "auto" else lan
+        self.original_language = _normalize_language(lan)
 
         if model_dir:
             model_id = model_dir
