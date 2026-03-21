@@ -363,6 +363,14 @@ def online_factory(args, asr, language=None):
         max_sess = getattr(args, "max_session_audio_sec", 30.0)
         return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
     if backend in ("granite-speech", "granite-speech-vllm", "qwen3-vllm"):
+        adaptive = getattr(args, 'adaptive_css', False)
+        if adaptive:
+            return OnlineASRProcessor(
+                asr,
+                adaptive_css=True,
+                adaptive_css_initial=getattr(args, 'adaptive_css_initial', 2.0),
+                adaptive_css_steady=getattr(args, 'adaptive_css_steady', 8.0),
+            )
         return OnlineASRProcessor(asr)
     if backend == "funasr":
         from whisperlivekit.funasr_online import FunASROnlineProcessor

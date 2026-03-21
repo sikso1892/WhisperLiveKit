@@ -16,15 +16,19 @@ class HypothesisBuffer:
       - committed_in_buffer: tokens that have been confirmed (committed)
       - buffer: the last hypothesis that is not yet committed
       - new: new tokens coming from the recognizer
+      - provisional: tokens emitted as draft (Uni-ASR fallback decoding style);
+        they are shown immediately but may be corrected by the next chunk.
     """
-    def __init__(self, logfile=sys.stderr, confidence_validation=False):
+    def __init__(self, logfile=sys.stderr, confidence_validation=False, n_provisional=0):
         self.confidence_validation = confidence_validation
         self.committed_in_buffer: List[ASRToken] = []
         self.buffer: List[ASRToken] = []
         self.new: List[ASRToken] = []
+        self.provisional: List[ASRToken] = []  # draft tokens shown in grey
         self.last_committed_time = 0.0
         self.last_committed_word: Optional[str] = None
         self.logfile = logfile
+        self.n_provisional = n_provisional  # number of tokens to hold as draft
 
     def insert(self, new_tokens: List[ASRToken], offset: float):
         """
@@ -60,7 +64,37 @@ class HypothesisBuffer:
         """
         Returns the committed chunk, defined as the longest common prefix
         between the previous hypothesis and the new tokens.
+
+        Uses Uni-ASR-style fallback: previous provisional tokens are
+        confirmed (or corrected) when new evidence arrives.  The last
+        ``n_provisional`` tokens of the new hypothesis are held back as
+        draft and shown in grey on the Web UI.
         """
+        # Step 1: confirm previous provisional tokens that agree with the
+        # new hypothesis, or replace them if corrected.
+        confirmed_provisional: List[ASRToken] = []
+        if self.provisional and self.new:
+            # Compare provisional with the start of new tokens
+            match_len = 0
+            for i, (prov, new_tok) in enumerate(zip(self.provisional, self.new)):
+                if prov.text == new_tok.text:
+                    match_len = i + 1
+                else:
+                    break
+            if match_len > 0:
+                # Matched provisionals are now confirmed
+                confirmed_provisional = self.new[:match_len]
+                self.new = self.new[match_len:]
+                if len(self.buffer) >= match_len:
+                    self.buffer = self.buffer[match_len:]
+            else:
+                # Provisional tokens were wrong — they get replaced by
+                # whatever the new hypothesis says. The correction happens
+                # naturally since we don't commit the old provisionals.
+                pass
+            self.provisional = []
+
+        # Step 2: standard local agreement flush
         committed: List[ASRToken] = []
         while self.new:
             current_new = self.new[0]
@@ -80,10 +114,29 @@ class HypothesisBuffer:
                 self.new.pop(0)
             else:
                 break
+
+        # Step 3: hold back last n_provisional tokens as draft
+        all_committed = confirmed_provisional + committed
+        if self.n_provisional > 0 and len(all_committed) > self.n_provisional:
+            self.provisional = all_committed[-self.n_provisional:]
+            final_committed = all_committed[:-self.n_provisional]
+        elif self.n_provisional > 0:
+            self.provisional = all_committed
+            final_committed = []
+        else:
+            # n_provisional=0: commit everything, buffer acts as draft
+            self.provisional = []
+            final_committed = all_committed
+
         self.buffer = self.new
         self.new = []
-        self.committed_in_buffer.extend(committed)
-        return committed
+        self.committed_in_buffer.extend(final_committed)
+
+        if final_committed:
+            self.last_committed_word = final_committed[-1].text
+            self.last_committed_time = final_committed[-1].end
+
+        return final_committed
 
     def pop_committed(self, time: float):
         """
@@ -109,6 +162,9 @@ class OnlineASRProcessor:
         self,
         asr,
         logfile=sys.stderr,
+        adaptive_css=False,
+        adaptive_css_initial=2.0,
+        adaptive_css_steady=8.0,
     ):
         """
         asr: An ASR system object (for example, a WhisperASR instance) that
@@ -116,12 +172,26 @@ class OnlineASRProcessor:
              a `segments_end_ts` method, and a separator attribute `sep`.
         tokenize_method: A function that receives text and returns a list of sentence strings.
         buffer_trimming: A tuple (option, seconds), where option is either "sentence" or "segment".
+        adaptive_css: If True, skip process_iter() calls until enough new audio has accumulated.
+        adaptive_css_initial: Seconds of audio to accumulate before first inference (fast first-word).
+        adaptive_css_steady: Seconds of new audio between subsequent inferences (efficient RTF).
         """
         self.asr = asr
         self.tokenize = asr.tokenizer
         self.logfile = logfile
         self.confidence_validation = asr.confidence_validation
         self.global_time_offset = 0.0
+
+        # Adaptive CSS: reduce inference frequency for re-feed backends
+        self._adaptive_css = adaptive_css
+        self._css_initial = adaptive_css_initial
+        self._css_steady = adaptive_css_steady
+        self._total_inserted_sec = 0.0
+        self._last_process_sec = 0.0
+        self._process_count = 0
+        if adaptive_css:
+            logger.info(f"Adaptive CSS enabled: initial={adaptive_css_initial}s, steady={adaptive_css_steady}s")
+
         self.init()
 
         self.buffer_trimming_way = asr.buffer_trimming
@@ -157,11 +227,13 @@ class OnlineASRProcessor:
     def insert_audio_chunk(self, audio: np.ndarray, audio_stream_end_time: Optional[float] = None):
         """Append an audio chunk (a numpy array) to the current audio buffer."""
         self.audio_buffer = np.append(self.audio_buffer, audio)
+        if self._adaptive_css:
+            self._total_inserted_sec += len(audio) / self.SAMPLING_RATE
 
     def start_silence(self):
         if self.audio_buffer.size == 0:
             return [], self.get_audio_buffer_end_time()
-        return self.process_iter()
+        return self.process_iter(force=True)
 
     def end_silence(self, silence_duration: Optional[float], offset: float):
         if not silence_duration or silence_duration <= 0:
@@ -211,17 +283,30 @@ class OnlineASRProcessor:
     def get_buffer(self):
         """
         Get the unvalidated buffer in string format.
+        Includes provisional (draft) tokens + uncommitted hypothesis.
         """
-        return self.concatenate_tokens(self.transcript_buffer.buffer)
+        draft_tokens = self.transcript_buffer.provisional + self.transcript_buffer.buffer
+        return self.concatenate_tokens(draft_tokens)
 
 
-    def process_iter(self) -> Tuple[List[ASRToken], float]:
+    def process_iter(self, force: bool = False) -> Tuple[List[ASRToken], float]:
         """
         Processes the current audio buffer.
 
         Returns a tuple: (list of committed ASRToken objects, float representing the audio processed up to time).
+
+        If adaptive CSS is enabled, skips processing until enough new audio has
+        accumulated since the last inference. Use force=True to bypass (e.g. on silence).
         """
         current_audio_processed_upto = self.get_audio_buffer_end_time()
+
+        # Adaptive CSS: skip if not enough new audio has accumulated
+        if self._adaptive_css and not force:
+            new_sec = self._total_inserted_sec - self._last_process_sec
+            threshold = self._css_initial if self._process_count == 0 else self._css_steady
+            if new_sec < threshold:
+                return [], current_audio_processed_upto
+
         prompt_text, _ = self.prompt()
         logger.debug(
             f"Transcribing {len(self.audio_buffer)/self.SAMPLING_RATE:.2f} seconds from {self.buffer_time_offset:.2f}"
@@ -262,6 +347,12 @@ class OnlineASRProcessor:
         logger.debug(
             f"Length of audio buffer now: {len(self.audio_buffer)/self.SAMPLING_RATE:.2f} seconds"
         )
+
+        # Adaptive CSS: update tracking after successful inference
+        if self._adaptive_css:
+            self._last_process_sec = self._total_inserted_sec
+            self._process_count += 1
+
         return committed_tokens, current_audio_processed_upto
 
     def chunk_completed_sentence(self):
@@ -401,6 +492,12 @@ class OnlineASRProcessor:
         Flush the remaining transcript when processing ends.
         Returns a tuple: (list of remaining ASRToken objects, float representing the final audio processed up to time).
         """
+        # Force final inference if adaptive CSS has unprocessed audio
+        if self._adaptive_css and self.audio_buffer.size > 0:
+            new_sec = self._total_inserted_sec - self._last_process_sec
+            if new_sec > 0:
+                self.process_iter(force=True)
+
         remaining_tokens = self.transcript_buffer.buffer
         logger.debug(f"Final non-committed tokens: {remaining_tokens}")
         final_processed_upto = self.buffer_time_offset + (len(self.audio_buffer) / self.SAMPLING_RATE)

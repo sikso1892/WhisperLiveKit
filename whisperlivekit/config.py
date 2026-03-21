@@ -84,6 +84,11 @@ class WhisperLiveKitConfig:
     vllm_url: str = "ws://localhost:8000/v1/realtime"
     vllm_model: str = ""
 
+    # Adaptive CSS (chunk step size) for LocalAgreement backends
+    adaptive_css: bool = False
+    adaptive_css_initial: float = 2.0
+    adaptive_css_steady: float = 8.0
+
     # Nemotron streaming backend
     nemotron_chunk_mode: str = "160ms"
 
