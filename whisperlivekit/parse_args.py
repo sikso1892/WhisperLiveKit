@@ -147,8 +147,8 @@ def parse_args():
         "--backend",
         type=str,
         default="auto",
-        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "qwen3-simul-kv", "qwen3-streaming", "vllm-realtime", "funasr"],
-        help="Select the ASR backend. 'qwen3-streaming' for official vLLM streaming (best WER). 'funasr' for Fun-ASR-MLT-Nano (Korean). 'qwen3-simul-kv' for custom SimulStreaming.",
+        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "qwen3-simul-kv", "qwen3-streaming", "nemotron-streaming", "vllm-realtime", "funasr"],
+        help="Select the ASR backend. 'nemotron-streaming' for sub-200ms latency (English). 'qwen3-streaming' for official vLLM streaming (best WER). 'funasr' for Fun-ASR-MLT-Nano (Korean). 'qwen3-simul-kv' for custom SimulStreaming.",
     )
     parser.add_argument(
         "--no-vac",
@@ -233,6 +233,16 @@ def parse_args():
         default=30.0,
         dest="max_session_audio_sec",
         help="Max audio duration per streaming session before automatic reset (seconds). Default: 30. Prevents context window overflow (>120s crashes) and Korean hallucination (>60s). Set to 0 to disable.",
+    )
+
+    # Nemotron-streaming-specific arguments
+    parser.add_argument(
+        "--nemotron-chunk-mode",
+        type=str,
+        default="160ms",
+        dest="nemotron_chunk_mode",
+        choices=["80ms", "160ms", "560ms", "1120ms"],
+        help="Chunk size for Nemotron streaming backend. 160ms gives ~193ms latency with WER 2.51%%. 560ms gives ~595ms latency with WER 2.09%%.",
     )
 
     # SimulStreaming-specific arguments

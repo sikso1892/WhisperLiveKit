@@ -156,6 +156,15 @@ class TranscriptionEngine:
                     alignment_heads_path=config.custom_alignment_heads,
                 )
                 logger.info("Using Qwen3-ASR backend with SimulStreaming policy")
+            elif config.backend == "nemotron-streaming":
+                from whisperlivekit.nemotron_streaming import NemotronStreamingASR
+                self.tokenizer = None
+                self.asr = NemotronStreamingASR(
+                    **transcription_common_params,
+                    chunk_mode=getattr(config, "nemotron_chunk_mode", "160ms"),
+                )
+                self.asr.backend_choice = "nemotron-streaming"
+                logger.info("Using Nemotron Speech Streaming (NeMo), chunk=%s", getattr(config, "nemotron_chunk_mode", "160ms"))
             elif config.backend == "qwen3-streaming":
                 from whisperlivekit.qwen3_streaming import Qwen3StreamingASR
                 self.tokenizer = None
@@ -296,6 +305,9 @@ def online_factory(args, asr, language=None):
         return VoxtralHFStreamingOnlineProcessor(asr)
     if backend == "qwen3":
         return OnlineASRProcessor(asr)
+    if backend == "nemotron-streaming":
+        from whisperlivekit.nemotron_streaming import NemotronStreamingOnlineProcessor
+        return NemotronStreamingOnlineProcessor(asr)
     if backend == "qwen3-streaming":
         from whisperlivekit.qwen3_streaming import Qwen3StreamingOnlineProcessor
         max_sess = getattr(args, "max_session_audio_sec", 30.0)

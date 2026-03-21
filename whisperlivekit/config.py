@@ -82,6 +82,9 @@ class WhisperLiveKitConfig:
     vllm_url: str = "ws://localhost:8000/v1/realtime"
     vllm_model: str = ""
 
+    # Nemotron streaming backend
+    nemotron_chunk_mode: str = "160ms"
+
     def __post_init__(self):
         # .en model suffix forces English
         if self.model_size and self.model_size.endswith(".en"):
