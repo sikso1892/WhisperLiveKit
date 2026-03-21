@@ -60,13 +60,13 @@ Korean FLEURS (30 samples, L40S FP8):
 - Batch FP8: CER 2.09% (qwen3-1.7b FP8), RTF 0.016
 - Streaming FP8 (css=3.0): CER 2.09%, RTF 0.048
 
-Qwen3-vllm-prefix (100 samples, L40S BF16, SDK 불필요):
+Qwen3-vllm-prefix (100 samples, L40S BF16, SDK 불필요, ucn=4):
 - **0.6B prefix LS-clean: WER 2.01%, RTF 0.025** ← 최저 multilingual streaming WER
-- 1.7B prefix LS-clean: WER 2.11%, RTF 0.046
-- 1.7B prefix LS-other: WER 3.97%, RTF 0.060
-- **1.7B prefix FLEURS-ko: CER 3.62%, RTF 0.039** ← 최적 SDK-free 한국어
+- 1.7B prefix LS-clean: WER 2.11%, RTF 0.059
+- 1.7B prefix LS-other: WER 3.97%, RTF 0.069
+- **1.7B prefix FLEURS-ko: CER 2.96%, RTF 0.060** ← SDK-free 한국어 (batch 대비 0.16pp)
 - 0.6B prefix FLEURS-ko: CER 4.89%, RTF 0.021
-- Note: LocalAgreement 대비 영어 3x, 한국어 16% 개선. SDK streaming보다 열등(2.89% CER).
+- Note: ucn=4로 한국어 CER 3.62%→2.96% 개선. SDK streaming(2.89%) 대비 0.07pp 차이.
 
 Long-form (10 min continuous, H100 BF16):
 - **Granite 1B css=8.0: RTF 0.057, WER 1.18%** ← 최적
@@ -79,7 +79,7 @@ Long-form (10 min continuous, H100 BF16):
 배포 전략:
 - **영어 (모든 환경): Granite 1B adaptive 2→8** (WER 1.18%, RTF 0.033, fd 49ms)
 - 한국어/다국어 (SDK 사용): Qwen3-1.7B adaptive 3→8 (CER 2.89%, RTF 0.045, fd 85ms)
-- 한국어/다국어 (SDK 불필요): **Qwen3-1.7B prefix** (CER 3.62%, RTF 0.039)
+- 한국어/다국어 (SDK 불필요): **Qwen3-1.7B prefix ucn=4** (CER 2.96%, RTF 0.060)
 - 영어 multilingual (SDK 불필요): **Qwen3-0.6B prefix** (WER 2.01%, RTF 0.025)
 - Nemotron 560ms: VRAM 제약 시 대안 (5GB, WER 3.85%)
 
