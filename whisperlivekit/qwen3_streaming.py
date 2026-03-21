@@ -101,6 +101,8 @@ class Qwen3StreamingASR:
         # 1.7B benefits from utn=7 for Korean; 0.6B stays at 5
         self.unfixed_token_num = 5 if is_06b else 7
         self.chunk_size_sec = kwargs.get("chunk_size_sec", 2.0)
+        # 0.6B does worse with longer chunks on CJK (3.84→4.04% CER)
+        self.use_longer_cjk_chunks = not is_06b
 
         self._load_model()
 
@@ -180,8 +182,9 @@ class Qwen3StreamingOnlineProcessor:
         """Initialize or reset streaming state."""
         css = self.asr.chunk_size_sec
         lang = self.asr.original_language
-        # CJK languages benefit from longer chunks (3s) for better accuracy
-        if lang in _LONGER_CHUNK_LANGUAGES and css < 3.0:
+        # 1.7B CJK languages benefit from longer chunks (3s) for batch-level quality
+        # 0.6B does worse with longer CJK chunks, so skip
+        if self.asr.use_longer_cjk_chunks and lang in _LONGER_CHUNK_LANGUAGES and css < 3.0:
             css = 3.0
         kwargs = {
             "unfixed_chunk_num": self.asr.unfixed_chunk_num,
