@@ -147,8 +147,8 @@ def parse_args():
         "--backend",
         type=str,
         default="auto",
-        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "qwen3-simul-kv", "qwen3-streaming", "qwen3-streaming-tf", "qwen3-vllm", "nemotron-streaming", "vllm-realtime", "funasr", "granite-speech", "granite-speech-vllm"],
-        help="Select the ASR backend. 'granite-speech-vllm' for best English quality+speed (WER 1.16%%, vLLM). 'qwen3-vllm' for multilingual vLLM (no SDK, WER 2.30%%). 'granite-speech' for English batch (Transformers). 'nemotron-streaming' for sub-200ms latency (English). 'qwen3-streaming' for official vLLM streaming (best multilingual WER). 'qwen3-streaming-tf' for Transformers streaming (no vLLM, 4.5x less VRAM). 'funasr' for Fun-ASR-MLT-Nano (Korean). 'qwen3-simul-kv' for custom SimulStreaming.",
+        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "qwen3-simul-kv", "qwen3-streaming", "qwen3-streaming-tf", "qwen3-vllm", "qwen3-vllm-prefix", "nemotron-streaming", "vllm-realtime", "funasr", "granite-speech", "granite-speech-vllm"],
+        help="Select the ASR backend. 'qwen3-vllm-prefix' for best multilingual streaming (prefix-constrained, Ko CER 3.72%%, En WER 2.11%%). 'granite-speech-vllm' for best English quality+speed (WER 1.16%%, vLLM). 'qwen3-vllm' for multilingual vLLM with LocalAgreement. 'nemotron-streaming' for sub-200ms latency (English). 'qwen3-streaming' for official vLLM streaming (best multilingual WER). 'funasr' for Fun-ASR-MLT-Nano (Korean).",
     )
     parser.add_argument(
         "--no-vac",
@@ -219,6 +219,13 @@ def parse_args():
         default=5,
         dest="unfixed_chunk_num",
         help="Number of unfixed (self-correcting) chunks for Qwen3 streaming backend. Default: 5 (auto-adjusted to 4 for 0.6B models). Optimal: 1.7B ucn=5 (Ko CER 2.38%%, En WER 1.82%%), 0.6B ucn=4 (Ko CER 3.71%%, En WER 2.65%%).",
+    )
+    parser.add_argument(
+        "--unfixed-token-num",
+        type=int,
+        default=5,
+        dest="unfixed_token_num",
+        help="Number of tokens to roll back from previous output for prefix-constrained decoding. Default: 5. Used by qwen3-vllm-prefix and qwen3-streaming backends.",
     )
     parser.add_argument(
         "--chunk-size-sec",

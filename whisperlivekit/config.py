@@ -75,6 +75,7 @@ class WhisperLiveKitConfig:
 
     # Qwen3-streaming-specific
     unfixed_chunk_num: int = 5
+    unfixed_token_num: int = 5
     chunk_size_sec: float = 2.0
     max_session_audio_sec: float = 30.0
     quantization: Optional[str] = None

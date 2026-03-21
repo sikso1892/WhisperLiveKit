@@ -208,7 +208,7 @@ class TranscriptionEngine:
                 self.asr.buffer_trimming_sec = config.buffer_trimming_sec
                 self.asr.backend_choice = "granite-speech-vllm"
                 logger.info("Using Granite 4.0 1B Speech vLLM backend (English, WER 1.16%%)")
-            elif config.backend == "qwen3-vllm":
+            elif config.backend in ("qwen3-vllm", "qwen3-vllm-prefix"):
                 from whisperlivekit.qwen3_vllm_asr import Qwen3VLLMASR
                 self.asr = Qwen3VLLMASR(
                     **transcription_common_params,
@@ -219,8 +219,11 @@ class TranscriptionEngine:
                 self.asr.tokenizer = None
                 self.asr.buffer_trimming = config.buffer_trimming
                 self.asr.buffer_trimming_sec = config.buffer_trimming_sec
-                self.asr.backend_choice = "qwen3-vllm"
-                logger.info("Using Qwen3-ASR vLLM backend (multilingual, no SDK)")
+                self.asr.backend_choice = config.backend
+                if config.backend == "qwen3-vllm-prefix":
+                    logger.info("Using Qwen3-ASR vLLM backend with prefix-constrained streaming")
+                else:
+                    logger.info("Using Qwen3-ASR vLLM backend (multilingual, no SDK)")
             elif config.backend == "funasr":
                 from whisperlivekit.funasr_backend import FunASR
                 self.asr = FunASR(**transcription_common_params)
@@ -362,6 +365,16 @@ def online_factory(args, asr, language=None):
         from whisperlivekit.qwen3_streaming import Qwen3StreamingOnlineProcessor
         max_sess = getattr(args, "max_session_audio_sec", 30.0)
         return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
+    if backend == "qwen3-vllm-prefix":
+        from whisperlivekit.qwen3_prefix_processor import Qwen3PrefixOnlineProcessor
+        return Qwen3PrefixOnlineProcessor(
+            asr,
+            unfixed_chunk_num=getattr(args, 'unfixed_chunk_num', 2),
+            unfixed_token_num=getattr(args, 'unfixed_token_num', 5),
+            css_initial=getattr(args, 'adaptive_css_initial', 2.0),
+            css_steady=getattr(args, 'adaptive_css_steady', 4.0),
+            max_session_audio_sec=getattr(args, 'max_session_audio_sec', 30.0),
+        )
     if backend in ("granite-speech", "granite-speech-vllm", "qwen3-vllm"):
         adaptive = getattr(args, 'adaptive_css', False)
         if adaptive:
