@@ -62,6 +62,9 @@ cu129 = [
     "torchaudio>=2.0.0",
     'triton>=2.0.0; platform_machine == "x86_64" and (sys_platform == "linux" or sys_platform == "linux2")',
 ]
+nemotron-streaming = [
+    "nemo-toolkit[asr]>2.4; python_version >= '3.10' and python_version < '3.13'",
+]
 diarization-sortformer = [
     "nemo-toolkit[asr]>2.4; python_version >= '3.10' and python_version < '3.13'",
 ]
@@ -112,6 +115,18 @@ conflicts = [
     [
         { extra = "qwen3-streaming" },
         { extra = "diarization-diart" },
+    ],
+    [
+        { extra = "nemotron-streaming" },
+        { extra = "voxtral-hf" },
+    ],
+    [
+        { extra = "nemotron-streaming" },
+        { extra = "qwen3-streaming" },
+    ],
+    [
+        { extra = "nemotron-streaming" },
+        { extra = "sentence_tokenizer" },
     ],
 ]
 

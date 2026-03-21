@@ -77,6 +77,37 @@ services:
     profiles:
       - qwen3
 
+  wlk-nemotron:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        EXTRAS: ${GPU_EXTRAS:-cu129,nemotron-streaming}
+    image: wlk:gpu-nemotron
+    container_name: wlk-nemotron
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    ports:
+      - "8200:8000"
+    volumes:
+      - hf-cache:/root/.cache/huggingface/hub
+    environment:
+      - HF_TOKEN
+    command: ["--backend", "nemotron-streaming", "--nemotron-chunk-mode", "160ms", "--pcm-input"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    profiles:
+      - nemotron
+
   # --- Alternative profiles (use with: docker compose --profile <name> up) ---
 
   wlk-gpu-voxtral:
