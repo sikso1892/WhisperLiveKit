@@ -10,10 +10,10 @@ This ensures cross-chunk consistency at the model level rather than relying
 on text-level agreement, which is especially beneficial for agglutinative
 languages like Korean where morphological variation defeats exact token match.
 
-Benchmark results (L40S, 100 samples, BF16):
-  FLEURS-ko: CER 3.72% (vs LocalAgreement 4.26%, batch 2.80%)
-  LS-clean:  WER 2.11% (vs LocalAgreement 6.08%, batch 2.03%)
-  RTF: 0.041 (vs LocalAgreement 0.067)
+Benchmark results (L40S, 100 samples, BF16, ucn=4):
+  FLEURS-ko: CER 2.96% (vs LocalAgreement 4.26%, batch 2.80%)
+  LS-clean:  WER 2.69% (50 samples, vs LocalAgreement 6.08%)
+  RTF: ~0.060 (vs LocalAgreement 0.067)
 
 Usage:
     wlk serve --backend qwen3-vllm-prefix --model 1.7b --lan ko
@@ -65,7 +65,7 @@ class Qwen3PrefixOnlineProcessor:
     def __init__(
         self,
         asr,
-        unfixed_chunk_num: int = 2,
+        unfixed_chunk_num: int = 4,
         unfixed_token_num: int = 5,
         css_initial: float = 2.0,
         css_steady: float = 4.0,

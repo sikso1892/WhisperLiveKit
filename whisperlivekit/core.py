@@ -369,7 +369,7 @@ def online_factory(args, asr, language=None):
         from whisperlivekit.qwen3_prefix_processor import Qwen3PrefixOnlineProcessor
         return Qwen3PrefixOnlineProcessor(
             asr,
-            unfixed_chunk_num=getattr(args, 'unfixed_chunk_num', 2),
+            unfixed_chunk_num=getattr(args, 'unfixed_chunk_num', 4),
             unfixed_token_num=getattr(args, 'unfixed_token_num', 5),
             css_initial=getattr(args, 'adaptive_css_initial', 2.0),
             css_steady=getattr(args, 'adaptive_css_steady', 4.0),
