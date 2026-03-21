@@ -6,10 +6,11 @@
 
 **스트리밍 환경에서 batch-level 품질에 근접하면서 실시간 이하의 지연시간을 달성한다.**
 
-현재 격차 (H100 LibriSpeech clean 기준):
+현재 격차 (L40S LibriSpeech clean 기준):
 - Batch: WER 2.02% (whisper-large-v3), RTF 0.071
-- Streaming: WER 6.44% (qwen3-0.6b-simulstream-kv), RTF 0.109, latency 91ms
-- **목표: 스트리밍 WER < 4%, RTF < 0.15, first-word latency < 200ms**
+- Streaming (best): WER 2.25% (qwen3-1.7b-streaming + silence-reset, 100 samples), RTF 0.069
+- Streaming (prev): WER 6.44% (qwen3-0.6b-simulstream-kv), RTF 0.109, latency 91ms
+- **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅, first-word latency < 200ms ❌ (~2s with css=2.0)**
 
 ## Metrics
 
@@ -88,7 +89,7 @@
 
 2. **가설 수립 (Hypothesis)**
    - 구체적이고 검증 가능한 가설을 세운다
-   - 예: "Qwen3 0.6B에 lookahead 2초를 추가하면 streaming WER이 6.44% -> 5.5% 이하로 내려갈 것이다"
+   - 예: "vLLM v0.17의 native realtime streaming으로 전환하면 re-feed 비용이 제거되어 long-form RTF가 개선될 것이다"
    - research_log.md에 가설 기록
 
 3. **구현 (Implement)**
