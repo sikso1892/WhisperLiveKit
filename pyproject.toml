@@ -9,7 +9,7 @@ description = "Real-time speech-to-text models"
 readme = "README.md"
 authors = [{ name = "Quentin Fuxa" }]
 license = { file = "LICENSE" }
-requires-python = ">=3.11, <3.14"
+requires-python = ">=3.11, <3.13"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -88,6 +88,30 @@ conflicts = [
     [
         { extra = "voxtral-hf" },
         { extra = "diarization-sortformer" },
+    ],
+    [
+        { extra = "qwen3-streaming" },
+        { extra = "voxtral-hf" },
+    ],
+    [
+        { extra = "sentence_tokenizer" },
+        { extra = "voxtral-hf" },
+    ],
+    [
+        { extra = "qwen3-streaming" },
+        { extra = "sentence_tokenizer" },
+    ],
+    [
+        { extra = "qwen3-streaming" },
+        { extra = "diarization-sortformer" },
+    ],
+    [
+        { extra = "diarization-sortformer" },
+        { extra = "sentence_tokenizer" },
+    ],
+    [
+        { extra = "qwen3-streaming" },
+        { extra = "diarization-diart" },
     ],
 ]
 

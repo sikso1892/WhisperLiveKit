@@ -115,4 +115,14 @@ services:
 
 volumes:
   hf-cache:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HF_CACHE_DIR:-/mnt/data/.cache/huggingface/hub}
   modelscope-cache:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ${MODELSCOPE_CACHE_DIR:-/mnt/data/.cache/modelscope}
