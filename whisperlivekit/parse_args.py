@@ -147,8 +147,8 @@ def parse_args():
         "--backend",
         type=str,
         default="auto",
-        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "qwen3-simul-kv", "qwen3-streaming", "qwen3-streaming-tf", "nemotron-streaming", "vllm-realtime", "funasr", "granite-speech"],
-        help="Select the ASR backend. 'granite-speech' for best English batch quality (WER 1.18%%). 'nemotron-streaming' for sub-200ms latency (English). 'qwen3-streaming' for official vLLM streaming (best WER). 'qwen3-streaming-tf' for Transformers streaming (no vLLM, 4.5x less VRAM). 'funasr' for Fun-ASR-MLT-Nano (Korean). 'qwen3-simul-kv' for custom SimulStreaming.",
+        choices=["auto", "mlx-whisper", "faster-whisper", "whisper", "openai-api", "voxtral", "voxtral-mlx", "qwen3", "qwen3-mlx", "qwen3-mlx-simul", "qwen3-simul", "qwen3-simul-kv", "qwen3-streaming", "qwen3-streaming-tf", "nemotron-streaming", "vllm-realtime", "funasr", "granite-speech", "granite-speech-vllm"],
+        help="Select the ASR backend. 'granite-speech-vllm' for best English quality+speed (WER 1.16%%, vLLM). 'granite-speech' for English batch (Transformers). 'nemotron-streaming' for sub-200ms latency (English). 'qwen3-streaming' for official vLLM streaming (best multilingual WER). 'qwen3-streaming-tf' for Transformers streaming (no vLLM, 4.5x less VRAM). 'funasr' for Fun-ASR-MLT-Nano (Korean). 'qwen3-simul-kv' for custom SimulStreaming.",
     )
     parser.add_argument(
         "--no-vac",
