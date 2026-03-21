@@ -62,15 +62,16 @@ class Qwen3StreamingASR:
         self.model_id = model_id
         self.gpu_memory_utilization = gpu_memory_utilization
 
-        # Auto-select optimal ucn based on model size if user didn't override
-        if unfixed_chunk_num == 5:  # default value = not explicitly set
-            if "0.6b" in model_id.lower():
-                self.unfixed_chunk_num = 4
+        # Auto-select optimal parameters based on model size
+        is_06b = "0.6b" in model_id.lower()
+        if unfixed_chunk_num == 5:  # default = not explicitly set
+            self.unfixed_chunk_num = 4 if is_06b else 5
+            if is_06b:
                 logger.info("Auto-selected unfixed_chunk_num=4 for 0.6B model")
-            else:
-                self.unfixed_chunk_num = unfixed_chunk_num
         else:
             self.unfixed_chunk_num = unfixed_chunk_num
+        # 1.7B benefits from utn=7 for Korean; 0.6B stays at 5
+        self.unfixed_token_num = 5 if is_06b else 7
 
         self._load_model()
 
@@ -128,7 +129,7 @@ class Qwen3StreamingOnlineProcessor:
         """Initialize or reset streaming state."""
         kwargs = {
             "unfixed_chunk_num": self.asr.unfixed_chunk_num,
-            "unfixed_token_num": 5,
+            "unfixed_token_num": self.asr.unfixed_token_num,
             "chunk_size_sec": 2.0,
         }
         if self.asr.original_language:
