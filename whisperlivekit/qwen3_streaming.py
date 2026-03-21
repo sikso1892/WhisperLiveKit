@@ -167,8 +167,7 @@ class Qwen3StreamingOnlineProcessor:
         self.end = 0.0
         self.buffer: List[ASRToken] = []
         self._audio_queue: List[np.ndarray] = []
-        self._prev_text = ""
-        self._committed_len = 0  # characters of state.text already emitted
+        self._committed_text = ""
         self._state = None
         self._speaker = -1
         self._global_time_offset = 0.0
@@ -197,8 +196,7 @@ class Qwen3StreamingOnlineProcessor:
         if lang:
             kwargs["language"] = lang
         self._state = self.asr.asr.init_streaming_state(**kwargs)
-        self._prev_text = ""
-        self._committed_len = 0
+        self._committed_text = ""
         self._audio_queue = []
         self._session_audio_fed = 0
         self._recent_audio = []
@@ -292,51 +290,52 @@ class Qwen3StreamingOnlineProcessor:
         return reset_tokens + new_tokens, self.end
 
     def _extract_new_tokens(self, current_text: str, is_last: bool) -> List[ASRToken]:
-        """Extract newly fixed tokens via common-prefix diff."""
-        prev = self._prev_text
-        self._prev_text = current_text
+        """Extract committed tokens using lazy-commit strategy.
 
-        if not current_text:
+        During streaming, no text is committed — all text is shown as
+        buffer (unfixed).  Only on is_last (silence/finish) is the SDK's
+        final text committed.  This avoids locking in wrong text when the
+        model self-corrects earlier portions mid-stream (e.g. "Rowle" →
+        "Raoul"), which the eager common-prefix diff could not undo.
+        """
+        if not current_text or not is_last:
             return []
 
-        # Find common prefix length between previous and current text.
-        # Common prefix = text that hasn't changed = fixed/committed.
-        common = 0
-        limit = min(len(prev), len(current_text))
-        for i in range(limit):
-            if prev[i] == current_text[i]:
-                common = i + 1
-            else:
-                break
+        # On is_last, commit the full SDK text minus already committed.
+        committed = self._committed_text
+        if committed and current_text.startswith(committed):
+            new_text = current_text[len(committed):]
+        else:
+            # Self-correction changed text before committed boundary.
+            # Emit the full final text as-is (authoritative SDK output).
+            new_text = current_text
 
-        # On is_last, commit everything
-        if is_last:
-            common = len(current_text)
+        if not new_text or not new_text.strip():
+            return []
 
-        # Emit text from _committed_len to common
-        if common > self._committed_len:
-            new_text = current_text[self._committed_len:common]
-            self._committed_len = common
+        self._committed_text = committed + new_text if current_text.startswith(committed) else current_text
 
-            if not new_text.strip():
-                return []
-
-            chunk_sec = self._state.chunk_size_sec if hasattr(self._state, 'chunk_size_sec') else 2.0
-            token = ASRToken(
-                start=round(max(self.end - chunk_sec, 0.0), 2),
-                end=round(self.end, 2),
-                text=new_text,
-                speaker=self._speaker,
-                detected_language=getattr(self._state, 'language', None),
-            ).with_offset(self._global_time_offset)
-            return [token]
-
-        return []
+        chunk_sec = self._state.chunk_size_sec if hasattr(self._state, 'chunk_size_sec') else 2.0
+        token = ASRToken(
+            start=round(max(self.end - chunk_sec, 0.0), 2),
+            end=round(self.end, 2),
+            text=new_text,
+            speaker=self._speaker,
+            detected_language=getattr(self._state, 'language', None),
+        ).with_offset(self._global_time_offset)
+        return [token]
 
     def get_buffer(self) -> Transcript:
         """Return current unfixed text as draft."""
         current = (self._state.text or "") if self._state else ""
-        unfixed = current[self._committed_len:]
+        committed = self._committed_text
+        if committed and current.startswith(committed):
+            unfixed = current[len(committed):]
+        elif committed:
+            # Model self-corrected; approximate unfixed from last known position
+            unfixed = current[min(len(committed), len(current)):]
+        else:
+            unfixed = current
         return Transcript(None, None, unfixed)
 
     def start_silence(self) -> Tuple[List[ASRToken], float]:
