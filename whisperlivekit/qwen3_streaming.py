@@ -49,7 +49,6 @@ class Qwen3StreamingASR:
     ):
         self.transcribe_kargs = {}
         self.original_language = None if lan == "auto" else lan
-        self.unfixed_chunk_num = unfixed_chunk_num
 
         if model_dir:
             model_id = model_dir
@@ -62,6 +61,17 @@ class Qwen3StreamingASR:
 
         self.model_id = model_id
         self.gpu_memory_utilization = gpu_memory_utilization
+
+        # Auto-select optimal ucn based on model size if user didn't override
+        if unfixed_chunk_num == 5:  # default value = not explicitly set
+            if "0.6b" in model_id.lower():
+                self.unfixed_chunk_num = 4
+                logger.info("Auto-selected unfixed_chunk_num=4 for 0.6B model")
+            else:
+                self.unfixed_chunk_num = unfixed_chunk_num
+        else:
+            self.unfixed_chunk_num = unfixed_chunk_num
+
         self._load_model()
 
     def _load_model(self):

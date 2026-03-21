@@ -218,7 +218,7 @@ def parse_args():
         type=int,
         default=5,
         dest="unfixed_chunk_num",
-        help="Number of unfixed (self-correcting) chunks for Qwen3 streaming backend. Default: 5 (optimal for Korean CER 2.45%%, English WER 1.99%%). Use 4 for slightly faster RTF.",
+        help="Number of unfixed (self-correcting) chunks for Qwen3 streaming backend. Default: 5 (auto-adjusted to 4 for 0.6B models). Optimal: 1.7B ucn=5 (Ko CER 2.45%%, En WER 1.99%%), 0.6B ucn=4 (Ko CER 3.71%%, En WER 2.65%%).",
     )
 
     # SimulStreaming-specific arguments
