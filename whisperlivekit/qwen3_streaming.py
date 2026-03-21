@@ -127,10 +127,13 @@ class Qwen3StreamingASR:
         self.asr = Qwen3ASRModel.LLM(**llm_kwargs)
         logger.info("Qwen3-ASR streaming model loaded")
 
-    def transcribe(self, audio):
-        raise NotImplementedError(
-            "Qwen3StreamingASR uses streaming_transcribe(), not batch transcribe()"
-        )
+    def transcribe(self, audio, init_prompt=""):
+        """Batch transcribe using qwen-asr SDK (for REST API compatibility)."""
+        lang = self.original_language
+        result = self.asr.transcribe((audio, SAMPLE_RATE), language=lang)
+        if not result:
+            return None
+        return result
 
 
 class Qwen3StreamingOnlineProcessor:
