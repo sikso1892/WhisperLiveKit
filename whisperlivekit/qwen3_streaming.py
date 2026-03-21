@@ -143,17 +143,17 @@ class Qwen3StreamingOnlineProcessor:
     The SDK accumulates audio internally and re-processes the full buffer
     each chunk. vLLM's KV cache makes this efficient.
 
-    Fixed/unfixed text is determined by diffing consecutive state.text
-    values: the common prefix is fixed (committed), the rest is unfixed.
+    Commit strategy — lazy commit:
+    During streaming, no text is committed — all text is shown as buffer
+    (unfixed). On finalize (silence/finish), the SDK's final text is
+    committed unconditionally. This avoids locking in wrong text when
+    the model self-corrects earlier portions mid-stream.
 
     Long-form stability: the SDK re-feeds all accumulated audio every chunk,
     so per-chunk cost grows O(n) with audio length. To prevent RTF degradation,
     hallucination (Korean 60s+), and context window overflow (120s+), the
     processor automatically resets the streaming state when accumulated audio
-    exceeds max_session_audio_sec (default 30s). Overlap is disabled by
-    default (overlap_sec=0) because the unfixed_chunk_num self-correction
-    mechanism handles context transitions well without re-feeding previous
-    audio.
+    exceeds max_session_audio_sec (default 30s).
     """
 
     SAMPLING_RATE = 16000
@@ -295,25 +295,18 @@ class Qwen3StreamingOnlineProcessor:
         During streaming, no text is committed — all text is shown as
         buffer (unfixed).  Only on is_last (silence/finish) is the SDK's
         final text committed.  This avoids locking in wrong text when the
-        model self-corrects earlier portions mid-stream (e.g. "Rowle" →
-        "Raoul"), which the eager common-prefix diff could not undo.
+        model self-corrects earlier portions mid-stream.
         """
         if not current_text or not is_last:
             return []
 
-        # On is_last, commit the full SDK text minus already committed.
         committed = self._committed_text
-        if committed and current_text.startswith(committed):
-            new_text = current_text[len(committed):]
-        else:
-            # Self-correction changed text before committed boundary.
-            # Emit the full final text as-is (authoritative SDK output).
-            new_text = current_text
+        new_text = current_text[len(committed):]
 
         if not new_text or not new_text.strip():
             return []
 
-        self._committed_text = committed + new_text if current_text.startswith(committed) else current_text
+        self._committed_text = committed + new_text
 
         chunk_sec = self._state.chunk_size_sec if hasattr(self._state, 'chunk_size_sec') else 2.0
         token = ASRToken(
