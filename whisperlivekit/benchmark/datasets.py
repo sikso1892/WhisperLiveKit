@@ -193,6 +193,37 @@ BENCHMARK_CATALOG = {
         "skip": 0,
         "tags": set(),
     },
+    # Korean (FLEURS)
+    "ko_fleurs_1": {
+        "dataset": "google/fleurs",
+        "config": "ko_kr",
+        "split": "test",
+        "language": "ko",
+        "category": "multilingual",
+        "n_samples": 10,
+        "skip": 0,
+        "tags": set(),
+    },
+    "ko_fleurs_2": {
+        "dataset": "google/fleurs",
+        "config": "ko_kr",
+        "split": "test",
+        "language": "ko",
+        "category": "multilingual",
+        "n_samples": 10,
+        "skip": 10,
+        "tags": set(),
+    },
+    "ko_fleurs_3": {
+        "dataset": "google/fleurs",
+        "config": "ko_kr",
+        "split": "test",
+        "language": "ko",
+        "category": "multilingual",
+        "n_samples": 10,
+        "skip": 20,
+        "tags": set(),
+    },
     # English multi-speaker meeting (AMI)
     "en_meeting": {
         "dataset": "edinburghcstr/ami",
@@ -341,28 +372,57 @@ def _download_mls(config: str, n_samples: int, skip: int,
 
 def _download_fleurs(config: str, n_samples: int, skip: int,
                      language: str, prefix: str) -> List[Dict]:
-    """Download from google/fleurs."""
-    _ensure_datasets()
-    import datasets.config
-    datasets.config.TORCHCODEC_AVAILABLE = False
-    from datasets import Audio, load_dataset
+    """Download from google/fleurs via HuggingFace Hub (no loading scripts)."""
+    import tarfile
 
-    logger.info("Downloading FLEURS %s samples...", config)
-    ds = load_dataset(
-        "google/fleurs", config, split="test", streaming=True,
+    from huggingface_hub import hf_hub_download
+
+    logger.info("Downloading FLEURS %s samples via Hub...", config)
+
+    # Download TSV metadata
+    tsv_path = hf_hub_download(
+        "google/fleurs", f"data/{config}/test.tsv", repo_type="dataset",
     )
-    ds = ds.cast_column("audio", Audio(decode=False))
+    entries = []
+    with open(tsv_path, encoding="utf-8") as f:
+        for line in f:
+            parts = line.strip().split("\t")
+            if len(parts) >= 6:
+                entries.append({
+                    "filename": parts[1],
+                    "transcription": parts[3],  # normalized transcription
+                    "num_samples": int(parts[5]),
+                })
+
+    # Download and extract audio
+    tar_path = hf_hub_download(
+        "google/fleurs", f"data/{config}/audio/test.tar.gz", repo_type="dataset",
+    )
+    audio_dir = CACHE_DIR / f"fleurs_{config}_audio"
+    audio_dir.mkdir(parents=True, exist_ok=True)
+    with tarfile.open(tar_path, "r:gz") as tar:
+        tar.extractall(audio_dir)
+
+    # Build filename -> path mapping
+    audio_files = {p.name: p for p in audio_dir.rglob("*.wav")}
 
     samples = []
-    for i, item in enumerate(ds):
+    for i, entry in enumerate(entries):
         if i < skip:
             continue
         if len(samples) >= n_samples:
             break
 
-        audio_array, sr = _decode_audio(item["audio"]["bytes"])
+        audio_path = audio_files.get(entry["filename"])
+        if not audio_path or not audio_path.exists():
+            logger.warning("Audio not found: %s", entry["filename"])
+            continue
+
+        import soundfile as sf_lib
+        audio_array, sr = sf_lib.read(str(audio_path), dtype="float32")
+        audio_array = np.array(audio_array, dtype=np.float32)
         duration = len(audio_array) / sr
-        text = item.get("transcription", item.get("raw_transcription", ""))
+        text = entry["transcription"]
 
         wav_name = f"{prefix}_{i}.wav"
         _save_wav(CACHE_DIR / wav_name, audio_array, sr)

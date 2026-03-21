@@ -24,6 +24,16 @@ BACKEND_LANGUAGES: Dict[str, Optional[Set[str]]] = {
         "ko", "ru", "th", "vi", "ja", "tr", "hi", "ms", "nl", "sv",
         "da", "fi", "pl", "cs", "fa", "el", "hu", "mk", "ro",
     },
+    "qwen3-streaming": {
+        "zh", "en", "yue", "ar", "de", "fr", "es", "pt", "id", "it",
+        "ko", "ru", "th", "vi", "ja", "tr", "hi", "ms", "nl", "sv",
+        "da", "fi", "pl", "cs", "fa", "el", "hu", "mk", "ro",
+    },
+    "funasr": {
+        "zh", "en", "yue", "ja", "ko", "ar", "bn", "cs", "de", "es",
+        "fa", "fr", "hi", "hu", "id", "it", "nl", "pl", "pt", "ro",
+        "ru", "sv", "sw", "th", "tr", "uk", "ur", "vi", "zh-tw",
+    },
 }
 
 
@@ -76,6 +86,18 @@ def detect_available_backends() -> List[str]:
         from qwen_asr import Qwen3ASRModel  # noqa: F401
         backends.append("qwen3")
         backends.append("qwen3-simul")
+    except (ImportError, Exception):
+        pass
+
+    try:
+        from whisperlivekit.qwen3_streaming import Qwen3StreamingASR  # noqa: F401
+        backends.append("qwen3-streaming")
+    except (ImportError, Exception):
+        pass
+
+    try:
+        from funasr import AutoModel  # noqa: F401
+        backends.append("funasr")
     except (ImportError, Exception):
         pass
 
