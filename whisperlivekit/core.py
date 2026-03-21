@@ -177,6 +177,16 @@ class TranscriptionEngine:
                 )
                 self.asr.backend_choice = "qwen3-streaming"
                 logger.info("Using Qwen3-ASR official streaming (vLLM), unfixed_chunk_num=%d, chunk_size_sec=%.1f", config.unfixed_chunk_num, config.chunk_size_sec)
+            elif config.backend == "qwen3-streaming-tf":
+                from whisperlivekit.qwen3_transformers_streaming import Qwen3TransformersStreamingASR
+                self.tokenizer = None
+                self.asr = Qwen3TransformersStreamingASR(
+                    **transcription_common_params,
+                    unfixed_chunk_num=config.unfixed_chunk_num,
+                    chunk_size_sec=config.chunk_size_sec,
+                )
+                self.asr.backend_choice = "qwen3-streaming-tf"
+                logger.info("Using Qwen3-ASR streaming (Transformers, no vLLM), unfixed_chunk_num=%d, chunk_size_sec=%.1f", config.unfixed_chunk_num, config.chunk_size_sec)
             elif config.backend == "granite-speech":
                 from whisperlivekit.granite_speech_asr import GraniteSpeechASR
                 self.asr = GraniteSpeechASR(**transcription_common_params)
@@ -320,6 +330,10 @@ def online_factory(args, asr, language=None):
         from whisperlivekit.nemotron_streaming import NemotronStreamingOnlineProcessor
         return NemotronStreamingOnlineProcessor(asr)
     if backend == "qwen3-streaming":
+        from whisperlivekit.qwen3_streaming import Qwen3StreamingOnlineProcessor
+        max_sess = getattr(args, "max_session_audio_sec", 30.0)
+        return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
+    if backend == "qwen3-streaming-tf":
         from whisperlivekit.qwen3_streaming import Qwen3StreamingOnlineProcessor
         max_sess = getattr(args, "max_session_audio_sec", 30.0)
         return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
