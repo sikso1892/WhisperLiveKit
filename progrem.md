@@ -6,25 +6,27 @@
 
 **스트리밍 환경에서 batch-level 품질에 근접하면서 실시간 이하의 지연시간을 달성한다.**
 
-현재 격차 (L40S, 100 samples 기준):
+현재 격차 (L40S 기준):
 
-LibriSpeech clean:
-- Batch: WER 2.03% (nemotron-0.6b), RTF 0.002
-- Streaming (best quality): WER 2.09% (nemotron-0.6b-560ms), RTF 0.075, latency 595ms
+LibriSpeech clean (100 samples):
+- Batch FP8: WER 2.14% (qwen3-1.7b FP8), RTF 0.018
+- Streaming FP8: WER 2.09% (qwen3-1.7b FP8 css=2.0), RTF 0.048 ← batch보다 좋음!
+- Streaming BF16: WER 2.25% (qwen3-1.7b css=2.0), RTF 0.069
+- Streaming (Nemotron): WER 2.09% (nemotron-0.6b-560ms), RTF 0.075, latency 595ms
 - Streaming (lowest latency): WER 2.51% (nemotron-0.6b-160ms), RTF 0.223, latency 193ms
-- Streaming (multilingual): WER 2.09% (qwen3-1.7b FP8 + silence-reset), RTF 0.053
-- Streaming (multilingual, BF16): WER 2.25% (qwen3-1.7b + silence-reset), RTF 0.069
 
 LibriSpeech other (noisy, 100 samples):
-- Streaming (FP8, best): WER 4.38% (qwen3-1.7b FP8 css=2.0), RTF 0.053
-- Streaming (BF16, best): WER 4.45% (qwen3-1.7b css=1.0), RTF 0.104
-- Streaming (BF16, css=2.0): WER 4.57% (qwen3-1.7b css=2.0), RTF 0.072
+- Batch FP8: WER 4.38% (qwen3-1.7b FP8), RTF 0.024
+- Streaming FP8: WER 4.38% (qwen3-1.7b FP8 css=2.0), RTF 0.053 ← batch와 동일!
+- Streaming BF16: WER 4.45% (qwen3-1.7b css=1.0), RTF 0.104
 - Streaming (Nemotron): WER 5.65% (nemotron-0.6b-560ms), RTF 0.082
 
-Korean FLEURS (100 samples):
-- Streaming: CER 2.90% (qwen3-1.7b FP8 css=2.0 ucn=5 utn=7 + silence-reset)
-- Streaming (BF16): CER 3.01% (qwen3-1.7b css=2.0 ucn=5 utn=7 + silence-reset)
+Korean FLEURS (30 samples):
+- Batch FP8: CER 2.09% (qwen3-1.7b FP8), RTF 0.016
+- Streaming FP8: CER 2.37% (qwen3-1.7b FP8 css=2.0 ucn=5 utn=7), RTF 0.046
+- Streaming BF16: CER 3.01% (qwen3-1.7b css=2.0 ucn=5 utn=7), RTF 0.072
 
+**Streaming-Batch Gap: EN 0.00pp ✅, KO 0.28pp**
 **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
 
 ## Metrics
