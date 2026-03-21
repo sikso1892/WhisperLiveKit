@@ -14,6 +14,7 @@ Usage:
 """
 
 import logging
+import os
 import sys
 from typing import List, Optional
 
@@ -109,6 +110,15 @@ class FunASR:
                 "funasr is required for Fun-ASR-Nano. "
                 "Install it with: pip install funasr"
             )
+
+        # FunASRNano model.py uses bare `from ctc import CTC` which requires
+        # the package subdirectory on sys.path.
+        import funasr as _funasr
+        _nano_dir = os.path.join(
+            os.path.dirname(_funasr.__file__), "models", "fun_asr_nano",
+        )
+        if _nano_dir not in sys.path:
+            sys.path.insert(0, _nano_dir)
 
         logger.info(f"Loading Fun-ASR-Nano model: {self._model_id}")
         model = AutoModel(
