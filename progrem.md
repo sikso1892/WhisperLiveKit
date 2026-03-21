@@ -18,8 +18,8 @@ LibriSpeech other (noisy):
 - Streaming (best quality): WER 4.32% (qwen3-1.7b css=1.0), RTF 0.086
 - Streaming (Nemotron): WER 5.65% (nemotron-0.6b-560ms), RTF 0.082
 
-Korean FLEURS:
-- Streaming: CER 2.17% (qwen3-1.7b css=2.0 ucn=5 utn=7 + silence-reset)
+Korean FLEURS (100 samples):
+- Streaming: CER 3.01% (qwen3-1.7b css=2.0 ucn=5 utn=7 + silence-reset)
 
 **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
 
