@@ -84,6 +84,7 @@ class Qwen3StreamingASR:
 
         self.model_id = model_id
         self.gpu_memory_utilization = gpu_memory_utilization
+        self.quantization = kwargs.get("quantization", None)
 
         # Auto-select optimal parameters based on model size
         is_06b = "0.6b" in model_id.lower()
@@ -108,11 +109,16 @@ class Qwen3StreamingASR:
                 "Install: pip install qwen-asr[vllm]"
             )
 
-        logger.info("Loading Qwen3-ASR streaming (vLLM): %s", self.model_id)
-        self.asr = Qwen3ASRModel.LLM(
+        llm_kwargs = dict(
             model=self.model_id,
             gpu_memory_utilization=self.gpu_memory_utilization,
         )
+        if self.quantization:
+            llm_kwargs["quantization"] = self.quantization
+            logger.info("Loading Qwen3-ASR streaming (vLLM, %s): %s", self.quantization, self.model_id)
+        else:
+            logger.info("Loading Qwen3-ASR streaming (vLLM): %s", self.model_id)
+        self.asr = Qwen3ASRModel.LLM(**llm_kwargs)
         logger.info("Qwen3-ASR streaming model loaded")
 
     def transcribe(self, audio):

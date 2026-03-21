@@ -77,6 +77,7 @@ class WhisperLiveKitConfig:
     unfixed_chunk_num: int = 5
     chunk_size_sec: float = 2.0
     max_session_audio_sec: float = 30.0
+    quantization: Optional[str] = None
 
     # vLLM Realtime backend
     vllm_url: str = "ws://localhost:8000/v1/realtime"

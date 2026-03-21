@@ -234,6 +234,12 @@ def parse_args():
         dest="max_session_audio_sec",
         help="Max audio duration per streaming session before automatic reset (seconds). Default: 30. Prevents context window overflow (>120s crashes) and Korean hallucination (>60s). Set to 0 to disable.",
     )
+    parser.add_argument(
+        "--quantization",
+        type=str,
+        default=None,
+        help="vLLM quantization method for Qwen3 streaming backend (e.g. 'fp8'). FP8 gives ~24%% throughput improvement on Ada Lovelace GPUs (L40S, RTX 4090) with no quality loss.",
+    )
 
     # Nemotron-streaming-specific arguments
     parser.add_argument(
