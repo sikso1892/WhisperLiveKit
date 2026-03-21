@@ -12,14 +12,16 @@ LibriSpeech clean:
 - Batch: WER 2.03% (nemotron-0.6b), RTF 0.002
 - Streaming (best quality): WER 2.09% (nemotron-0.6b-560ms), RTF 0.075, latency 595ms
 - Streaming (lowest latency): WER 2.51% (nemotron-0.6b-160ms), RTF 0.223, latency 193ms
-- Streaming (multilingual): WER 2.25% (qwen3-1.7b + silence-reset), RTF 0.069
+- Streaming (multilingual): WER 2.09% (qwen3-1.7b FP8 + silence-reset), RTF 0.053
+- Streaming (multilingual, BF16): WER 2.25% (qwen3-1.7b + silence-reset), RTF 0.069
 
 LibriSpeech other (noisy):
 - Streaming (best quality): WER 4.32% (qwen3-1.7b css=1.0), RTF 0.086
 - Streaming (Nemotron): WER 5.65% (nemotron-0.6b-560ms), RTF 0.082
 
 Korean FLEURS (100 samples):
-- Streaming: CER 3.01% (qwen3-1.7b css=2.0 ucn=5 utn=7 + silence-reset)
+- Streaming: CER 2.90% (qwen3-1.7b FP8 css=2.0 ucn=5 utn=7 + silence-reset)
+- Streaming (BF16): CER 3.01% (qwen3-1.7b css=2.0 ucn=5 utn=7 + silence-reset)
 
 **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
 
