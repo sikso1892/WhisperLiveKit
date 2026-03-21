@@ -46,7 +46,7 @@ class NemotronStreamingASR:
         model_size: str = None,
         model_dir: str = None,
         lan: str = "en",
-        chunk_mode: str = "160ms",
+        chunk_mode: str = "560ms",
         model_cache_dir: Optional[str] = None,
         model_path: Optional[str] = None,
         **kwargs,
