@@ -47,16 +47,17 @@ Korean FLEURS (30 samples, L40S FP8):
 - Streaming FP8 (css=3.0): CER 2.09%, RTF 0.048
 
 Long-form (10 min continuous, H100 BF16):
-- Nemotron 560ms native stream: WER 2.75%, RTF 0.064 — O(n) compute, RTF flat
-- Granite 1B re-feed css=2.0: RTF 0.254 (4x overhead vs Nemotron)
+- **Granite 1B css=8.0: RTF 0.057, WER 1.18%** ← 최적
+- Nemotron 560ms native: WER 2.75%, RTF 0.064
+- Granite css=2.0: RTF 0.254 (비효율, css=8.0 사용 권장)
 
 **Streaming-Batch Gap: EN 0.00pp ✅, KO 0.00pp ✅ (css=3.0)**
-**목표: 스트리밍 WER < 4% ✅ (Granite 1.18%), RTF < 0.15 ✅ (0.077), first-word latency < 200ms ✅ (fd=72ms)**
+**목표: 스트리밍 WER < 4% ✅ (Granite 1.18%), RTF < 0.15 ✅ (0.028), first-word latency < 200ms ✅ (fd=110ms)**
 
 배포 전략:
-- 영어 short-form (<30s): Granite 1B re-feed (WER 1.18%, 최고 품질)
-- 영어 long-form (>1min): Nemotron 560ms native (WER 2.75%, 4x 효율)
-- 한국어/다국어: Qwen3-1.7B re-feed (CER 2.89%)
+- **영어 (모든 환경): Granite 1B css=8.0** (WER 1.18%, RTF 0.028-0.057, fd 110ms)
+- 한국어/다국어: Qwen3-1.7B css=3.0 (CER 2.89%)
+- Nemotron 560ms: VRAM 제약 시 대안 (5GB, WER 3.85%)
 
 ## Metrics
 
