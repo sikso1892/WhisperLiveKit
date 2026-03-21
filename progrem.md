@@ -8,27 +8,40 @@
 
 현재 격차 (L40S 기준):
 
-LibriSpeech clean (100 samples):
-- Batch FP8: WER 2.14% (qwen3-1.7b FP8), RTF 0.018
-- Streaming FP8: WER 2.09% (qwen3-1.7b FP8 css=2.0), RTF 0.048 ← batch보다 좋음!
-- Streaming BF16: WER 2.25% (qwen3-1.7b css=2.0), RTF 0.069
-- Streaming (Nemotron): WER 2.09% (nemotron-0.6b-560ms), RTF 0.075, latency 595ms
-- Streaming (lowest latency): WER 2.51% (nemotron-0.6b-160ms), RTF 0.223, latency 193ms
+LibriSpeech clean (100 samples, H100 BF16):
+- **Granite 1B batch: WER 1.18%, RTF 0.024** ← 최저 WER
+- **Granite 1B stream css=2.0: WER 1.18%, RTF 0.077, fd 72ms** ← 영어 최적
+- Qwen3-1.7B batch: WER 2.30%, RTF 0.026
+- Qwen3-1.7B stream css=2.0: WER 2.30%, RTF 0.092, fd 85ms
+- Nemotron chunk-stream: WER 7.43% (1120ms), RTF 0.033 — native streaming은 품질 저하 큼
 
-LibriSpeech other (noisy, 100 samples):
-- Batch FP8: WER 4.38% (qwen3-1.7b FP8), RTF 0.024
-- Streaming FP8: WER 4.38% (qwen3-1.7b FP8 css=2.0), RTF 0.053 ← batch와 동일!
-- Streaming BF16: WER 4.45% (qwen3-1.7b css=1.0), RTF 0.104
-- Streaming (Nemotron): WER 5.65% (nemotron-0.6b-560ms), RTF 0.082
+LibriSpeech clean (100 samples, L40S FP8):
+- Qwen3-1.7B FP8 batch: WER 2.14%, RTF 0.018
+- Qwen3-1.7B FP8 stream css=2.0: WER 2.09%, RTF 0.048
 
-Korean FLEURS (30 samples):
+LibriSpeech other (100 samples, H100 BF16):
+- **Granite 1B batch: WER 3.68%, RTF 0.030** ← 최저 WER
+- **Granite 1B stream css=2.0: WER 3.75%, RTF 0.075**
+- Qwen3-1.7B batch: WER 4.45%, RTF 0.035 (Exp #135)
+- Qwen3-1.7B stream css=2.0: WER 4.32%, RTF 0.094 (Exp #135)
+
+LibriSpeech other (100 samples, L40S FP8):
+- Qwen3-1.7B FP8 batch: WER 4.38%, RTF 0.024
+- Qwen3-1.7B FP8 stream css=2.0: WER 4.38%, RTF 0.053
+
+Korean FLEURS (100 samples, H100 BF16):
+- Qwen3-1.7B batch: CER 2.84%, RTF 0.023
+- Qwen3-1.7B stream css=2.0: CER 2.89%, RTF 0.114, fd 81ms
+- Qwen3-1.7B stream css=3.0: CER 2.89%, RTF 0.083, fd 97ms ← 균형점
+- Qwen3-1.7B stream css=5.0: CER 2.89%, RTF 0.057, fd 150ms
+- Note: CSS 값에 관계없이 CER=2.89%로 동일. stream-batch gap 0.04pp로 고정.
+
+Korean FLEURS (30 samples, L40S FP8):
 - Batch FP8: CER 2.09% (qwen3-1.7b FP8), RTF 0.016
-- Streaming FP8 (css=3.0): CER 2.09% (qwen3-1.7b FP8 css=3.0 ucn=5 utn=7), RTF 0.048 ← batch와 동일!
-- Streaming FP8 (css=2.0): CER 2.30% (qwen3-1.7b FP8 css=2.0 ucn=5 utn=7), RTF 0.052
-- Streaming BF16: CER 3.01% (qwen3-1.7b css=2.0 ucn=5 utn=7), RTF 0.072
+- Streaming FP8 (css=3.0): CER 2.09%, RTF 0.048
 
 **Streaming-Batch Gap: EN 0.00pp ✅, KO 0.00pp ✅ (css=3.0)**
-**목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
+**목표: 스트리밍 WER < 4% ✅ (Granite 1.18%), RTF < 0.15 ✅ (0.077), first-word latency < 200ms ✅ (fd=72ms)**
 
 ## Metrics
 
