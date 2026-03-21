@@ -7,10 +7,11 @@
 **스트리밍 환경에서 batch-level 품질에 근접하면서 실시간 이하의 지연시간을 달성한다.**
 
 현재 격차 (L40S LibriSpeech clean 기준):
-- Batch: WER 2.02% (whisper-large-v3), RTF 0.071
-- Streaming (best): WER 2.25% (qwen3-1.7b-streaming + silence-reset, 100 samples), RTF 0.069
-- Streaming (prev): WER 6.44% (qwen3-0.6b-simulstream-kv), RTF 0.109, latency 91ms
-- **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅, first-word latency < 200ms ❌ (~2s with css=2.0)**
+- Batch: WER 2.03% (nemotron-0.6b), RTF 0.002
+- Streaming (best quality): WER 2.09% (nemotron-0.6b-560ms, 100 samples), RTF 0.075, latency 595ms
+- Streaming (lowest latency): WER 2.51% (nemotron-0.6b-160ms, 100 samples), RTF 0.223, latency 193ms
+- Streaming (multilingual): WER 2.25% (qwen3-1.7b-streaming + silence-reset, 100 samples), RTF 0.069
+- **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
 
 ## Metrics
 
