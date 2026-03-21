@@ -15,10 +15,10 @@ LibriSpeech clean:
 - Streaming (multilingual): WER 2.09% (qwen3-1.7b FP8 + silence-reset), RTF 0.053
 - Streaming (multilingual, BF16): WER 2.25% (qwen3-1.7b + silence-reset), RTF 0.069
 
-LibriSpeech other (noisy, 30 samples):
-- Streaming (FP8, best): WER 2.23% (qwen3-1.7b FP8 css=2.0), RTF 0.053
-- Streaming (FP8, low latency): WER 2.41% (qwen3-1.7b FP8 css=1.0), RTF 0.081
-- Streaming (BF16): WER 4.32% (qwen3-1.7b css=1.0), RTF 0.086
+LibriSpeech other (noisy, 100 samples):
+- Streaming (FP8, best): WER 4.38% (qwen3-1.7b FP8 css=2.0), RTF 0.053
+- Streaming (BF16, best): WER 4.45% (qwen3-1.7b css=1.0), RTF 0.104
+- Streaming (BF16, css=2.0): WER 4.57% (qwen3-1.7b css=2.0), RTF 0.072
 - Streaming (Nemotron): WER 5.65% (nemotron-0.6b-560ms), RTF 0.082
 
 Korean FLEURS (100 samples):
