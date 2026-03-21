@@ -23,10 +23,11 @@ LibriSpeech other (noisy, 100 samples):
 
 Korean FLEURS (30 samples):
 - Batch FP8: CER 2.09% (qwen3-1.7b FP8), RTF 0.016
-- Streaming FP8: CER 2.37% (qwen3-1.7b FP8 css=2.0 ucn=5 utn=7), RTF 0.046
+- Streaming FP8 (css=3.0): CER 2.09% (qwen3-1.7b FP8 css=3.0 ucn=5 utn=7), RTF 0.048 ← batch와 동일!
+- Streaming FP8 (css=2.0): CER 2.30% (qwen3-1.7b FP8 css=2.0 ucn=5 utn=7), RTF 0.052
 - Streaming BF16: CER 3.01% (qwen3-1.7b css=2.0 ucn=5 utn=7), RTF 0.072
 
-**Streaming-Batch Gap: EN 0.00pp ✅, KO 0.28pp**
+**Streaming-Batch Gap: EN 0.00pp ✅, KO 0.00pp ✅ (css=3.0)**
 **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
 
 ## Metrics
@@ -45,17 +46,13 @@ Korean FLEURS (30 samples):
 
 우선순위 순:
 
-### 1. Streaming-Batch WER Gap 축소
-현재 스트리밍은 batch 대비 WER이 3~4배 높다. 핵심 병목:
-- SimulStreaming의 attention alignment 정확도
-- 짧은 컨텍스트에서의 인식 품질
-- KV cache 재활용 효율 (qwen3_simul_kv에서 시작)
+### 1. Streaming-Batch WER Gap 축소 ✅ (영어 gap 0, 한국어 0.28pp)
+**달성됨**: Qwen3-ASR-1.7B FP8 streaming이 batch와 동등한 품질 달성.
+- LS-clean: Streaming 2.09% ≤ Batch 2.14% (streaming이 더 좋음)
+- LS-other: Streaming 4.38% = Batch 4.38% (동일)
+- Korean: Streaming 2.37% vs Batch 2.09% (0.28pp gap — 추가 연구 중)
 
-접근 방향:
-- Speculative decoding / lookahead 전략
-- Encoder KV cache 최적화 (이미 Qwen3에 구현, 다른 백엔드로 확장)
-- Adaptive chunk size (짧은 발화 vs 긴 발화)
-- Confidence-based emission (낮은 확신도 토큰 지연 방출)
+**핵심 기법**: FP8 dynamic quantization + css=2.0 + ucn=5/utn=7
 
 ### 2. 새 모델/백엔드 탐색
 최신 ASR 모델을 지속적으로 조사하고 통합 가능성을 평가한다:
