@@ -22,6 +22,7 @@ classifiers = [
 ]
 dependencies = [
     "fastapi",
+    "python-multipart",
     "librosa",
     "soundfile",
     "uvicorn",
@@ -37,7 +38,9 @@ dependencies = [
 [project.optional-dependencies]
 test = ["pytest>=7.0", "pytest-asyncio>=0.21", "datasets>=2.14", "librosa"]
 translation = ["nllw"]
-sentence_tokenizer = ["mosestokenizer", "wtpsplit"]
+sentence_tokenizer = ["mosestokenizer", "wtpsplit>=2.0"]
+funasr = ["funasr>=1.0"]
+qwen3-streaming = ["qwen-asr[vllm]>=0.0.6"]
 mlx-whisper = [
     'mlx>=0.11.0; sys_platform == "darwin" and platform_machine == "arm64"',
     'mlx-whisper>=0.4.0; sys_platform == "darwin" and platform_machine == "arm64"',
