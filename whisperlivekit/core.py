@@ -175,6 +175,15 @@ class TranscriptionEngine:
                 )
                 self.asr.backend_choice = "qwen3-streaming"
                 logger.info("Using Qwen3-ASR official streaming (vLLM), unfixed_chunk_num=%d, chunk_size_sec=%.1f", config.unfixed_chunk_num, config.chunk_size_sec)
+            elif config.backend == "granite-speech":
+                from whisperlivekit.granite_speech_asr import GraniteSpeechASR
+                self.asr = GraniteSpeechASR(**transcription_common_params)
+                self.asr.confidence_validation = config.confidence_validation
+                self.asr.tokenizer = None
+                self.asr.buffer_trimming = config.buffer_trimming
+                self.asr.buffer_trimming_sec = config.buffer_trimming_sec
+                self.asr.backend_choice = "granite-speech"
+                logger.info("Using Granite 4.0 1B Speech backend (batch, English)")
             elif config.backend == "funasr":
                 from whisperlivekit.funasr_backend import FunASR
                 self.asr = FunASR(**transcription_common_params)
@@ -312,6 +321,8 @@ def online_factory(args, asr, language=None):
         from whisperlivekit.qwen3_streaming import Qwen3StreamingOnlineProcessor
         max_sess = getattr(args, "max_session_audio_sec", 30.0)
         return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
+    if backend == "granite-speech":
+        return OnlineASRProcessor(asr)
     if backend == "funasr":
         from whisperlivekit.funasr_online import FunASROnlineProcessor
         return FunASROnlineProcessor(asr)
