@@ -31,6 +31,12 @@ LibriSpeech other (100 samples, H100 BF16):
 - Nemotron batch: WER 5.84%, RTF 0.016
 - Nemotron 560ms stream: WER 8.01%, RTF 0.085 — 노이즈 환경 취약
 
+LibriSpeech other (100 samples, L40S BF16):
+- Granite 1B batch: WER 3.75%, RTF 0.025
+- Granite 1B stream css=2.0: WER 3.62%, RTF 0.082, fd 83ms
+- **Granite 1B stream css=4.0: WER 3.75%, RTF 0.043, fd 87ms**
+- **Granite 1B stream css=8.0: WER 3.75%, RTF 0.029, fd 103ms** ← CSS-invariant 확인
+
 LibriSpeech other (100 samples, L40S FP8):
 - Qwen3-1.7B FP8 batch: WER 4.38%, RTF 0.024
 - Qwen3-1.7B FP8 stream css=2.0: WER 4.38%, RTF 0.053
