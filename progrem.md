@@ -6,12 +6,22 @@
 
 **스트리밍 환경에서 batch-level 품질에 근접하면서 실시간 이하의 지연시간을 달성한다.**
 
-현재 격차 (L40S LibriSpeech clean 기준):
+현재 격차 (L40S, 100 samples 기준):
+
+LibriSpeech clean:
 - Batch: WER 2.03% (nemotron-0.6b), RTF 0.002
-- Streaming (best quality): WER 2.09% (nemotron-0.6b-560ms, 100 samples), RTF 0.075, latency 595ms
-- Streaming (lowest latency): WER 2.51% (nemotron-0.6b-160ms, 100 samples), RTF 0.223, latency 193ms
-- Streaming (multilingual): WER 2.25% (qwen3-1.7b-streaming + silence-reset, 100 samples), RTF 0.069
-- **목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
+- Streaming (best quality): WER 2.09% (nemotron-0.6b-560ms), RTF 0.075, latency 595ms
+- Streaming (lowest latency): WER 2.51% (nemotron-0.6b-160ms), RTF 0.223, latency 193ms
+- Streaming (multilingual): WER 2.25% (qwen3-1.7b + silence-reset), RTF 0.069
+
+LibriSpeech other (noisy):
+- Streaming (best quality): WER 4.32% (qwen3-1.7b css=1.0), RTF 0.086
+- Streaming (Nemotron): WER 5.65% (nemotron-0.6b-560ms), RTF 0.082
+
+Korean FLEURS:
+- Streaming: CER 2.17% (qwen3-1.7b css=2.0 ucn=5 utn=7 + silence-reset)
+
+**목표: 스트리밍 WER < 4% ✅, RTF < 0.15 ✅ (560ms), first-word latency < 200ms ✅ (nemotron 160ms)**
 
 ## Metrics
 
