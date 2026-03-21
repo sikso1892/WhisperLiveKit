@@ -1,20 +1,83 @@
 services:
-  wlk-gpu-sortformer:
+  wlk:
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        EXTRAS: ${GPU_SORTFORMER_EXTRAS:-cu129,diarization-sortformer}
-    image: wlk:gpu-sortformer
-    gpus: all
+        EXTRAS: ${GPU_EXTRAS:-cu129,funasr,sentence_tokenizer}
+    image: wlk:gpu-funasr
+    container_name: wlk
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['3']
+              capabilities: [gpu]
     ports:
-      - "8000:8000"
+      - "${WLK_PORT:-8000}:8000"
     volumes:
       - hf-cache:/root/.cache/huggingface/hub
-      # - ${HF_TKN_FILE:-./token}:/root/.cache/huggingface/token:ro
+      - modelscope-cache:/root/.cache/modelscope
     environment:
       - HF_TOKEN
-    command: ["--model", "medium", "--diarization", "--pcm-input"]
+    command: ["--backend", "funasr", "--model", "FunAudioLLM/Fun-ASR-MLT-Nano-2512", "--lan", "ko", "--pcm-input"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    restart: unless-stopped
+
+  frpc:
+    image: fatedier/frpc:v0.65.0
+    container_name: wlk-frpc
+    depends_on:
+      wlk:
+        condition: service_healthy
+    env_file:
+      - ${ENV_FILE_PATH:-.env}
+    volumes:
+      - ./frpc/config/frpc.toml:/etc/frp/frpc.toml:z
+    command:
+      - -c
+      - /etc/frp/frpc.toml
+    restart: unless-stopped
+
+  wlk-qwen3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        EXTRAS: ${GPU_EXTRAS:-cu129,funasr,sentence_tokenizer}
+    image: wlk:gpu-qwen3
+    container_name: wlk-qwen3
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['2']
+              capabilities: [gpu]
+    ports:
+      - "8400:8000"
+    volumes:
+      - hf-cache:/root/.cache/huggingface/hub
+      - modelscope-cache:/root/.cache/modelscope
+    environment:
+      - HF_TOKEN
+    command: ["--backend", "qwen3-streaming", "--model", "Qwen/Qwen3-ASR-0.6B", "--lan", "ko", "--pcm-input", "--unfixed-chunk-num", "6"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    profiles:
+      - qwen3
+
+  # --- Alternative profiles (use with: docker compose --profile <name> up) ---
 
   wlk-gpu-voxtral:
     build:
@@ -28,10 +91,11 @@ services:
       - "8001:8000"
     volumes:
       - hf-cache:/root/.cache/huggingface/hub
-      # - ${HF_TKN_FILE:-./token}:/root/.cache/huggingface/token:ro
     environment:
       - HF_TOKEN
     command: ["--backend", "voxtral", "--pcm-input"]
+    profiles:
+      - voxtral
 
   wlk-cpu:
     build:
@@ -44,9 +108,11 @@ services:
       - "8000:8000"
     volumes:
       - hf-cache:/root/.cache/huggingface/hub
-      # - ${HF_TKN_FILE:-./token}:/root/.cache/huggingface/token:ro
     environment:
       - HF_TOKEN
+    profiles:
+      - cpu
 
 volumes:
   hf-cache:
+  modelscope-cache:
