@@ -10,7 +10,9 @@
 
 LibriSpeech clean (100 samples, H100 BF16):
 - **Granite 1B batch: WER 1.18%, RTF 0.024** ← 최저 WER
-- **Granite 1B stream css=2.0: WER 1.18%, RTF 0.077, fd 72ms** ← 영어 최적
+- **Granite 1B stream css=2.0: WER 1.18%, RTF 0.077, fd 72ms**
+- **Granite 1B stream css=4.0: WER 1.18%, RTF 0.042, fd 79ms** ← RTF 최적
+- Granite 1B stream css=8.0: WER 1.18%, RTF 0.028, fd 110ms ← batch급 RTF
 - Qwen3-1.7B batch: WER 2.30%, RTF 0.026
 - Qwen3-1.7B stream css=2.0: WER 2.30%, RTF 0.092, fd 85ms
 - Nemotron 560ms stream: WER 3.85%, RTF 0.077 — keep_all_outputs fix 적용
