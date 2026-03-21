@@ -265,5 +265,9 @@ class FunASROnlineProcessor:
 
         return [], end_time
 
+    def finish(self) -> Tuple[List[ASRToken], float]:
+        """End-of-stream: commit any remaining audio in the buffer."""
+        return self.process_iter(is_last=True)
+
     def warmup(self, audio, init_prompt=""):
         pass

@@ -28,6 +28,8 @@ class SessionASRProxy:
         object.__setattr__(self, '_lock', asr._session_lock)
 
     def __getattr__(self, name):
+        if name == 'original_language':
+            return self._session_language
         return getattr(self._asr, name)
 
     def transcribe(self, audio, init_prompt=""):
