@@ -44,7 +44,7 @@ class Qwen3StreamingASR:
         gpu_memory_utilization: float = 0.8,
         model_cache_dir: Optional[str] = None,
         model_path: Optional[str] = None,
-        unfixed_chunk_num: int = 6,
+        unfixed_chunk_num: int = 5,
         **kwargs,
     ):
         self.transcribe_kargs = {}

@@ -74,7 +74,7 @@ class WhisperLiveKitConfig:
     nllb_size: str = "600M"
 
     # Qwen3-streaming-specific
-    unfixed_chunk_num: int = 6
+    unfixed_chunk_num: int = 5
 
     # vLLM Realtime backend
     vllm_url: str = "ws://localhost:8000/v1/realtime"
