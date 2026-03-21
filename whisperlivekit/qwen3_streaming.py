@@ -130,12 +130,22 @@ class Qwen3StreamingOnlineProcessor:
 
     Fixed/unfixed text is determined by diffing consecutive state.text
     values: the common prefix is fixed (committed), the rest is unfixed.
+
+    Long-form stability: the SDK re-feeds all accumulated audio every chunk,
+    so per-chunk cost grows O(n) with audio length. To prevent RTF degradation
+    and hallucination on long sessions, the processor automatically resets
+    the streaming state when accumulated audio exceeds max_session_audio_sec
+    (default 180s). Overlap is disabled by default (overlap_sec=0) because
+    the unfixed_chunk_num self-correction mechanism handles context transitions
+    well without re-feeding previous audio.
     """
 
     SAMPLING_RATE = 16000
     MIN_DURATION_REAL_SILENCE = 5
 
-    def __init__(self, asr: Qwen3StreamingASR, logfile=sys.stderr):
+    def __init__(self, asr: Qwen3StreamingASR, logfile=sys.stderr,
+                 max_session_audio_sec: float = 180.0,
+                 overlap_sec: float = 0.0):
         self.asr = asr
         self.logfile = logfile
         self.end = 0.0
@@ -146,6 +156,13 @@ class Qwen3StreamingOnlineProcessor:
         self._state = None
         self._speaker = -1
         self._global_time_offset = 0.0
+
+        # Long-form session management
+        self._max_session_audio_sec = max_session_audio_sec
+        self._overlap_sec = overlap_sec
+        self._session_audio_fed = 0  # samples fed to current session
+        self._recent_audio: List[np.ndarray] = []  # rolling buffer for overlap
+
         self._init_state()
 
     def _init_state(self):
@@ -161,6 +178,8 @@ class Qwen3StreamingOnlineProcessor:
         self._prev_text = ""
         self._committed_len = 0
         self._audio_queue = []
+        self._session_audio_fed = 0
+        self._recent_audio = []
 
     @property
     def speaker(self):
@@ -180,7 +199,51 @@ class Qwen3StreamingOnlineProcessor:
 
     def insert_audio_chunk(self, audio: np.ndarray, audio_stream_end_time: float):
         self.end = audio_stream_end_time
-        self._audio_queue.append(audio.astype(np.float32))
+        audio_f32 = audio.astype(np.float32)
+        self._audio_queue.append(audio_f32)
+        # Keep rolling buffer for overlap on session reset (only if overlap enabled)
+        if self._overlap_sec > 0:
+            self._recent_audio.append(audio_f32)
+            overlap_samples = int(self._overlap_sec * self.SAMPLING_RATE)
+            total = sum(len(a) for a in self._recent_audio)
+            while total > overlap_samples and len(self._recent_audio) > 1:
+                total -= len(self._recent_audio[0])
+                self._recent_audio.pop(0)
+
+    def _maybe_reset_session(self) -> List[ASRToken]:
+        """Reset session if accumulated audio exceeds threshold. Returns emitted tokens."""
+        max_samples = int(self._max_session_audio_sec * self.SAMPLING_RATE)
+        if self._max_session_audio_sec <= 0 or self._session_audio_fed < max_samples:
+            return []
+
+        # Finalize current session
+        self.asr.asr.finish_streaming_transcribe(self._state)
+        current_text = self._state.text or ""
+        tokens = self._extract_new_tokens(current_text, is_last=True)
+
+        logger.info(
+            "Session reset at %.1fs audio (text=%d chars)",
+            self._session_audio_fed / self.SAMPLING_RATE, len(current_text)
+        )
+
+        # Save overlap audio before resetting
+        overlap_audio = np.concatenate(self._recent_audio) if self._recent_audio else None
+
+        # Reset state
+        self._init_state()
+
+        # Re-feed overlap audio to new session
+        if overlap_audio is not None and len(overlap_audio) > 0:
+            chunk_samples = int(2.0 * self.SAMPLING_RATE)
+            offset = 0
+            while offset < len(overlap_audio):
+                ov_chunk = overlap_audio[offset:offset + chunk_samples]
+                self.asr.asr.streaming_transcribe(ov_chunk, self._state)
+                offset += chunk_samples
+            self._session_audio_fed = len(overlap_audio)
+            self._recent_audio = [overlap_audio]
+
+        return tokens
 
     def process_iter(self, is_last=False) -> Tuple[List[ASRToken], float]:
         if not self._audio_queue and not is_last:
@@ -191,6 +254,10 @@ class Qwen3StreamingOnlineProcessor:
             chunk = np.concatenate(self._audio_queue)
             self._audio_queue = []
             self.asr.asr.streaming_transcribe(chunk, self._state)
+            self._session_audio_fed += len(chunk)
+
+        # Check for automatic session reset (long-form stability)
+        reset_tokens = self._maybe_reset_session()
 
         if is_last:
             self.asr.asr.finish_streaming_transcribe(self._state)
@@ -199,7 +266,7 @@ class Qwen3StreamingOnlineProcessor:
         new_tokens = self._extract_new_tokens(current_text, is_last)
 
         self.buffer = []
-        return new_tokens, self.end
+        return reset_tokens + new_tokens, self.end
 
     def _extract_new_tokens(self, current_text: str, is_last: bool) -> List[ASRToken]:
         """Extract newly fixed tokens via common-prefix diff."""
