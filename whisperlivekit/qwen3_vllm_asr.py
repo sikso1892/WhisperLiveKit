@@ -41,7 +41,7 @@ def _parse_qwen3_output(text: str) -> str:
 class Qwen3VLLMASR(ASRBase):
     """Qwen3-ASR via vLLM — fast multilingual ASR without SDK dependency."""
 
-    sep = ""
+    sep = " "
     SAMPLING_RATE = 16000
 
     def __init__(self, lan="en", model_size=None, cache_dir=None,

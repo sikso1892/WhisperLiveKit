@@ -27,7 +27,7 @@ GRANITE_SUPPORTED_LANGUAGES = {"en", "fr", "de", "es", "pt", "ja"}
 class GraniteSpeechASR(ASRBase):
     """Granite 4.0 1B Speech batch ASR via HuggingFace Transformers."""
 
-    sep = ""
+    sep = " "
     SAMPLING_RATE = 16000
 
     def __init__(self, lan="en", model_size=None, cache_dir=None,

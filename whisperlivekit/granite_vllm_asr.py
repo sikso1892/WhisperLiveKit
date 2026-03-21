@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 class GraniteVLLMASR(ASRBase):
     """Granite 4.0 1B Speech via vLLM — fast batch/streaming ASR."""
 
-    sep = ""
+    sep = " "
     SAMPLING_RATE = 16000
 
     def __init__(self, lan="en", model_size=None, cache_dir=None,
