@@ -25,6 +25,10 @@ logger = logging.getLogger(__name__)
 
 SAMPLE_RATE = 16000
 
+# Languages that benefit from longer chunk size (3s vs 2s default).
+# CJK languages need more context per chunk for accurate streaming.
+_LONGER_CHUNK_LANGUAGES = {"Korean", "Chinese", "Japanese", "Cantonese"}
+
 QWEN3_MODEL_MAPPING = {
     "0.6b": "Qwen/Qwen3-ASR-0.6B",
     "1.7b": "Qwen/Qwen3-ASR-1.7B",
@@ -174,13 +178,18 @@ class Qwen3StreamingOnlineProcessor:
 
     def _init_state(self):
         """Initialize or reset streaming state."""
+        css = self.asr.chunk_size_sec
+        lang = self.asr.original_language
+        # CJK languages benefit from longer chunks (3s) for better accuracy
+        if lang in _LONGER_CHUNK_LANGUAGES and css < 3.0:
+            css = 3.0
         kwargs = {
             "unfixed_chunk_num": self.asr.unfixed_chunk_num,
             "unfixed_token_num": self.asr.unfixed_token_num,
-            "chunk_size_sec": self.asr.chunk_size_sec,
+            "chunk_size_sec": css,
         }
-        if self.asr.original_language:
-            kwargs["language"] = self.asr.original_language
+        if lang:
+            kwargs["language"] = lang
         self._state = self.asr.asr.init_streaming_state(**kwargs)
         self._prev_text = ""
         self._committed_len = 0
@@ -241,7 +250,8 @@ class Qwen3StreamingOnlineProcessor:
 
         # Re-feed overlap audio to new session
         if overlap_audio is not None and len(overlap_audio) > 0:
-            chunk_samples = int(self.asr.chunk_size_sec * self.SAMPLING_RATE)
+            css = getattr(self._state, 'chunk_size_sec', self.asr.chunk_size_sec)
+            chunk_samples = int(css * self.SAMPLING_RATE)
             offset = 0
             while offset < len(overlap_audio):
                 ov_chunk = overlap_audio[offset:offset + chunk_samples]
