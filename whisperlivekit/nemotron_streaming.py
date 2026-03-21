@@ -176,17 +176,13 @@ class NemotronStreamingOnlineProcessor:
         if self._audio_queue:
             chunk = np.concatenate(self._audio_queue)
             self._audio_queue = []
-            self._process_chunk(chunk)
-
-        if is_last:
-            # Run one final step to flush any remaining tokens
-            pass
+            self._process_chunk(chunk, keep_all_outputs=is_last)
 
         new_tokens = self._extract_new_tokens(is_last)
         self.buffer = []
         return new_tokens, self.end
 
-    def _process_chunk(self, audio: np.ndarray):
+    def _process_chunk(self, audio: np.ndarray, keep_all_outputs: bool = False):
         """Process audio chunk through cache-aware encoder + RNNT decoder."""
         # Preprocess audio through NeMo pipeline
         processed_signal, processed_signal_length = self._streaming_buffer.preprocess_audio(
@@ -215,7 +211,7 @@ class NemotronStreamingOnlineProcessor:
                 cache_last_channel=self._cache_last_channel,
                 cache_last_time=self._cache_last_time,
                 cache_last_channel_len=self._cache_last_channel_len,
-                keep_all_outputs=False,
+                keep_all_outputs=keep_all_outputs,
                 previous_hypotheses=self._previous_hypotheses,
                 previous_pred_out=self._pred_out_stream,
                 drop_extra_pre_encoded=drop_extra,

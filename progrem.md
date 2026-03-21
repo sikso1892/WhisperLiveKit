@@ -13,7 +13,9 @@ LibriSpeech clean (100 samples, H100 BF16):
 - **Granite 1B stream css=2.0: WER 1.18%, RTF 0.077, fd 72ms** ← 영어 최적
 - Qwen3-1.7B batch: WER 2.30%, RTF 0.026
 - Qwen3-1.7B stream css=2.0: WER 2.30%, RTF 0.092, fd 85ms
-- Nemotron chunk-stream: WER 7.43% (1120ms), RTF 0.033 — native streaming은 품질 저하 큼
+- Nemotron 560ms stream: WER 3.85%, RTF 0.077 — keep_all_outputs fix 적용
+- Nemotron 1120ms stream: WER 4.44%, RTF 0.046
+- Nemotron 160ms stream: WER 7.06%, RTF 0.229
 
 LibriSpeech clean (100 samples, L40S FP8):
 - Qwen3-1.7B FP8 batch: WER 2.14%, RTF 0.018
