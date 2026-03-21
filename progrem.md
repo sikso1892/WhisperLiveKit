@@ -13,6 +13,7 @@ LibriSpeech clean (100 samples, H100 BF16):
 - **Granite 1B stream css=2.0: WER 1.18%, RTF 0.077, fd 72ms**
 - **Granite 1B stream css=4.0: WER 1.18%, RTF 0.042, fd 79ms** ← RTF 최적
 - Granite 1B stream css=8.0: WER 1.18%, RTF 0.028, fd 110ms ← batch급 RTF
+- **Granite 1B adaptive 2→8: WER 1.18%, RTF 0.033, fd 49ms** ← 최적 배포 설정
 - Qwen3-1.7B batch: WER 2.30%, RTF 0.026
 - Qwen3-1.7B stream css=2.0: WER 2.30%, RTF 0.092, fd 85ms
 - Nemotron 560ms stream: WER 3.85%, RTF 0.077 — keep_all_outputs fix 적용
@@ -64,10 +65,10 @@ Long-form (10 min continuous, H100 BF16):
 - Granite css=2.0: RTF 0.254 (비효율, css=8.0 사용 권장)
 
 **Streaming-Batch Gap: EN 0.00pp ✅, KO 0.00pp ✅ (css=8.0)**
-**목표: 스트리밍 WER < 4% ✅ (Granite 1.18%), RTF < 0.15 ✅ (0.028), first-word latency < 200ms ✅ (fd=110ms)**
+**목표: 스트리밍 WER < 4% ✅ (Granite 1.18%), RTF < 0.15 ✅ (0.033), first-word latency < 200ms ✅ (fd=49ms)**
 
 배포 전략:
-- **영어 (모든 환경): Granite 1B css=8.0** (WER 1.18%, RTF 0.028-0.057, fd 110ms)
+- **영어 (모든 환경): Granite 1B adaptive 2→8** (WER 1.18%, RTF 0.033, fd 49ms)
 - 한국어/다국어: Qwen3-1.7B css=3.0 (CER 2.89%)
 - Nemotron 560ms: VRAM 제약 시 대안 (5GB, WER 3.85%)
 
