@@ -162,9 +162,10 @@ class TranscriptionEngine:
                 self.asr = Qwen3StreamingASR(
                     **transcription_common_params,
                     unfixed_chunk_num=config.unfixed_chunk_num,
+                    chunk_size_sec=config.chunk_size_sec,
                 )
                 self.asr.backend_choice = "qwen3-streaming"
-                logger.info("Using Qwen3-ASR official streaming (vLLM), unfixed_chunk_num=%d", config.unfixed_chunk_num)
+                logger.info("Using Qwen3-ASR official streaming (vLLM), unfixed_chunk_num=%d, chunk_size_sec=%.1f", config.unfixed_chunk_num, config.chunk_size_sec)
             elif config.backend == "funasr":
                 from whisperlivekit.funasr_backend import FunASR
                 self.asr = FunASR(**transcription_common_params)

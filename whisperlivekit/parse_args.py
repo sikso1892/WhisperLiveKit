@@ -220,6 +220,13 @@ def parse_args():
         dest="unfixed_chunk_num",
         help="Number of unfixed (self-correcting) chunks for Qwen3 streaming backend. Default: 5 (auto-adjusted to 4 for 0.6B models). Optimal: 1.7B ucn=5 (Ko CER 2.38%%, En WER 1.82%%), 0.6B ucn=4 (Ko CER 3.71%%, En WER 2.65%%).",
     )
+    parser.add_argument(
+        "--chunk-size-sec",
+        type=float,
+        default=2.0,
+        dest="chunk_size_sec",
+        help="Audio chunk size in seconds for Qwen3 streaming backend. Default: 2.0. Lower values (1.0) reduce latency but may degrade Korean quality.",
+    )
 
     # SimulStreaming-specific arguments
     simulstreaming_group = parser.add_argument_group('SimulStreaming arguments (only used with --backend simulstreaming)')

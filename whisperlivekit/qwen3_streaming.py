@@ -95,6 +95,7 @@ class Qwen3StreamingASR:
             self.unfixed_chunk_num = unfixed_chunk_num
         # 1.7B benefits from utn=7 for Korean; 0.6B stays at 5
         self.unfixed_token_num = 5 if is_06b else 7
+        self.chunk_size_sec = kwargs.get("chunk_size_sec", 2.0)
 
         self._load_model()
 
@@ -170,7 +171,7 @@ class Qwen3StreamingOnlineProcessor:
         kwargs = {
             "unfixed_chunk_num": self.asr.unfixed_chunk_num,
             "unfixed_token_num": self.asr.unfixed_token_num,
-            "chunk_size_sec": 2.0,
+            "chunk_size_sec": self.asr.chunk_size_sec,
         }
         if self.asr.original_language:
             kwargs["language"] = self.asr.original_language
@@ -234,7 +235,7 @@ class Qwen3StreamingOnlineProcessor:
 
         # Re-feed overlap audio to new session
         if overlap_audio is not None and len(overlap_audio) > 0:
-            chunk_samples = int(2.0 * self.SAMPLING_RATE)
+            chunk_samples = int(self.asr.chunk_size_sec * self.SAMPLING_RATE)
             offset = 0
             while offset < len(overlap_audio):
                 ov_chunk = overlap_audio[offset:offset + chunk_samples]
