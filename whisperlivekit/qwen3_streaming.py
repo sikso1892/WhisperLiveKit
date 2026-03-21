@@ -87,7 +87,7 @@ class Qwen3StreamingASR:
         self.asr = Qwen3ASRModel.LLM(
             model=self.model_id,
             gpu_memory_utilization=self.gpu_memory_utilization,
-            max_new_tokens=32,
+            max_new_tokens=64,
         )
         logger.info("Qwen3-ASR streaming model loaded")
 
