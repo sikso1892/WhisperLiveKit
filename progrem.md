@@ -26,6 +26,8 @@ LibriSpeech other (100 samples, H100 BF16):
 - **Granite 1B stream css=2.0: WER 3.75%, RTF 0.075**
 - Qwen3-1.7B batch: WER 4.45%, RTF 0.035 (Exp #135)
 - Qwen3-1.7B stream css=2.0: WER 4.32%, RTF 0.094 (Exp #135)
+- Nemotron batch: WER 5.84%, RTF 0.016
+- Nemotron 560ms stream: WER 8.01%, RTF 0.085 — 노이즈 환경 취약
 
 LibriSpeech other (100 samples, L40S FP8):
 - Qwen3-1.7B FP8 batch: WER 4.38%, RTF 0.024
