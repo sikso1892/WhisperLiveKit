@@ -46,12 +46,13 @@ class Qwen3VLLMASR(ASRBase):
 
     def __init__(self, lan="en", model_size=None, cache_dir=None,
                  model_dir=None, logfile=sys.stderr,
-                 gpu_memory_utilization=0.45, **kwargs):
+                 gpu_memory_utilization=0.45, quantization=None, **kwargs):
         self.logfile = logfile
         self.transcribe_kargs = {}
         self.original_language = None if lan == "auto" else lan
         self._gpu_mem_util = gpu_memory_utilization
         self._model_size = model_size
+        self._quantization = quantization
         self.model = self._load_model(model_dir)
 
     def _load_model(self, model_dir=None):
@@ -64,14 +65,18 @@ class Qwen3VLLMASR(ASRBase):
         else:
             model_id = "Qwen/Qwen3-ASR-0.6B"
 
-        logger.info("Loading Qwen3-ASR via vLLM: %s", model_id)
-        self._llm = LLM(
+        quant_label = f" ({self._quantization})" if self._quantization else ""
+        logger.info("Loading Qwen3-ASR via vLLM: %s%s", model_id, quant_label)
+        llm_kwargs = dict(
             model=model_id,
             dtype="bfloat16",
             gpu_memory_utilization=self._gpu_mem_util,
             max_model_len=4096,
             trust_remote_code=True,
         )
+        if self._quantization:
+            llm_kwargs["quantization"] = self._quantization
+        self._llm = LLM(**llm_kwargs)
         self._sp = SamplingParams(temperature=0.0, max_tokens=256, stop=["<|im_end|>"])
 
         audio_placeholder = "<|audio_start|><|audio_pad|><|audio_end|>"

@@ -213,6 +213,7 @@ class TranscriptionEngine:
                 self.asr = Qwen3VLLMASR(
                     **transcription_common_params,
                     gpu_memory_utilization=config.gpu_memory_utilization,
+                    quantization=config.quantization,
                 )
                 self.asr.confidence_validation = config.confidence_validation
                 self.asr.tokenizer = None
