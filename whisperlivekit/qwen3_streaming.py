@@ -112,7 +112,6 @@ class Qwen3StreamingASR:
         self.asr = Qwen3ASRModel.LLM(
             model=self.model_id,
             gpu_memory_utilization=self.gpu_memory_utilization,
-            max_new_tokens=64,
         )
         logger.info("Qwen3-ASR streaming model loaded")
 
@@ -133,19 +132,20 @@ class Qwen3StreamingOnlineProcessor:
     values: the common prefix is fixed (committed), the rest is unfixed.
 
     Long-form stability: the SDK re-feeds all accumulated audio every chunk,
-    so per-chunk cost grows O(n) with audio length. To prevent RTF degradation
-    and hallucination on long sessions, the processor automatically resets
-    the streaming state when accumulated audio exceeds max_session_audio_sec
-    (default 180s). Overlap is disabled by default (overlap_sec=0) because
-    the unfixed_chunk_num self-correction mechanism handles context transitions
-    well without re-feeding previous audio.
+    so per-chunk cost grows O(n) with audio length. To prevent RTF degradation,
+    hallucination (Korean 60s+), and context window overflow (120s+), the
+    processor automatically resets the streaming state when accumulated audio
+    exceeds max_session_audio_sec (default 30s). Overlap is disabled by
+    default (overlap_sec=0) because the unfixed_chunk_num self-correction
+    mechanism handles context transitions well without re-feeding previous
+    audio.
     """
 
     SAMPLING_RATE = 16000
     MIN_DURATION_REAL_SILENCE = 5
 
     def __init__(self, asr: Qwen3StreamingASR, logfile=sys.stderr,
-                 max_session_audio_sec: float = 180.0,
+                 max_session_audio_sec: float = 30.0,
                  overlap_sec: float = 0.0):
         self.asr = asr
         self.logfile = logfile

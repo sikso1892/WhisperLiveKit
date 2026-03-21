@@ -227,6 +227,13 @@ def parse_args():
         dest="chunk_size_sec",
         help="Audio chunk size in seconds for Qwen3 streaming backend. Default: 2.0. Lower values (1.0) reduce latency but may degrade Korean quality.",
     )
+    parser.add_argument(
+        "--max-session-audio-sec",
+        type=float,
+        default=30.0,
+        dest="max_session_audio_sec",
+        help="Max audio duration per streaming session before automatic reset (seconds). Default: 30. Prevents context window overflow (>120s crashes) and Korean hallucination (>60s). Set to 0 to disable.",
+    )
 
     # SimulStreaming-specific arguments
     simulstreaming_group = parser.add_argument_group('SimulStreaming arguments (only used with --backend simulstreaming)')

@@ -298,7 +298,8 @@ def online_factory(args, asr, language=None):
         return OnlineASRProcessor(asr)
     if backend == "qwen3-streaming":
         from whisperlivekit.qwen3_streaming import Qwen3StreamingOnlineProcessor
-        return Qwen3StreamingOnlineProcessor(asr)
+        max_sess = getattr(args, "max_session_audio_sec", 30.0)
+        return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
     if backend == "funasr":
         from whisperlivekit.funasr_online import FunASROnlineProcessor
         return FunASROnlineProcessor(asr)
