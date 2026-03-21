@@ -53,6 +53,7 @@ Korean FLEURS (100 samples, L40S BF16):
 - Qwen3-1.7B stream css=3.0: CER 2.84%, RTF 0.084, fd 97ms
 - Qwen3-1.7B stream css=5.0: CER 2.89%, RTF 0.057, fd 150ms
 - **Qwen3-1.7B stream css=8.0: CER 2.89%, RTF 0.044, fd 216ms** ← CSS-invariant 확인
+- **Qwen3-1.7B adaptive 3→8: CER 2.89%, RTF 0.045, fd 85ms** ← 최적 배포 설정
 - Note: CSS 2.0~8.0 전체에서 CER=2.84~2.89% 범위. stream-batch gap 0pp.
 
 Korean FLEURS (30 samples, L40S FP8):
@@ -69,7 +70,7 @@ Long-form (10 min continuous, H100 BF16):
 
 배포 전략:
 - **영어 (모든 환경): Granite 1B adaptive 2→8** (WER 1.18%, RTF 0.033, fd 49ms)
-- 한국어/다국어: Qwen3-1.7B css=3.0 (CER 2.89%)
+- 한국어/다국어: Qwen3-1.7B adaptive 3→8 (CER 2.89%, RTF 0.045, fd 85ms)
 - Nemotron 560ms: VRAM 제약 시 대안 (5GB, WER 3.85%)
 
 ## Metrics
