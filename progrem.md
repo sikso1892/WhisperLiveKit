@@ -46,7 +46,13 @@ Korean FLEURS (100 samples, H100 BF16):
 - Qwen3-1.7B stream css=2.0: CER 2.89%, RTF 0.114, fd 81ms
 - Qwen3-1.7B stream css=3.0: CER 2.89%, RTF 0.083, fd 97ms ← 균형점
 - Qwen3-1.7B stream css=5.0: CER 2.89%, RTF 0.057, fd 150ms
-- Note: CSS 값에 관계없이 CER=2.89%로 동일. stream-batch gap 0.04pp로 고정.
+
+Korean FLEURS (100 samples, L40S BF16):
+- Qwen3-1.7B batch: CER 2.89%, RTF 0.022
+- Qwen3-1.7B stream css=3.0: CER 2.84%, RTF 0.084, fd 97ms
+- Qwen3-1.7B stream css=5.0: CER 2.89%, RTF 0.057, fd 150ms
+- **Qwen3-1.7B stream css=8.0: CER 2.89%, RTF 0.044, fd 216ms** ← CSS-invariant 확인
+- Note: CSS 2.0~8.0 전체에서 CER=2.84~2.89% 범위. stream-batch gap 0pp.
 
 Korean FLEURS (30 samples, L40S FP8):
 - Batch FP8: CER 2.09% (qwen3-1.7b FP8), RTF 0.016
@@ -57,7 +63,7 @@ Long-form (10 min continuous, H100 BF16):
 - Nemotron 560ms native: WER 2.75%, RTF 0.064
 - Granite css=2.0: RTF 0.254 (비효율, css=8.0 사용 권장)
 
-**Streaming-Batch Gap: EN 0.00pp ✅, KO 0.00pp ✅ (css=3.0)**
+**Streaming-Batch Gap: EN 0.00pp ✅, KO 0.00pp ✅ (css=8.0)**
 **목표: 스트리밍 WER < 4% ✅ (Granite 1.18%), RTF < 0.15 ✅ (0.028), first-word latency < 200ms ✅ (fd=110ms)**
 
 배포 전략:
