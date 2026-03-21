@@ -318,12 +318,16 @@ class Qwen3StreamingOnlineProcessor:
         return Transcript(None, None, unfixed)
 
     def start_silence(self) -> Tuple[List[ASRToken], float]:
-        return self.process_iter(is_last=True)
+        result = self.process_iter(is_last=True)
+        # Reset session on every speech→silence transition.
+        # This prevents audio accumulation across utterances, which causes
+        # O(n) re-feed cost growth, Korean hallucination, and quality loss.
+        self._init_state()
+        return result
 
     def end_silence(self, silence_duration: float, offset: float):
-        if silence_duration >= self.MIN_DURATION_REAL_SILENCE:
-            self._init_state()
-            self._global_time_offset = silence_duration + offset
+        # Session already reset in start_silence(); just update time offset.
+        self._global_time_offset = silence_duration + offset
 
     def new_speaker(self, change_speaker: ChangeSpeaker):
         self.process_iter(is_last=True)
