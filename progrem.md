@@ -130,42 +130,45 @@ Concurrent Sessions (L40S, 1.7B FP8 prefix):
 
 우선순위 순:
 
-### 1. Streaming-Batch WER Gap 축소 ✅ (영어 gap 0, 한국어 0.28pp)
-**달성됨**: Qwen3-ASR-1.7B FP8 streaming이 batch와 동등한 품질 달성.
-- LS-clean: Streaming 2.09% ≤ Batch 2.14% (streaming이 더 좋음)
-- LS-other: Streaming 4.38% = Batch 4.38% (동일)
-- Korean: Streaming 2.37% vs Batch 2.09% (0.28pp gap — 추가 연구 중)
+### 1. Streaming-Batch Gap 축소 ✅ (4개 언어 모두 <0.5pp)
+**달성됨**: Qwen3-ASR-1.7B FP8 prefix-constrained + language-adaptive 설정.
+- EN: stream WER 5.20% vs batch 5.15% (gap +0.05pp)
+- KO: stream CER 2.84% vs batch 2.78% (gap +0.06pp)
+- ZH: stream CER 3.08% vs batch 2.89% (gap +0.19pp)
+- VI: stream WER 6.72% vs batch 6.24% (gap +0.48pp)
 
-**핵심 기법**: FP8 dynamic quantization + css=2.0 + ucn=5/utn=7
+**핵심 기법**: prefix-constrained decoding + FP8 + language-adaptive UTN/CSS (non-EN: 15/3.0, EN: 5/4.0)
 
 ### 2. 새 모델/백엔드 탐색
-최신 ASR 모델을 지속적으로 조사하고 통합 가능성을 평가한다:
-- HuggingFace/arXiv에서 신규 ASR 모델 모니터링
-- 스트리밍 지원 여부, 한국어 품질, 추론 속도 평가
-- 유망한 모델 발견 시 백엔드 프로토타입 구현
+최신 ASR 모델을 지속적으로 조사하고 통합 가능성을 평가한다.
 
-알려진 후보:
-- Whisper 후속 모델 (v4 등)
-- Moonshine, Canary, Parakeet 등 NVIDIA NeMo 계열
-- CTC 기반 스트리밍 모델 (wav2vec2-streaming 등)
-- Distil-Whisper 변종 (스트리밍 최적화)
+**2026-03-22 조사 결과**: Qwen3-1.7B FP8 prefix가 여전히 한국어+다국어 스트리밍 최적.
+- Voxtral Realtime 4B: 한국어 WER 6.80%@960ms (우리 2.84% 대비 열등)
+- VibeVoice-ASR 7B: batch-only, 한국어 WER 9.65%, 과대
+- Meta Omnilingual 7B: 1600+ 언어, batch-only, 과대
+- NVIDIA Canary-Qwen-2.5B: LS-clean 1.6% 인상적이나 영어 전용, 스트리밍 미지원
+- Granite 3.3 8B: 한국어 미지원
+- Whisper v4 미출시: OpenAI는 gpt-4o-transcribe (API-only)로 이동
 
-### 3. 한국어 품질 개선
-- FunASR SenseVoiceSmall: 배치에서는 양호하나 5초 미만 청크에서 품질 저하
-- 한국어 특화: 띄어쓰기, 구두점, 숫자 표현
-- **decoder/model-level 해결을 우선** (규칙기반 후처리 최소화)
-- Init prompt 최적화, language-specific 디코딩 파라미터
+**주시 대상**:
+- Qwen3-ASR 후속 모델 (Flash, larger variants)
+- vLLM Realtime API의 encoder-decoder 모델 지원 확대
+- Granite 4.0 multilingual 확장 (한국어 추가 시 즉시 평가)
 
-### 4. 아키텍처 개선
-- LocalAgreement vs SimulStreaming 하이브리드 전략
-- VAD 개선 (Silero VAD 대안, 한국어 최적화)
+### 3. 프로덕션 다중 세션 ← NEXT
+- Exp #189에서 batched generate() 검증 완료 (BS=8 → 78.5x RT throughput)
+- **필요**: request queue + periodic batch generate() 서버 구현
+- vLLM `LLM.generate()` is NOT thread-safe → 전용 scheduler 필요
+- Contextual biasing (hotword/keyword prefix injection)으로 도메인 특화 정확도 향상
+
+### 4. 장시간 안정성 개선
+- 현재 30초 세션 리셋 → sliding window prefix로 연속 처리
+- Repetition guard 강화 (vi hallucination 해결 완료, 추가 언어 검증)
+
+### 5. 아키텍처 개선
+- VAD 개선 (Silero VAD 대안)
 - DiffTracker 프로토콜 효율화
 - WebSocket 대역폭 최적화
-
-### 5. 배포/운영
-- 다중 세션 동시 처리 성능
-- GPU 메모리 공유 최적화 (TranscriptionEngine 싱글톤 활용)
-- Docker/compose 배포 자동화
 
 ## Research Loop
 
