@@ -108,6 +108,43 @@ services:
     profiles:
       - nemotron
 
+  wlk-multilingual:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        EXTRAS: ${GPU_EXTRAS:-cu129,qwen3-streaming}
+    image: wlk:gpu-multilingual
+    container_name: wlk-multilingual
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['1']
+              capabilities: [gpu]
+    ports:
+      - "8500:8000"
+    volumes:
+      - hf-cache:/root/.cache/huggingface/hub
+    environment:
+      - HF_TOKEN
+    command: >-
+      --backend qwen3-streaming
+      --model Qwen/Qwen3-ASR-1.7B
+      --lan auto
+      --pcm-input
+      --unfixed-chunk-num 5
+      --fp8
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 180s
+    profiles:
+      - multilingual
+
   # --- Alternative profiles (use with: docker compose --profile <name> up) ---
 
   wlk-gpu-voxtral:
