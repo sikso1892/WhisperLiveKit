@@ -75,7 +75,7 @@ class WhisperLiveKitConfig:
 
     # Qwen3-streaming-specific
     unfixed_chunk_num: int = 5
-    unfixed_token_num: int = 5
+    unfixed_token_num: Optional[int] = None
     chunk_size_sec: float = 2.0
     max_session_audio_sec: float = 30.0
     quantization: Optional[str] = None
@@ -88,7 +88,7 @@ class WhisperLiveKitConfig:
     # Adaptive CSS (chunk step size) for LocalAgreement backends
     adaptive_css: bool = False
     adaptive_css_initial: float = 2.0
-    adaptive_css_steady: float = 4.0
+    adaptive_css_steady: Optional[float] = None
 
     # Nemotron streaming backend
     nemotron_chunk_mode: str = "160ms"

@@ -367,12 +367,18 @@ def online_factory(args, asr, language=None):
         return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
     if backend == "qwen3-vllm-prefix":
         from whisperlivekit.qwen3_prefix_processor import Qwen3PrefixOnlineProcessor
+        # Language-adaptive defaults: Korean benefits from higher UTN and lower CSS
+        lang = getattr(asr, 'original_language', None)
+        default_utn = 15 if lang == "ko" else 5
+        default_css = 3.0 if lang == "ko" else 4.0
+        utn = getattr(args, 'unfixed_token_num', None)
+        css = getattr(args, 'adaptive_css_steady', None)
         return Qwen3PrefixOnlineProcessor(
             asr,
             unfixed_chunk_num=getattr(args, 'unfixed_chunk_num', 4),
-            unfixed_token_num=getattr(args, 'unfixed_token_num', 5),
+            unfixed_token_num=utn if utn is not None else default_utn,
             css_initial=getattr(args, 'adaptive_css_initial', 2.0),
-            css_steady=getattr(args, 'adaptive_css_steady', 4.0),
+            css_steady=css if css is not None else default_css,
             max_session_audio_sec=getattr(args, 'max_session_audio_sec', 30.0),
         )
     if backend in ("granite-speech", "granite-speech-vllm", "qwen3-vllm"):
@@ -382,7 +388,7 @@ def online_factory(args, asr, language=None):
                 asr,
                 adaptive_css=True,
                 adaptive_css_initial=getattr(args, 'adaptive_css_initial', 2.0),
-                adaptive_css_steady=getattr(args, 'adaptive_css_steady', 8.0),
+                adaptive_css_steady=getattr(args, 'adaptive_css_steady', None) or 8.0,
             )
         return OnlineASRProcessor(asr)
     if backend == "funasr":

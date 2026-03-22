@@ -223,9 +223,9 @@ def parse_args():
     parser.add_argument(
         "--unfixed-token-num",
         type=int,
-        default=5,
+        default=None,
         dest="unfixed_token_num",
-        help="Number of tokens to roll back from previous output for prefix-constrained decoding. Default: 5. Used by qwen3-vllm-prefix and qwen3-streaming backends.",
+        help="Number of tokens to roll back from previous output for prefix-constrained decoding. Default: auto (15 for Korean, 5 otherwise). Used by qwen3-vllm-prefix and qwen3-streaming backends.",
     )
     parser.add_argument(
         "--chunk-size-sec",
@@ -276,9 +276,9 @@ def parse_args():
     parser.add_argument(
         "--adaptive-css-steady",
         type=float,
-        default=8.0,
+        default=None,
         dest="adaptive_css_steady",
-        help="Steady-state chunk step size in seconds for adaptive CSS (default: 8.0). Controls throughput efficiency.",
+        help="Steady-state chunk step size in seconds for adaptive CSS. Default: auto (3.0 for Korean prefix, 4.0 for other prefix, 8.0 for LocalAgreement). Controls throughput efficiency.",
     )
 
     # Nemotron-streaming-specific arguments
