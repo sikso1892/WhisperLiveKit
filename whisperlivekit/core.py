@@ -367,14 +367,25 @@ def online_factory(args, asr, language=None):
         return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
     if backend == "qwen3-vllm-prefix":
         from whisperlivekit.qwen3_prefix_processor import Qwen3PrefixOnlineProcessor
-        # Language-adaptive defaults: Korean 1.7B+ benefits from higher UTN and lower CSS
-        # 0.6B models lack capacity for frequent short-context self-correction
+        # Language-adaptive defaults for prefix-constrained streaming.
+        # 0.6B models lack capacity for frequent short-context self-correction.
+        # Larger models (1.7B+) benefit from per-language tuning:
+        #   ko: agglutinative morphology → high UTN for self-correction, low CSS
+        #   zh: CJK characters → moderate UTN, low CSS
+        #   vi: tonal + diacritics → moderate UTN
+        #   en/default: standard settings
         lang = getattr(asr, 'original_language', None)
         model_size = str(getattr(asr, '_model_size', '') or '')
         is_large = '1.7' in model_size or '3b' in model_size.lower()
-        ko_large = lang == "ko" and is_large
-        default_utn = 15 if ko_large else 5
-        default_css = 3.0 if ko_large else 4.0
+        _LANG_DEFAULTS = {
+            "ko": (15, 3.0),  # Korean: high UTN, low CSS
+            "zh": (10, 3.0),  # Chinese: moderate UTN, low CSS
+            "vi": (7, 4.0),   # Vietnamese: moderate UTN
+        }
+        if is_large and lang in _LANG_DEFAULTS:
+            default_utn, default_css = _LANG_DEFAULTS[lang]
+        else:
+            default_utn, default_css = 5, 4.0
         utn = getattr(args, 'unfixed_token_num', None)
         css = getattr(args, 'adaptive_css_steady', None)
         return Qwen3PrefixOnlineProcessor(

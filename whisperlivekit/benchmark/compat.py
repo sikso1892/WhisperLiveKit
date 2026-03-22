@@ -29,6 +29,16 @@ BACKEND_LANGUAGES: Dict[str, Optional[Set[str]]] = {
         "ko", "ru", "th", "vi", "ja", "tr", "hi", "ms", "nl", "sv",
         "da", "fi", "pl", "cs", "fa", "el", "hu", "mk", "ro",
     },
+    "qwen3-vllm": {
+        "zh", "en", "yue", "ar", "de", "fr", "es", "pt", "id", "it",
+        "ko", "ru", "th", "vi", "ja", "tr", "hi", "ms", "nl", "sv",
+        "da", "fi", "pl", "cs", "fa", "el", "hu", "mk", "ro",
+    },
+    "qwen3-vllm-prefix": {
+        "zh", "en", "yue", "ar", "de", "fr", "es", "pt", "id", "it",
+        "ko", "ru", "th", "vi", "ja", "tr", "hi", "ms", "nl", "sv",
+        "da", "fi", "pl", "cs", "fa", "el", "hu", "mk", "ro",
+    },
     "funasr": {
         "zh", "en", "yue", "ja", "ko", "ar", "bn", "cs", "de", "es",
         "fa", "fr", "hi", "hu", "id", "it", "nl", "pl", "pt", "ro",

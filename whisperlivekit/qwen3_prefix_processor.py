@@ -171,13 +171,42 @@ class Qwen3PrefixOnlineProcessor:
 
         # Safety valve: detect repetition (hallucination protection)
         parsed = _parse_qwen3_output(self._raw_decoded)
-        if len(parsed) > 20:
-            words = parsed.split()
-            if len(words) > 4:
-                last4 = " ".join(words[-4:])
-                if parsed.count(last4) >= 3:
-                    logger.warning("Repetition detected in prefix decode, resetting prefix")
-                    self._raw_decoded = ""
+        if self._detect_repetition(parsed):
+            logger.warning("Repetition detected in prefix decode, resetting prefix")
+            self._raw_decoded = ""
+
+    def _detect_repetition(self, text: str) -> bool:
+        """Multi-strategy repetition detection for hallucination prevention.
+
+        Checks:
+        1. N-gram repetition (2,3,4-word ngrams appearing 3+ times)
+        2. Text length vs audio length ratio (catches runaway generation)
+        """
+        if len(text) <= 20:
+            return False
+
+        words = text.split()
+        if len(words) <= 6:
+            return False
+
+        # Strategy 1: N-gram repetition (check 2,3,4-grams)
+        for n in (2, 3, 4):
+            if len(words) < n * 3:
+                continue
+            last_ngram = " ".join(words[-n:])
+            if text.count(last_ngram) >= 3:
+                return True
+
+        # Strategy 2: Text-to-audio ratio guard
+        # Normal speech: ~3-5 chars/sec (CJK) or ~15-25 chars/sec (Latin)
+        # If text >> expected, likely hallucination
+        audio_sec = len(self.audio_buffer) / self.SAMPLING_RATE
+        if audio_sec > 0:
+            chars_per_sec = len(text) / audio_sec
+            if chars_per_sec > 40:  # very generous threshold
+                return True
+
+        return False
 
     def _maybe_reset_session(self) -> List[ASRToken]:
         """Reset session if accumulated audio exceeds threshold."""
