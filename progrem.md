@@ -68,6 +68,18 @@ Qwen3-vllm-prefix (100 samples, L40S BF16, SDK 불필요, ucn=4):
 - 0.6B prefix FLEURS-ko: CER 4.89%, RTF 0.021
 - Note: ucn=4로 한국어 CER 3.62%→2.96% 개선. SDK streaming(2.89%) 대비 0.07pp 차이.
 
+Qwen3-vllm-prefix FP8 (100 samples, L40S FP8, ucn=4):
+- **0.6B FP8 prefix LS-clean: WER 1.96%, RTF 0.028** ← 최저 multilingual streaming WER
+- 0.6B FP8 prefix FLEURS-ko: CER 4.38%, RTF 0.028 (BF16: 4.74%)
+- **1.7B FP8 prefix LS-clean: WER 2.06%, RTF 0.045** ← BF16 대비 RTF -24%, WER -0.05pp
+- **1.7B FP8 prefix FLEURS-ko: CER 3.01%, RTF 0.046** ← BF16 대비 RTF -23%, CER +0.05pp
+- 1.7B Model memory: 2.55 GiB (BF16 ~3.5 GiB)
+- Note: FP8은 영어/한국어 모두 WER/CER 개선 또는 유지. RTF도 개선.
+- **1.7B FP8 prefix utn=15 FLEURS-ko: CER 2.86%** ← SDK streaming(2.89%)보다 좋음, batch(2.80%) 대비 0.06pp
+- Note: utn=15는 한국어 최적이나 LS-other에서 +0.19pp 회귀. 영어는 utn=5 유지 권장.
+- **1.7B FP8 prefix utn=15 css=3.0 FLEURS-ko: CER 2.83%** ← batch(2.80%) 대비 0.03pp!
+- Note: css=3.0+utn=15 한국어 최적 조합. css=2.0은 hallucination 위험.
+
 Long-form (10 min continuous, H100 BF16):
 - **Granite 1B css=8.0: RTF 0.057, WER 1.18%** ← 최적
 - Nemotron 560ms native: WER 2.75%, RTF 0.064
@@ -80,7 +92,9 @@ Long-form (10 min continuous, H100 BF16):
 - **영어 (모든 환경): Granite 1B adaptive 2→8** (WER 1.18%, RTF 0.033, fd 49ms)
 - 한국어/다국어 (SDK 사용): Qwen3-1.7B adaptive 3→8 (CER 2.89%, RTF 0.045, fd 85ms)
 - 한국어/다국어 (SDK 불필요): **Qwen3-1.7B prefix ucn=4** (CER 2.96%, RTF 0.060)
-- 영어 multilingual (SDK 불필요): **Qwen3-0.6B prefix** (WER 2.01%, RTF 0.025)
+- 한국어/다국어 (SDK 불필요, FP8): **Qwen3-1.7B FP8 prefix** (CER 3.01%, RTF 0.046, VRAM 2.55GB)
+- **한국어 최적 (SDK 불필요, FP8)**: Qwen3-1.7B FP8 prefix utn=15 css=3.0 (CER **2.83%**, RTF 0.050)
+- 영어 multilingual (SDK 불필요): **Qwen3-0.6B FP8 prefix** (WER 1.96%, RTF 0.028)
 - Nemotron 560ms: VRAM 제약 시 대안 (5GB, WER 3.85%)
 
 ## Metrics
