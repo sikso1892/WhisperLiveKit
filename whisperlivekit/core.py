@@ -367,10 +367,14 @@ def online_factory(args, asr, language=None):
         return Qwen3StreamingOnlineProcessor(asr, max_session_audio_sec=max_sess)
     if backend == "qwen3-vllm-prefix":
         from whisperlivekit.qwen3_prefix_processor import Qwen3PrefixOnlineProcessor
-        # Language-adaptive defaults: Korean benefits from higher UTN and lower CSS
+        # Language-adaptive defaults: Korean 1.7B+ benefits from higher UTN and lower CSS
+        # 0.6B models lack capacity for frequent short-context self-correction
         lang = getattr(asr, 'original_language', None)
-        default_utn = 15 if lang == "ko" else 5
-        default_css = 3.0 if lang == "ko" else 4.0
+        model_size = str(getattr(asr, '_model_size', '') or '')
+        is_large = '1.7' in model_size or '3b' in model_size.lower()
+        ko_large = lang == "ko" and is_large
+        default_utn = 15 if ko_large else 5
+        default_css = 3.0 if ko_large else 4.0
         utn = getattr(args, 'unfixed_token_num', None)
         css = getattr(args, 'adaptive_css_steady', None)
         return Qwen3PrefixOnlineProcessor(
