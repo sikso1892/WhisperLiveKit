@@ -41,6 +41,7 @@ FLEURS_CONFIGS = {
     "ko": ("ko_kr", "ko", "cer"),
     "zh": ("cmn_hans_cn", "zh", "cer"),
     "vi": ("vi_vn", "vi", "wer"),
+    "ja": ("ja_jp", "ja", "cer"),
 }
 
 
@@ -185,16 +186,29 @@ def _compute_cer(reference: str, hypothesis: str) -> dict:
         text = re.sub(r'[^\w\uac00-\ud7af]', '', text)
         return list(text)
 
+    def normalize_ja(text: str) -> list:
+        # Remove parenthesized Latin names
+        text = re.sub(r'[（(][A-Za-z\s·.\u00C0-\u024F]+[）)]', '', text)
+        # Remove standalone Latin words
+        text = re.sub(r'[A-Za-z\u00C0-\u024F]+', '', text)
+        # Keep hiragana, katakana, kanji, numbers
+        text = re.sub(r'[^\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff\uff00-\uffef0-9]', '', text)
+        return list(text)
+
     def normalize_generic(text: str) -> list:
         text = re.sub(r'\s+', '', text)
         text = re.sub(r'[^\w\u4e00-\u9fff\uac00-\ud7af\u3040-\u309f\u30a0-\u30ff]', '', text)
         return list(text)
 
-    # Detect if reference is primarily Chinese
+    # Detect primary script
     cjk_count = len(re.findall(r'[\u4e00-\u9fff]', reference))
     ko_count = len(re.findall(r'[\uac00-\ud7af]', reference))
+    ja_count = len(re.findall(r'[\u3040-\u309f\u30a0-\u30ff]', reference))
 
-    if cjk_count > ko_count and cjk_count > 5:
+    if ja_count > 3 and ja_count >= ko_count:
+        ref_chars = normalize_ja(reference)
+        hyp_chars = normalize_ja(hypothesis)
+    elif cjk_count > ko_count and cjk_count > 5 and ja_count < 3:
         ref_chars = normalize_zh(reference)
         hyp_chars = normalize_zh(hypothesis)
     elif ko_count > cjk_count and ko_count > 5:
@@ -533,7 +547,7 @@ def get_language_defaults(lang: str, model_size: str) -> dict:
     is_large = "1.7" in model_size or "3b" in model_size.lower()
 
     # Non-English languages benefit from utn=15/css=3.0 on 1.7B+
-    if is_large and lang in ("ko", "zh", "vi"):
+    if is_large and lang in ("ko", "zh", "vi", "ja"):
         return {"utn": 15, "css_initial": 2.0, "css_steady": 3.0}
     # English / default
     return {"utn": 5, "css_initial": 2.0, "css_steady": 4.0}
