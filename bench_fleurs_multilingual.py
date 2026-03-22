@@ -532,15 +532,9 @@ def get_language_defaults(lang: str, model_size: str) -> dict:
     """Get language-adaptive UTN/CSS defaults."""
     is_large = "1.7" in model_size or "3b" in model_size.lower()
 
-    # Korean: higher UTN + lower CSS for agglutinative language
-    if lang == "ko" and is_large:
+    # Non-English languages benefit from utn=15/css=3.0 on 1.7B+
+    if is_large and lang in ("ko", "zh", "vi"):
         return {"utn": 15, "css_initial": 2.0, "css_steady": 3.0}
-    # Chinese: similar to Korean — CJK benefits from more self-correction
-    if lang == "zh" and is_large:
-        return {"utn": 10, "css_initial": 2.0, "css_steady": 3.0}
-    # Vietnamese: tonal language with diacritics, moderate UTN
-    if lang == "vi" and is_large:
-        return {"utn": 7, "css_initial": 2.0, "css_steady": 4.0}
     # English / default
     return {"utn": 5, "css_initial": 2.0, "css_steady": 4.0}
 

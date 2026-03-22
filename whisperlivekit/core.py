@@ -378,9 +378,9 @@ def online_factory(args, asr, language=None):
         model_size = str(getattr(asr, '_model_size', '') or '')
         is_large = '1.7' in model_size or '3b' in model_size.lower()
         _LANG_DEFAULTS = {
-            "ko": (15, 3.0),  # Korean: high UTN, low CSS
-            "zh": (10, 3.0),  # Chinese: moderate UTN, low CSS
-            "vi": (7, 4.0),   # Vietnamese: moderate UTN
+            "ko": (15, 3.0),  # Korean: agglutinative morphology
+            "zh": (15, 3.0),  # Chinese: CJK self-correction
+            "vi": (15, 3.0),  # Vietnamese: tonal + diacritics
         }
         if is_large and lang in _LANG_DEFAULTS:
             default_utn, default_css = _LANG_DEFAULTS[lang]
