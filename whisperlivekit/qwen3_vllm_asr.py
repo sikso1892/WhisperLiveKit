@@ -77,7 +77,7 @@ class Qwen3VLLMASR(ASRBase):
         if self._quantization:
             llm_kwargs["quantization"] = self._quantization
         self._llm = LLM(**llm_kwargs)
-        self._sp = SamplingParams(temperature=0.0, max_tokens=256, stop=["<|im_end|>"])
+        self._sp = SamplingParams(temperature=0.0, max_tokens=128, stop=["<|im_end|>"])
 
         audio_placeholder = "<|audio_start|><|audio_pad|><|audio_end|>"
         self._prompt_tpl = (
