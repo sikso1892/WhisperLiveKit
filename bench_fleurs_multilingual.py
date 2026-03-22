@@ -335,20 +335,40 @@ def _parse_qwen3_output(text: str) -> str:
 
 
 def _detect_repetition(text: str, audio_sec: float) -> bool:
-    """Detect repetition/hallucination in generated text."""
+    """Detect repetition/hallucination in generated text.
+
+    Handles both space-separated languages (en, vi) and CJK languages
+    (ja, zh, ko) which lack word boundaries.
+    """
     if len(text) <= 20:
         return False
-    words = text.split()
-    if len(words) <= 6:
-        return False
-    for n in (2, 3, 4):
-        if len(words) < n * 3:
-            continue
-        last_ngram = " ".join(words[-n:])
-        if text.count(last_ngram) >= 3:
+
+    is_cjk = len(text.split()) <= len(text) // 10  # CJK: very few spaces
+
+    if is_cjk:
+        # Character-level n-gram for CJK
+        if len(text) >= 45:
+            for n in (15, 20):
+                ngram = text[-n:]
+                if text.count(ngram) >= 3:
+                    return True
+    else:
+        # Word-level n-gram for space-separated languages
+        words = text.split()
+        if len(words) > 6:
+            for n in (2, 3, 4):
+                if len(words) < n * 3:
+                    continue
+                last_ngram = " ".join(words[-n:])
+                if text.count(last_ngram) >= 3:
+                    return True
+
+    # Text-to-audio ratio guard (CJK: ~3-5 chars/sec normal, Latin: ~15-25)
+    if audio_sec > 0:
+        chars_per_sec = len(text) / audio_sec
+        threshold = 20 if is_cjk else 40
+        if chars_per_sec > threshold:
             return True
-    if audio_sec > 0 and len(text) / audio_sec > 40:
-        return True
     return False
 
 

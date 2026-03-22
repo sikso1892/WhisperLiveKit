@@ -179,31 +179,39 @@ class Qwen3PrefixOnlineProcessor:
         """Multi-strategy repetition detection for hallucination prevention.
 
         Checks:
-        1. N-gram repetition (2,3,4-word ngrams appearing 3+ times)
-        2. Text length vs audio length ratio (catches runaway generation)
+        1. Word-level n-gram repetition (for space-separated languages)
+        2. Character-level n-gram repetition (for CJK languages without spaces)
+        3. Text length vs audio length ratio (catches runaway generation)
         """
         if len(text) <= 20:
             return False
 
-        words = text.split()
-        if len(words) <= 6:
-            return False
+        is_cjk = len(text.split()) <= len(text) // 10  # CJK: very few spaces
 
-        # Strategy 1: N-gram repetition (check 2,3,4-grams)
-        for n in (2, 3, 4):
-            if len(words) < n * 3:
-                continue
-            last_ngram = " ".join(words[-n:])
-            if text.count(last_ngram) >= 3:
-                return True
+        if is_cjk:
+            # Strategy 1a: Character-level n-gram for CJK (ja, zh, ko)
+            if len(text) >= 45:
+                for n in (15, 20):
+                    ngram = text[-n:]
+                    if text.count(ngram) >= 3:
+                        return True
+        else:
+            # Strategy 1b: Word-level n-gram for space-separated languages
+            words = text.split()
+            if len(words) > 6:
+                for n in (2, 3, 4):
+                    if len(words) < n * 3:
+                        continue
+                    last_ngram = " ".join(words[-n:])
+                    if text.count(last_ngram) >= 3:
+                        return True
 
         # Strategy 2: Text-to-audio ratio guard
-        # Normal speech: ~3-5 chars/sec (CJK) or ~15-25 chars/sec (Latin)
-        # If text >> expected, likely hallucination
         audio_sec = len(self.audio_buffer) / self.SAMPLING_RATE
         if audio_sec > 0:
             chars_per_sec = len(text) / audio_sec
-            if chars_per_sec > 40:  # very generous threshold
+            threshold = 20 if is_cjk else 40
+            if chars_per_sec > threshold:
                 return True
 
         return False

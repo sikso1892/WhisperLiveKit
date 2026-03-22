@@ -87,10 +87,10 @@ Multilingual FLEURS (100 samples, L40S FP8, qwen3-vllm-prefix, language-adaptive
 - **ko batch: CER 2.78%, RTF 0.017** | **ko stream: CER 2.84%, RTF 0.050** (gap +0.06pp)
 - **zh batch: CER 2.89%, RTF 0.013** | **zh stream: CER 3.08%, RTF 0.040** (gap +0.19pp)
 - **vi batch: WER 6.24%, RTF 0.016** | **vi stream: WER 6.72%, RTF 0.049** (gap +0.48pp)
-- **ja batch: CER 5.67%, RTF 0.014** | **ja stream: CER 6.20%*, RTF 0.043** (gap +0.46pp)
+- **ja batch: CER 5.67%, RTF 0.014** | **ja stream: CER 6.13%, RTF 0.044** (gap +0.46pp)
 - Language-adaptive: non-English utn=15/css=3.0, English utn=5/css=4.0
 - Note: 단일 Qwen3-1.7B FP8로 5개 언어 커버. 모든 언어 batch-stream gap <0.5pp.
-- *ja streaming: hallucination 1/100 제외. Raw 16.02% → filtered 6.20%. Repetition filter 필요.
+- CJK repetition filter로 일본어 hallucination 해결 (16.02% → 6.13%).
 
 Long-form (10 min continuous, H100 BF16):
 - **Granite 1B css=8.0: RTF 0.057, WER 1.18%** ← 최적
@@ -107,7 +107,7 @@ Long-form (10 min continuous, H100 BF16):
   - zh: CER 3.08%, RTF 0.040 (utn=15, css=3.0)
   - en: WER 5.20%, RTF 0.042 (utn=5, css=4.0)
   - vi: WER 6.72%, RTF 0.049 (utn=15, css=3.0)
-  - ja: CER 6.20%, RTF 0.043 (utn=15, css=3.0) — hallucination filter 필요
+  - ja: CER 6.13%, RTF 0.044 (utn=15, css=3.0)
 - 영어 multilingual (경량): **Qwen3-0.6B FP8 prefix** (WER 1.96%, RTF 0.028)
 - Nemotron 560ms: VRAM 제약 시 대안 (5GB, WER 3.85%)
 
