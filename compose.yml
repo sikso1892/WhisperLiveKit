@@ -108,12 +108,15 @@ services:
     profiles:
       - nemotron
 
+  # Multilingual: Qwen3-1.7B FP8 prefix-constrained (ko/zh/en/vi)
+  # Language-adaptive UTN/CSS auto-applied per --lan setting
+  # Usage: WLK_LANG=ko docker compose --profile multilingual up
   wlk-multilingual:
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        EXTRAS: ${GPU_EXTRAS:-cu129,qwen3-streaming}
+        EXTRAS: ${GPU_EXTRAS:-cu129,funasr,sentence_tokenizer}
     image: wlk:gpu-multilingual
     container_name: wlk-multilingual
     deploy:
@@ -121,27 +124,30 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ['1']
+              device_ids: ['${WLK_GPU:-1}']
               capabilities: [gpu]
     ports:
-      - "8500:8000"
+      - "${WLK_ML_PORT:-8500}:8000"
     volumes:
       - hf-cache:/root/.cache/huggingface/hub
     environment:
       - HF_TOKEN
-    command: >-
-      --backend qwen3-streaming
-      --model Qwen/Qwen3-ASR-1.7B
-      --lan auto
-      --pcm-input
-      --unfixed-chunk-num 5
-      --fp8
+    command:
+      - "--backend"
+      - "qwen3-vllm-prefix"
+      - "--model"
+      - "Qwen/Qwen3-ASR-1.7B"
+      - "--lan"
+      - "${WLK_LANG:-ko}"
+      - "--quantization"
+      - "fp8"
+      - "--pcm-input"
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 30s
       timeout: 10s
       retries: 5
-      start_period: 180s
+      start_period: 120s
     profiles:
       - multilingual
 
