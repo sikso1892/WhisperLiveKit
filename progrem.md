@@ -85,10 +85,10 @@ Qwen3-vllm-prefix FP8 (100 samples, L40S FP8, ucn=4):
 Multilingual FLEURS (100 samples, L40S FP8, qwen3-vllm-prefix, language-adaptive):
 - **en batch: WER 5.15%, RTF 0.016** | **en stream: WER 5.20%, RTF 0.042** (gap +0.05pp)
 - **ko batch: CER 2.78%, RTF 0.017** | **ko stream: CER 2.84%, RTF 0.050** (gap +0.06pp)
-- **zh batch: CER 2.89%, RTF 0.013** | **zh stream: CER 3.33%, RTF 0.038** (gap +0.44pp)
-- **vi batch: WER 6.24%, RTF 0.016** | **vi stream: WER 8.30%, RTF 0.042** (gap +2.06pp)
-- Language-adaptive: ko utn=15/css=3.0, zh utn=10/css=3.0, vi utn=7/css=4.0, en utn=5/css=4.0
-- Note: 단일 Qwen3-1.7B FP8로 4개 언어 커버. en/ko gap <0.1pp, zh acceptable, vi needs work.
+- **zh batch: CER 2.89%, RTF 0.013** | **zh stream: CER 3.08%, RTF 0.040** (gap +0.19pp)
+- **vi batch: WER 6.24%, RTF 0.016** | **vi stream: WER 6.72%, RTF 0.049** (gap +0.48pp)
+- Language-adaptive: non-English utn=15/css=3.0, English utn=5/css=4.0
+- Note: 단일 Qwen3-1.7B FP8로 4개 언어 커버. 모든 언어 batch-stream gap <0.5pp.
 
 Long-form (10 min continuous, H100 BF16):
 - **Granite 1B css=8.0: RTF 0.057, WER 1.18%** ← 최적
@@ -102,9 +102,9 @@ Long-form (10 min continuous, H100 BF16):
 - **영어 전용 (최고 품질): Granite 1B adaptive 2→8** (WER 1.18%, RTF 0.033, fd 49ms)
 - **다국어 4개 언어 (ko/zh/en/vi)**: Qwen3-1.7B FP8 prefix, language-adaptive 자동 적용
   - ko: CER 2.84%, RTF 0.050 (utn=15, css=3.0)
-  - zh: CER 3.33%, RTF 0.038 (utn=10, css=3.0)
+  - zh: CER 3.08%, RTF 0.040 (utn=15, css=3.0)
   - en: WER 5.20%, RTF 0.042 (utn=5, css=4.0)
-  - vi: WER 8.30%, RTF 0.042 (utn=7, css=4.0)
+  - vi: WER 6.72%, RTF 0.049 (utn=15, css=3.0)
 - 영어 multilingual (경량): **Qwen3-0.6B FP8 prefix** (WER 1.96%, RTF 0.028)
 - Nemotron 560ms: VRAM 제약 시 대안 (5GB, WER 3.85%)
 
