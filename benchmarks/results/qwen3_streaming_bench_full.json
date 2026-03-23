@@ -1,0 +1,531 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3-ASR-0.6B",
+    "backend": "vllm",
+    "mode": "streaming",
+    "gpu": "L40S",
+    "unfixed_chunk_num": 6,
+    "chunk_size_sec": 2.0,
+    "feed_step_sec": 0.5
+  },
+  "summary": {
+    "n_samples": 30,
+    "total_audio_s": 217.7,
+    "macro_wer": 0.0292,
+    "micro_wer": 0.0281,
+    "overall_rtf": 0.076,
+    "avg_rtf": 0.112
+  },
+  "results": [
+    {
+      "name": "ls_clean_0",
+      "duration": 3.505,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 8,
+        "hyp_words": 8
+      },
+      "rtf": 2.3112180739768733,
+      "processing_time": 8.10081934928894,
+      "hypothesis": "Concord returned to its place amidst the tents.",
+      "reference": "CONCORD RETURNED TO ITS PLACE AMIDST THE TENTS"
+    },
+    {
+      "name": "ls_clean_1",
+      "duration": 14.225,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 43,
+        "hyp_words": 43
+      },
+      "rtf": 0.05120248911879394,
+      "processing_time": 0.7283554077148438,
+      "hypothesis": "The English forwarded to the French baskets of flowers, of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+      "reference": "THE ENGLISH FORWARDED TO THE FRENCH BASKETS OF FLOWERS OF WHICH THEY HAD MADE A PLENTIFUL PROVISION TO GREET THE ARRIVAL OF THE YOUNG PRINCESS THE FRENCH IN RETURN INVITED THE ENGLISH TO A SUPPER WHICH WAS TO BE GIVEN THE NEXT DAY"
+    },
+    {
+      "name": "ls_clean_2",
+      "duration": 5.025,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 11,
+        "hyp_words": 11
+      },
+      "rtf": 0.02646873246377973,
+      "processing_time": 0.13300538063049316,
+      "hypothesis": "Congratulations were poured in upon the princess everywhere during her journey.",
+      "reference": "CONGRATULATIONS WERE POURED IN UPON THE PRINCESS EVERYWHERE DURING HER JOURNEY"
+    },
+    {
+      "name": "ls_clean_3",
+      "duration": 23.315,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 64,
+        "hyp_words": 64
+      },
+      "rtf": 0.03711631720909202,
+      "processing_time": 0.8653669357299805,
+      "hypothesis": "From the respect paid her on all sides, she seemed like a queen, and from the adoration with which she was treated by two or three, she appeared an object of worship. The queen mother gave the French the most affectionate reception. France was her native country, and she had suffered too much unhappiness in England for England to have made her forget France.",
+      "reference": "FROM THE RESPECT PAID HER ON ALL SIDES SHE SEEMED LIKE A QUEEN AND FROM THE ADORATION WITH WHICH SHE WAS TREATED BY TWO OR THREE SHE APPEARED AN OBJECT OF WORSHIP THE QUEEN MOTHER GAVE THE FRENCH THE MOST AFFECTIONATE RECEPTION FRANCE WAS HER NATIVE COUNTRY AND SHE HAD SUFFERED TOO MUCH UNHAPPINESS IN ENGLAND FOR ENGLAND TO HAVE MADE HER FORGET FRANCE"
+    },
+    {
+      "name": "ls_clean_4",
+      "duration": 11.065,
+      "wer": 0.03225806451612903,
+      "wer_details": {
+        "wer": 0.03225806451612903,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 31,
+        "hyp_words": 31
+      },
+      "rtf": 0.04145389113876543,
+      "processing_time": 0.45868730545043945,
+      "hypothesis": "She taught her daughter then by her own affection for it that love for a country where they had both been hospitably received and where a brilliant future opened for them.",
+      "reference": "SHE TAUGHT HER DAUGHTER THEN BY HER OWN AFFECTION FOR IT THAT LOVE FOR A COUNTRY WHERE THEY HAD BOTH BEEN HOSPITABLY RECEIVED AND WHERE A BRILLIANT FUTURE OPENED BEFORE THEM"
+    },
+    {
+      "name": "ls_clean_5",
+      "duration": 13.16,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 33,
+        "hyp_words": 33
+      },
+      "rtf": 0.04040540895201152,
+      "processing_time": 0.5317351818084717,
+      "hypothesis": "The count had thrown himself back on his seat, leaning his shoulders against the partition of the tent, and remained thus, his face buried in his hands, with heaving chest and restless limbs.",
+      "reference": "THE COUNT HAD THROWN HIMSELF BACK ON HIS SEAT LEANING HIS SHOULDERS AGAINST THE PARTITION OF THE TENT AND REMAINED THUS HIS FACE BURIED IN HIS HANDS WITH HEAVING CHEST AND RESTLESS LIMBS"
+    },
+    {
+      "name": "ls_clean_6",
+      "duration": 5.85,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 17,
+        "hyp_words": 17
+      },
+      "rtf": 0.02941241631141076,
+      "processing_time": 0.17206263542175293,
+      "hypothesis": "This has indeed been a harassing day,\" continued the young man, his eyes fixed upon his friend.",
+      "reference": "THIS HAS INDEED BEEN A HARASSING DAY CONTINUED THE YOUNG MAN HIS EYES FIXED UPON HIS FRIEND"
+    },
+    {
+      "name": "ls_clean_7",
+      "duration": 3.315,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 9,
+        "hyp_words": 9
+      },
+      "rtf": 0.027948339240763162,
+      "processing_time": 0.09264874458312988,
+      "hypothesis": "You will be frank with me. I always am.",
+      "reference": "YOU WILL BE FRANK WITH ME I ALWAYS AM"
+    },
+    {
+      "name": "ls_clean_8",
+      "duration": 4.785,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 11,
+        "hyp_words": 11
+      },
+      "rtf": 0.030402678805583446,
+      "processing_time": 0.1454768180847168,
+      "hypothesis": "Can you imagine why Buckingham has been so violent? I suspect.",
+      "reference": "CAN YOU IMAGINE WHY BUCKINGHAM HAS BEEN SO VIOLENT I SUSPECT"
+    },
+    {
+      "name": "ls_clean_9",
+      "duration": 7.28,
+      "wer": 0.041666666666666664,
+      "wer_details": {
+        "wer": 0.041666666666666664,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 24,
+        "hyp_words": 24
+      },
+      "rtf": 0.04093008381979806,
+      "processing_time": 0.2979710102081299,
+      "hypothesis": "It is you who are mistaken, Row. I have read his distress in his eyes, in his every gesture and action the whole day.",
+      "reference": "IT IS YOU WHO ARE MISTAKEN RAOUL I HAVE READ HIS DISTRESS IN HIS EYES IN HIS EVERY GESTURE AND ACTION THE WHOLE DAY"
+    },
+    {
+      "name": "ls_clean_10",
+      "duration": 3.035,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 6,
+        "hyp_words": 6
+      },
+      "rtf": 0.026152750609144935,
+      "processing_time": 0.07937359809875488,
+      "hypothesis": "I can perceive love clearly enough.",
+      "reference": "I CAN PERCEIVE LOVE CLEARLY ENOUGH"
+    },
+    {
+      "name": "ls_clean_11",
+      "duration": 3.195,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 10,
+        "hyp_words": 10
+      },
+      "rtf": 0.031082395096899758,
+      "processing_time": 0.09930825233459473,
+      "hypothesis": "I am convinced of what I say,\" said the count.",
+      "reference": "I AM CONVINCED OF WHAT I SAY SAID THE COUNT"
+    },
+    {
+      "name": "ls_clean_12",
+      "duration": 1.94,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 4,
+        "hyp_words": 4
+      },
+      "rtf": 0.01979402660094586,
+      "processing_time": 0.03840041160583496,
+      "hypothesis": "It is annoyance. Then.",
+      "reference": "IT IS ANNOYANCE THEN"
+    },
+    {
+      "name": "ls_clean_13",
+      "duration": 2.94,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 8,
+        "hyp_words": 8
+      },
+      "rtf": 0.03298634574526832,
+      "processing_time": 0.09697985649108887,
+      "hypothesis": "In those very terms, I even added more.",
+      "reference": "IN THOSE VERY TERMS I EVEN ADDED MORE"
+    },
+    {
+      "name": "ls_clean_14",
+      "duration": 16.84,
+      "wer": 0.023255813953488372,
+      "wer_details": {
+        "wer": 0.023255813953488372,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 43,
+        "hyp_words": 43
+      },
+      "rtf": 0.038884895148016775,
+      "processing_time": 0.6548216342926025,
+      "hypothesis": "But, continued Rowl, not interrupted by this movement of his friend, \"Heaven be praised! The French, who are pronounced to be thoughtless and indiscreet, reckless even, are capable of bringing a calm and sound judgment to bear on matters of such high importance.\"",
+      "reference": "BUT CONTINUED RAOUL NOT INTERRUPTED BY THIS MOVEMENT OF HIS FRIEND HEAVEN BE PRAISED THE FRENCH WHO ARE PRONOUNCED TO BE THOUGHTLESS AND INDISCREET RECKLESS EVEN ARE CAPABLE OF BRINGING A CALM AND SOUND JUDGMENT TO BEAR ON MATTERS OF SUCH HIGH IMPORTANCE"
+    },
+    {
+      "name": "ls_clean_15",
+      "duration": 6.38,
+      "wer": 0.11764705882352941,
+      "wer_details": {
+        "wer": 0.11764705882352941,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 17,
+        "hyp_words": 17
+      },
+      "rtf": 0.038683302350178785,
+      "processing_time": 0.24679946899414062,
+      "hypothesis": "Thus it is that the honor of three is saved: our country, our masters, and our own.",
+      "reference": "THUS IT IS THAT THE HONOR OF THREE IS SAVED OUR COUNTRY'S OUR MASTER'S AND OUR OWN"
+    },
+    {
+      "name": "ls_clean_16",
+      "duration": 10.015,
+      "wer": 0.13793103448275862,
+      "wer_details": {
+        "wer": 0.13793103448275862,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 2,
+        "ref_words": 29,
+        "hyp_words": 27
+      },
+      "rtf": 0.05093201719637341,
+      "processing_time": 0.5100841522216797,
+      "hypothesis": "Yes, I need repose. Many things have agitated me today, both in mind and body. When you return tomorrow, I shall no longer be the same man.",
+      "reference": "YES I NEED REPOSE MANY THINGS HAVE AGITATED ME TO DAY BOTH IN MIND AND BODY WHEN YOU RETURN TO MORROW I SHALL NO LONGER BE THE SAME MAN"
+    },
+    {
+      "name": "ls_clean_17",
+      "duration": 6.16,
+      "wer": 0.0625,
+      "wer_details": {
+        "wer": 0.0625,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 16,
+        "hyp_words": 16
+      },
+      "rtf": 0.03662221617512889,
+      "processing_time": 0.22559285163879395,
+      "hypothesis": "But in this friendly pressure, Rao could detect the nervous agitation of a great internal conflict.",
+      "reference": "BUT IN THIS FRIENDLY PRESSURE RAOUL COULD DETECT THE NERVOUS AGITATION OF A GREAT INTERNAL CONFLICT"
+    },
+    {
+      "name": "ls_clean_18",
+      "duration": 10.81,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 26,
+        "hyp_words": 26
+      },
+      "rtf": 0.04692992934686623,
+      "processing_time": 0.507312536239624,
+      "hypothesis": "The night was clear, starlit, and splendid. The tempest had passed away, and the sweet influences of the evening had restored life, peace, and security everywhere.",
+      "reference": "THE NIGHT WAS CLEAR STARLIT AND SPLENDID THE TEMPEST HAD PASSED AWAY AND THE SWEET INFLUENCES OF THE EVENING HAD RESTORED LIFE PEACE AND SECURITY EVERYWHERE"
+    },
+    {
+      "name": "ls_clean_19",
+      "duration": 11.6450625,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 31,
+        "hyp_words": 31
+      },
+      "rtf": 0.043506888371370844,
+      "processing_time": 0.5066404342651367,
+      "hypothesis": "Upon the large square in front of the hotel, the shadows of the tents intersected by the golden moonbeams formed, as it were, a huge mosaic of jet and yellow flagstones.",
+      "reference": "UPON THE LARGE SQUARE IN FRONT OF THE HOTEL THE SHADOWS OF THE TENTS INTERSECTED BY THE GOLDEN MOONBEAMS FORMED AS IT WERE A HUGE MOSAIC OF JET AND YELLOW FLAGSTONES"
+    },
+    {
+      "name": "ls_clean_20",
+      "duration": 14.4,
+      "wer": 0.05263157894736842,
+      "wer_details": {
+        "wer": 0.05263157894736842,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 38,
+        "hyp_words": 38
+      },
+      "rtf": 0.04267147845692105,
+      "processing_time": 0.6144692897796631,
+      "hypothesis": "Bragolon watched for some time the conduct of the two lovers, listened to the loud and uncivil slumbers of Manocamp, who snored as imperiously as though he was wearing his blue and gold instead of his violet suit.",
+      "reference": "BRAGELONNE WATCHED FOR SOME TIME THE CONDUCT OF THE TWO LOVERS LISTENED TO THE LOUD AND UNCIVIL SLUMBERS OF MANICAMP WHO SNORED AS IMPERIOUSLY AS THOUGH HE WAS WEARING HIS BLUE AND GOLD INSTEAD OF HIS VIOLET SUIT"
+    },
+    {
+      "name": "ls_clean_21",
+      "duration": 3.025,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 4,
+        "hyp_words": 4
+      },
+      "rtf": 0.023668304947782156,
+      "processing_time": 0.07159662246704102,
+      "hypothesis": "Goliath makes another discovery.",
+      "reference": "GOLIATH MAKES ANOTHER DISCOVERY"
+    },
+    {
+      "name": "ls_clean_22",
+      "duration": 3.2,
+      "wer": 0.2,
+      "wer_details": {
+        "wer": 0.2,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 10,
+        "hyp_words": 10
+      },
+      "rtf": 0.026455149054527283,
+      "processing_time": 0.0846564769744873,
+      "hypothesis": "There were certainly no near the solution of their problem.",
+      "reference": "THEY WERE CERTAINLY NO NEARER THE SOLUTION OF THEIR PROBLEM"
+    },
+    {
+      "name": "ls_clean_23",
+      "duration": 5.56,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 18,
+        "hyp_words": 18
+      },
+      "rtf": 0.032092298535134296,
+      "processing_time": 0.17843317985534668,
+      "hypothesis": "The poor little things cried, \"Cynthia, think of them having been turned to the wall all these years.\"",
+      "reference": "THE POOR LITTLE THINGS CRIED CYNTHIA THINK OF THEM HAVING BEEN TURNED TO THE WALL ALL THESE YEARS"
+    },
+    {
+      "name": "ls_clean_24",
+      "duration": 3.385,
+      "wer": 0.08333333333333333,
+      "wer_details": {
+        "wer": 0.08333333333333333,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 12,
+        "hyp_words": 12
+      },
+      "rtf": 0.03182919726237941,
+      "processing_time": 0.1077418327331543,
+      "hypothesis": "Now, what is the sense of it? Two innocent babies like that.",
+      "reference": "NOW WHAT WAS THE SENSE OF IT TWO INNOCENT BABIES LIKE THAT"
+    },
+    {
+      "name": "ls_clean_25",
+      "duration": 6.15,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 21,
+        "hyp_words": 21
+      },
+      "rtf": 0.045426221397834095,
+      "processing_time": 0.2793712615966797,
+      "hypothesis": "But Joyce had not been listening. All at once, she put down her candle on the table and faced her companion.",
+      "reference": "BUT JOYCE HAD NOT BEEN LISTENING ALL AT ONCE SHE PUT DOWN HER CANDLE ON THE TABLE AND FACED HER COMPANION"
+    },
+    {
+      "name": "ls_clean_26",
+      "duration": 5.035,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 16,
+        "hyp_words": 16
+      },
+      "rtf": 0.03641388030369445,
+      "processing_time": 0.18334388732910156,
+      "hypothesis": "The twin brother did something she didn't like, and she turned his picture to the wall.",
+      "reference": "THE TWIN BROTHER DID SOMETHING SHE DIDN'T LIKE AND SHE TURNED HIS PICTURE TO THE WALL"
+    },
+    {
+      "name": "ls_clean_27",
+      "duration": 4.455,
+      "wer": 0.125,
+      "wer_details": {
+        "wer": 0.125,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 16,
+        "hyp_words": 16
+      },
+      "rtf": 0.043345889124672285,
+      "processing_time": 0.19310593605041504,
+      "hypothesis": "Hers happened to be on the same frame too, but she evidently didn't care about it.",
+      "reference": "HERS HAPPENED TO BE IN THE SAME FRAME TOO BUT SHE EVIDENTLY DIDN'T CARE ABOUT THAT"
+    },
+    {
+      "name": "ls_clean_28",
+      "duration": 2.82,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 8,
+        "hyp_words": 8
+      },
+      "rtf": 0.03543990723630216,
+      "processing_time": 0.09994053840637207,
+      "hypothesis": "Now, what have you to say, Cynthia Sprague?",
+      "reference": "NOW WHAT HAVE YOU TO SAY CYNTHIA SPRAGUE"
+    },
+    {
+      "name": "ls_clean_29",
+      "duration": 5.185,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 20,
+        "hyp_words": 20
+      },
+      "rtf": 0.04085427654858611,
+      "processing_time": 0.21182942390441895,
+      "hypothesis": "I thought we were stumped again when I first saw that picture, but it's been of some use after all.",
+      "reference": "I THOUGHT WE WERE STUMPED AGAIN WHEN I FIRST SAW THAT PICTURE BUT IT'S BEEN OF SOME USE AFTER ALL"
+    }
+  ]
+}

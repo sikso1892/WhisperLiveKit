@@ -1,0 +1,74 @@
+{
+  "ucn=4_css=2.0_utn=5": {
+    "unfixed_chunk_num": 4,
+    "chunk_size_sec": 2.0,
+    "unfixed_token_num": 5,
+    "micro_cer": 0.026573426573426574,
+    "macro_cer": 0.02617051363074693,
+    "overall_rtf": 0.07908021606340553,
+    "total_audio": 396.18
+  },
+  "ucn=6_css=2.0_utn=5": {
+    "unfixed_chunk_num": 6,
+    "chunk_size_sec": 2.0,
+    "unfixed_token_num": 5,
+    "micro_cer": 0.039160839160839164,
+    "macro_cer": 0.04124588737526171,
+    "overall_rtf": 0.06731788580948053,
+    "total_audio": 396.18
+  },
+  "ucn=8_css=2.0_utn=5": {
+    "unfixed_chunk_num": 8,
+    "chunk_size_sec": 2.0,
+    "unfixed_token_num": 5,
+    "micro_cer": 0.12867132867132866,
+    "macro_cer": 0.12264646165308328,
+    "overall_rtf": 0.07776768135695895,
+    "total_audio": 396.18
+  },
+  "ucn=10_css=2.0_utn=5": {
+    "unfixed_chunk_num": 10,
+    "chunk_size_sec": 2.0,
+    "unfixed_token_num": 5,
+    "micro_cer": 0.28601398601398603,
+    "macro_cer": 0.2427533964634079,
+    "overall_rtf": 0.07928214447978192,
+    "total_audio": 396.18
+  },
+  "ucn=6_css=3.0_utn=5": {
+    "unfixed_chunk_num": 6,
+    "chunk_size_sec": 3.0,
+    "unfixed_token_num": 5,
+    "micro_cer": 0.23146853146853147,
+    "macro_cer": 0.2066422853522968,
+    "overall_rtf": 0.058937856529860166,
+    "total_audio": 396.18
+  },
+  "ucn=6_css=1.0_utn=5": {
+    "unfixed_chunk_num": 6,
+    "chunk_size_sec": 1.0,
+    "unfixed_token_num": 5,
+    "micro_cer": 0.02937062937062937,
+    "macro_cer": 0.02975859898712497,
+    "overall_rtf": 0.07501640668383058,
+    "total_audio": 396.18
+  },
+  "ucn=6_css=2.0_utn=3": {
+    "unfixed_chunk_num": 6,
+    "chunk_size_sec": 2.0,
+    "unfixed_token_num": 3,
+    "micro_cer": 0.03986013986013986,
+    "macro_cer": 0.041851947981322316,
+    "overall_rtf": 0.06600535110303397,
+    "total_audio": 396.18
+  },
+  "ucn=6_css=2.0_utn=8": {
+    "unfixed_chunk_num": 6,
+    "chunk_size_sec": 2.0,
+    "unfixed_token_num": 8,
+    "micro_cer": 0.04125874125874126,
+    "macro_cer": 0.04287758900696335,
+    "overall_rtf": 0.06911000050482104,
+    "total_audio": 396.18
+  }
+}

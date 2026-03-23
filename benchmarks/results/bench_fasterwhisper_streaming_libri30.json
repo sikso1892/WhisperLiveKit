@@ -1,0 +1,493 @@
+{
+  "backend": "faster-whisper-large-v3-turbo-streaming",
+  "model": "large-v3-turbo",
+  "mode": "streaming-localagreement",
+  "chunk_sec": 1.0,
+  "n_samples": 30,
+  "total_audio_s": 217.7,
+  "micro_wer": 0.04966887417218543,
+  "macro_wer": 0.04206805973248488,
+  "overall_rtf": 0.21079467156637577,
+  "results": [
+    {
+      "index": 0,
+      "duration": 3.5,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 8,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.171,
+      "elapsed": 0.6,
+      "hypothesis": "Concord  returned  to  its  place  amidst  the  tents.",
+      "reference": "CONCORD RETURNED TO ITS PLACE AMIDST THE TENTS"
+    },
+    {
+      "index": 1,
+      "duration": 14.22,
+      "wer": 0.11627906976744186,
+      "wer_details": {
+        "wer": 0.11627906976744186,
+        "ref_words": 43,
+        "substitutions": 3,
+        "insertions": 2,
+        "deletions": 0
+      },
+      "rtf": 0.333,
+      "elapsed": 4.74,
+      "hypothesis": "the  English  forwarded  to  the  French  baskets  of  flowers  of  which  they  had  made  a  plentiful  provision  to  greet  the  arrival  of  the  young  princess  the  french  in  return  to  a  supper  which  was  to  a  supper  which  was  to  be  given  the  next  day",
+      "reference": "THE ENGLISH FORWARDED TO THE FRENCH BASKETS OF FLOWERS OF WHICH THEY HAD MADE A PLENTIFUL PROVISION TO GREET THE ARRIVAL OF THE YOUNG PRINCESS THE FRENCH IN RETURN INVITED THE ENGLISH TO A SUPPER WHICH WAS TO BE GIVEN THE NEXT DAY"
+    },
+    {
+      "index": 2,
+      "duration": 5.03,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 11,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.119,
+      "elapsed": 0.6,
+      "hypothesis": "congratulations  were  poured  in  upon  the  princess  everywhere  during  her  journey",
+      "reference": "CONGRATULATIONS WERE POURED IN UPON THE PRINCESS EVERYWHERE DURING HER JOURNEY"
+    },
+    {
+      "index": 3,
+      "duration": 23.32,
+      "wer": 0.015625,
+      "wer_details": {
+        "wer": 0.015625,
+        "ref_words": 64,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.324,
+      "elapsed": 7.56,
+      "hypothesis": "from  the  respect  paid  her  on  all  sides  she  seemed  like  a  queen  and  from  the  adoration  with  which  she  was  treated  by  two  or  three  she  appeared  an  object  of  worship  the  queen  mother  gave  the  french  the  most  affectionate  reception  france  was  her  native  country  and  she  has  suffered  too  much  unhappiness  in  england  for  england  to  have  made  her  forget  france",
+      "reference": "FROM THE RESPECT PAID HER ON ALL SIDES SHE SEEMED LIKE A QUEEN AND FROM THE ADORATION WITH WHICH SHE WAS TREATED BY TWO OR THREE SHE APPEARED AN OBJECT OF WORSHIP THE QUEEN MOTHER GAVE THE FRENCH THE MOST AFFECTIONATE RECEPTION FRANCE WAS HER NATIVE COUNTRY AND SHE HAD SUFFERED TOO MUCH UNHAPPINESS IN ENGLAND FOR ENGLAND TO HAVE MADE HER FORGET FRANCE"
+    },
+    {
+      "index": 4,
+      "duration": 11.06,
+      "wer": 0.03225806451612903,
+      "wer_details": {
+        "wer": 0.03225806451612903,
+        "ref_words": 31,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.137,
+      "elapsed": 1.51,
+      "hypothesis": "She  taught  her  daughter  then  by  her  own  affection  for  it  that  love  for  a  country  where  they  had  both  been  hospitably  received  and  where  a  brilliant  future  opened  for  them",
+      "reference": "SHE TAUGHT HER DAUGHTER THEN BY HER OWN AFFECTION FOR IT THAT LOVE FOR A COUNTRY WHERE THEY HAD BOTH BEEN HOSPITABLY RECEIVED AND WHERE A BRILLIANT FUTURE OPENED BEFORE THEM"
+    },
+    {
+      "index": 5,
+      "duration": 13.16,
+      "wer": 0.09090909090909091,
+      "wer_details": {
+        "wer": 0.09090909090909091,
+        "ref_words": 33,
+        "substitutions": 0,
+        "insertions": 3,
+        "deletions": 0
+      },
+      "rtf": 0.144,
+      "elapsed": 1.9,
+      "hypothesis": "the  count  had  thrown  himself  back  on  his  seat  leaning  his  shoulders  against  the  partition  of  the  tent  and  remained  thus  his  face  buried  his  face  buried  in  his  hands  with  heaving  chest  and  restless  limbs",
+      "reference": "THE COUNT HAD THROWN HIMSELF BACK ON HIS SEAT LEANING HIS SHOULDERS AGAINST THE PARTITION OF THE TENT AND REMAINED THUS HIS FACE BURIED IN HIS HANDS WITH HEAVING CHEST AND RESTLESS LIMBS"
+    },
+    {
+      "index": 6,
+      "duration": 5.85,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 17,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.106,
+      "elapsed": 0.62,
+      "hypothesis": "this  has  indeed  been  a  harassing  day  continued  the  young  man  his  eyes  fixed  upon  his  friend",
+      "reference": "THIS HAS INDEED BEEN A HARASSING DAY CONTINUED THE YOUNG MAN HIS EYES FIXED UPON HIS FRIEND"
+    },
+    {
+      "index": 7,
+      "duration": 3.31,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 9,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.116,
+      "elapsed": 0.38,
+      "hypothesis": "you  will  be  frank  with  me,  I  always  am.",
+      "reference": "YOU WILL BE FRANK WITH ME I ALWAYS AM"
+    },
+    {
+      "index": 8,
+      "duration": 4.79,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 11,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.12,
+      "elapsed": 0.57,
+      "hypothesis": "Can  you  imagine  why  Buckingham  has  been  so  violent?  I  suspect",
+      "reference": "CAN YOU IMAGINE WHY BUCKINGHAM HAS BEEN SO VIOLENT I SUSPECT"
+    },
+    {
+      "index": 9,
+      "duration": 7.28,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 24,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.131,
+      "elapsed": 0.95,
+      "hypothesis": "It  is  you  who  are  mistaken,  Raoul.  I  have  read  his  distress  in  his  eyes.  in  his  every  gesture  and  action  the  whole  day",
+      "reference": "IT IS YOU WHO ARE MISTAKEN RAOUL I HAVE READ HIS DISTRESS IN HIS EYES IN HIS EVERY GESTURE AND ACTION THE WHOLE DAY"
+    },
+    {
+      "index": 10,
+      "duration": 3.04,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 6,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.108,
+      "elapsed": 0.33,
+      "hypothesis": "I  can  perceive  love  clearly  enough.",
+      "reference": "I CAN PERCEIVE LOVE CLEARLY ENOUGH"
+    },
+    {
+      "index": 11,
+      "duration": 3.19,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 10,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.12,
+      "elapsed": 0.38,
+      "hypothesis": "I  am  convinced  of  what  i  say  said  the  count",
+      "reference": "I AM CONVINCED OF WHAT I SAY SAID THE COUNT"
+    },
+    {
+      "index": 12,
+      "duration": 1.94,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 4,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.088,
+      "elapsed": 0.17,
+      "hypothesis": "It  is  annoyance,  then.",
+      "reference": "IT IS ANNOYANCE THEN"
+    },
+    {
+      "index": 13,
+      "duration": 2.94,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 8,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.089,
+      "elapsed": 0.26,
+      "hypothesis": "In  those  very  terms,  I  even  added  more.",
+      "reference": "IN THOSE VERY TERMS I EVEN ADDED MORE"
+    },
+    {
+      "index": 14,
+      "duration": 16.84,
+      "wer": 0.023255813953488372,
+      "wer_details": {
+        "wer": 0.023255813953488372,
+        "ref_words": 43,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.155,
+      "elapsed": 2.62,
+      "hypothesis": "but  continued  Rao,  not  interrupted  by  this  movement  of  his  friend  heaven  be  praised  the  french  who  are  pronounced  to  be  thoughtless  and  indiscreet  reckless  even  are  capable  of  bringing  a  calm  and  sound  judgment  to  bear  on  matters  of  such  high  importance.",
+      "reference": "BUT CONTINUED RAOUL NOT INTERRUPTED BY THIS MOVEMENT OF HIS FRIEND HEAVEN BE PRAISED THE FRENCH WHO ARE PRONOUNCED TO BE THOUGHTLESS AND INDISCREET RECKLESS EVEN ARE CAPABLE OF BRINGING A CALM AND SOUND JUDGMENT TO BEAR ON MATTERS OF SUCH HIGH IMPORTANCE"
+    },
+    {
+      "index": 15,
+      "duration": 6.38,
+      "wer": 0.058823529411764705,
+      "wer_details": {
+        "wer": 0.058823529411764705,
+        "ref_words": 17,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.118,
+      "elapsed": 0.75,
+      "hypothesis": "Thus,  it  is  that  the  honor  of  three  is  saved  our  country  our  masters  and  our  own",
+      "reference": "THUS IT IS THAT THE HONOR OF THREE IS SAVED OUR COUNTRY'S OUR MASTER'S AND OUR OWN"
+    },
+    {
+      "index": 16,
+      "duration": 10.02,
+      "wer": 0.13793103448275862,
+      "wer_details": {
+        "wer": 0.13793103448275862,
+        "ref_words": 29,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 2
+      },
+      "rtf": 0.145,
+      "elapsed": 1.46,
+      "hypothesis": "Yes,  I  need  repose.  Many  things  have  agitated  me  today,  both  in  mind  and  body.  when  you  return  tomorrow  i  shall  no  longer  be  the  same  man",
+      "reference": "YES I NEED REPOSE MANY THINGS HAVE AGITATED ME TO DAY BOTH IN MIND AND BODY WHEN YOU RETURN TO MORROW I SHALL NO LONGER BE THE SAME MAN"
+    },
+    {
+      "index": 17,
+      "duration": 6.16,
+      "wer": 0.0625,
+      "wer_details": {
+        "wer": 0.0625,
+        "ref_words": 16,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.31,
+      "elapsed": 1.91,
+      "hypothesis": "but  in  this  friendly  pressure,  Rao  could  detect  the  nervous  agitation  of  a  great  internal  conflict.",
+      "reference": "BUT IN THIS FRIENDLY PRESSURE RAOUL COULD DETECT THE NERVOUS AGITATION OF A GREAT INTERNAL CONFLICT"
+    },
+    {
+      "index": 18,
+      "duration": 10.81,
+      "wer": 0.15384615384615385,
+      "wer_details": {
+        "wer": 0.15384615384615385,
+        "ref_words": 26,
+        "substitutions": 0,
+        "insertions": 4,
+        "deletions": 0
+      },
+      "rtf": 0.451,
+      "elapsed": 4.87,
+      "hypothesis": "The  night  was  clear,  starlit  and  splendid  the  tempest  had  passed  away  and  the  sweet  influences  of  the  evening  had  restored  life  peace  at  peace  and  a  true  security  everywhere.",
+      "reference": "THE NIGHT WAS CLEAR STARLIT AND SPLENDID THE TEMPEST HAD PASSED AWAY AND THE SWEET INFLUENCES OF THE EVENING HAD RESTORED LIFE PEACE AND SECURITY EVERYWHERE"
+    },
+    {
+      "index": 19,
+      "duration": 11.65,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 31,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.388,
+      "elapsed": 4.52,
+      "hypothesis": "Upon  the  large  square  in  front  of  the  hotel  the  shadows  of  the  tents  intersected  by  the  golden  moonbeams  formed  as  it  were,  a  huge  mosaic  of  jet  and  yellow  flagstones.",
+      "reference": "UPON THE LARGE SQUARE IN FRONT OF THE HOTEL THE SHADOWS OF THE TENTS INTERSECTED BY THE GOLDEN MOONBEAMS FORMED AS IT WERE A HUGE MOSAIC OF JET AND YELLOW FLAGSTONES"
+    },
+    {
+      "index": 20,
+      "duration": 14.4,
+      "wer": 0.07894736842105263,
+      "wer_details": {
+        "wer": 0.07894736842105263,
+        "ref_words": 38,
+        "substitutions": 2,
+        "insertions": 1,
+        "deletions": 0
+      },
+      "rtf": 0.232,
+      "elapsed": 3.34,
+      "hypothesis": "Bragalon  watched  for  some  time  the  conduct  of  the  two  lovers  listened  to  the  loud  and  uncivil  slumbers  of  manekamp  who  snored  as  imperiously  as  though  he  was  wearing  his  blue  and  gold  instead  of  his  violet  suit  you",
+      "reference": "BRAGELONNE WATCHED FOR SOME TIME THE CONDUCT OF THE TWO LOVERS LISTENED TO THE LOUD AND UNCIVIL SLUMBERS OF MANICAMP WHO SNORED AS IMPERIOUSLY AS THOUGH HE WAS WEARING HIS BLUE AND GOLD INSTEAD OF HIS VIOLET SUIT"
+    },
+    {
+      "index": 21,
+      "duration": 3.02,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 4,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.117,
+      "elapsed": 0.35,
+      "hypothesis": "Goliath  makes  another  discovery.",
+      "reference": "GOLIATH MAKES ANOTHER DISCOVERY"
+    },
+    {
+      "index": 22,
+      "duration": 3.2,
+      "wer": 0.2,
+      "wer_details": {
+        "wer": 0.2,
+        "ref_words": 10,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.118,
+      "elapsed": 0.38,
+      "hypothesis": "there  were  certainly  no  near  the  solution  of  their  problem.",
+      "reference": "THEY WERE CERTAINLY NO NEARER THE SOLUTION OF THEIR PROBLEM"
+    },
+    {
+      "index": 23,
+      "duration": 5.56,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 18,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.113,
+      "elapsed": 0.63,
+      "hypothesis": "the  poor  little  things  cried  cynthia  think  of  them  having  been  turned  to  the  wall  all  these  years",
+      "reference": "THE POOR LITTLE THINGS CRIED CYNTHIA THINK OF THEM HAVING BEEN TURNED TO THE WALL ALL THESE YEARS"
+    },
+    {
+      "index": 24,
+      "duration": 3.38,
+      "wer": 0.16666666666666666,
+      "wer_details": {
+        "wer": 0.16666666666666666,
+        "ref_words": 12,
+        "substitutions": 1,
+        "insertions": 1,
+        "deletions": 0
+      },
+      "rtf": 0.163,
+      "elapsed": 0.55,
+      "hypothesis": "Now,  what  is  the  sense  of  it  two  innocent  babies  like  that  you",
+      "reference": "NOW WHAT WAS THE SENSE OF IT TWO INNOCENT BABIES LIKE THAT"
+    },
+    {
+      "index": 25,
+      "duration": 6.15,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 21,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.133,
+      "elapsed": 0.82,
+      "hypothesis": "but  joyce  had  not  been  listening  all  at  once  she  put  down  her  candle  on  the  table  and  faced  her  companion",
+      "reference": "BUT JOYCE HAD NOT BEEN LISTENING ALL AT ONCE SHE PUT DOWN HER CANDLE ON THE TABLE AND FACED HER COMPANION"
+    },
+    {
+      "index": 26,
+      "duration": 5.04,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 16,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.131,
+      "elapsed": 0.66,
+      "hypothesis": "the  twin  brother  did  something  she  didn't  like  and  she  turned  his  picture  to  the  wall.",
+      "reference": "THE TWIN BROTHER DID SOMETHING SHE DIDN'T LIKE AND SHE TURNED HIS PICTURE TO THE WALL"
+    },
+    {
+      "index": 27,
+      "duration": 4.46,
+      "wer": 0.125,
+      "wer_details": {
+        "wer": 0.125,
+        "ref_words": 16,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.294,
+      "elapsed": 1.31,
+      "hypothesis": "hers  happened  to  be  on  the  same  frame  too,  but  she  evidently  didn't  care  about  it.",
+      "reference": "HERS HAPPENED TO BE IN THE SAME FRAME TOO BUT SHE EVIDENTLY DIDN'T CARE ABOUT THAT"
+    },
+    {
+      "index": 28,
+      "duration": 2.82,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 8,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.133,
+      "elapsed": 0.37,
+      "hypothesis": "Now,  what  have  you  to  say,  Cynthia  Sprague?",
+      "reference": "NOW WHAT HAVE YOU TO SAY CYNTHIA SPRAGUE"
+    },
+    {
+      "index": 29,
+      "duration": 5.18,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "ref_words": 20,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.15,
+      "elapsed": 0.78,
+      "hypothesis": "i  thought  we  were  stumped  again  when  I  first  saw  that  picture,  but  it's  been  of  some  use  after  all.",
+      "reference": "I THOUGHT WE WERE STUMPED AGAIN WHEN I FIRST SAW THAT PICTURE BUT IT'S BEEN OF SOME USE AFTER ALL"
+    }
+  ]
+}

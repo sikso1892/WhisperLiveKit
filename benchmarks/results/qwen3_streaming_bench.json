@@ -1,0 +1,53 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3-ASR-0.6B",
+    "backend": "vllm",
+    "mode": "streaming",
+    "unfixed_chunk_num": 6,
+    "chunk_size_sec": 2.0,
+    "feed_step_sec": 0.5
+  },
+  "summary": {
+    "n_samples": 2,
+    "total_audio_s": 17.7,
+    "macro_wer": 0.0,
+    "micro_wer": 0.0,
+    "overall_rtf": 0.369
+  },
+  "results": [
+    {
+      "name": "en_clean_short",
+      "duration": 3.5,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 8,
+        "hyp_words": 8
+      },
+      "rtf": 1.660752637045724,
+      "processing_time": 5.812634229660034,
+      "hypothesis": "Concord returned to its place amidst the tents.",
+      "reference": "CONCORD RETURNED TO ITS PLACE AMIDST THE TENTS"
+    },
+    {
+      "name": "en_clean_medium",
+      "duration": 14.22,
+      "wer": 0.0,
+      "wer_details": {
+        "wer": 0.0,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0,
+        "ref_words": 43,
+        "hyp_words": 43
+      },
+      "rtf": 0.051169204309519836,
+      "processing_time": 0.7276260852813721,
+      "hypothesis": "The English forwarded to the French baskets of flowers, of which they had made a plentiful provision to greet the arrival of the young princess. The French, in return, invited the English to a supper, which was to be given the next day.",
+      "reference": "THE ENGLISH FORWARDED TO THE FRENCH BASKETS OF FLOWERS OF WHICH THEY HAD MADE A PLENTIFUL PROVISION TO GREET THE ARRIVAL OF THE YOUNG PRINCESS THE FRENCH IN RETURN INVITED THE ENGLISH TO A SUPPER WHICH WAS TO BE GIVEN THE NEXT DAY"
+    }
+  ]
+}

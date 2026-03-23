@@ -1,0 +1,41 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "css": 1.0,
+  "results": [
+    {
+      "ucn": 1,
+      "utn": 5,
+      "css": 1.0,
+      "ko_cer": 22.87,
+      "ko_rtf": 0.093
+    },
+    {
+      "ucn": 3,
+      "utn": 5,
+      "css": 1.0,
+      "ko_cer": 3.01,
+      "ko_rtf": 0.061
+    },
+    {
+      "ucn": 5,
+      "utn": 5,
+      "css": 1.0,
+      "ko_cer": 3.01,
+      "ko_rtf": 0.063
+    },
+    {
+      "ucn": 7,
+      "utn": 5,
+      "css": 1.0,
+      "ko_cer": 3.01,
+      "ko_rtf": 0.076
+    },
+    {
+      "ucn": 5,
+      "utn": 3,
+      "css": 1.0,
+      "ko_cer": 3.64,
+      "ko_rtf": 0.056
+    }
+  ]
+}

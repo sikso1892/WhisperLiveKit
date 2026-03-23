@@ -4,30 +4,38 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        EXTRAS: ${GPU_EXTRAS:-cu129,funasr,sentence_tokenizer}
-    image: wlk:gpu-funasr
+        EXTRAS: ${GPU_EXTRAS:-cu129,qwen3-streaming}
+    image: wlk:gpu-qwen3
     container_name: wlk
     deploy:
       resources:
         reservations:
           devices:
             - driver: nvidia
-              device_ids: ['3']
+              device_ids: ['${WLK_GPU:-0}']
               capabilities: [gpu]
     ports:
       - "${WLK_PORT:-8000}:8000"
     volumes:
       - hf-cache:/root/.cache/huggingface/hub
-      - modelscope-cache:/root/.cache/modelscope
     environment:
       - HF_TOKEN
-    command: ["--backend", "funasr", "--model", "FunAudioLLM/Fun-ASR-MLT-Nano-2512", "--lan", "ko", "--pcm-input"]
+    command:
+      - "--backend"
+      - "qwen3-vllm-prefix"
+      - "--model"
+      - "Qwen/Qwen3-ASR-1.7B"
+      - "--lan"
+      - "${WLK_LANG:-auto}"
+      - "--quantization"
+      - "fp8"
+      - "--pcm-input"
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 30s
       timeout: 10s
       retries: 5
-      start_period: 60s
+      start_period: 180s
     restart: unless-stopped
 
   frpc:
