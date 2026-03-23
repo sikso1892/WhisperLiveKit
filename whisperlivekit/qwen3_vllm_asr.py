@@ -56,6 +56,18 @@ class Qwen3VLLMASR(ASRBase):
         self.model = self._load_model(model_dir)
 
     def _load_model(self, model_dir=None):
+        # Register qwen3_asr architecture with transformers before vLLM loads the model
+        try:
+            from qwen_asr.core.transformers_backend import (
+                Qwen3ASRConfig, Qwen3ASRForConditionalGeneration, Qwen3ASRProcessor,
+            )
+            from transformers import AutoConfig, AutoModel, AutoProcessor
+            AutoConfig.register("qwen3_asr", Qwen3ASRConfig)
+            AutoModel.register(Qwen3ASRConfig, Qwen3ASRForConditionalGeneration)
+            AutoProcessor.register(Qwen3ASRConfig, Qwen3ASRProcessor)
+        except Exception:
+            pass  # Already registered or qwen_asr not installed
+
         from vllm import LLM, SamplingParams
 
         if model_dir:
