@@ -24,13 +24,13 @@ services:
       - "--backend"
       - "qwen3-vllm-prefix"
       - "--model"
-      - "Qwen/Qwen3-ASR-0.6B"
+      - "Qwen/Qwen3-ASR-1.7B"
       - "--lan"
       - "${WLK_LANG:-auto}"
       - "--quantization"
       - "fp8"
       - "--gpu-memory-utilization"
-      - "0.2"
+      - "0.35"
       - "--pcm-input"
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
