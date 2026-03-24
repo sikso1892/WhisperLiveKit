@@ -558,8 +558,13 @@ async function startRecording() {
         statusText.textContent = "Using microphone audio.";
       }
     } else if (isWebContext) {
-      const audioConstraints = selectedMicrophoneId 
-        ? { audio: { deviceId: { exact: selectedMicrophoneId } } }
+      const audioConstraints = selectedMicrophoneId
+        ? { audio: {
+            deviceId: { exact: selectedMicrophoneId },
+            echoCancellation: false,
+            noiseSuppression: false,
+            autoGainControl: false,
+          } }
         : { audio: true };
       stream = await navigator.mediaDevices.getUserMedia(audioConstraints);
     }
