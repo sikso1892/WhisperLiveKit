@@ -348,6 +348,13 @@ async def rtt_speech_session(websocket: WebSocket):
                 text_msg = json.loads(message["text"])
                 if text_msg.get("event") == "stop":
                     logger.info("RTT stop received")
+                    # Finalize before breaking — emit transcript_end + finish
+                    for msg in rtt_protocol.force_finalize():
+                        await websocket.send_json(msg)
+                        if msg.get("event") == "transcript_end":
+                            await _dispatch_translation(
+                                websocket, msg, tgt_langs, transcription_engine,
+                            )
                     break
             elif "bytes" in message:
                 await audio_processor.process_audio(message["bytes"])
