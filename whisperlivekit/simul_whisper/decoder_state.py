@@ -35,6 +35,7 @@ class DecoderState:
 
     speaker: int = -1
     log_segments: int = 0
+    draft_text: str = ""
 
     CIFLinear: Optional[torch.nn.Module] = None
     always_fire: bool = False

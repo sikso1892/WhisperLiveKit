@@ -24,7 +24,47 @@ async def lifespan(app: FastAPI):
     transcription_engine = TranscriptionEngine(config=config)
     yield
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(
+    title="Flitto On-Prem STT Demo",
+    description=(
+        "Real-time speech transcription API with WebSocket streaming and OpenAI-compatible REST endpoints.\n\n"
+        "## Endpoints\n\n"
+        "| Protocol | Path | Description |\n"
+        "|----------|------|-------------|\n"
+        "| REST | `POST /v1/audio/transcriptions` | OpenAI-compatible batch transcription |\n"
+        "| REST | `GET /v1/models` | List available models |\n"
+        "| REST | `GET /health` | Health check |\n"
+        "| WebSocket | `ws://.../asr` | Live streaming transcription |\n"
+        "| WebSocket | `ws://.../v1/listen` | Deepgram-compatible live transcription |\n\n"
+        "## WebSocket Modes\n\n"
+        "| Mode | Query | Description |\n"
+        "|------|-------|-------------|\n"
+        "| Full | `?mode=full` | Default - complete FrontData JSON per update |\n"
+        "| Diff | `?mode=diff` | Bandwidth-efficient incremental diffs |\n"
+        "| Utterance | `?mode=utterance` | Utterance mode: seq-based with partial/final |\n\n"
+        "## Multi-user Support\n\n"
+        "The server supports concurrent sessions. Each WebSocket connection creates an independent "
+        "`AudioProcessor` pipeline with per-session language override via `SessionASRProxy`. "
+        "The `TranscriptionEngine` singleton is shared across all sessions for efficient GPU utilization.\n\n"
+        "## WebSocket Protocol\n\n"
+        "1. Connect to `ws://<host>:<port>/asr?language=en&mode=full`\n"
+        "2. Receive config message: `{\"type\": \"config\", \"useAudioWorklet\": bool, \"mode\": str}`\n"
+        "3. Send binary audio frames\n"
+        "4. Receive JSON transcription results\n"
+        "5. On completion, receive `{\"type\": \"ready_to_stop\"}`\n"
+    ),
+    version="0.2.20",
+    docs_url="/docs",
+    redoc_url="/redoc",
+    openapi_tags=[
+        {"name": "Transcription", "description": "Audio transcription endpoints (OpenAI-compatible)"},
+        {"name": "Models", "description": "Model information"},
+        {"name": "Health", "description": "Server health and status"},
+        {"name": "WebSocket", "description": "Real-time streaming transcription via WebSocket"},
+        {"name": "UI", "description": "Web-based transcription interface"},
+    ],
+    lifespan=lifespan,
+)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -33,14 +73,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/")
+@app.get("/", tags=["UI"], summary="Web UI", include_in_schema=False)
 async def get():
     return HTMLResponse(get_inline_ui_html())
 
 
-@app.get("/health")
+@app.get("/health", tags=["Health"], summary="Health check")
 async def health():
-    """Health check endpoint."""
+    """Returns server status, configured backend, and readiness state."""
     global transcription_engine
     backend = getattr(transcription_engine.config, "backend", "whisper") if transcription_engine else None
     return JSONResponse({
@@ -50,15 +90,25 @@ async def health():
     })
 
 
-async def handle_websocket_results(websocket, results_generator, diff_tracker=None):
+async def handle_websocket_results(websocket, results_generator, diff_tracker=None, utterance_tracker=None):
     """Consumes results from the audio processor and sends them via WebSocket."""
     try:
         async for response in results_generator:
-            if diff_tracker is not None:
+            if utterance_tracker is not None:
+                d = response.to_dict()
+                is_silence = any(
+                    line.get("speaker") == -2 for line in d.get("lines", [])
+                )
+                for msg in utterance_tracker.process_update(d, is_silence=is_silence):
+                    await websocket.send_json(msg)
+            elif diff_tracker is not None:
                 await websocket.send_json(diff_tracker.to_message(response))
             else:
                 await websocket.send_json(response.to_dict())
-        # when the results_generator finishes it means all audio has been processed
+        # Finalize any remaining utterance
+        if utterance_tracker is not None:
+            for msg in utterance_tracker.force_finalize():
+                await websocket.send_json(msg)
         logger.info("Results generator finished. Sending 'ready_to_stop' to client.")
         await websocket.send_json({"type": "ready_to_stop"})
     except WebSocketDisconnect:
@@ -69,6 +119,15 @@ async def handle_websocket_results(websocket, results_generator, diff_tracker=No
 
 @app.websocket("/asr")
 async def websocket_endpoint(websocket: WebSocket):
+    """Live streaming transcription via WebSocket.
+
+    Query parameters:
+    - `language`: ISO 639-1 language code for per-session override
+    - `mode`: `full` (default), `diff` (incremental updates), or `utterance` (utterance-based seq/final protocol)
+
+    Each connection creates an independent AudioProcessor pipeline.
+    Multiple clients can connect simultaneously.
+    """
     global transcription_engine
 
     # Read per-session options from query parameters
@@ -85,10 +144,26 @@ async def websocket_endpoint(websocket: WebSocket):
         f" language={session_language}" if session_language else "",
     )
     diff_tracker = None
+    utterance_tracker = None
     if mode == "diff":
         from whisperlivekit.diff_protocol import DiffTracker
         diff_tracker = DiffTracker()
         logger.info("Client requested diff mode")
+    elif mode == "utterance":
+        from whisperlivekit.utterance_tracker import UtteranceTracker
+        sentence_split_fn = None
+        try:
+            from whisperlivekit.sentence_splitter import SentenceSplitter
+            splitter = SentenceSplitter()
+            sentence_split_fn = splitter.split
+        except Exception:
+            logger.info("wtpsplit not available, using punctuation heuristics for utterance splitting")
+        utterance_tracker = UtteranceTracker(
+            epd_threshold=0.5,
+            max_utterance_duration=15.0,
+            sentence_splitter=sentence_split_fn,
+        )
+        logger.info("Client requested utterance mode (utterance-based)")
 
     try:
         await websocket.send_json({"type": "config", "useAudioWorklet": bool(config.pcm_input), "mode": mode})
@@ -96,7 +171,9 @@ async def websocket_endpoint(websocket: WebSocket):
         logger.warning(f"Failed to send config to client: {e}")
 
     results_generator = await audio_processor.create_tasks()
-    websocket_task = asyncio.create_task(handle_websocket_results(websocket, results_generator, diff_tracker))
+    websocket_task = asyncio.create_task(
+        handle_websocket_results(websocket, results_generator, diff_tracker, utterance_tracker)
+    )
 
     try:
         while True:
@@ -246,19 +323,35 @@ def _srt_timestamp(seconds: float, fmt: str) -> str:
     return f"{h:02d}:{m:02d}:{s:02d}{sep}{ms:03d}"
 
 
-@app.post("/v1/audio/transcriptions")
+@app.post("/v1/audio/transcriptions", tags=["Transcription"], summary="Transcribe audio file")
 async def create_transcription(
-    file: UploadFile = File(...),
-    model: str = Form(default=""),
-    language: Optional[str] = Form(default=None),
-    prompt: str = Form(default=""),
-    response_format: str = Form(default="json"),
-    timestamp_granularities: Optional[List[str]] = Form(default=None),
+    file: UploadFile = File(..., description="Audio file to transcribe (mp3, wav, m4a, etc.)"),
+    model: str = Form(default="", description="Model name (accepted but ignored; uses server backend)"),
+    language: Optional[str] = Form(default=None, description="ISO 639-1 language code (e.g. 'en', 'ko')"),
+    prompt: str = Form(default="", description="Optional prompt to guide transcription"),
+    response_format: str = Form(default="json", description="Response format: json, verbose_json, text, srt, vtt"),
+    timestamp_granularities: Optional[List[str]] = Form(default=None, description="Timestamp granularities: word, segment"),
 ):
     """OpenAI-compatible audio transcription endpoint.
 
-    Accepts the same parameters as OpenAI's /v1/audio/transcriptions API.
-    The `model` parameter is accepted but ignored (uses the server's configured backend).
+    Drop-in replacement for OpenAI's `/v1/audio/transcriptions` API.
+    Supports concurrent requests — each request creates an independent processing pipeline.
+
+    **Example with curl:**
+    ```bash
+    curl http://localhost:8000/v1/audio/transcriptions \\
+      -F file=@audio.mp3 \\
+      -F response_format=verbose_json
+    ```
+
+    **Example with OpenAI Python client:**
+    ```python
+    from openai import OpenAI
+    client = OpenAI(base_url="http://localhost:8000/v1", api_key="unused")
+    result = client.audio.transcriptions.create(
+        model="whisper-1", file=open("audio.mp3", "rb")
+    )
+    ```
     """
     global transcription_engine
 
@@ -317,9 +410,9 @@ async def create_transcription(
     return JSONResponse(result)
 
 
-@app.get("/v1/models")
+@app.get("/v1/models", tags=["Models"], summary="List models")
 async def list_models():
-    """OpenAI-compatible model listing endpoint."""
+    """OpenAI-compatible model listing. Returns the currently configured backend and model."""
     global transcription_engine
     backend = getattr(transcription_engine.config, "backend", "whisper") if transcription_engine else "whisper"
     model_size = getattr(transcription_engine.config, "model_size", "base") if transcription_engine else "base"

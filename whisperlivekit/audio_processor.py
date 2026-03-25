@@ -716,15 +716,13 @@ class AudioProcessor:
                 await self._end_silence(at_sample=res.get("start"))
 
             if "end" in res and not self.current_silence:
-                pre_silence_chunk = self._slice_before_silence(
-                    pcm_array, chunk_sample_start, res.get("end")
-                )
-                if pre_silence_chunk is not None and pre_silence_chunk.size > 0:
-                    await self._enqueue_active_audio(pre_silence_chunk)
                 await self._begin_silence(at_sample=res.get("end"))
 
-        if not self.current_silence:
-            await self._enqueue_active_audio(pcm_array)
+        # Always enqueue audio for transcription, even during silence.
+        # Non-autoregressive backends (FunASR) need continuous audio without
+        # gaps for proper word segmentation. VAD silence events are still
+        # sent separately to trigger utterance commits.
+        await self._enqueue_active_audio(pcm_array)
 
         self.total_pcm_samples = chunk_sample_end
 

@@ -107,6 +107,7 @@ class TokensAlignment:
             if token.is_silence():
                 previous_segment = PuncSegment.from_tokens(
                         tokens=self.all_tokens[segment_start_idx: i],
+                        sep=self.sep,
                     )
                 if previous_segment:
                     segments.append(previous_segment)
@@ -120,12 +121,14 @@ class TokensAlignment:
                 if token.has_punctuation():
                     segment = PuncSegment.from_tokens(
                         tokens=self.all_tokens[segment_start_idx: i+1],
+                        sep=self.sep,
                     )
                     segments.append(segment)
                     segment_start_idx = i+1
 
         final_segment = PuncSegment.from_tokens(
             tokens=self.all_tokens[segment_start_idx:],
+            sep=self.sep,
         )
         if final_segment:
             segments.append(final_segment)
@@ -139,6 +142,7 @@ class TokensAlignment:
             if token.is_silence():
                 previous_segment = PuncSegment.from_tokens(
                         tokens=self.unvalidated_tokens[segment_start_idx: i],
+                        sep=self.sep,
                     )
                 if previous_segment:
                     new_punc_segments.append(previous_segment)
@@ -152,6 +156,7 @@ class TokensAlignment:
                 if token.has_punctuation():
                     segment = PuncSegment.from_tokens(
                         tokens=self.unvalidated_tokens[segment_start_idx: i+1],
+                        sep=self.sep,
                     )
                     new_punc_segments.append(segment)
                     segment_start_idx = i+1
@@ -206,7 +211,7 @@ class TokensAlignment:
             for segment in punctuation_segments[1:]:
                 if segment.speaker == segments[-1].speaker:
                     if segments[-1].text:
-                        segments[-1].text += segment.text
+                        segments[-1].text += self.sep + segment.text if self.sep else segment.text
                     segments[-1].end = segment.end
                 else:
                     segments.append(segment)
@@ -238,7 +243,7 @@ class TokensAlignment:
             for token in self.new_tokens:
                 if isinstance(token, Silence):
                     if self.current_line_tokens:
-                        self.validated_segments.append(Segment.from_tokens(self.current_line_tokens))
+                        self.validated_segments.append(Segment.from_tokens(self.current_line_tokens, sep=self.sep))
                         self.current_line_tokens = []
 
                     end_silence = token.end if token.has_ended else _silence_now
@@ -251,10 +256,20 @@ class TokensAlignment:
                         ))
                 else:
                     self.current_line_tokens.append(token)
+                    # If this token ends with punctuation (complete sentence),
+                    # flush to a separate validated segment for per-line display.
+                    if token.has_punctuation():
+                        seg = Segment.from_tokens(self.current_line_tokens, sep=self.sep)
+                        if seg:
+                            self.validated_segments.append(seg)
+                        self.current_line_tokens = []
 
             segments = list(self.validated_segments)
             if self.current_line_tokens:
-                segments.append(Segment.from_tokens(self.current_line_tokens))
+                # Build a segment from remaining (uncommitted) tokens
+                pending = Segment.from_tokens(self.current_line_tokens, sep=self.sep)
+                if pending:
+                    segments.append(pending)
 
         if current_silence:
             end_silence = current_silence.end if current_silence.has_ended else _silence_now

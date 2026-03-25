@@ -302,6 +302,13 @@ class AlignAttBase(ABC):
         )
         self._handle_pending_tokens(split_words, split_tokens)
 
+        # Expose the last un-committed word as draft text for the Web UI.
+        # When fire_detected or is_last, all words are committed so no draft.
+        if not fire_detected and not is_last and len(split_words) > 0:
+            self.state.draft_text = split_words[-1]
+        else:
+            self.state.draft_text = ""
+
         return timestamped_words
 
     # === Post-decode shared helpers ===
@@ -434,7 +441,7 @@ class AlignAttBase(ABC):
                 logger.debug(f"[DRY] penalising {len(penalties)} tokens (longest match: {max_len})")
             for tok, length in penalties.items():
                 if length >= 2:
-                    logits[:, tok] = logits[:, tok] - 1.0 * 2.0 ** (length - 2)
+                    logits[:, tok] = logits[:, tok] - 2.0 * 2.0 ** (length - 1)
 
         return logits
 

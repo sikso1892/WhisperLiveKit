@@ -128,7 +128,8 @@ class Segment(TimedText):
     def from_tokens(
         cls,
         tokens: List[Union[ASRToken, Silence]],
-        is_silence: bool = False
+        is_silence: bool = False,
+        sep: str = "",
     ) -> Optional["Segment"]:
         """Return a normalized segment representing the provided tokens."""
         if not tokens:
@@ -147,7 +148,7 @@ class Segment(TimedText):
             return cls(
                 start=start_token.start,
                 end=end_token.end,
-                text=''.join(token.text for token in tokens),
+                text=sep.join(token.text for token in tokens),
                 speaker=-1,
                 detected_language=start_token.detected_language
             )

@@ -97,7 +97,14 @@ class SimulStreamingOnlineProcessor:
         self.model.global_time_offset = change_speaker.start
 
     def get_buffer(self):
-        concat_buffer = Transcript.from_tokens(tokens= self.buffer, sep='')
+        concat_buffer = Transcript.from_tokens(tokens=self.buffer, sep='')
+        # Append the model's internal draft (last un-committed word from decoder)
+        draft = getattr(self.model.state, 'draft_text', '')
+        if draft:
+            if concat_buffer.text:
+                concat_buffer.text = concat_buffer.text + draft
+            else:
+                concat_buffer.text = draft
         return concat_buffer
 
     def process_iter(self, is_last=False) -> Tuple[List[ASRToken], float]:
@@ -116,8 +123,23 @@ class SimulStreamingOnlineProcessor:
                 self.buffer.extend(timestamped_words)
                 return [], self.end
 
-            self.buffer = []
-            return timestamped_words, self.end
+            # Commit previous buffer tokens + all but last N new tokens.
+            # The held-back tokens appear as grey "draft" in the Web UI.
+            prev_buffer = self.buffer
+
+            if is_last:
+                # On silence/finalize: commit everything
+                self.buffer = []
+                return prev_buffer + timestamped_words, self.end
+
+            n_draft = min(3, len(timestamped_words))
+            if n_draft and not is_last:
+                committed = prev_buffer + timestamped_words[:-n_draft]
+                self.buffer = timestamped_words[-n_draft:]
+            else:
+                committed = prev_buffer + timestamped_words
+                self.buffer = []
+            return committed, self.end
         except Exception as e:
             logger.exception(f"SimulStreaming processing error: {e}")
             return [], self.end
