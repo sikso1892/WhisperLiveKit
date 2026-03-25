@@ -216,6 +216,207 @@ async def deepgram_websocket_endpoint(websocket: WebSocket):
 
 
 # ---------------------------------------------------------------------------
+# RTT Speech Session WebSocket API  (/v1/realtime/speech-session)
+# ---------------------------------------------------------------------------
+
+# Track active RTT sessions to prevent duplicate token connections
+_active_rtt_sessions: dict = {}
+
+
+@app.websocket("/v1/realtime/speech-session")
+async def rtt_speech_session(websocket: WebSocket):
+    """Real-Time Translation speech session via WebSocket.
+
+    Protocol:
+    1. Client connects with ?token=<TOKEN>
+    2. Client sends {"event": "connect", "data": {"hint_lang_code_list": [...], "tgt_lang_code_list": [...]}}
+    3. Server sends {"event": "ready_for_transcript"}
+    4. Client sends {"event": "start"}
+    5. Client sends raw binary audio frames
+    6. Server sends transcript / transcript_end / finish events
+    7. Client sends {"event": "stop"} to end
+    """
+    global transcription_engine
+
+    # --- Auth: require token query param ---
+    token = websocket.query_params.get("token", "")
+    if not token:
+        await websocket.close(code=4001, reason="Missing token")
+        return
+
+    if token in _active_rtt_sessions:
+        await websocket.close(code=4002, reason="Duplicate connection for this token")
+        return
+
+    await websocket.accept()
+    _active_rtt_sessions[token] = websocket
+    logger.info("RTT session opened (token=%s...)", token[:8])
+
+    import json
+    from whisperlivekit.rtt_protocol import RTTConfig, RTTProtocol
+
+    audio_processor = None
+    rtt_protocol = None
+
+    try:
+        # --- Step 1: Wait for connect event ---
+        raw = await asyncio.wait_for(websocket.receive_text(), timeout=10.0)
+        connect_msg = json.loads(raw)
+        if connect_msg.get("event") != "connect":
+            await websocket.close(code=4003, reason="Expected connect event")
+            return
+
+        data = connect_msg.get("data", {})
+        hint_langs = data.get("hint_lang_code_list", [])
+        tgt_langs = data.get("tgt_lang_code_list", [])
+
+        # Use first hint language as session language
+        session_language = hint_langs[0] if hint_langs else None
+
+        rtt_config = RTTConfig(
+            hint_lang_code_list=hint_langs,
+            tgt_lang_code_list=tgt_langs,
+        )
+
+        # Try to load sentence splitter for better utterance boundaries
+        sentence_split_fn = None
+        try:
+            from whisperlivekit.sentence_splitter import SentenceSplitter
+            splitter = SentenceSplitter()
+            sentence_split_fn = splitter.split
+        except Exception:
+            pass
+
+        rtt_protocol = RTTProtocol(config=rtt_config, sentence_splitter=sentence_split_fn)
+
+        # Create AudioProcessor with session language
+        audio_processor = AudioProcessor(
+            transcription_engine=transcription_engine,
+            language=session_language,
+        )
+
+        # Send ready
+        await websocket.send_json(RTTProtocol.make_ready())
+        logger.info("RTT ready (hints=%s, targets=%s)", hint_langs, tgt_langs)
+
+        # --- Step 2: Wait for start event ---
+        raw = await asyncio.wait_for(websocket.receive_text(), timeout=10.0)
+        start_msg = json.loads(raw)
+        if start_msg.get("event") != "start":
+            await websocket.close(code=4004, reason="Expected start event")
+            return
+
+        # --- Step 3: Start audio pipeline + results handler ---
+        results_generator = await audio_processor.create_tasks()
+
+        async def rtt_results_handler():
+            """Consume AudioProcessor results and send RTT events."""
+            try:
+                async for response in results_generator:
+                    d = response.to_dict()
+                    is_silence = any(
+                        line.get("speaker") == -2 for line in d.get("lines", [])
+                    )
+                    rtt_messages = rtt_protocol.process_update(d, is_silence=is_silence)
+                    for msg in rtt_messages:
+                        await websocket.send_json(msg)
+
+                        # On transcript_end, dispatch translation
+                        if msg.get("event") == "transcript_end":
+                            await _dispatch_translation(
+                                websocket, msg, tgt_langs, transcription_engine,
+                            )
+
+                # Finalize remaining utterance
+                for msg in rtt_protocol.force_finalize():
+                    await websocket.send_json(msg)
+                    if msg.get("event") == "transcript_end":
+                        await _dispatch_translation(
+                            websocket, msg, tgt_langs, transcription_engine,
+                        )
+            except WebSocketDisconnect:
+                logger.info("RTT client disconnected during results handling")
+            except Exception as e:
+                logger.exception("RTT results handler error: %s", e)
+
+        results_task = asyncio.create_task(rtt_results_handler())
+
+        # --- Step 4: Audio receive loop ---
+        while True:
+            message = await websocket.receive()
+            if "text" in message:
+                text_msg = json.loads(message["text"])
+                if text_msg.get("event") == "stop":
+                    logger.info("RTT stop received")
+                    break
+            elif "bytes" in message:
+                await audio_processor.process_audio(message["bytes"])
+
+    except asyncio.TimeoutError:
+        logger.warning("RTT session timed out waiting for connect/start")
+    except WebSocketDisconnect:
+        logger.info("RTT WebSocket disconnected")
+    except Exception as e:
+        logger.exception("RTT session error: %s", e)
+    finally:
+        _active_rtt_sessions.pop(token, None)
+        if audio_processor:
+            if 'results_task' in dir() and not results_task.done():
+                results_task.cancel()
+                try:
+                    await results_task
+                except asyncio.CancelledError:
+                    pass
+            await audio_processor.cleanup()
+        logger.info("RTT session closed (token=%s...)", token[:8])
+
+
+async def _dispatch_translation(
+    websocket: WebSocket,
+    transcript_end_msg: dict,
+    tgt_langs: list,
+    engine,
+):
+    """Translate a finalized transcript and send finish event(s)."""
+    data = transcript_end_msg.get("data", {})
+    transcript_id = data.get("transcript_id", "")
+    src_text = data.get("text", "")
+    src_lang = data.get("language_code", "")
+
+    if not src_text or not tgt_langs:
+        return
+
+    translations = []
+    translation_model = getattr(engine, "translation_model", None)
+
+    if translation_model:
+        # Use nllw/NLLB for translation
+        try:
+            for tgt_lang in tgt_langs:
+                result = await asyncio.to_thread(
+                    translation_model.translate, src_text, src_lang, tgt_lang,
+                )
+                translations.append({"lang_code": tgt_lang, "text": result})
+        except Exception as e:
+            logger.warning("Translation failed: %s", e)
+            translations = [{"lang_code": tgt, "text": ""} for tgt in tgt_langs]
+    else:
+        # No translation model — return empty translations
+        translations = [{"lang_code": tgt, "text": ""} for tgt in tgt_langs]
+
+    finish_msg = RTTProtocol.make_finish(
+        transcript_id=transcript_id,
+        src_text=src_text,
+        src_lang_code=src_lang,
+        translations=translations,
+    )
+    try:
+        await websocket.send_json(finish_msg)
+    except Exception:
+        pass
+
+
+# ---------------------------------------------------------------------------
 # OpenAI-compatible REST API  (/v1/audio/transcriptions)
 # ---------------------------------------------------------------------------
 
