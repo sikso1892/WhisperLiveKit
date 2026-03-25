@@ -1,0 +1,520 @@
+{
+  "backend": "qwen3-1.7b",
+  "n_samples": 30,
+  "total_audio_s": 396.18,
+  "micro_cer": 0.03776223776223776,
+  "macro_cer": 0.04031996144933579,
+  "overall_rtf": 0.08761169165530819,
+  "results": [
+    {
+      "index": 0,
+      "duration": 14.16,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 45,
+        "hyp_chars": 45,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.498,
+      "elapsed": 7.06,
+      "hypothesis": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다.",
+      "reference": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다"
+    },
+    {
+      "index": 1,
+      "duration": 14.7,
+      "cer": 0.1076923076923077,
+      "cer_details": {
+        "cer": 0.1076923076923077,
+        "ref_chars": 65,
+        "hyp_chars": 58,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 7
+      },
+      "rtf": 0.069,
+      "elapsed": 1.02,
+      "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+      "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+    },
+    {
+      "index": 2,
+      "duration": 16.08,
+      "cer": 0.1076923076923077,
+      "cer_details": {
+        "cer": 0.1076923076923077,
+        "ref_chars": 65,
+        "hyp_chars": 58,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 7
+      },
+      "rtf": 0.067,
+      "elapsed": 1.07,
+      "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+      "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+    },
+    {
+      "index": 3,
+      "duration": 9.36,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 36,
+        "hyp_chars": 36,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.084,
+      "elapsed": 0.79,
+      "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다",
+      "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+    },
+    {
+      "index": 4,
+      "duration": 9.72,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 36,
+        "hyp_chars": 36,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.08,
+      "elapsed": 0.78,
+      "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다",
+      "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+    },
+    {
+      "index": 5,
+      "duration": 19.08,
+      "cer": 0.013888888888888888,
+      "cer_details": {
+        "cer": 0.013888888888888888,
+        "ref_chars": 72,
+        "hyp_chars": 72,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.065,
+      "elapsed": 1.24,
+      "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+      "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+    },
+    {
+      "index": 6,
+      "duration": 18.42,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 72,
+        "hyp_chars": 72,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.069,
+      "elapsed": 1.27,
+      "hypothesis": "올리버 색스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+      "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+    },
+    {
+      "index": 7,
+      "duration": 16.14,
+      "cer": 0.01818181818181818,
+      "cer_details": {
+        "cer": 0.01818181818181818,
+        "ref_chars": 55,
+        "hyp_chars": 55,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.075,
+      "elapsed": 1.22,
+      "hypothesis": "어제 아침 터키 가지안 태프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다.",
+      "reference": "어제 아침 터키 가지안테프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다"
+    },
+    {
+      "index": 8,
+      "duration": 15.3,
+      "cer": 0.015151515151515152,
+      "cer_details": {
+        "cer": 0.015151515151515152,
+        "ref_chars": 66,
+        "hyp_chars": 66,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.076,
+      "elapsed": 1.16,
+      "hypothesis": "이들의 시대에는 빛 공예가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다.",
+      "reference": "이들의 시대에는 빛 공해가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다"
+    },
+    {
+      "index": 9,
+      "duration": 12.0,
+      "cer": 0.1951219512195122,
+      "cer_details": {
+        "cer": 0.1951219512195122,
+        "ref_chars": 41,
+        "hyp_chars": 33,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 8
+      },
+      "rtf": 0.075,
+      "elapsed": 0.9,
+      "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을",
+      "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+    },
+    {
+      "index": 10,
+      "duration": 10.08,
+      "cer": 0.1951219512195122,
+      "cer_details": {
+        "cer": 0.1951219512195122,
+        "ref_chars": 41,
+        "hyp_chars": 33,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 8
+      },
+      "rtf": 0.097,
+      "elapsed": 0.98,
+      "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을",
+      "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+    },
+    {
+      "index": 11,
+      "duration": 13.56,
+      "cer": 0.2,
+      "cer_details": {
+        "cer": 0.2,
+        "ref_chars": 35,
+        "hyp_chars": 35,
+        "substitutions": 7,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.06,
+      "elapsed": 0.81,
+      "hypothesis": "집권당인 사하프리카 인민기구 (SWAPO)도 의회 선거에서 과반수를 유지했습니다.",
+      "reference": "집권당인 서아프리카 인민 기구swapo도 의회 선거에서 과반수를 유지했습니다"
+    },
+    {
+      "index": 12,
+      "duration": 15.0,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 56,
+        "hyp_chars": 56,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.071,
+      "elapsed": 1.07,
+      "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+      "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+    },
+    {
+      "index": 13,
+      "duration": 17.34,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 56,
+        "hyp_chars": 56,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.06,
+      "elapsed": 1.04,
+      "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+      "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+    },
+    {
+      "index": 14,
+      "duration": 17.46,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 54,
+        "hyp_chars": 54,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.065,
+      "elapsed": 1.14,
+      "hypothesis": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다. 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다.",
+      "reference": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다"
+    },
+    {
+      "index": 15,
+      "duration": 17.64,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 59,
+        "hyp_chars": 59,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.061,
+      "elapsed": 1.08,
+      "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+      "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+    },
+    {
+      "index": 16,
+      "duration": 16.08,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 59,
+        "hyp_chars": 59,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.07,
+      "elapsed": 1.12,
+      "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+      "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+    },
+    {
+      "index": 17,
+      "duration": 5.88,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 27,
+        "hyp_chars": 27,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.085,
+      "elapsed": 0.5,
+      "hypothesis": "지각은 가까운 쪽이 약 70km, 먼 쪽이 약 100km 두께입니다",
+      "reference": "지각은 가까운 쪽이 약 70km 먼 쪽이 약 100km 두께입니다"
+    },
+    {
+      "index": 18,
+      "duration": 13.62,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 50,
+        "hyp_chars": 50,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.079,
+      "elapsed": 1.07,
+      "hypothesis": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 � � 밤 늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요.",
+      "reference": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요"
+    },
+    {
+      "index": 19,
+      "duration": 12.6,
+      "cer": 0.025,
+      "cer_details": {
+        "cer": 0.025,
+        "ref_chars": 40,
+        "hyp_chars": 40,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.073,
+      "elapsed": 0.92,
+      "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+      "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+    },
+    {
+      "index": 20,
+      "duration": 9.9,
+      "cer": 0.1,
+      "cer_details": {
+        "cer": 0.1,
+        "ref_chars": 40,
+        "hyp_chars": 37,
+        "substitutions": 1,
+        "insertions": 0,
+        "deletions": 3
+      },
+      "rtf": 0.079,
+      "elapsed": 0.78,
+      "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊",
+      "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+    },
+    {
+      "index": 21,
+      "duration": 4.68,
+      "cer": 0.07692307692307693,
+      "cer_details": {
+        "cer": 0.07692307692307693,
+        "ref_chars": 26,
+        "hyp_chars": 26,
+        "substitutions": 2,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.097,
+      "elapsed": 0.45,
+      "hypothesis": "어느 날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+      "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+    },
+    {
+      "index": 22,
+      "duration": 8.46,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 26,
+        "hyp_chars": 26,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.087,
+      "elapsed": 0.73,
+      "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+      "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+    },
+    {
+      "index": 23,
+      "duration": 7.56,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 26,
+        "hyp_chars": 26,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.074,
+      "elapsed": 0.56,
+      "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+      "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+    },
+    {
+      "index": 24,
+      "duration": 10.86,
+      "cer": 0.13043478260869565,
+      "cer_details": {
+        "cer": 0.13043478260869565,
+        "ref_chars": 46,
+        "hyp_chars": 40,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 6
+      },
+      "rtf": 0.083,
+      "elapsed": 0.9,
+      "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록",
+      "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+    },
+    {
+      "index": 25,
+      "duration": 13.26,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 46,
+        "hyp_chars": 46,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.072,
+      "elapsed": 0.96,
+      "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+      "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+    },
+    {
+      "index": 26,
+      "duration": 13.74,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 43,
+        "hyp_chars": 43,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.067,
+      "elapsed": 0.93,
+      "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+      "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+    },
+    {
+      "index": 27,
+      "duration": 13.02,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 43,
+        "hyp_chars": 43,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.074,
+      "elapsed": 0.96,
+      "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+      "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+    },
+    {
+      "index": 28,
+      "duration": 17.28,
+      "cer": 0.0,
+      "cer_details": {
+        "cer": 0.0,
+        "ref_chars": 63,
+        "hyp_chars": 63,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 0
+      },
+      "rtf": 0.074,
+      "elapsed": 1.29,
+      "hypothesis": "독일의 구운 식품 상당수에는 또한 아몬드, 헤이즐넛 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다.",
+      "reference": "독일의 구운 식품 상당수에는 또한 아몬드 헤이즐넛 및 다른 견과류가 포함되어 있습니다 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다"
+    },
+    {
+      "index": 29,
+      "duration": 13.2,
+      "cer": 0.024390243902439025,
+      "cer_details": {
+        "cer": 0.024390243902439025,
+        "ref_chars": 41,
+        "hyp_chars": 40,
+        "substitutions": 0,
+        "insertions": 0,
+        "deletions": 1
+      },
+      "rtf": 0.069,
+      "elapsed": 0.91,
+      "hypothesis": "사막 모래 영향으로 인해 1990년 팀북투는 위험에 처한 세계문화유산 목록에 추가되었습니다.",
+      "reference": "사막 모래의 영향으로 인해 1990년 팀북투는 위험에 처한 세계 문화유산 목록에 추가되었습니다"
+    }
+  ]
+}

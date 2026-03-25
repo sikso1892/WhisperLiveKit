@@ -1,0 +1,3926 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "model_size": "1.7b",
+  "quantization": "fp8",
+  "n_samples": 100,
+  "mode": "both",
+  "languages": [
+    "ja"
+  ],
+  "ja_batch": {
+    "micro_cer": 5.67,
+    "overall_rtf": 0.014,
+    "total_audio_s": 1338.4,
+    "total_elapsed_s": 19.0,
+    "results": [
+      {
+        "index": 0,
+        "language": "ja",
+        "duration": 22.62,
+        "error_rate": 0.06363636363636363,
+        "error_details": {
+          "cer": 0.06363636363636363,
+          "ref_len": 110,
+          "hyp_len": 111,
+          "substitutions": 6,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.35,
+        "hypothesis": "技術決定論のほとんどの解釈は、2つの一般論を共有しています。一つは技術の発展自体が文化的・政治的な影響を大きく超えた道をたたんでいること、もう一つは技術が社会的に条件付けられたものではなく、むしろ内在する社会に影響を与えることです。",
+        "reference": "技術決定論のほとんどの解釈は 2つの一般論を共有しています 1つは技術の発展自体が文化的 政治的な影響を大きく超えた道をたどっていること もう1つは技術が社会的に条件づけられたものではなく むしろ内在する社会に 影響 を与えることです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 1,
+        "language": "ja",
+        "duration": 10.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.16,
+        "hypothesis": "地殻が薄いため、近い方には海が多くなることがあります。溶岩が浮上しやすくなっていました。",
+        "reference": "地殻が薄いため 近い方には海が多くなることがあります 溶岩が浮上しやすくなっていました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 2,
+        "language": "ja",
+        "duration": 17.4,
+        "error_rate": 0.045454545454545456,
+        "error_details": {
+          "cer": 0.045454545454545456,
+          "ref_len": 66,
+          "hyp_len": 65,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.015,
+        "elapsed": 0.26,
+        "hypothesis": "都市はモロッコのスルタンによってダルルバリアとして再建され、貿易拠点を設立したスペイン人貿易商によってカサブランカと名づけられました。",
+        "reference": "都市はモロッコのスルタンによってダルル バディアとして再建され 貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 3,
+        "language": "ja",
+        "duration": 14.04,
+        "error_rate": 0.030303030303030304,
+        "error_details": {
+          "cer": 0.030303030303030304,
+          "ref_len": 66,
+          "hyp_len": 65,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.018,
+        "elapsed": 0.25,
+        "hypothesis": "都市はモロッコのスルタンによってダルルバリアとして再建され、貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました。",
+        "reference": "都市はモロッコのスルタンによってダルル バディアとして再建され 貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 4,
+        "language": "ja",
+        "duration": 14.34,
+        "error_rate": 0.05263157894736842,
+        "error_details": {
+          "cer": 0.05263157894736842,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.22,
+        "hypothesis": "上空の澄んだ美しい空と周囲の多くの山々以外には何も見えません。洞窟の中からは下界をほとんど見えず、下界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer"
+      },
+      {
+        "index": 5,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.05263157894736842,
+        "error_details": {
+          "cer": 0.05263157894736842,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.22,
+        "hypothesis": "上空に澄んだ美しい空と、周囲の多くの山々以外には何も見えません。洞窟の中からは下界はほとんど見えず、下界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer"
+      },
+      {
+        "index": 6,
+        "language": "ja",
+        "duration": 17.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.21,
+        "hypothesis": "上空の澄んだ美しい空と周囲の多くの山々以外には何も見えません。洞窟の中からは外界はほとんど見えず、外界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer"
+      },
+      {
+        "index": 7,
+        "language": "ja",
+        "duration": 14.58,
+        "error_rate": 0.10526315789473684,
+        "error_details": {
+          "cer": 0.10526315789473684,
+          "ref_len": 38,
+          "hyp_len": 39,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.17,
+        "hypothesis": "北マリアナ諸島の気候管理団体（EMO）によると、全国的に被害は報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 8,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.02631578947368421,
+        "error_details": {
+          "cer": 0.02631578947368421,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.15,
+        "hypothesis": "北マリアナ諸島の危機管理室 EMO によると、全国的に被害を報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 9,
+        "language": "ja",
+        "duration": 11.1,
+        "error_rate": 0.02631578947368421,
+        "error_details": {
+          "cer": 0.02631578947368421,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.16,
+        "hypothesis": "北マリアナ諸島の危機管理室（EMO）によると、全国的に被害を報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 10,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "cer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.13,
+        "hypothesis": "エアロ・スミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 11,
+        "language": "ja",
+        "duration": 9.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.13,
+        "hypothesis": "エアロスミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 12,
+        "language": "ja",
+        "duration": 6.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.13,
+        "hypothesis": "エアロスミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 13,
+        "language": "ja",
+        "duration": 13.08,
+        "error_rate": 0.04,
+        "error_details": {
+          "cer": 0.04,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.18,
+        "hypothesis": "これらはたまに混雑する家族向けのビーチで、海外にはさまざまな店舗が並んでいます。安全に親ぐことができます。",
+        "reference": "これらはたまに混雑する家族向けのビーチで 海岸にはさまざまな店舗が並んでいます 安全に泳ぐことができます",
+        "metric_type": "cer"
+      },
+      {
+        "index": 14,
+        "language": "ja",
+        "duration": 11.58,
+        "error_rate": 0.02,
+        "error_details": {
+          "cer": 0.02,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.18,
+        "hypothesis": "これらをたまに混雑する家族向けのビーチで、海岸にはさまざまな店舗が並んでいます。安全に泳ぐことができます。",
+        "reference": "これらはたまに混雑する家族向けのビーチで 海岸にはさまざまな店舗が並んでいます 安全に泳ぐことができます",
+        "metric_type": "cer"
+      },
+      {
+        "index": 15,
+        "language": "ja",
+        "duration": 10.2,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.15,
+        "hypothesis": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。",
+        "reference": "一部の路線では大企業は自社機を持っているが それ以外の路線や小規模企業では問題があった",
+        "metric_type": "cer"
+      },
+      {
+        "index": 16,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.15,
+        "hypothesis": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。",
+        "reference": "一部の路線では大企業は自社機を持っているが それ以外の路線や小規模企業では問題があった",
+        "metric_type": "cer"
+      },
+      {
+        "index": 17,
+        "language": "ja",
+        "duration": 20.7,
+        "error_rate": 0.07228915662650602,
+        "error_details": {
+          "cer": 0.07228915662650602,
+          "ref_len": 83,
+          "hyp_len": 84,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 1
+        },
+        "rtf": 0.015,
+        "elapsed": 0.31,
+        "hypothesis": "文明ということは、市民を意味するラテン語の形容詞 civis からきており、市民を意味するラテン語の名詞 civis（都市や都市国を意味し、何らかの形で社会の規模を定義する）という名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 18,
+        "language": "ja",
+        "duration": 24.48,
+        "error_rate": 0.012048192771084338,
+        "error_details": {
+          "cer": 0.012048192771084338,
+          "ref_len": 83,
+          "hyp_len": 83,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.32,
+        "hypothesis": "文明という言葉は市民を意味するラテン語の形容詞 civis からきており、市民を意味するラテン語の名詞 civis、都市や都市国家を意味し何らかの形で社会の規模を定義する civitas という名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 19,
+        "language": "ja",
+        "duration": 26.04,
+        "error_rate": 0.012048192771084338,
+        "error_details": {
+          "cer": 0.012048192771084338,
+          "ref_len": 83,
+          "hyp_len": 83,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.32,
+        "hypothesis": "文明という言葉は市民を意味するラテン語の形容詞 civis からきており、市民を意味するラテン語の名詞 civis、都市や都市国家を意味し何らかの形で社会の規模を定義する civitas という名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 20,
+        "language": "ja",
+        "duration": 18.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.23,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 21,
+        "language": "ja",
+        "duration": 15.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.23,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 22,
+        "language": "ja",
+        "duration": 14.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.22,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 23,
+        "language": "ja",
+        "duration": 16.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 62,
+          "hyp_len": 62,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.21,
+        "hypothesis": "ドイツの焼き菓子の多くはアーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは特に強いコーヒーとよく合います。",
+        "reference": "ドイツの焼き菓子の多くは アーモンドやヘーゼルナッツなどの木の実を使っています 人気のあるケーキは 特に強いコーヒーとよく合います",
+        "metric_type": "cer"
+      },
+      {
+        "index": 24,
+        "language": "ja",
+        "duration": 18.3,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 62,
+          "hyp_len": 62,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.21,
+        "hypothesis": "ドイツの焼き菓子の多くはアーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは特に強いコーヒーとよく合います。",
+        "reference": "ドイツの焼き菓子の多くは アーモンドやヘーゼルナッツなどの木の実を使っています 人気のあるケーキは 特に強いコーヒーとよく合います",
+        "metric_type": "cer"
+      },
+      {
+        "index": 25,
+        "language": "ja",
+        "duration": 17.88,
+        "error_rate": 0.015384615384615385,
+        "error_details": {
+          "cer": 0.015384615384615385,
+          "ref_len": 65,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.24,
+        "hypothesis": "自動車の保有者増加は道路事故発生率の増加につながり、結果として負傷した体を治療するための新技術が医療分野で開発されることになります。",
+        "reference": "自動車の保有者増加は 道路事故発生率の増加につながり 結果として 負傷した身体を治療するための新技術が医療分野で開発されることになります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 26,
+        "language": "ja",
+        "duration": 24.72,
+        "error_rate": 0.06382978723404255,
+        "error_details": {
+          "cer": 0.06382978723404255,
+          "ref_len": 94,
+          "hyp_len": 94,
+          "substitutions": 4,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.012,
+        "elapsed": 0.31,
+        "hypothesis": "社会化の重要性を示すために用いられる最も一般的な方法の一つは、育児放棄、不運、または恋の虐待によって成長過程で大人によって社会への適応が阻まれた子どもたちの数少ない不幸な事例を取り上げることです。",
+        "reference": "社会化の重要性を示すために用いられる最も一般的な方法の1つは 育児放棄 不運 または故意の虐待によって 成長過程で大人によって社会への適応が阻まれた子供たちの数少ない不幸な事例を取りあげることです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 27,
+        "language": "ja",
+        "duration": 20.1,
+        "error_rate": 0.11702127659574468,
+        "error_details": {
+          "cer": 0.11702127659574468,
+          "ref_len": 94,
+          "hyp_len": 94,
+          "substitutions": 9,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.29,
+        "hypothesis": "社会化の重要性を示すために用いられる最も一般的な方法の一つは、育児放棄、不遇、または行為の虐待によって成長過程で大人によって社会の適用が破られた子どもたちの数少ない不幸な事例を取り上げることです。",
+        "reference": "社会化の重要性を示すために用いられる最も一般的な方法の1つは 育児放棄 不運 または故意の虐待によって 成長過程で大人によって社会への適応が阻まれた子供たちの数少ない不幸な事例を取りあげることです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 28,
+        "language": "ja",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.13,
+        "hypothesis": "しかし、そうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer"
+      },
+      {
+        "index": 29,
+        "language": "ja",
+        "duration": 9.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.13,
+        "hypothesis": "しかし、そうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer"
+      },
+      {
+        "index": 30,
+        "language": "ja",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.13,
+        "hypothesis": "しかしそうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer"
+      },
+      {
+        "index": 31,
+        "language": "ja",
+        "duration": 11.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.18,
+        "hypothesis": "宇宙に存在するあらゆるものは物質でできています。あらゆる物質は原子と呼ばれる微小な粒子でできています。",
+        "reference": "宇宙に存在するあらゆるものは物質でできています あらゆる物質は原子と呼ばれる微小な粒子でできています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 32,
+        "language": "ja",
+        "duration": 9.36,
+        "error_rate": 0.17073170731707318,
+        "error_details": {
+          "cer": 0.17073170731707318,
+          "ref_len": 41,
+          "hyp_len": 39,
+          "substitutions": 5,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.019,
+        "elapsed": 0.18,
+        "hypothesis": "モルトバの市とは賃運です。現地語はルーマニア語ですが、ロシア語が広く使われています。",
+        "reference": "モルドバの首都はチインウです 現地語はルーマニア語ですが ロシア語が広く使われています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 33,
+        "language": "ja",
+        "duration": 13.62,
+        "error_rate": 0.018518518518518517,
+        "error_details": {
+          "cer": 0.018518518518518517,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.19,
+        "hypothesis": "植物は自然環境にあるときに最も見栄えがするのですから、一本だけならと標本に持ち帰りたい誘惑に負けないでください。",
+        "reference": "植物は自然環境にあるときに最も見栄えがするのですから 1本だけ ならと標本に持ち帰りたい誘惑に負けないでください",
+        "metric_type": "cer"
+      },
+      {
+        "index": 34,
+        "language": "ja",
+        "duration": 12.72,
+        "error_rate": 0.2708333333333333,
+        "error_details": {
+          "cer": 0.2708333333333333,
+          "ref_len": 48,
+          "hyp_len": 58,
+          "substitutions": 3,
+          "insertions": 10,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.21,
+        "hypothesis": "当初、バンガミアトークラジオに特化したインターネットラジオサイト「トギネットラジオ」のみで取り上げられ、これは長寿サイトです。",
+        "reference": "当初 番組はトークラジオに特化したインターネットラジオサイト toginet radio のみで取り上げられ これは長寿サイトです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 35,
+        "language": "ja",
+        "duration": 15.54,
+        "error_rate": 0.14285714285714285,
+        "error_details": {
+          "cer": 0.14285714285714285,
+          "ref_len": 35,
+          "hyp_len": 34,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.009,
+        "elapsed": 0.14,
+        "hypothesis": "ほとんどが砂浜で安全に泳ぐことができ、ポフツ川の小木が日焼けになります。",
+        "reference": "ほとんどが砂浜で安全に泳ぐことができ ポフツカワの木陰が日除けになります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 36,
+        "language": "ja",
+        "duration": 9.9,
+        "error_rate": 0.14285714285714285,
+        "error_details": {
+          "cer": 0.14285714285714285,
+          "ref_len": 35,
+          "hyp_len": 34,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.14,
+        "hypothesis": "ほとんどが砂浜で安全に泳ぐことができ、ポフツ川の小川が日焼けになります。",
+        "reference": "ほとんどが砂浜で安全に泳ぐことができ ポフツカワの木陰が日除けになります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 37,
+        "language": "ja",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.13,
+        "hypothesis": "さらに北方の広い地域は人口が少なく、ほとんど人が住んでいない原生地域もあります。",
+        "reference": "さらに北方の広い地域は人口が少なく ほとんど人が住んでいない原生地域もあります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 38,
+        "language": "ja",
+        "duration": 11.88,
+        "error_rate": 0.07894736842105263,
+        "error_details": {
+          "cer": 0.07894736842105263,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.13,
+        "hypothesis": "さらに北方の広い地域は人口が少なく、ほとんど人が住んでいない厳密封域もあります。",
+        "reference": "さらに北方の広い地域は人口が少なく ほとんど人が住んでいない原生地域もあります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 39,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.07894736842105263,
+        "error_details": {
+          "cer": 0.07894736842105263,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.13,
+        "hypothesis": "さらに北方の広い地域は人口が少なく、ほとんど人が住んでいない厳密封域もあります。",
+        "reference": "さらに北方の広い地域は人口が少なく ほとんど人が住んでいない原生地域もあります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 40,
+        "language": "ja",
+        "duration": 9.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.14,
+        "hypothesis": "北はサヘルと境界を接し、南と西は大西洋に囲まれた地域です。",
+        "reference": "北はサヘルと境界を接し 南と西は大西洋に囲まれた地域です",
+        "metric_type": "cer"
+      },
+      {
+        "index": 41,
+        "language": "ja",
+        "duration": 10.92,
+        "error_rate": 0.14814814814814814,
+        "error_details": {
+          "cer": 0.14814814814814814,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.13,
+        "hypothesis": "北はサヘルと教会を接し、南と西は太平洋に囲まれた地域です。",
+        "reference": "北はサヘルと境界を接し 南と西は大西洋に囲まれた地域です",
+        "metric_type": "cer"
+      },
+      {
+        "index": 42,
+        "language": "ja",
+        "duration": 9.18,
+        "error_rate": 0.23529411764705882,
+        "error_details": {
+          "cer": 0.23529411764705882,
+          "ref_len": 34,
+          "hyp_len": 38,
+          "substitutions": 4,
+          "insertions": 4,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.13,
+        "hypothesis": "お別れではありません。これは一つのショーの終わりであり、新しいショーの幕開きです。",
+        "reference": "「お別れではありませんこれは1つの章の終わりであり、新しい章の幕開けです」",
+        "metric_type": "cer"
+      },
+      {
+        "index": 43,
+        "language": "ja",
+        "duration": 8.94,
+        "error_rate": 0.29411764705882354,
+        "error_details": {
+          "cer": 0.29411764705882354,
+          "ref_len": 34,
+          "hyp_len": 40,
+          "substitutions": 4,
+          "insertions": 6,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.13,
+        "hypothesis": "お別れではありません。これは一つのショーの終わりであり、新しいショーのマーク開けです。",
+        "reference": "「お別れではありませんこれは1つの章の終わりであり、新しい章の幕開けです」",
+        "metric_type": "cer"
+      },
+      {
+        "index": 44,
+        "language": "ja",
+        "duration": 11.52,
+        "error_rate": 0.20588235294117646,
+        "error_details": {
+          "cer": 0.20588235294117646,
+          "ref_len": 34,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 4,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.13,
+        "hypothesis": "お別れではありません。これは一つのショーの終わりであり、新しいショーの幕開けです。",
+        "reference": "「お別れではありませんこれは1つの章の終わりであり、新しい章の幕開けです」",
+        "metric_type": "cer"
+      },
+      {
+        "index": 45,
+        "language": "ja",
+        "duration": 10.56,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.17,
+        "hypothesis": "植物は人間が吸う酸素を作り、人間が息として吐き出す二酸化炭素を取り込んでいます。",
+        "reference": "植物は人間が吸う酸素を作り 人間が息として吐き出す二酸化炭素を取り込んでいます",
+        "metric_type": "cer"
+      },
+      {
+        "index": 46,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 35,
+          "hyp_len": 35,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.14,
+        "hypothesis": "事故発生後、ギブソン氏は病院に搬送されましたが、その後まもなく死亡しました。",
+        "reference": "事故発生後 ギブソン氏は病院に搬送されましたが その後まもなく死亡しました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 47,
+        "language": "ja",
+        "duration": 12.24,
+        "error_rate": 0.022222222222222223,
+        "error_details": {
+          "cer": 0.022222222222222223,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.16,
+        "hypothesis": "小さい島々の大半は独立国家、またはフランスに関係する国々であり、有名な高級ビーチリゾートもあります。",
+        "reference": "小さい島々の大半は独立国か またはフランスに関係する国々であり 有名な高級ビーチリゾートもあります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 48,
+        "language": "ja",
+        "duration": 12.6,
+        "error_rate": 0.2,
+        "error_details": {
+          "cer": 0.2,
+          "ref_len": 45,
+          "hyp_len": 48,
+          "substitutions": 6,
+          "insertions": 3,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.19,
+        "hypothesis": "小さい島々の対岸、ドクリスコフかまたはフランスに関係する小国であり、有名な高級ビーチリゾートもあります。",
+        "reference": "小さい島々の大半は独立国か またはフランスに関係する国々であり 有名な高級ビーチリゾートもあります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 49,
+        "language": "ja",
+        "duration": 11.28,
+        "error_rate": 0.022222222222222223,
+        "error_details": {
+          "cer": 0.022222222222222223,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.16,
+        "hypothesis": "小さい島々の大半は独立国家またはフランスに関係する国々であり、有名な高級ビーチリゾートもあります。",
+        "reference": "小さい島々の大半は独立国か またはフランスに関係する国々であり 有名な高級ビーチリゾートもあります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 50,
+        "language": "ja",
+        "duration": 11.22,
+        "error_rate": 0.023255813953488372,
+        "error_details": {
+          "cer": 0.023255813953488372,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.18,
+        "hypothesis": "砂漠の砂により脅威から保護するため、1990年には危険な世界遺産のリストに追加されました。",
+        "reference": "砂漠の砂による脅威から保護するため 1990年には危険な世界遺産のリストに追加されました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 51,
+        "language": "ja",
+        "duration": 11.7,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.18,
+        "hypothesis": "砂漠の砂による脅威から保護するため、1990年には危険な世界遺産のリストに追加されました。",
+        "reference": "砂漠の砂による脅威から保護するため 1990年には危険な世界遺産のリストに追加されました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 52,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.09302325581395349,
+        "error_details": {
+          "cer": 0.09302325581395349,
+          "ref_len": 43,
+          "hyp_len": 41,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.013,
+        "elapsed": 0.17,
+        "hypothesis": "砂漠の砂による脅威から保護するため、1990年には危険な生物のリストに追加されました。",
+        "reference": "砂漠の砂による脅威から保護するため 1990年には危険な世界遺産のリストに追加されました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 53,
+        "language": "ja",
+        "duration": 20.58,
+        "error_rate": 0.1968503937007874,
+        "error_details": {
+          "cer": 0.1968503937007874,
+          "ref_len": 127,
+          "hyp_len": 121,
+          "substitutions": 19,
+          "insertions": 0,
+          "deletions": 6
+        },
+        "rtf": 0.023,
+        "elapsed": 0.48,
+        "hypothesis": "しかし、これらの計画はほぼ一様に過去のものとなりました。ソビエト連邦赤軍の80万人以上の兵士がリカ高原諸駅、ソビエトポーラなど付加陣営、その他の国際諸駅、二国間を結びた国間に反してポーラの東部地域を侵攻した後、ベルルシ戦線とウクライナ戦線を形成したのです。",
+        "reference": "しかし これらの計画はほぼ一夜にして過去のものとなりました ソビエト連邦赤軍の80万人以上の兵士が リガ講和条約 ソビエト ポーランド不可侵条約 その他の国際条約二国間および多国間に違反してポーランド東部地域を侵攻した後 ベラルーシ戦線とウクライナ戦線を形成したのです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 54,
+        "language": "ja",
+        "duration": 18.18,
+        "error_rate": 0.0641025641025641,
+        "error_details": {
+          "cer": 0.0641025641025641,
+          "ref_len": 78,
+          "hyp_len": 75,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 3
+        },
+        "rtf": 0.013,
+        "elapsed": 0.24,
+        "hypothesis": "バーチャルスケールドはこのソフトウェアに組み込まれており、学生が一人では難しいと思われる手順についての質問、指示、説明できるようにすることを目的としています。",
+        "reference": "バーチャル スキャフォールドはこのソフトウェアに組み込まれており 学生が1人では難しいと思われる手順についての質問 指示 説明できるようにすることを目的としています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 55,
+        "language": "ja",
+        "duration": 17.58,
+        "error_rate": 0.0641025641025641,
+        "error_details": {
+          "cer": 0.0641025641025641,
+          "ref_len": 78,
+          "hyp_len": 80,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.25,
+        "hypothesis": "バーチャルスキャフォールドはこのソフトウェアに組み込まれており、学生が一人では難しいと思われるテキストについての質問、指示、説明できるようにすることを目的としています。",
+        "reference": "バーチャル スキャフォールドはこのソフトウェアに組み込まれており 学生が1人では難しいと思われる手順についての質問 指示 説明できるようにすることを目的としています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 56,
+        "language": "ja",
+        "duration": 10.44,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "cer": 0.1111111111111111,
+          "ref_len": 45,
+          "hyp_len": 44,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "elapsed": 0.14,
+        "hypothesis": "インターネットで適体的環境構成について検索すると、おそらく現地企業の住所が出てくるでしょう。",
+        "reference": "インターネットで 敵対的環境コース について検索すると おそらく現地企業の住所が出てくるでしょう",
+        "metric_type": "cer"
+      },
+      {
+        "index": 57,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.19,
+        "hypothesis": "すべての名詞は、あなたを指す単語「C」と同様に、文の途中であっても常に大文字で始まります。",
+        "reference": "すべての名詞は あなた を指す単語sieと同様に 文の途中であっても常に大文字で始まります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 58,
+        "language": "ja",
+        "duration": 15.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.19,
+        "hypothesis": "すべての名詞は、あなたを指す単語「C」と同様に、文の途中であっても常に大文字で始まります。",
+        "reference": "すべての名詞は あなた を指す単語sieと同様に 文の途中であっても常に大文字で始まります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 59,
+        "language": "ja",
+        "duration": 12.3,
+        "error_rate": 0.125,
+        "error_details": {
+          "cer": 0.125,
+          "ref_len": 40,
+          "hyp_len": 37,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 3
+        },
+        "rtf": 0.014,
+        "elapsed": 0.18,
+        "hypothesis": "新トラ駅のスコッターバス403が定期的に運行しており、カボダロカに停車します。",
+        "reference": "シントラ行きのスコッターブバス403が定期的に運行しており カボ ダ ロカに停車します",
+        "metric_type": "cer"
+      },
+      {
+        "index": 60,
+        "language": "ja",
+        "duration": 9.3,
+        "error_rate": 0.175,
+        "error_details": {
+          "cer": 0.175,
+          "ref_len": 40,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 3
+        },
+        "rtf": 0.019,
+        "elapsed": 0.18,
+        "hypothesis": "新トラ駅のスコッターバス403が定期的に運行しており、カボッタロカに停車します。",
+        "reference": "シントラ行きのスコッターブバス403が定期的に運行しており カボ ダ ロカに停車します",
+        "metric_type": "cer"
+      },
+      {
+        "index": 61,
+        "language": "ja",
+        "duration": 8.88,
+        "error_rate": 0.09375,
+        "error_details": {
+          "cer": 0.09375,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.12,
+        "hypothesis": "このように世に出てきた当時で鉛筆は多くの人にとってよく友人でした。",
+        "reference": "このように 世に出てきた当時の鉛筆は多くの人にとって良き友人でした",
+        "metric_type": "cer"
+      },
+      {
+        "index": 62,
+        "language": "ja",
+        "duration": 11.34,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.13,
+        "hypothesis": "このように世に出てきた当時の鉛筆は多くの人にとって良き友人でした。",
+        "reference": "このように 世に出てきた当時の鉛筆は多くの人にとって良き友人でした",
+        "metric_type": "cer"
+      },
+      {
+        "index": 63,
+        "language": "ja",
+        "duration": 17.28,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 54,
+          "hyp_len": 55,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.21,
+        "hypothesis": "生殖細胞に生じた突然変異だけはここに受け継がれ、他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります。",
+        "reference": "生殖細胞に生じた突然変異だけは子に受け継がれ 他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 64,
+        "language": "ja",
+        "duration": 15.12,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.21,
+        "hypothesis": "生殖細胞に生じた突然変異だけは子に受け継がれ、他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります。",
+        "reference": "生殖細胞に生じた突然変異だけは子に受け継がれ 他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 65,
+        "language": "ja",
+        "duration": 12.0,
+        "error_rate": 0.05555555555555555,
+        "error_details": {
+          "cer": 0.05555555555555555,
+          "ref_len": 54,
+          "hyp_len": 55,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.21,
+        "hypothesis": "生殖細胞に生じた突然変異だけはここに受け継がれ、他の部位に生じた突然変異は細胞質や癌の原因になる可能性があります。",
+        "reference": "生殖細胞に生じた突然変異だけは子に受け継がれ 他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります",
+        "metric_type": "cer"
+      },
+      {
+        "index": 66,
+        "language": "ja",
+        "duration": 12.66,
+        "error_rate": 0.017241379310344827,
+        "error_details": {
+          "cer": 0.017241379310344827,
+          "ref_len": 58,
+          "hyp_len": 58,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.19,
+        "hypothesis": "バチカン使国で働く人々のほとんどが日常的に使用する言語はイタリア語であり、宗教的な儀式ではラテン語がよく使用されています。",
+        "reference": "バチカン市国で働く人々のほとんどが日常的に使用する言語はイタリア語であり 宗教的な儀式ではラテン語がよく使用されています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 67,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "cer": 0.034482758620689655,
+          "ref_len": 58,
+          "hyp_len": 58,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.19,
+        "hypothesis": "マチカン諸国で働く人々のほとんどが日常的に使用する言語はイタリア語であり、宗教的な儀式ではラテン語がよく使用されています。",
+        "reference": "バチカン市国で働く人々のほとんどが日常的に使用する言語はイタリア語であり 宗教的な儀式ではラテン語がよく使用されています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 68,
+        "language": "ja",
+        "duration": 9.12,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.14,
+        "hypothesis": "地球上の川から海に注ぐ水の20%はアマゾン川から流れ出ています。",
+        "reference": "地球上の川から海に注ぐ水の20%は アマゾン川から流れ出ています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 69,
+        "language": "ja",
+        "duration": 13.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.14,
+        "hypothesis": "地球上の川から海に注ぐ水の20%はアマゾン川から流れ出ています。",
+        "reference": "地球上の川から海に注ぐ水の20%は アマゾン川から流れ出ています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 70,
+        "language": "ja",
+        "duration": 9.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.14,
+        "hypothesis": "地球上の川から海に注ぐ水の20%はアマゾン川から流れ出ています。",
+        "reference": "地球上の川から海に注ぐ水の20%は アマゾン川から流れ出ています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 71,
+        "language": "ja",
+        "duration": 18.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 86,
+          "hyp_len": 86,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.3,
+        "hypothesis": "78ある提言うち最初に挙げられているのは、敵対的な介入に対してイラクの国境を確保し、近隣諸国との外交関係を再び確立するために年内に新たな外交主導権を発揮するべきだというものです。",
+        "reference": "78ある提言うち最初に挙げられているのは 敵対的な介入に対してイラクの国境を確保し 近隣諸国との外交関係を再び確立するために 年内に新たな外交主導権を発揮するべきだというものです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 72,
+        "language": "ja",
+        "duration": 18.96,
+        "error_rate": 0.03488372093023256,
+        "error_details": {
+          "cer": 0.03488372093023256,
+          "ref_len": 86,
+          "hyp_len": 86,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.016,
+        "elapsed": 0.3,
+        "hypothesis": "78ある提言うち最初に挙げられているのは、敵対的な介入に対してイラクの国境を確保し、近隣諸国との外交関係を再び確立するために年内にあるたな外交主導権発揮するべきだというものです。",
+        "reference": "78ある提言うち最初に挙げられているのは 敵対的な介入に対してイラクの国境を確保し 近隣諸国との外交関係を再び確立するために 年内に新たな外交主導権を発揮するべきだというものです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 73,
+        "language": "ja",
+        "duration": 8.22,
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "cer": 0.21428571428571427,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 4,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "elapsed": 0.11,
+        "hypothesis": "羽を持つで空を飛べるので恐竜だと思っている人も当然います。",
+        "reference": "羽を持ち 空を飛べるので 恐竜だと思っていない人も大勢います",
+        "metric_type": "cer"
+      },
+      {
+        "index": 74,
+        "language": "ja",
+        "duration": 11.52,
+        "error_rate": 0.03571428571428571,
+        "error_details": {
+          "cer": 0.03571428571428571,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.12,
+        "hypothesis": "羽をもち、空を飛べるので恐竜だと思っていない人も大勢います。",
+        "reference": "羽を持ち 空を飛べるので 恐竜だと思っていない人も大勢います",
+        "metric_type": "cer"
+      },
+      {
+        "index": 75,
+        "language": "ja",
+        "duration": 11.28,
+        "error_rate": 0.1509433962264151,
+        "error_details": {
+          "cer": 0.1509433962264151,
+          "ref_len": 53,
+          "hyp_len": 55,
+          "substitutions": 4,
+          "insertions": 3,
+          "deletions": 1
+        },
+        "rtf": 0.02,
+        "elapsed": 0.22,
+        "hypothesis": "中継のバッツマン、サチン・テンドルカール、ラフォール・ドラビットが連携してうまく試合を運び、100ランを達成しました。",
+        "reference": "中軸のバッツマン サチン テンドルカール ラホール ドラヴィッドが連携してうまく試合を運び 100ランを達成しました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 76,
+        "language": "ja",
+        "duration": 15.9,
+        "error_rate": 0.07547169811320754,
+        "error_details": {
+          "cer": 0.07547169811320754,
+          "ref_len": 53,
+          "hyp_len": 52,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "elapsed": 0.21,
+        "hypothesis": "中翼のバッツマン、サチンテンドルカール、ラホールドラビットが連携してうまく試合を運び、100ランを達成しました。",
+        "reference": "中軸のバッツマン サチン テンドルカール ラホール ドラヴィッドが連携してうまく試合を運び 100ランを達成しました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 77,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.13,
+        "hypothesis": "脳病理と行動の相関関係は、科学者たちの研究を裏付けるものです。",
+        "reference": "脳病理と行動の相関関係は 科学者たちの研究を裏付けるものです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 78,
+        "language": "ja",
+        "duration": 22.86,
+        "error_rate": 0.09302325581395349,
+        "error_details": {
+          "cer": 0.09302325581395349,
+          "ref_len": 86,
+          "hyp_len": 80,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 6
+        },
+        "rtf": 0.013,
+        "elapsed": 0.29,
+        "hypothesis": "バスは一日中地区間バスステーション川を渡って出発しますが、ほとんどのバス、特に東に向かうバスとジャカルブムタンに向かうものは午前6時半から午前7時半の間に出発します。",
+        "reference": "バスは一日中地区間バスステーション川を渡ってを出発しますが、ほとんどのバス、特に東に向かうバスとジャカール/ブムタンに向かうものは、午前6時30分から午前7時30分の間に出発します",
+        "metric_type": "cer"
+      },
+      {
+        "index": 79,
+        "language": "ja",
+        "duration": 15.6,
+        "error_rate": 0.12790697674418605,
+        "error_details": {
+          "cer": 0.12790697674418605,
+          "ref_len": 86,
+          "hyp_len": 78,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 8
+        },
+        "rtf": 0.019,
+        "elapsed": 0.29,
+        "hypothesis": "バスは1日中区間バスステーション川を渡って出発しますが、ほとんどのバス、特に東に向かうバスとジャカル、ブムタに向かうものは午前6時半から午前7時半の間に出発します。",
+        "reference": "バスは一日中地区間バスステーション川を渡ってを出発しますが、ほとんどのバス、特に東に向かうバスとジャカール/ブムタンに向かうものは、午前6時30分から午前7時30分の間に出発します",
+        "metric_type": "cer"
+      },
+      {
+        "index": 80,
+        "language": "ja",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.1,
+        "hypothesis": "列車、車、その他の多くの交通手段がそこから生まれました。",
+        "reference": "列車 車 その他の多くの交通手段がそこから生まれました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 81,
+        "language": "ja",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.1,
+        "hypothesis": "列車、車、その他の多くの交通手段がそこから生まれました。",
+        "reference": "列車 車 その他の多くの交通手段がそこから生まれました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 82,
+        "language": "ja",
+        "duration": 8.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.11,
+        "hypothesis": "列車、車、その他の多くの交通手段がそこから生まれました。",
+        "reference": "列車 車 その他の多くの交通手段がそこから生まれました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 83,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.08571428571428572,
+        "error_details": {
+          "cer": 0.08571428571428572,
+          "ref_len": 70,
+          "hyp_len": 72,
+          "substitutions": 2,
+          "insertions": 3,
+          "deletions": 1
+        },
+        "rtf": 0.017,
+        "elapsed": 0.23,
+        "hypothesis": "教会の中央権力は1000年以上前からローマにあり、権力と資金が集中することで多くの人がその教理が満たされているかどうかを疑問視するようになりました。",
+        "reference": "教会の中央権力は千年以上も前からローマにあり 権力と資金が集中することで 多くの人がその教義が満たされているかどうかを疑問視するようになりました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 84,
+        "language": "ja",
+        "duration": 18.48,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "cer": 0.05714285714285714,
+          "ref_len": 70,
+          "hyp_len": 73,
+          "substitutions": 1,
+          "insertions": 3,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.24,
+        "hypothesis": "教会の中央権力は1000年以上も前からローマにあり、権力と資金が集中することで多くの人がその教義が満たされているかどうかを疑問視するようになりました。",
+        "reference": "教会の中央権力は千年以上も前からローマにあり 権力と資金が集中することで 多くの人がその教義が満たされているかどうかを疑問視するようになりました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 85,
+        "language": "ja",
+        "duration": 10.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.11,
+        "hypothesis": "このようなご夫婦は、その赤ちゃんのために養子縁組制度を利用できます。",
+        "reference": "このようなご夫婦は その赤ちゃんのために養子縁組制度を利用できます",
+        "metric_type": "cer"
+      },
+      {
+        "index": 86,
+        "language": "ja",
+        "duration": 12.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "elapsed": 0.12,
+        "hypothesis": "このようなご夫婦は、その赤ちゃんのために養子縁組制度を利用できます。",
+        "reference": "このようなご夫婦は その赤ちゃんのために養子縁組制度を利用できます",
+        "metric_type": "cer"
+      },
+      {
+        "index": 87,
+        "language": "ja",
+        "duration": 19.2,
+        "error_rate": 0.015873015873015872,
+        "error_details": {
+          "cer": 0.015873015873015872,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.26,
+        "hypothesis": "彼の作品はその質の高さと詳細さが評価され、切手収集家の中では数少ない有名人の一人です。彼の作品だけを専門とする収集家もいるほどです。",
+        "reference": "彼の作品は その質の高さと詳細さが評価され 切手収集家の中では数少ない 有名人 の1人です 彼の作品だけを専門とする収集家もいるほどです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 88,
+        "language": "ja",
+        "duration": 16.14,
+        "error_rate": 0.031746031746031744,
+        "error_details": {
+          "cer": 0.031746031746031744,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.26,
+        "hypothesis": "彼の作品はその質の高さと繊細さが評価され、切手収集家の中では数少ない有名人の一人です。彼の作品だけを専門とする収集家もいるほどです。",
+        "reference": "彼の作品は その質の高さと詳細さが評価され 切手収集家の中では数少ない 有名人 の1人です 彼の作品だけを専門とする収集家もいるほどです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 89,
+        "language": "ja",
+        "duration": 15.96,
+        "error_rate": 0.12698412698412698,
+        "error_details": {
+          "cer": 0.12698412698412698,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 6,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.016,
+        "elapsed": 0.25,
+        "hypothesis": "彼の作品はその質の高さと詳細さが評価され、キッテ収集家だから数少ない有名人の一人です。彼の作品だけを専門とする収集家もいるほどです。",
+        "reference": "彼の作品は その質の高さと詳細さが評価され 切手収集家の中では数少ない 有名人 の1人です 彼の作品だけを専門とする収集家もいるほどです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 90,
+        "language": "ja",
+        "duration": 8.7,
+        "error_rate": 0.0967741935483871,
+        "error_details": {
+          "cer": 0.0967741935483871,
+          "ref_len": 31,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.014,
+        "elapsed": 0.12,
+        "hypothesis": "カサブランカ、モロッコで最も買い物楽しみにくい場所の一つです。",
+        "reference": "カサブランカはモロッコで最も買い物を楽しみにくい場所の1つです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 91,
+        "language": "ja",
+        "duration": 7.8,
+        "error_rate": 0.03225806451612903,
+        "error_details": {
+          "cer": 0.03225806451612903,
+          "ref_len": 31,
+          "hyp_len": 31,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.13,
+        "hypothesis": "カサブランカはモロッコで最も買い物を楽しみにくい場所の一つです。",
+        "reference": "カサブランカはモロッコで最も買い物を楽しみにくい場所の1つです",
+        "metric_type": "cer"
+      },
+      {
+        "index": 92,
+        "language": "ja",
+        "duration": 13.86,
+        "error_rate": 0.0625,
+        "error_details": {
+          "cer": 0.0625,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.21,
+        "hypothesis": "ムハンマドは日常生活を超えた問題に深い関心を持っていました。彼は瞑想のためにヌール、光の山にあるヒイラと呼ばれる洞窟旅行を訪れました。",
+        "reference": "ムハンマドは 日常生活を超えた問題に深い関心を持っていました 彼は 瞑想のために ヌール 光の山にある ヒーラ と呼ばれる洞窟をよく訪れました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 93,
+        "language": "ja",
+        "duration": 20.64,
+        "error_rate": 0.05357142857142857,
+        "error_details": {
+          "cer": 0.05357142857142857,
+          "ref_len": 56,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 3,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.25,
+        "hypothesis": "主な被写体を配置すべき最も効果的な位置は、画像を縦・横3分の1ずつに分割した線の交点に囲まれた部分（例）を参照とされます。",
+        "reference": "主な被写体を配置すべき最も効果的な位置は 画像を縦横3分の1ずつに分割した線の交点に囲まれた部分例を参照とされます",
+        "metric_type": "cer"
+      },
+      {
+        "index": 94,
+        "language": "ja",
+        "duration": 13.08,
+        "error_rate": 0.057692307692307696,
+        "error_details": {
+          "cer": 0.057692307692307696,
+          "ref_len": 52,
+          "hyp_len": 53,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.2,
+        "hypothesis": "第2セットでは、デルポトロが序盤から優位でしたが、6対6に追いつかれた後、またもやタイムレースが必要となりました。",
+        "reference": "第2セットでは デル ポトロが序盤から優位でしたが 6-6に追いつかれた後 またもやタイブレークが必要となりました",
+        "metric_type": "cer"
+      },
+      {
+        "index": 95,
+        "language": "ja",
+        "duration": 11.22,
+        "error_rate": 0.05263157894736842,
+        "error_details": {
+          "cer": 0.05263157894736842,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.18,
+        "hypothesis": "交通流研究とは、二転間にいる個々の運転手と車両の動きとそれらの相互作用の研究です。",
+        "reference": "交通流研究とは 2点間にいる個々の運転手と車両の動きとそれらの相互作用の研究です",
+        "metric_type": "cer"
+      },
+      {
+        "index": 96,
+        "language": "ja",
+        "duration": 10.86,
+        "error_rate": 0.10526315789473684,
+        "error_details": {
+          "cer": 0.10526315789473684,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.18,
+        "hypothesis": "高速流研究とは、移転間にいる個々の運転手と車両の動きとそれらの相互作用の研究です。",
+        "reference": "交通流研究とは 2点間にいる個々の運転手と車両の動きとそれらの相互作用の研究です",
+        "metric_type": "cer"
+      },
+      {
+        "index": 97,
+        "language": "ja",
+        "duration": 11.88,
+        "error_rate": 0.045454545454545456,
+        "error_details": {
+          "cer": 0.045454545454545456,
+          "ref_len": 44,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.18,
+        "hypothesis": "ヤギの家畜化は約100万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。",
+        "reference": "ヤギの家畜化は 約1万年前に始まり その中心はイランのザグロス山脈西部であったとされています",
+        "metric_type": "cer"
+      },
+      {
+        "index": 98,
+        "language": "ja",
+        "duration": 12.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.16,
+        "hypothesis": "手についた水分が外側の層と反応し、妙な感触になり、一種の殻のようなものを形成します。",
+        "reference": "手についた水分が外側の層と反応し 妙な感触になり 一種の殻のようなものを形成します",
+        "metric_type": "cer"
+      },
+      {
+        "index": 99,
+        "language": "ja",
+        "duration": 11.7,
+        "error_rate": 0.02564102564102564,
+        "error_details": {
+          "cer": 0.02564102564102564,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.16,
+        "hypothesis": "手に付いた水分が外側の層と反応し、妙な感触になり、一種の殻のようなものを形成します。",
+        "reference": "手についた水分が外側の層と反応し 妙な感触になり 一種の殻のようなものを形成します",
+        "metric_type": "cer"
+      }
+    ]
+  },
+  "ja_streaming": {
+    "micro_cer": 16.02,
+    "overall_rtf": 0.043,
+    "total_audio_s": 1338.4,
+    "total_elapsed_s": 57.8,
+    "results": [
+      {
+        "index": 0,
+        "language": "ja",
+        "duration": 22.62,
+        "error_rate": 0.07272727272727272,
+        "error_details": {
+          "cer": 0.07272727272727272,
+          "ref_len": 110,
+          "hyp_len": 111,
+          "substitutions": 7,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 1.01,
+        "hypothesis": "技術決定論のほとんどの解釈は、二つの一般論を共有しています。一つは技術の発展自体が文化的・政治的な影響を大きく超えた道をたたんでいること、もう一つは技術が社会的に条件付けられたものではなく、むしろ内在する社会に影響を与えることです。",
+        "reference": "技術決定論のほとんどの解釈は 2つの一般論を共有しています 1つは技術の発展自体が文化的 政治的な影響を大きく超えた道をたどっていること もう1つは技術が社会的に条件づけられたものではなく むしろ内在する社会に 影響 を与えることです",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 1,
+        "language": "ja",
+        "duration": 10.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.42,
+        "hypothesis": "地殻が薄いため、近い方には海が多くなることがあります。溶岩が浮上しやすくなっていました。",
+        "reference": "地殻が薄いため 近い方には海が多くなることがあります 溶岩が浮上しやすくなっていました",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 2,
+        "language": "ja",
+        "duration": 17.4,
+        "error_rate": 0.030303030303030304,
+        "error_details": {
+          "cer": 0.030303030303030304,
+          "ref_len": 66,
+          "hyp_len": 65,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.041,
+        "elapsed": 0.7,
+        "hypothesis": "都市はモロッコのスルタンによってダルルバリアとして再建され、貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました。",
+        "reference": "都市はモロッコのスルタンによってダルル バディアとして再建され 貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 3,
+        "language": "ja",
+        "duration": 14.04,
+        "error_rate": 0.030303030303030304,
+        "error_details": {
+          "cer": 0.030303030303030304,
+          "ref_len": 66,
+          "hyp_len": 65,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.053,
+        "elapsed": 0.74,
+        "hypothesis": "都市はモロッコのスルタンによってダルルバリアとして再建され、貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました。",
+        "reference": "都市はモロッコのスルタンによってダルル バディアとして再建され 貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 4,
+        "language": "ja",
+        "duration": 14.34,
+        "error_rate": 0.03508771929824561,
+        "error_details": {
+          "cer": 0.03508771929824561,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.65,
+        "hypothesis": "上空の澄んだ美しい空と周囲の多くの山々以外には何も見えません。洞窟の中からは下界はほとんど見えず、下界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 5,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.05263157894736842,
+        "error_details": {
+          "cer": 0.05263157894736842,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.57,
+        "hypothesis": "上空に澄んだ美しい空と、周囲の多くの山々以外には何も見えません。洞窟の中からは下界はほとんど見えず、下界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 6,
+        "language": "ja",
+        "duration": 17.4,
+        "error_rate": 8.68421052631579,
+        "error_details": {
+          "cer": 8.68421052631579,
+          "ref_len": 57,
+          "hyp_len": 549,
+          "substitutions": 3,
+          "insertions": 492,
+          "deletions": 0
+        },
+        "rtf": 0.119,
+        "elapsed": 2.07,
+        "hypothesis": "上空の澄んだ美しい空と周囲の多くの山々以外には何も見えません。洞窟の中からは外界はほとんど見えず、外界からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞窟の中からも洞窟の外はほとんど見えません。洞窟の外からも洞窟の中はほとんど見えません。洞",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 7,
+        "language": "ja",
+        "duration": 14.58,
+        "error_rate": 0.10526315789473684,
+        "error_details": {
+          "cer": 0.10526315789473684,
+          "ref_len": 38,
+          "hyp_len": 39,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.57,
+        "hypothesis": "北マリアナ諸島の気候管理団体（EMO）によると、全国的に被害は報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 8,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.02631578947368421,
+        "error_details": {
+          "cer": 0.02631578947368421,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.41,
+        "hypothesis": "北マリアナ諸島の危機管理室 EMO によると、全国的に被害を報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 9,
+        "language": "ja",
+        "duration": 11.1,
+        "error_rate": 0.02631578947368421,
+        "error_details": {
+          "cer": 0.02631578947368421,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.53,
+        "hypothesis": "北マリアナ諸島の危機管理室（EMO）によると、全国的に被害を報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 10,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "cer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.37,
+        "hypothesis": "エアロ・スミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 11,
+        "language": "ja",
+        "duration": 9.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.39,
+        "hypothesis": "エアロスミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 12,
+        "language": "ja",
+        "duration": 6.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.33,
+        "hypothesis": "エアロスミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 13,
+        "language": "ja",
+        "duration": 13.08,
+        "error_rate": 0.02,
+        "error_details": {
+          "cer": 0.02,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 0.53,
+        "hypothesis": "これらはたまに混雑する家族向けのビーチで、海岸にはさまざまな店舗が並んでいます。安全に親ぐことができます。",
+        "reference": "これらはたまに混雑する家族向けのビーチで 海岸にはさまざまな店舗が並んでいます 安全に泳ぐことができます",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 14,
+        "language": "ja",
+        "duration": 11.58,
+        "error_rate": 0.02,
+        "error_details": {
+          "cer": 0.02,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.55,
+        "hypothesis": "これらをたまに混雑する家族向けのビーチで、海岸にはさまざまな店舗が並んでいます。安全に泳ぐことができます。",
+        "reference": "これらはたまに混雑する家族向けのビーチで 海岸にはさまざまな店舗が並んでいます 安全に泳ぐことができます",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 15,
+        "language": "ja",
+        "duration": 10.2,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.45,
+        "hypothesis": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。",
+        "reference": "一部の路線では大企業は自社機を持っているが それ以外の路線や小規模企業では問題があった",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 16,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.46,
+        "hypothesis": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。",
+        "reference": "一部の路線では大企業は自社機を持っているが それ以外の路線や小規模企業では問題があった",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 17,
+        "language": "ja",
+        "duration": 20.7,
+        "error_rate": 0.07228915662650602,
+        "error_details": {
+          "cer": 0.07228915662650602,
+          "ref_len": 83,
+          "hyp_len": 82,
+          "substitutions": 5,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.043,
+        "elapsed": 0.9,
+        "hypothesis": "文明ということは、市民を意味するラテン語の形容詞 civis からきており、市民を意味するラテン語の名詞 civis としや都市国を意味し、何らかの形で社会の規模を定義する civitas という名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 18,
+        "language": "ja",
+        "duration": 24.48,
+        "error_rate": 0.012048192771084338,
+        "error_details": {
+          "cer": 0.012048192771084338,
+          "ref_len": 83,
+          "hyp_len": 83,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.92,
+        "hypothesis": "文明という言葉は市民を意味するラテン語の形容詞 civis からきており、市民を意味するラテン語の名詞 civis、都市や都市国家を意味し何らかの形で社会の規模を定義する civitas という名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer",
+        "n_inferences": 9
+      },
+      {
+        "index": 19,
+        "language": "ja",
+        "duration": 26.04,
+        "error_rate": 0.14457831325301204,
+        "error_details": {
+          "cer": 0.14457831325301204,
+          "ref_len": 83,
+          "hyp_len": 94,
+          "substitutions": 1,
+          "insertions": 11,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 1.03,
+        "hypothesis": "文明という言葉は市民を意味するラテン語の形容詞シビリスからきており、市民を意味するラテン語の名詞シビス、都市や都市国家を意味し、何らかの形で社会の規模を定義するシビタスという名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer",
+        "n_inferences": 10
+      },
+      {
+        "index": 20,
+        "language": "ja",
+        "duration": 18.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.77,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 21,
+        "language": "ja",
+        "duration": 15.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.72,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 22,
+        "language": "ja",
+        "duration": 14.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.67,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 23,
+        "language": "ja",
+        "duration": 16.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 62,
+          "hyp_len": 62,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.64,
+        "hypothesis": "ドイツの焼き菓子の多くは、アーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは特に強いコーヒーとよく合います。",
+        "reference": "ドイツの焼き菓子の多くは アーモンドやヘーゼルナッツなどの木の実を使っています 人気のあるケーキは 特に強いコーヒーとよく合います",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 24,
+        "language": "ja",
+        "duration": 18.3,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 62,
+          "hyp_len": 62,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.75,
+        "hypothesis": "ドイツの焼き菓子の多くは、アーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは特に強いコーヒーとよく合います。",
+        "reference": "ドイツの焼き菓子の多くは アーモンドやヘーゼルナッツなどの木の実を使っています 人気のあるケーキは 特に強いコーヒーとよく合います",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 25,
+        "language": "ja",
+        "duration": 17.88,
+        "error_rate": 0.046153846153846156,
+        "error_details": {
+          "cer": 0.046153846153846156,
+          "ref_len": 65,
+          "hyp_len": 63,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.045,
+        "elapsed": 0.81,
+        "hypothesis": "自動車の保有者増加は道路事故発生率の増加に繋がり、結果として負傷した体を治療するための新技術が医療分野で開発されることになります。",
+        "reference": "自動車の保有者増加は 道路事故発生率の増加につながり 結果として 負傷した身体を治療するための新技術が医療分野で開発されることになります",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 26,
+        "language": "ja",
+        "duration": 24.72,
+        "error_rate": 0.07446808510638298,
+        "error_details": {
+          "cer": 0.07446808510638298,
+          "ref_len": 94,
+          "hyp_len": 94,
+          "substitutions": 5,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.039,
+        "elapsed": 0.95,
+        "hypothesis": "社会科の重要性を示すために用いられる最も一般的な方法の一つは、育児放棄、不運、または恋の虐待によって成長過程で大人によって社会への適応が阻まれた子どもたちの数少ない不幸な事例を取り上げることです。",
+        "reference": "社会化の重要性を示すために用いられる最も一般的な方法の1つは 育児放棄 不運 または故意の虐待によって 成長過程で大人によって社会への適応が阻まれた子供たちの数少ない不幸な事例を取りあげることです",
+        "metric_type": "cer",
+        "n_inferences": 9
+      },
+      {
+        "index": 27,
+        "language": "ja",
+        "duration": 20.1,
+        "error_rate": 0.10638297872340426,
+        "error_details": {
+          "cer": 0.10638297872340426,
+          "ref_len": 94,
+          "hyp_len": 93,
+          "substitutions": 7,
+          "insertions": 1,
+          "deletions": 2
+        },
+        "rtf": 0.046,
+        "elapsed": 0.92,
+        "hypothesis": "社会化の重要性を示すために用いられる最も一般的な方法の一つは、育児放棄、不遇、または声の虐待によって成長過程で大人によって社会の適用が破まれた子どもたちの数少ない不幸な事例を取り上げることです。",
+        "reference": "社会化の重要性を示すために用いられる最も一般的な方法の1つは 育児放棄 不運 または故意の虐待によって 成長過程で大人によって社会への適応が阻まれた子供たちの数少ない不幸な事例を取りあげることです",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 28,
+        "language": "ja",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.39,
+        "hypothesis": "しかし、そうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 29,
+        "language": "ja",
+        "duration": 9.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.39,
+        "hypothesis": "しかし、そうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 30,
+        "language": "ja",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.27,
+        "hypothesis": "しかしそうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 31,
+        "language": "ja",
+        "duration": 11.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.58,
+        "hypothesis": "宇宙に存在するあらゆるものは物質でできています。あらゆる物質は原子と呼ばれる微小な粒子でできています。",
+        "reference": "宇宙に存在するあらゆるものは物質でできています あらゆる物質は原子と呼ばれる微小な粒子でできています",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 32,
+        "language": "ja",
+        "duration": 9.36,
+        "error_rate": 0.17073170731707318,
+        "error_details": {
+          "cer": 0.17073170731707318,
+          "ref_len": 41,
+          "hyp_len": 39,
+          "substitutions": 5,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.056,
+        "elapsed": 0.53,
+        "hypothesis": "モルトバの市とは賃運です。現地語はルーマニア語ですが、ロシア語が広く使われています。",
+        "reference": "モルドバの首都はチインウです 現地語はルーマニア語ですが ロシア語が広く使われています",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 33,
+        "language": "ja",
+        "duration": 13.62,
+        "error_rate": 0.018518518518518517,
+        "error_details": {
+          "cer": 0.018518518518518517,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.53,
+        "hypothesis": "植物は自然環境にあるときに最も見栄えがするのですから、一本だけならと標本に持ち帰りたい誘惑に負けないでください。",
+        "reference": "植物は自然環境にあるときに最も見栄えがするのですから 1本だけ ならと標本に持ち帰りたい誘惑に負けないでください",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 34,
+        "language": "ja",
+        "duration": 12.72,
+        "error_rate": 0.2708333333333333,
+        "error_details": {
+          "cer": 0.2708333333333333,
+          "ref_len": 48,
+          "hyp_len": 58,
+          "substitutions": 3,
+          "insertions": 10,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.58,
+        "hypothesis": "当初、バンガミアトークラジオに特化したインターネットラジオサイト「トギネットラジオ」のみで取り上げられ、これは長寿サイトです。",
+        "reference": "当初 番組はトークラジオに特化したインターネットラジオサイト toginet radio のみで取り上げられ これは長寿サイトです",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 35,
+        "language": "ja",
+        "duration": 15.54,
+        "error_rate": 0.14285714285714285,
+        "error_details": {
+          "cer": 0.14285714285714285,
+          "ref_len": 35,
+          "hyp_len": 34,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.031,
+        "elapsed": 0.47,
+        "hypothesis": "ほとんどが砂浜で安全に泳ぐことができ、ポフツ川の小木が日焼けになります。",
+        "reference": "ほとんどが砂浜で安全に泳ぐことができ ポフツカワの木陰が日除けになります",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 36,
+        "language": "ja",
+        "duration": 9.9,
+        "error_rate": 0.14285714285714285,
+        "error_details": {
+          "cer": 0.14285714285714285,
+          "ref_len": 35,
+          "hyp_len": 34,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.04,
+        "elapsed": 0.39,
+        "hypothesis": "ほとんどが砂浜で安全に泳ぐことができ、ポフツ川の小川が日焼けになります。",
+        "reference": "ほとんどが砂浜で安全に泳ぐことができ ポフツカワの木陰が日除けになります",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 37,
+        "language": "ja",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.38,
+        "hypothesis": "さらに北方の広い地域は人口が少なく、ほとんど人が住んでいない原生地域もあります。",
+        "reference": "さらに北方の広い地域は人口が少なく ほとんど人が住んでいない原生地域もあります",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 38,
+        "language": "ja",
+        "duration": 11.88,
+        "error_rate": 0.07894736842105263,
+        "error_details": {
+          "cer": 0.07894736842105263,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.45,
+        "hypothesis": "さらに北方の広い地域は人口が少なく、ほとんど人が住んでいない厳密封域もあります。",
+        "reference": "さらに北方の広い地域は人口が少なく ほとんど人が住んでいない原生地域もあります",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 39,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.07894736842105263,
+        "error_details": {
+          "cer": 0.07894736842105263,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.035,
+        "elapsed": 0.37,
+        "hypothesis": "さらに北方の広い地域は人口が少なく、ほとんど人が住んでいない厳密封域もあります。",
+        "reference": "さらに北方の広い地域は人口が少なく ほとんど人が住んでいない原生地域もあります",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 40,
+        "language": "ja",
+        "duration": 9.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.4,
+        "hypothesis": "北はサヘルと境界を接し、南と西は大西洋に囲まれた地域です。",
+        "reference": "北はサヘルと境界を接し 南と西は大西洋に囲まれた地域です",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 41,
+        "language": "ja",
+        "duration": 10.92,
+        "error_rate": 0.14814814814814814,
+        "error_details": {
+          "cer": 0.14814814814814814,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.036,
+        "elapsed": 0.39,
+        "hypothesis": "北はサヘルと教会を接し、南と西は太平洋に囲まれた地域です。",
+        "reference": "北はサヘルと境界を接し 南と西は大西洋に囲まれた地域です",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 42,
+        "language": "ja",
+        "duration": 9.18,
+        "error_rate": 0.23529411764705882,
+        "error_details": {
+          "cer": 0.23529411764705882,
+          "ref_len": 34,
+          "hyp_len": 38,
+          "substitutions": 4,
+          "insertions": 4,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 0.37,
+        "hypothesis": "お別れではありません。これは一つのショーの終わりであり、新しいショーの幕開きです。",
+        "reference": "「お別れではありませんこれは1つの章の終わりであり、新しい章の幕開けです」",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 43,
+        "language": "ja",
+        "duration": 8.94,
+        "error_rate": 0.29411764705882354,
+        "error_details": {
+          "cer": 0.29411764705882354,
+          "ref_len": 34,
+          "hyp_len": 40,
+          "substitutions": 4,
+          "insertions": 6,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.38,
+        "hypothesis": "お別れではありません。これは一つのショーの終わりであり、新しいショーのマーク開けです。",
+        "reference": "「お別れではありませんこれは1つの章の終わりであり、新しい章の幕開けです」",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 44,
+        "language": "ja",
+        "duration": 11.52,
+        "error_rate": 0.20588235294117646,
+        "error_details": {
+          "cer": 0.20588235294117646,
+          "ref_len": 34,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 4,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.53,
+        "hypothesis": "お別れではありません。これは一つのショーの終わりであり、新しいショーの幕開けです。",
+        "reference": "「お別れではありませんこれは1つの章の終わりであり、新しい章の幕開けです」",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 45,
+        "language": "ja",
+        "duration": 10.56,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.45,
+        "hypothesis": "植物は人間が吸う酸素を作り、人間が息として吐き出す二酸化炭素を取り込んでいます。",
+        "reference": "植物は人間が吸う酸素を作り 人間が息として吐き出す二酸化炭素を取り込んでいます",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 46,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 35,
+          "hyp_len": 35,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.036,
+        "elapsed": 0.42,
+        "hypothesis": "事故発生後、ギブソン氏は病院に搬送されましたが、その後まもなく死亡しました。",
+        "reference": "事故発生後 ギブソン氏は病院に搬送されましたが その後まもなく死亡しました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 47,
+        "language": "ja",
+        "duration": 12.24,
+        "error_rate": 0.022222222222222223,
+        "error_details": {
+          "cer": 0.022222222222222223,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.46,
+        "hypothesis": "小さい島々の大半は独立国家またはフランスに関係する国々であり、有名な高級ビーチリゾートもあります。",
+        "reference": "小さい島々の大半は独立国か またはフランスに関係する国々であり 有名な高級ビーチリゾートもあります",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 48,
+        "language": "ja",
+        "duration": 12.6,
+        "error_rate": 0.08888888888888889,
+        "error_details": {
+          "cer": 0.08888888888888889,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.038,
+        "elapsed": 0.48,
+        "hypothesis": "小さい島々の対岸、独立国かまたはフランスに関係する小国であり、有名な高級ビーチリゾートもあります。",
+        "reference": "小さい島々の大半は独立国か またはフランスに関係する国々であり 有名な高級ビーチリゾートもあります",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 49,
+        "language": "ja",
+        "duration": 11.28,
+        "error_rate": 0.022222222222222223,
+        "error_details": {
+          "cer": 0.022222222222222223,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.48,
+        "hypothesis": "小さい島々の大半は独立国家またはフランスに関係する国々であり、有名な高級ビーチリゾートもあります。",
+        "reference": "小さい島々の大半は独立国か またはフランスに関係する国々であり 有名な高級ビーチリゾートもあります",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 50,
+        "language": "ja",
+        "duration": 11.22,
+        "error_rate": 0.023255813953488372,
+        "error_details": {
+          "cer": 0.023255813953488372,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.53,
+        "hypothesis": "砂漠の砂により脅威から保護するため、1990年には危険な世界遺産のリストに追加されました。",
+        "reference": "砂漠の砂による脅威から保護するため 1990年には危険な世界遺産のリストに追加されました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 51,
+        "language": "ja",
+        "duration": 11.7,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.53,
+        "hypothesis": "砂漠の砂による脅威から保護するため、1990年には危険な世界遺産のリストに追加されました。",
+        "reference": "砂漠の砂による脅威から保護するため 1990年には危険な世界遺産のリストに追加されました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 52,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.09302325581395349,
+        "error_details": {
+          "cer": 0.09302325581395349,
+          "ref_len": 43,
+          "hyp_len": 41,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.034,
+        "elapsed": 0.47,
+        "hypothesis": "砂漠の砂による脅威から保護するため、1990年には危険な生物のリストに追加されました。",
+        "reference": "砂漠の砂による脅威から保護するため 1990年には危険な世界遺産のリストに追加されました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 53,
+        "language": "ja",
+        "duration": 20.58,
+        "error_rate": 0.23622047244094488,
+        "error_details": {
+          "cer": 0.23622047244094488,
+          "ref_len": 127,
+          "hyp_len": 127,
+          "substitutions": 22,
+          "insertions": 4,
+          "deletions": 4
+        },
+        "rtf": 0.061,
+        "elapsed": 1.26,
+        "hypothesis": "しかしこれらの計画はほぼ一朝にして過去のものとなりました。ソビエト連邦赤軍の80万人以上の兵士がリカ・コウジュエク、ソビエト・ポワなど付加陣営、その他の国際陣営、二国間を呼びた五国間に反してポーラの東部地域を侵攻した後、ベルルシ戦線とウクライナ戦線を形成したのです。",
+        "reference": "しかし これらの計画はほぼ一夜にして過去のものとなりました ソビエト連邦赤軍の80万人以上の兵士が リガ講和条約 ソビエト ポーランド不可侵条約 その他の国際条約二国間および多国間に違反してポーランド東部地域を侵攻した後 ベラルーシ戦線とウクライナ戦線を形成したのです",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 54,
+        "language": "ja",
+        "duration": 18.18,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "cer": 0.07692307692307693,
+          "ref_len": 78,
+          "hyp_len": 77,
+          "substitutions": 5,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.042,
+        "elapsed": 0.76,
+        "hypothesis": "バーチャルスケールボードはこのソフトウェアに組み込まれており、学生が一人では難しいと思われる手順についての質問、指示、説明できるようにすることを目的としています。",
+        "reference": "バーチャル スキャフォールドはこのソフトウェアに組み込まれており 学生が1人では難しいと思われる手順についての質問 指示 説明できるようにすることを目的としています",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 55,
+        "language": "ja",
+        "duration": 17.58,
+        "error_rate": 0.14102564102564102,
+        "error_details": {
+          "cer": 0.14102564102564102,
+          "ref_len": 78,
+          "hyp_len": 80,
+          "substitutions": 7,
+          "insertions": 3,
+          "deletions": 1
+        },
+        "rtf": 0.044,
+        "elapsed": 0.77,
+        "hypothesis": "バーチャルスケートボードはこのソフトウェアに組み込まれており、学生が一人では難しいと思われるテクニックについての質問、指示、説明できるようにすることを目的としています。",
+        "reference": "バーチャル スキャフォールドはこのソフトウェアに組み込まれており 学生が1人では難しいと思われる手順についての質問 指示 説明できるようにすることを目的としています",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 56,
+        "language": "ja",
+        "duration": 10.44,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "cer": 0.1111111111111111,
+          "ref_len": 45,
+          "hyp_len": 44,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.036,
+        "elapsed": 0.38,
+        "hypothesis": "インターネットで適体的環境構成について検索すると、おそらく現地企業の住所が出てくるでしょう。",
+        "reference": "インターネットで 敵対的環境コース について検索すると おそらく現地企業の住所が出てくるでしょう",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 57,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.52,
+        "hypothesis": "すべての名詞はあなたを指す単語「C」と同様に、文の途中であっても常に大文字で始まります。",
+        "reference": "すべての名詞は あなた を指す単語sieと同様に 文の途中であっても常に大文字で始まります",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 58,
+        "language": "ja",
+        "duration": 15.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.035,
+        "elapsed": 0.55,
+        "hypothesis": "すべての名詞は、あなたを指す単語「C」と同様に、文の途中であっても常に大文字で始まります。",
+        "reference": "すべての名詞は あなた を指す単語sieと同様に 文の途中であっても常に大文字で始まります",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 59,
+        "language": "ja",
+        "duration": 12.3,
+        "error_rate": 0.125,
+        "error_details": {
+          "cer": 0.125,
+          "ref_len": 40,
+          "hyp_len": 37,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 3
+        },
+        "rtf": 0.042,
+        "elapsed": 0.51,
+        "hypothesis": "新トラ駅のスコッターバス403が定期的に運行しており、カボダロカに停車します。",
+        "reference": "シントラ行きのスコッターブバス403が定期的に運行しており カボ ダ ロカに停車します",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 60,
+        "language": "ja",
+        "duration": 9.3,
+        "error_rate": 0.175,
+        "error_details": {
+          "cer": 0.175,
+          "ref_len": 40,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 3
+        },
+        "rtf": 0.054,
+        "elapsed": 0.5,
+        "hypothesis": "新トラ駅のスコッターバス403が定期的に運行しており、カボッタロカに停車します。",
+        "reference": "シントラ行きのスコッターブバス403が定期的に運行しており カボ ダ ロカに停車します",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 61,
+        "language": "ja",
+        "duration": 8.88,
+        "error_rate": 0.09375,
+        "error_details": {
+          "cer": 0.09375,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.39,
+        "hypothesis": "このように世に出てきた当時で鉛筆は多くの人にとってよく友人でした。",
+        "reference": "このように 世に出てきた当時の鉛筆は多くの人にとって良き友人でした",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 62,
+        "language": "ja",
+        "duration": 11.34,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.43,
+        "hypothesis": "このように世に出てきた当時の鉛筆は多くの人にとって良き友人でした。",
+        "reference": "このように 世に出てきた当時の鉛筆は多くの人にとって良き友人でした",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 63,
+        "language": "ja",
+        "duration": 17.28,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 54,
+          "hyp_len": 55,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.68,
+        "hypothesis": "生殖細胞に生じた突然変異だけはここに受け継がれ、他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります。",
+        "reference": "生殖細胞に生じた突然変異だけは子に受け継がれ 他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 64,
+        "language": "ja",
+        "duration": 15.12,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.69,
+        "hypothesis": "生殖細胞に生じた突然変異だけは子に受け継がれ、他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります。",
+        "reference": "生殖細胞に生じた突然変異だけは子に受け継がれ 他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 65,
+        "language": "ja",
+        "duration": 12.0,
+        "error_rate": 0.05555555555555555,
+        "error_details": {
+          "cer": 0.05555555555555555,
+          "ref_len": 54,
+          "hyp_len": 55,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.64,
+        "hypothesis": "生殖細胞に生じた突然変異だけはここに受け継がれ、他の部位に生じた突然変異は細胞質や癌の原因になる可能性があります。",
+        "reference": "生殖細胞に生じた突然変異だけは子に受け継がれ 他の部位に生じた突然変異は細胞死や癌の原因になる可能性があります",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 66,
+        "language": "ja",
+        "duration": 12.66,
+        "error_rate": 0.017241379310344827,
+        "error_details": {
+          "cer": 0.017241379310344827,
+          "ref_len": 58,
+          "hyp_len": 58,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.56,
+        "hypothesis": "バチカン使国で働く人々のほとんどが日常的に使用する言語はイタリア語であり、宗教的な儀式ではラテン語がよく使用されています。",
+        "reference": "バチカン市国で働く人々のほとんどが日常的に使用する言語はイタリア語であり 宗教的な儀式ではラテン語がよく使用されています",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 67,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.08620689655172414,
+        "error_details": {
+          "cer": 0.08620689655172414,
+          "ref_len": 58,
+          "hyp_len": 59,
+          "substitutions": 4,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.59,
+        "hypothesis": "マディガン王国で働く人々のほとんどが日常的に使用する言語はイタリア語であり、宗教的な儀式ではラテン語がよく使用されています。",
+        "reference": "バチカン市国で働く人々のほとんどが日常的に使用する言語はイタリア語であり 宗教的な儀式ではラテン語がよく使用されています",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 68,
+        "language": "ja",
+        "duration": 9.12,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.4,
+        "hypothesis": "地球上の川から海に注ぐ水の20%はアマゾン川から流れ出ています。",
+        "reference": "地球上の川から海に注ぐ水の20%は アマゾン川から流れ出ています",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 69,
+        "language": "ja",
+        "duration": 13.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.44,
+        "hypothesis": "地球上の川から海に注ぐ水の20%はアマゾン川から流れ出ています。",
+        "reference": "地球上の川から海に注ぐ水の20%は アマゾン川から流れ出ています",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 70,
+        "language": "ja",
+        "duration": 9.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.43,
+        "hypothesis": "地球上の川から海に注ぐ水の20%はアマゾン川から流れ出ています。",
+        "reference": "地球上の川から海に注ぐ水の20%は アマゾン川から流れ出ています",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 71,
+        "language": "ja",
+        "duration": 18.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 86,
+          "hyp_len": 86,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.85,
+        "hypothesis": "78ある提言うち最初に挙げられているのは、敵対的な介入に対してイラクの国境を確保し、近隣諸国との外交関係を再び確立するために年内に新たな外交主導権を発揮するべきだというものです。",
+        "reference": "78ある提言うち最初に挙げられているのは 敵対的な介入に対してイラクの国境を確保し 近隣諸国との外交関係を再び確立するために 年内に新たな外交主導権を発揮するべきだというものです",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 72,
+        "language": "ja",
+        "duration": 18.96,
+        "error_rate": 0.03488372093023256,
+        "error_details": {
+          "cer": 0.03488372093023256,
+          "ref_len": 86,
+          "hyp_len": 86,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.045,
+        "elapsed": 0.85,
+        "hypothesis": "78ある提言うち最初に挙げられているのは、敵対的な介入に対してイラクの国境を確保し、近隣諸国との外交関係を再び確立するために年内にあるたな外交主導権発揮するべきだというものです。",
+        "reference": "78ある提言うち最初に挙げられているのは 敵対的な介入に対してイラクの国境を確保し 近隣諸国との外交関係を再び確立するために 年内に新たな外交主導権を発揮するべきだというものです",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 73,
+        "language": "ja",
+        "duration": 8.22,
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "cer": 0.21428571428571427,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 4,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.042,
+        "elapsed": 0.34,
+        "hypothesis": "羽を持つで空を飛べるので恐竜だと思っている人も当然います。",
+        "reference": "羽を持ち 空を飛べるので 恐竜だと思っていない人も大勢います",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 74,
+        "language": "ja",
+        "duration": 11.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.037,
+        "elapsed": 0.43,
+        "hypothesis": "羽を持ち空を飛べるので恐竜だと思っていない人も大勢います。",
+        "reference": "羽を持ち 空を飛べるので 恐竜だと思っていない人も大勢います",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 75,
+        "language": "ja",
+        "duration": 11.28,
+        "error_rate": 0.1509433962264151,
+        "error_details": {
+          "cer": 0.1509433962264151,
+          "ref_len": 53,
+          "hyp_len": 55,
+          "substitutions": 4,
+          "insertions": 3,
+          "deletions": 1
+        },
+        "rtf": 0.059,
+        "elapsed": 0.67,
+        "hypothesis": "中継のバッツマン、サチン・テンドルカール、ラフォール・ドラビットが連携してうまく試合を運び、100ランを達成しました。",
+        "reference": "中軸のバッツマン サチン テンドルカール ラホール ドラヴィッドが連携してうまく試合を運び 100ランを達成しました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 76,
+        "language": "ja",
+        "duration": 15.9,
+        "error_rate": 0.07547169811320754,
+        "error_details": {
+          "cer": 0.07547169811320754,
+          "ref_len": 53,
+          "hyp_len": 52,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.036,
+        "elapsed": 0.58,
+        "hypothesis": "中翼のバッツマン、サチンテンドルカール、ラホールドラビットが連携してうまく試合を運び、100ランを達成しました。",
+        "reference": "中軸のバッツマン サチン テンドルカール ラホール ドラヴィッドが連携してうまく試合を運び 100ランを達成しました",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 77,
+        "language": "ja",
+        "duration": 11.82,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.46,
+        "hypothesis": "脳病理と行動の相関関係は、科学者たちの研究を裏付けるものです。",
+        "reference": "脳病理と行動の相関関係は 科学者たちの研究を裏付けるものです",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 78,
+        "language": "ja",
+        "duration": 22.86,
+        "error_rate": 0.08139534883720931,
+        "error_details": {
+          "cer": 0.08139534883720931,
+          "ref_len": 86,
+          "hyp_len": 81,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 5
+        },
+        "rtf": 0.038,
+        "elapsed": 0.87,
+        "hypothesis": "バスは一日中地区間バスステーション川を渡ってを出発しますが、ほとんどのバス、特に東に向かうバスとジャカルブムタンに向かうものは午前6時半から午前7時半の間に出発します。",
+        "reference": "バスは一日中地区間バスステーション川を渡ってを出発しますが、ほとんどのバス、特に東に向かうバスとジャカール/ブムタンに向かうものは、午前6時30分から午前7時30分の間に出発します",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 79,
+        "language": "ja",
+        "duration": 15.6,
+        "error_rate": 0.11627906976744186,
+        "error_details": {
+          "cer": 0.11627906976744186,
+          "ref_len": 86,
+          "hyp_len": 78,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 8
+        },
+        "rtf": 0.048,
+        "elapsed": 0.76,
+        "hypothesis": "バスは一日中区間バスステーション川を渡って出発しますが、ほとんどのバス、特に東に向かうバスとジャカル、ブムタに向かうものは午前6時半から午前7時半の間に出発します。",
+        "reference": "バスは一日中地区間バスステーション川を渡ってを出発しますが、ほとんどのバス、特に東に向かうバスとジャカール/ブムタンに向かうものは、午前6時30分から午前7時30分の間に出発します",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 80,
+        "language": "ja",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.032,
+        "elapsed": 0.25,
+        "hypothesis": "列車、車、その他の多くの交通手段がそこから生まれました。",
+        "reference": "列車 車 その他の多くの交通手段がそこから生まれました",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 81,
+        "language": "ja",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.027,
+        "elapsed": 0.22,
+        "hypothesis": "列車、車、その他の多くの交通手段がそこから生まれました。",
+        "reference": "列車 車 その他の多くの交通手段がそこから生まれました",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 82,
+        "language": "ja",
+        "duration": 8.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.34,
+        "hypothesis": "列車、車、その他の多くの交通手段がそこから生まれました。",
+        "reference": "列車 車 その他の多くの交通手段がそこから生まれました",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 83,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.08571428571428572,
+        "error_details": {
+          "cer": 0.08571428571428572,
+          "ref_len": 70,
+          "hyp_len": 72,
+          "substitutions": 2,
+          "insertions": 3,
+          "deletions": 1
+        },
+        "rtf": 0.047,
+        "elapsed": 0.63,
+        "hypothesis": "教会の中央権力は1000年以上前からローマにあり、権力と資金が集中することで多くの人がその教理が満たされているかどうかを疑問視するようになりました。",
+        "reference": "教会の中央権力は千年以上も前からローマにあり 権力と資金が集中することで 多くの人がその教義が満たされているかどうかを疑問視するようになりました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 84,
+        "language": "ja",
+        "duration": 18.48,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "cer": 0.05714285714285714,
+          "ref_len": 70,
+          "hyp_len": 73,
+          "substitutions": 1,
+          "insertions": 3,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.77,
+        "hypothesis": "教会の中央権力は1000年以上も前からローマにあり、権力と資金が集中することで多くの人がその教義が満たされているかどうかを疑問視するようになりました。",
+        "reference": "教会の中央権力は千年以上も前からローマにあり 権力と資金が集中することで 多くの人がその教義が満たされているかどうかを疑問視するようになりました",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 85,
+        "language": "ja",
+        "duration": 10.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.033,
+        "elapsed": 0.35,
+        "hypothesis": "このようなご夫婦は、その赤ちゃんのために養子縁組制度を利用できます。",
+        "reference": "このようなご夫婦は その赤ちゃんのために養子縁組制度を利用できます",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 86,
+        "language": "ja",
+        "duration": 12.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.032,
+        "elapsed": 0.4,
+        "hypothesis": "このようなご夫婦は、その赤ちゃんのために養子縁組制度を利用できます。",
+        "reference": "このようなご夫婦は その赤ちゃんのために養子縁組制度を利用できます",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 87,
+        "language": "ja",
+        "duration": 19.2,
+        "error_rate": 0.015873015873015872,
+        "error_details": {
+          "cer": 0.015873015873015872,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.036,
+        "elapsed": 0.69,
+        "hypothesis": "彼の作品はその質の高さと詳細さが評価され、切手収集家の中では数少ない有名人の一人です。彼の作品だけを専門とする収集家もいるほどです。",
+        "reference": "彼の作品は その質の高さと詳細さが評価され 切手収集家の中では数少ない 有名人 の1人です 彼の作品だけを専門とする収集家もいるほどです",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 88,
+        "language": "ja",
+        "duration": 16.14,
+        "error_rate": 0.031746031746031744,
+        "error_details": {
+          "cer": 0.031746031746031744,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.73,
+        "hypothesis": "彼の作品はその質の高さと繊細さが評価され、切手収集家の中では数少ない有名人の一人です。彼の作品だけを専門とする収集家もいるほどです。",
+        "reference": "彼の作品は その質の高さと詳細さが評価され 切手収集家の中では数少ない 有名人 の1人です 彼の作品だけを専門とする収集家もいるほどです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 89,
+        "language": "ja",
+        "duration": 15.96,
+        "error_rate": 0.12698412698412698,
+        "error_details": {
+          "cer": 0.12698412698412698,
+          "ref_len": 63,
+          "hyp_len": 64,
+          "substitutions": 7,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.68,
+        "hypothesis": "彼の作品はその質の高さと詳細さが評価され、キッテ収集家だからか数少ない有名人の一人です。彼の作品だけを専門とする収集家もいるほどです。",
+        "reference": "彼の作品は その質の高さと詳細さが評価され 切手収集家の中では数少ない 有名人 の1人です 彼の作品だけを専門とする収集家もいるほどです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 90,
+        "language": "ja",
+        "duration": 8.7,
+        "error_rate": 0.0967741935483871,
+        "error_details": {
+          "cer": 0.0967741935483871,
+          "ref_len": 31,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.045,
+        "elapsed": 0.39,
+        "hypothesis": "カサブランカ、モロッコで最も買い物楽しみにくい場所の一つです。",
+        "reference": "カサブランカはモロッコで最も買い物を楽しみにくい場所の1つです",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 91,
+        "language": "ja",
+        "duration": 7.8,
+        "error_rate": 0.03225806451612903,
+        "error_details": {
+          "cer": 0.03225806451612903,
+          "ref_len": 31,
+          "hyp_len": 31,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.037,
+        "elapsed": 0.29,
+        "hypothesis": "カサブランカはモロッコで最も買い物を楽しみにくい場所の一つです。",
+        "reference": "カサブランカはモロッコで最も買い物を楽しみにくい場所の1つです",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 92,
+        "language": "ja",
+        "duration": 13.86,
+        "error_rate": 0.109375,
+        "error_details": {
+          "cer": 0.109375,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 7,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.58,
+        "hypothesis": "ムハンマルは日常生活を超えた問題に深い関心を持っていました。彼は瞑想のためにヌール、光の山にあるヒイラと言われる洞窟旅行を訪れました。",
+        "reference": "ムハンマドは 日常生活を超えた問題に深い関心を持っていました 彼は 瞑想のために ヌール 光の山にある ヒーラ と呼ばれる洞窟をよく訪れました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 93,
+        "language": "ja",
+        "duration": 20.64,
+        "error_rate": 0.05357142857142857,
+        "error_details": {
+          "cer": 0.05357142857142857,
+          "ref_len": 56,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 3,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.85,
+        "hypothesis": "主な被写体を配置すべき最も効果的な位置は、画像を縦・横3分の1ずつに分割した線の交点に囲まれた部分（例）を参照とされます。",
+        "reference": "主な被写体を配置すべき最も効果的な位置は 画像を縦横3分の1ずつに分割した線の交点に囲まれた部分例を参照とされます",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 94,
+        "language": "ja",
+        "duration": 13.08,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "cer": 0.07692307692307693,
+          "ref_len": 52,
+          "hyp_len": 53,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.58,
+        "hypothesis": "第二セットでは、デルポトロが序盤から優位でしたが、6対6に追いつかれた後、またもやタイムレースが必要となりました。",
+        "reference": "第2セットでは デル ポトロが序盤から優位でしたが 6-6に追いつかれた後 またもやタイブレークが必要となりました",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 95,
+        "language": "ja",
+        "duration": 11.22,
+        "error_rate": 0.05263157894736842,
+        "error_details": {
+          "cer": 0.05263157894736842,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.56,
+        "hypothesis": "交通流研究とは、二転間にいる個々の運転手と車両の動きとそれらの相互作用の研究です。",
+        "reference": "交通流研究とは 2点間にいる個々の運転手と車両の動きとそれらの相互作用の研究です",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 96,
+        "language": "ja",
+        "duration": 10.86,
+        "error_rate": 0.10526315789473684,
+        "error_details": {
+          "cer": 0.10526315789473684,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.51,
+        "hypothesis": "高速流研究とは、移転間にいる個々の運転手と車両の動きとそれらの相互作用の研究です。",
+        "reference": "交通流研究とは 2点間にいる個々の運転手と車両の動きとそれらの相互作用の研究です",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 97,
+        "language": "ja",
+        "duration": 11.88,
+        "error_rate": 0.045454545454545456,
+        "error_details": {
+          "cer": 0.045454545454545456,
+          "ref_len": 44,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.56,
+        "hypothesis": "ヤギの家畜化は約100万年前に始まり、その中心はイランのザグロス山脈西部であったとされています。",
+        "reference": "ヤギの家畜化は 約1万年前に始まり その中心はイランのザグロス山脈西部であったとされています",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 98,
+        "language": "ja",
+        "duration": 12.0,
+        "error_rate": 0.02564102564102564,
+        "error_details": {
+          "cer": 0.02564102564102564,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.51,
+        "hypothesis": "手に付いた水分が外側の層と反応し、妙な感触になり、一種の殻のようなものを形成します。",
+        "reference": "手についた水分が外側の層と反応し 妙な感触になり 一種の殻のようなものを形成します",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 99,
+        "language": "ja",
+        "duration": 11.7,
+        "error_rate": 0.02564102564102564,
+        "error_details": {
+          "cer": 0.02564102564102564,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.52,
+        "hypothesis": "手に付いた水分が外側の層と反応し、妙な感触になり、一種の殻のようなものを形成します。",
+        "reference": "手についた水分が外側の層と反応し 妙な感触になり 一種の殻のようなものを形成します",
+        "metric_type": "cer",
+        "n_inferences": 5
+      }
+    ]
+  }
+}

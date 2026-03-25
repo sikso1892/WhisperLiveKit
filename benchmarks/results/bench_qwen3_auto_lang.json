@@ -1,0 +1,42 @@
+{
+  "EN|explicit English": {
+    "wer": 1.9867549668874174,
+    "errors": 12,
+    "total": 604,
+    "detected": {
+      "English": 30
+    }
+  },
+  "EN|auto (no lang)": {
+    "wer": 1.9867549668874174,
+    "errors": 12,
+    "total": 604,
+    "detected": {
+      "English": 30
+    }
+  },
+  "KO|explicit Korean css=3": {
+    "cer": 2.0223152022315203,
+    "errors": 29,
+    "total": 1434,
+    "detected": {
+      "Korean": 30
+    }
+  },
+  "KO|auto css=2": {
+    "cer": 2.2315202231520224,
+    "errors": 32,
+    "total": 1434,
+    "detected": {
+      "Korean": 30
+    }
+  },
+  "KO|auto css=3": {
+    "cer": 2.092050209205021,
+    "errors": 30,
+    "total": 1434,
+    "detected": {
+      "Korean": 30
+    }
+  }
+}

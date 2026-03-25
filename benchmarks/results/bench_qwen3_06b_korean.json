@@ -1,0 +1,37 @@
+{
+  "KO css=2.0 ucn=4 utn=5": {
+    "metric": "CER",
+    "value": 3.8354253835425385,
+    "rtf": 0.027828490489640506,
+    "errors": 55,
+    "total": 1434
+  },
+  "KO css=3.0 ucn=4 utn=5": {
+    "metric": "CER",
+    "value": 4.044630404463041,
+    "rtf": 0.023537589531126505,
+    "errors": 58,
+    "total": 1434
+  },
+  "KO css=3.0 ucn=5 utn=7": {
+    "metric": "CER",
+    "value": 4.114365411436541,
+    "rtf": 0.02534104277194524,
+    "errors": 59,
+    "total": 1434
+  },
+  "KO css=4.0 ucn=4 utn=5": {
+    "metric": "CER",
+    "value": 3.905160390516039,
+    "rtf": 0.021390991444448452,
+    "errors": 56,
+    "total": 1434
+  },
+  "EN css=2.0 ucn=4 utn=5": {
+    "metric": "WER",
+    "value": 2.6490066225165565,
+    "rtf": 0.02908473961519086,
+    "errors": 16,
+    "total": 604
+  }
+}

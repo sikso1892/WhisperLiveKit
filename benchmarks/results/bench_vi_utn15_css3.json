@@ -1,0 +1,2018 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "model_size": "1.7b",
+  "quantization": "fp8",
+  "n_samples": 100,
+  "mode": "streaming",
+  "languages": [
+    "vi"
+  ],
+  "vi_streaming": {
+    "micro_wer": 6.72,
+    "overall_rtf": 0.049,
+    "total_audio_s": 1293.5,
+    "total_elapsed_s": 63.8,
+    "results": [
+      {
+        "index": 0,
+        "language": "vi",
+        "duration": 9.42,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.057,
+        "elapsed": 0.54,
+        "hypothesis": "mặt khác, băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm, giao thông gần như không bị gián đoạn.",
+        "reference": "mặt khác băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 1,
+        "language": "vi",
+        "duration": 9.3,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.5,
+        "hypothesis": "mặt khác, băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn.",
+        "reference": "mặt khác băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 2,
+        "language": "vi",
+        "duration": 8.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.059,
+        "elapsed": 0.51,
+        "hypothesis": "Mặt khác, băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn.",
+        "reference": "mặt khác băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 3,
+        "language": "vi",
+        "duration": 7.2,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.036,
+        "elapsed": 0.26,
+        "hypothesis": "Đây là cách rất quan trọng để phân biệt giữa động từ và từ ngữ.",
+        "reference": "đây là cách rất quan trọng để phân biệt giữa động từ và tân ngữ",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 4,
+        "language": "vi",
+        "duration": 5.88,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.29,
+        "hypothesis": "Đây là cách rất quan trọng để phân biệt giữa động từ và tên ngữ.",
+        "reference": "đây là cách rất quan trọng để phân biệt giữa động từ và tân ngữ",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 5,
+        "language": "vi",
+        "duration": 25.38,
+        "error_rate": 0.15384615384615385,
+        "error_details": {
+          "wer": 0.15384615384615385,
+          "ref_len": 39,
+          "hyp_len": 37,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.038,
+        "elapsed": 0.98,
+        "hypothesis": "Công viên quốc gia Litsviket có khu rừng rậm đặc, chủ yếu là cây sồi, cây vân sam, cây linh sam và cùng với sự pha trộn thẩm thực vật của vùng áp và địa trung hải.",
+        "reference": "công viên quốc gia plitvice lakes có khu rừng rậm rạp chủ yếu là cây sồi cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng alps và địa trung hải",
+        "metric_type": "wer",
+        "n_inferences": 9
+      },
+      {
+        "index": 6,
+        "language": "vi",
+        "duration": 20.52,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "wer": 0.07692307692307693,
+          "ref_len": 39,
+          "hyp_len": 38,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.046,
+        "elapsed": 0.94,
+        "hypothesis": "Công viên quốc gia Isvaylak có khu rừng rậm rạp chủ yếu là cây sồi, cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng on và địa trung hải.",
+        "reference": "công viên quốc gia plitvice lakes có khu rừng rậm rạp chủ yếu là cây sồi cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng alps và địa trung hải",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 7,
+        "language": "vi",
+        "duration": 16.68,
+        "error_rate": 0.05128205128205128,
+        "error_details": {
+          "wer": 0.05128205128205128,
+          "ref_len": 39,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.044,
+        "elapsed": 0.73,
+        "hypothesis": "Công viên quốc gia Plitvice có khu rừng rậm rạp chủ yếu là cây sồi, cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng ôn và địa trung hải.",
+        "reference": "công viên quốc gia plitvice lakes có khu rừng rậm rạp chủ yếu là cây sồi cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng alps và địa trung hải",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 8,
+        "language": "vi",
+        "duration": 9.18,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.4,
+        "hypothesis": "số Rossby càng nhỏ, ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường.",
+        "reference": "số rossby càng nhỏ ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 9,
+        "language": "vi",
+        "duration": 8.1,
+        "error_rate": 0.11764705882352941,
+        "error_details": {
+          "wer": 0.11764705882352941,
+          "ref_len": 17,
+          "hyp_len": 18,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.43,
+        "hypothesis": "số robot bay càng nhỏ, ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường.",
+        "reference": "số rossby càng nhỏ ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 10,
+        "language": "vi",
+        "duration": 9.18,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.38,
+        "hypothesis": "Số Rossby càng nhỏ, ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường.",
+        "reference": "số rossby càng nhỏ ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 11,
+        "language": "vi",
+        "duration": 9.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.52,
+        "hypothesis": "Chuyến đi thực tế là một phần quan trọng trong lớp học. Giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn.",
+        "reference": "chuyến đi thực tế là một phần quan trọng trong lớp học giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 12,
+        "language": "vi",
+        "duration": 11.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.057,
+        "elapsed": 0.65,
+        "hypothesis": "Chuyến đi thực tế là một phần quan trọng trong lớp học. Giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn.",
+        "reference": "chuyến đi thực tế là một phần quan trọng trong lớp học giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 13,
+        "language": "vi",
+        "duration": 10.08,
+        "error_rate": 0.06060606060606061,
+        "error_details": {
+          "wer": 0.06060606060606061,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.53,
+        "hypothesis": "Chuyến đi thực tế là một phần quan trọng trong lớp học. Giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi sẽ biết không phải là lựa chọn.",
+        "reference": "chuyến đi thực tế là một phần quan trọng trong lớp học giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 14,
+        "language": "vi",
+        "duration": 14.16,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.73,
+        "hypothesis": "Theo quy tắc này, vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang. Xem ví dụ.",
+        "reference": "theo quy tắc này vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang xem ví dụ",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 15,
+        "language": "vi",
+        "duration": 14.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.71,
+        "hypothesis": "Theo quy tắc này, vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang. Xem ví dụ.",
+        "reference": "theo quy tắc này vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang xem ví dụ",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 16,
+        "language": "vi",
+        "duration": 16.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.7,
+        "hypothesis": "theo quy tắc này, vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang. Xem ví dụ.",
+        "reference": "theo quy tắc này vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang xem ví dụ",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 17,
+        "language": "vi",
+        "duration": 10.32,
+        "error_rate": 0.04,
+        "error_details": {
+          "wer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.56,
+        "hypothesis": "Quân đoàn công binh Hoa Kỳ ước tính 6 in nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước.",
+        "reference": "quân đoàn công binh hoa kỳ ước tính 6 inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 18,
+        "language": "vi",
+        "duration": 9.48,
+        "error_rate": 0.16,
+        "error_details": {
+          "wer": 0.16,
+          "ref_len": 25,
+          "hyp_len": 24,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.055,
+        "elapsed": 0.52,
+        "hypothesis": "Quân đoàn công binh Hoa Kỳ ước tính sáu In-Nước mơ có thể làm vỡ những đoạn đê đã bị hư tổn từ trước.",
+        "reference": "quân đoàn công binh hoa kỳ ước tính 6 inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 19,
+        "language": "vi",
+        "duration": 10.62,
+        "error_rate": 0.04,
+        "error_details": {
+          "wer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.49,
+        "hypothesis": "Quân đoàn công binh Hoa Kỳ ước tính sáu inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước.",
+        "reference": "quân đoàn công binh hoa kỳ ước tính 6 inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 20,
+        "language": "vi",
+        "duration": 17.4,
+        "error_rate": 0.075,
+        "error_details": {
+          "wer": 0.075,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.91,
+        "hypothesis": "Nó liên quan, nhưng thường không bao gồm kiểu dạo chơi hay kiểu leo núi sử dụng ván trượt tuyết, kiểu on-bike, kiểu sao được thực hiện ở địa hình dốc và cần ván trượt và dày cứng hơn nhiều.",
+        "reference": "nó liên quan nhưng thường không bao gồm kiểu dạo chơi hay kiểu leo núi sử dụng ván trượt tuyết kiểu alpes kiểu sau được thực hiện ở địa hình dốc và cần ván trượt và giày cứng hơn nhiều",
+        "metric_type": "wer",
+        "n_inferences": 7
+      },
+      {
+        "index": 21,
+        "language": "vi",
+        "duration": 11.64,
+        "error_rate": 0.11428571428571428,
+        "error_details": {
+          "wer": 0.11428571428571428,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.056,
+        "elapsed": 0.65,
+        "hypothesis": "Nếu vượt biển Bắc băng tuyết vào mùa đông, hãy kiểm tra lại bồn ngủ, vì khi tàu phá băng sẽ tạo ra những tiếng nổ kinh khủng mà không phải ai cũng chịu đựng được.",
+        "reference": "nếu vượt biển bắc baltic vào mùa đông hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 22,
+        "language": "vi",
+        "duration": 13.8,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "wer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.66,
+        "hypothesis": "nếu vượt biển Bắc băng tuyết vào mùa đông, hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được.",
+        "reference": "nếu vượt biển bắc baltic vào mùa đông hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 23,
+        "language": "vi",
+        "duration": 12.66,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "wer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.68,
+        "hypothesis": "Nếu vượt biển Bắc Băng Tích vào mùa đông, hãy kiểm tra lại buồng ngủ, vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được.",
+        "reference": "nếu vượt biển bắc baltic vào mùa đông hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 24,
+        "language": "vi",
+        "duration": 9.9,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "wer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.54,
+        "hypothesis": "Quy trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực.",
+        "reference": "buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 25,
+        "language": "vi",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.4,
+        "hypothesis": "Buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực.",
+        "reference": "buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 26,
+        "language": "vi",
+        "duration": 8.28,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "wer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.067,
+        "elapsed": 0.55,
+        "hypothesis": "Bộ trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực.",
+        "reference": "buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 27,
+        "language": "vi",
+        "duration": 8.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.42,
+        "hypothesis": "Mạng Internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân.",
+        "reference": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 28,
+        "language": "vi",
+        "duration": 7.5,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 0.3,
+        "hypothesis": "Mạng Internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân.",
+        "reference": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 29,
+        "language": "vi",
+        "duration": 7.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.32,
+        "hypothesis": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân.",
+        "reference": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 30,
+        "language": "vi",
+        "duration": 14.4,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "wer": 0.027777777777777776,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.65,
+        "hypothesis": "cũng có lợi cho ai đó mua thẻ wheel vì nó có thể cho phép bạn tiến vào hoặc các công viên ở Nam Phi hoặc tất cả các công viên quốc gia ở Nam Phi",
+        "reference": "cũng có lợi cho ai đó mua thẻ wild vì nó có thể cho phép bạn tiến vào hoặc các công viên ở nam phi hoặc tất cả các công viên quốc gia ở nam phi",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 31,
+        "language": "vi",
+        "duration": 16.56,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "wer": 0.027777777777777776,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.63,
+        "hypothesis": "cũng có lợi cho ai đó mua thẻ Wheel vì nó có thể cho phép bạn tiến vào hoặc các công viên ở Nam Phi hoặc tất cả các công viên quốc gia ở Nam Phi.",
+        "reference": "cũng có lợi cho ai đó mua thẻ wild vì nó có thể cho phép bạn tiến vào hoặc các công viên ở nam phi hoặc tất cả các công viên quốc gia ở nam phi",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 32,
+        "language": "vi",
+        "duration": 15.42,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.83,
+        "hypothesis": "các đề cử khác bao gồm phim, đạo diễn, quay phim, thiết kế trang phục, biên tập phim, nhạc phim gốc, thiết kế sản xuất, biên tập âm thanh, hòa âm và kịch bản gốc hay nhất.",
+        "reference": "các đề cử khác bao gồm phim đạo diễn quay phim thiết kế trang phục biên tập phim nhạc phim gốc thiết kế sản xuất biên tập âm thanh hòa âm và kịch bản gốc hay nhất",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 33,
+        "language": "vi",
+        "duration": 15.12,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "wer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.79,
+        "hypothesis": "các đề cử khác bao gồm phim, đạo diễn, quay phim, thiết kế trang phục, biên tập phim, dạp phim gốc, thiết kế sản xuất, biên tập âm thanh, hòa âm và kịch bản gốc hay nhất.",
+        "reference": "các đề cử khác bao gồm phim đạo diễn quay phim thiết kế trang phục biên tập phim nhạc phim gốc thiết kế sản xuất biên tập âm thanh hòa âm và kịch bản gốc hay nhất",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 34,
+        "language": "vi",
+        "duration": 15.06,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.75,
+        "hypothesis": "các đề cử khác bao gồm phim, đạo diễn, quay phim, thiết kế trang phục, biên tập phim, nhạc phim gốc, thiết kế sản xuất, biên tập âm thanh, hòa âm và kịch bản gốc hay nhất.",
+        "reference": "các đề cử khác bao gồm phim đạo diễn quay phim thiết kế trang phục biên tập phim nhạc phim gốc thiết kế sản xuất biên tập âm thanh hòa âm và kịch bản gốc hay nhất",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 35,
+        "language": "vi",
+        "duration": 6.18,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 12,
+          "hyp_len": 12,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.26,
+        "hypothesis": "tương tự nam giới phải mặc quần dài che phủ đầu gối.",
+        "reference": "tương tự nam giới phải mặc quần dài che phủ đầu gối",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 36,
+        "language": "vi",
+        "duration": 5.1,
+        "error_rate": 0.25,
+        "error_details": {
+          "wer": 0.25,
+          "ref_len": 12,
+          "hyp_len": 12,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.25,
+        "hypothesis": "Các đối vật khác cũng thể hiện sự chiên ăn với Luna.",
+        "reference": "các đô vật khác cũng thể hiện sự tri ân với luna",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 37,
+        "language": "vi",
+        "duration": 6.54,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 12,
+          "hyp_len": 12,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 0.26,
+        "hypothesis": "Các đô vật khác cũng thể hiện sự tri ân với Luna.",
+        "reference": "các đô vật khác cũng thể hiện sự tri ân với luna",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 38,
+        "language": "vi",
+        "duration": 22.32,
+        "error_rate": 0.23255813953488372,
+        "error_details": {
+          "wer": 0.23255813953488372,
+          "ref_len": 43,
+          "hyp_len": 49,
+          "substitutions": 4,
+          "insertions": 6,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 1.0,
+        "hypothesis": "mặc dù không ai chắc chắn về tác giả của văn kiện, người ta biết rằng vào những ngày đầu văn kiện viết trên tấm da dê lớn, dài 29, 3 trên 4 in và rộng 24, 1 trên 2 in này đã được cuộn lại để bảo quản.",
+        "reference": "mặc dù không ai chắc chắn về tác giả của văn kiện người ta biết rằng vào những ngày đầu văn kiện viết trên tấm da dê lớn dài 29¾ inch và rộng 24½ inch này đã được cuộn lại để bảo quản",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 39,
+        "language": "vi",
+        "duration": 25.08,
+        "error_rate": 0.023255813953488372,
+        "error_details": {
+          "wer": 0.023255813953488372,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.95,
+        "hypothesis": "Ngôn ngữ chính thức của Barcelona là tiếng Catalan và tiếng Tây Ban Nha. Khoảng một nửa dân số thích nói tiếng Catalan hơn và đại đa số người dân hiểu thứ tiếng này. Hầu như ai cũng biết tiếng Tây Ban Nha.",
+        "reference": "ngôn ngữ chính thức của barcelona là tiếng catalan và tiếng tây ban nha khoảng một nửa dân số thích nói tiếng catalan hơn và đại đa số người dân hiểu thứ tiếng này hầu như ai cũng biết tiếng tây ba nha",
+        "metric_type": "wer",
+        "n_inferences": 9
+      },
+      {
+        "index": 40,
+        "language": "vi",
+        "duration": 18.84,
+        "error_rate": 0.023255813953488372,
+        "error_details": {
+          "wer": 0.023255813953488372,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.79,
+        "hypothesis": "Ngôn ngữ chính thức của Barcelona là tiếng Catalan và tiếng Tây Ban Nha. Khoảng một nửa dân số thích nói tiếng Catalan hơn và đại đa số người dân hiểu thứ tiếng này. Hầu như ai cũng biết tiếng Tây Ban Nha.",
+        "reference": "ngôn ngữ chính thức của barcelona là tiếng catalan và tiếng tây ban nha khoảng một nửa dân số thích nói tiếng catalan hơn và đại đa số người dân hiểu thứ tiếng này hầu như ai cũng biết tiếng tây ba nha",
+        "metric_type": "wer",
+        "n_inferences": 7
+      },
+      {
+        "index": 41,
+        "language": "vi",
+        "duration": 11.16,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.5,
+        "hypothesis": "Số người có mặt quá lớn nên việc mọi người tới được nơi tổ chức lễ tang tại quảng trường Thánh Peter là không thể.",
+        "reference": "số người có mặt quá lớn nên việc mọi người tới được nơi tổ chức lễ tang tại quảng trường thánh peter là không thể",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 42,
+        "language": "vi",
+        "duration": 8.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.056,
+        "elapsed": 0.48,
+        "hypothesis": "Số người có mặt quá lớn nên việc mọi người tới được nơi tổ chức lễ tang tại quảng trường Thánh Peter là không thể.",
+        "reference": "số người có mặt quá lớn nên việc mọi người tới được nơi tổ chức lễ tang tại quảng trường thánh peter là không thể",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 43,
+        "language": "vi",
+        "duration": 11.88,
+        "error_rate": 0.23076923076923078,
+        "error_details": {
+          "wer": 0.23076923076923078,
+          "ref_len": 26,
+          "hyp_len": 30,
+          "substitutions": 2,
+          "insertions": 4,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.64,
+        "hypothesis": "Nó nổi tiếng là tiêu điểm của sự xa hoa bắt đầu từ khoảng năm 400 trước Công nguyên và kéo dài đến tận khoảng năm 1100 sau Công nguyên.",
+        "reference": "nó nổi tiếng là tiêu điểm của sự xa hoa bắt đầu từ khoảng năm 400 tcn và kéo dài đến tận khoảng năm 1100 scn",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 44,
+        "language": "vi",
+        "duration": 12.78,
+        "error_rate": 0.23076923076923078,
+        "error_details": {
+          "wer": 0.23076923076923078,
+          "ref_len": 26,
+          "hyp_len": 30,
+          "substitutions": 2,
+          "insertions": 4,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.59,
+        "hypothesis": "Nó nổi tiếng là tiêu điểm của sự xa hoa bắt đầu từ khoảng năm 400 trước Công nguyên và kéo dài đến tận khoảng năm 1100 sau Công nguyên.",
+        "reference": "nó nổi tiếng là tiêu điểm của sự xa hoa bắt đầu từ khoảng năm 400 tcn và kéo dài đến tận khoảng năm 1100 scn",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 45,
+        "language": "vi",
+        "duration": 9.84,
+        "error_rate": 0.2692307692307692,
+        "error_details": {
+          "wer": 0.2692307692307692,
+          "ref_len": 26,
+          "hyp_len": 30,
+          "substitutions": 3,
+          "insertions": 4,
+          "deletions": 0
+        },
+        "rtf": 0.062,
+        "elapsed": 0.61,
+        "hypothesis": "Nó nổi tiếng là tiêu điểm của sự sa hoa bắt đầu từ khoảng năm 400 trước Công nguyên và kéo dài đến tận khoảng năm 1100 sau Công nguyên.",
+        "reference": "nó nổi tiếng là tiêu điểm của sự xa hoa bắt đầu từ khoảng năm 400 tcn và kéo dài đến tận khoảng năm 1100 scn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 46,
+        "language": "vi",
+        "duration": 13.5,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 5,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.62,
+        "hypothesis": "tan rằng được biết đến khá sớm để giữ cát gây tại vị trí tuy nhiên dần dần người ta nhận ra các đường gây này sẽ làm việc hiệu quả hơn nếu có miếng kim loại nhỏ phần đầu.",
+        "reference": "thanh giằng được biết đến khá sớm để giữ các ray tại vị trí tuy nhiên dần dần người ta nhận ra các đường ray này sẽ làm việc hiệu quả hơn nếu có miếng kim loại nhỏ phần đầu",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 47,
+        "language": "vi",
+        "duration": 12.36,
+        "error_rate": 0.1,
+        "error_details": {
+          "wer": 0.1,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.68,
+        "hypothesis": "Thanh dần được biết đến khá sớm để giữ cát gây tại vị trí. Tuy nhiên, dần dần người ta nhận ra các đường gây này sẽ làm việc hiệu quả hơn nếu có miếng kim loại nhỏ phần đầu.",
+        "reference": "thanh giằng được biết đến khá sớm để giữ các ray tại vị trí tuy nhiên dần dần người ta nhận ra các đường ray này sẽ làm việc hiệu quả hơn nếu có miếng kim loại nhỏ phần đầu",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 48,
+        "language": "vi",
+        "duration": 20.4,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "wer": 0.07692307692307693,
+          "ref_len": 52,
+          "hyp_len": 52,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.074,
+        "elapsed": 1.52,
+        "hypothesis": "Thông báo thông thường trong khuôn Metro chỉ được phát bằng tiếng Catalunya. Tuy nhiên, với những sự cố bất ngờ, thì thông báo sẽ được thực hiện qua hệ thống tự động bằng nhiều thứ tiếng, gồm tiếng Tây Ban Nha, tiếng Anh, tiếng Pháp, tiếng Ai cập và tiếng Nhật.",
+        "reference": "thông báo thông thường trong khu metro chỉ được phát bằng tiếng catalunya tuy nhiên với những sự cố bất ngờ thì thông báo sẽ được thực hiên qua hệ thống tự động bằng nhiều thứ tiếng gồm tiếng tây ban nha tiếng anh tiếng pháp tiếng ả rập và tiếng nhật",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 49,
+        "language": "vi",
+        "duration": 22.56,
+        "error_rate": 0.057692307692307696,
+        "error_details": {
+          "wer": 0.057692307692307696,
+          "ref_len": 52,
+          "hyp_len": 52,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.067,
+        "elapsed": 1.52,
+        "hypothesis": "Thông báo thông thường trong khu metro chỉ được phát bằng tiếng Catalonia. Tuy nhiên, với những sự cố bất ngờ, thì thông báo sẽ được phát thông qua hệ thống tự động bằng nhiều thứ tiếng, gồm tiếng Tây Ban Nha, tiếng Anh, tiếng Pháp, tiếng Ả Rập và tiếng Nhật.",
+        "reference": "thông báo thông thường trong khu metro chỉ được phát bằng tiếng catalunya tuy nhiên với những sự cố bất ngờ thì thông báo sẽ được thực hiên qua hệ thống tự động bằng nhiều thứ tiếng gồm tiếng tây ban nha tiếng anh tiếng pháp tiếng ả rập và tiếng nhật",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 50,
+        "language": "vi",
+        "duration": 22.62,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 52,
+          "hyp_len": 52,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.94,
+        "hypothesis": "Thông báo thông thường trong khu metro chỉ được phát bằng tiếng Catalan. Tuy nhiên với những sự cố bất ngờ, thì thông báo sẽ được thực hiện qua hệ thống tự động bằng nhiều thứ tiếng, gồm tiếng Tây Ban Nha, tiếng Anh, tiếng Pháp, tiếng Ả Rập và tiếng Nhật.",
+        "reference": "thông báo thông thường trong khu metro chỉ được phát bằng tiếng catalunya tuy nhiên với những sự cố bất ngờ thì thông báo sẽ được thực hiên qua hệ thống tự động bằng nhiều thứ tiếng gồm tiếng tây ban nha tiếng anh tiếng pháp tiếng ả rập và tiếng nhật",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 51,
+        "language": "vi",
+        "duration": 11.94,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.61,
+        "hypothesis": "Đây là một cơ hội tốt để ngắm nhìn hiện tượng cực quang vì bầu trời sẽ ít nhiều tối hơn trong cả ngày.",
+        "reference": "đây là một cơ hội tốt để ngắm nhìn hiện tượng cực quang vì bầu trời sẽ ít nhiều tối hơn trong cả ngày",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 52,
+        "language": "vi",
+        "duration": 8.88,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.48,
+        "hypothesis": "Đây là một cơ hội tốt để ngắm nhìn hiện tượng cực quang vì bầu trời sẽ ít nhiều tối hơn trong cả ngày.",
+        "reference": "đây là một cơ hội tốt để ngắm nhìn hiện tượng cực quang vì bầu trời sẽ ít nhiều tối hơn trong cả ngày",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 53,
+        "language": "vi",
+        "duration": 13.68,
+        "error_rate": 0.025,
+        "error_details": {
+          "wer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.7,
+        "hypothesis": "việc quá nhiều người sở hữu xe hơi cũng dẫn đến sự gia tăng số vụ tai nạn giao thông, dẫn đến phát minh kỹ thuật mới trong ngành y tế để phục hồi những tổn thương trên thân thể.",
+        "reference": "việc quá nhiều người sở hữu xe hơi cũng dẫn đến sự gia tăng số vụ tai nạn giao thông dẫn tới phát minh kỹ thuật mới trong ngành y tế để phục hồi những tổn thương trên thân thể",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 54,
+        "language": "vi",
+        "duration": 14.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.77,
+        "hypothesis": "Việc quá nhiều người sở hữu xe hơi cũng dẫn đến sự gia tăng số vụ tai nạn giao thông, dẫn tới phát minh kỹ thuật mới trong ngành y tế để phục hồi những tổn thương trên thân thể.",
+        "reference": "việc quá nhiều người sở hữu xe hơi cũng dẫn đến sự gia tăng số vụ tai nạn giao thông dẫn tới phát minh kỹ thuật mới trong ngành y tế để phục hồi những tổn thương trên thân thể",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 55,
+        "language": "vi",
+        "duration": 9.48,
+        "error_rate": 0.08333333333333333,
+        "error_details": {
+          "wer": 0.08333333333333333,
+          "ref_len": 24,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.056,
+        "elapsed": 0.53,
+        "hypothesis": "Chúng hầu hết đều là bãi biển cát an toàn cho việc bơi lội và hầu hết có bóng mát từ các cây bohu tucawa.",
+        "reference": "chúng hầu hết đều là bãi biển cát an toàn cho việc bơi lội và hầu hết có bóng mát từ các cây pohutukawa",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 56,
+        "language": "vi",
+        "duration": 12.36,
+        "error_rate": 0.041666666666666664,
+        "error_details": {
+          "wer": 0.041666666666666664,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.54,
+        "hypothesis": "chúng hầu hết đều là bãi biển cát an toàn cho việc bơi lội và hầu hết có bóng mát từ các cây bohutucawa.",
+        "reference": "chúng hầu hết đều là bãi biển cát an toàn cho việc bơi lội và hầu hết có bóng mát từ các cây pohutukawa",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 57,
+        "language": "vi",
+        "duration": 10.86,
+        "error_rate": 0.041666666666666664,
+        "error_details": {
+          "wer": 0.041666666666666664,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.5,
+        "hypothesis": "chúng hầu hết đều là bãi biển cát an toàn cho việc bơi lội và hầu hết có bóng mát từ các cây bohutukawa.",
+        "reference": "chúng hầu hết đều là bãi biển cát an toàn cho việc bơi lội và hầu hết có bóng mát từ các cây pohutukawa",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 58,
+        "language": "vi",
+        "duration": 18.18,
+        "error_rate": 0.3783783783783784,
+        "error_details": {
+          "wer": 0.3783783783783784,
+          "ref_len": 37,
+          "hyp_len": 44,
+          "substitutions": 7,
+          "insertions": 7,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.95,
+        "hypothesis": "Xe bến xuất phát từ trạm xe bến Liên Nguyện, dọc con sông, chạy cả ngày dù chủ yếu, đặc biệt là các xe đến phía đông và ra cát, bung thang. Xe xuất phát từ lúc 6 giờ 30 đến 7 giờ 30.",
+        "reference": "xe buýt xuất phát từ trạm xe buýt liên huyện dọc con sông chạy cả ngày dù chủ yếu đặc biệt là các xe đến phía đông và jakar/bumthang sẽ xuất phát từ lúc 06:30 đến 07:30",
+        "metric_type": "wer",
+        "n_inferences": 7
+      },
+      {
+        "index": 59,
+        "language": "vi",
+        "duration": 16.32,
+        "error_rate": 0.21621621621621623,
+        "error_details": {
+          "wer": 0.21621621621621623,
+          "ref_len": 37,
+          "hyp_len": 40,
+          "substitutions": 5,
+          "insertions": 3,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.77,
+        "hypothesis": "Xe bít xuất phát từ trạm xe bít liên huyện, dọc con sông, chạy cả ngày dù chủ yếu, đặc biệt là các xe đến phía đông và ra cát, bung thang sẽ xuất phát từ lúc 6:30 đến 7:30.",
+        "reference": "xe buýt xuất phát từ trạm xe buýt liên huyện dọc con sông chạy cả ngày dù chủ yếu đặc biệt là các xe đến phía đông và jakar/bumthang sẽ xuất phát từ lúc 06:30 đến 07:30",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 60,
+        "language": "vi",
+        "duration": 18.72,
+        "error_rate": 0.2702702702702703,
+        "error_details": {
+          "wer": 0.2702702702702703,
+          "ref_len": 37,
+          "hyp_len": 44,
+          "substitutions": 3,
+          "insertions": 7,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.86,
+        "hypothesis": "Xe buýt xuất phát từ trạm xe buýt liên huyện, dọc con sông, chạy cả ngày, dù chủ yếu, đặc biệt là các xe đến phía đông và ra cát, cung thang sẽ xuất phát từ lúc 6 giờ 30 đến 7 giờ 30.",
+        "reference": "xe buýt xuất phát từ trạm xe buýt liên huyện dọc con sông chạy cả ngày dù chủ yếu đặc biệt là các xe đến phía đông và jakar/bumthang sẽ xuất phát từ lúc 06:30 đến 07:30",
+        "metric_type": "wer",
+        "n_inferences": 7
+      },
+      {
+        "index": 61,
+        "language": "vi",
+        "duration": 8.34,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.058,
+        "elapsed": 0.49,
+        "hypothesis": "đội nhóm làm việc từ xa phải đáp ứng tiêu chuẩn chất lượng như đội nhóm truyền thống, nhưng vẫn có những khác biệt nhỏ.",
+        "reference": "đội nhóm làm việc từ xa phải đáp ứng tiêu chuẩn chất lượng như đội nhóm truyền thống nhưng vẫn có những khác biệt nhỏ",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 62,
+        "language": "vi",
+        "duration": 9.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.49,
+        "hypothesis": "đội nhóm làm việc từ xa phải đáp ứng tiêu chuẩn chất lượng như đội nhóm truyền thống, nhưng vẫn có những khác biệt nhỏ.",
+        "reference": "đội nhóm làm việc từ xa phải đáp ứng tiêu chuẩn chất lượng như đội nhóm truyền thống nhưng vẫn có những khác biệt nhỏ",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 63,
+        "language": "vi",
+        "duration": 9.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.47,
+        "hypothesis": "đội nhóm làm việc từ xa phải đáp ứng tiêu chuẩn chất lượng như đội nhóm truyền thống, nhưng vẫn có những khác biệt nhỏ.",
+        "reference": "đội nhóm làm việc từ xa phải đáp ứng tiêu chuẩn chất lượng như đội nhóm truyền thống nhưng vẫn có những khác biệt nhỏ",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 64,
+        "language": "vi",
+        "duration": 10.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.058,
+        "elapsed": 0.6,
+        "hypothesis": "Chỉ các đột biến ở tế bào dòng vi khuẩn mới có thể di truyền sang con cái, trong khi đột biến ở nơi khác có thể gây chết tế bào hay ung thư.",
+        "reference": "chỉ các đột biến ở tế bào dòng vi khuẩn mới có thể di truyền sang con cái trong khi đột biến ở nơi khác có thể gây chết tế bào hay ung thư",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 65,
+        "language": "vi",
+        "duration": 13.2,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.62,
+        "hypothesis": "chỉ các đột biến ở tế bào dòng vi khuẩn mới có thể di truyền sang con cái, trong khi đột biến ở nơi khác có thể gây chết tế bào hay ung thư.",
+        "reference": "chỉ các đột biến ở tế bào dòng vi khuẩn mới có thể di truyền sang con cái trong khi đột biến ở nơi khác có thể gây chết tế bào hay ung thư",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 66,
+        "language": "vi",
+        "duration": 11.82,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.63,
+        "hypothesis": "Chỉ các đột biến ở tế bào dòng vi khuẩn mới có thể di truyền sang con cái, trong khi đột biến ở nơi khác có thể gây chết tế bào hay ung thư.",
+        "reference": "chỉ các đột biến ở tế bào dòng vi khuẩn mới có thể di truyền sang con cái trong khi đột biến ở nơi khác có thể gây chết tế bào hay ung thư",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 67,
+        "language": "vi",
+        "duration": 8.88,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "wer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.06,
+        "elapsed": 0.54,
+        "hypothesis": "Tuy nhiên, điều đó không đúng. Mặc dù có thứ gì đó được viết ở mặt sau của tài liệu, nhưng đó không phải là bản đồ khôi báo.",
+        "reference": "tuy nhiên điều đó không đúng mặc dù có thứ gì đó được viết ở mặt sau của tài liệu nhưng đó không phải là bản đồ kho báu",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 68,
+        "language": "vi",
+        "duration": 9.96,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "wer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.51,
+        "hypothesis": "Tuy nhiên, điều đó không đúng. Mặc dù có thứ gì đó được viết ở mặt sau của tài liệu, nhưng đó không phải là bản đồ khố báo.",
+        "reference": "tuy nhiên điều đó không đúng mặc dù có thứ gì đó được viết ở mặt sau của tài liệu nhưng đó không phải là bản đồ kho báu",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 69,
+        "language": "vi",
+        "duration": 10.26,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "wer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.52,
+        "hypothesis": "Tuy nhiên điều đó không đúng, mặc dù có thứ gì đó được viết ở mặt sau của tài liệu, nhưng đó không phải là bản đồ khai báo.",
+        "reference": "tuy nhiên điều đó không đúng mặc dù có thứ gì đó được viết ở mặt sau của tài liệu nhưng đó không phải là bản đồ kho báu",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 70,
+        "language": "vi",
+        "duration": 11.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.55,
+        "hypothesis": "Trầm tích này là cần thiết để tạo ra các bãi cát và bãi biển đóng vai trò như môi trường sống của loài hoang dã.",
+        "reference": "trầm tích này là cần thiết để tạo ra các bãi cát và bãi biển đóng vai trò như môi trường sống của loài hoang dã",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 71,
+        "language": "vi",
+        "duration": 8.94,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.059,
+        "elapsed": 0.53,
+        "hypothesis": "Chạm tích này là cần thiết để tạo ra các bãi cát và bãi biển đóng vai trò như môi trường sống của loài hoang dã.",
+        "reference": "trầm tích này là cần thiết để tạo ra các bãi cát và bãi biển đóng vai trò như môi trường sống của loài hoang dã",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 72,
+        "language": "vi",
+        "duration": 9.42,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.48,
+        "hypothesis": "Chầm tích này là cần thiết để tạo ra các bãi cát và bãi biển, đóng vai trò như môi trường sống của loài hoang dã.",
+        "reference": "trầm tích này là cần thiết để tạo ra các bãi cát và bãi biển đóng vai trò như môi trường sống của loài hoang dã",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 73,
+        "language": "vi",
+        "duration": 20.16,
+        "error_rate": 0.043478260869565216,
+        "error_details": {
+          "wer": 0.043478260869565216,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.99,
+        "hypothesis": "Vì vào thời kỳ cực thịnh của chúng, ô nhiễm ánh sáng không phải là vấn đề lớn như hiện nay. Chúng thường được đặt ở các thành phố hoặc các khu trường sở dễ tiếp cận hơn những cái được xây ở thời hiện đại.",
+        "reference": "vì vào thời kỳ cực thịnh của chúng ô nhiễm ánh sáng không phải là vấn đề lớn như hiện nay chúng thường được đặt ở các thành phố hoặc các khu trường sở dễ tiếp cập hơn những các được xây ở thời hiện đại",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 74,
+        "language": "vi",
+        "duration": 20.16,
+        "error_rate": 0.043478260869565216,
+        "error_details": {
+          "wer": 0.043478260869565216,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.91,
+        "hypothesis": "vì vào thời kỳ cực thịnh của chúng, ô nhiễm ánh sáng không phải là vấn đề lớn như hiện nay. Chúng thường được đặt ở các thành phố hoặc các khu trường sở dễ tiếp cận hơn những cát được xây ở thời hiện đại.",
+        "reference": "vì vào thời kỳ cực thịnh của chúng ô nhiễm ánh sáng không phải là vấn đề lớn như hiện nay chúng thường được đặt ở các thành phố hoặc các khu trường sở dễ tiếp cập hơn những các được xây ở thời hiện đại",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 75,
+        "language": "vi",
+        "duration": 16.56,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 45,
+          "hyp_len": 44,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.049,
+        "elapsed": 0.81,
+        "hypothesis": "Kağuen Giza hay khu lăng mộ Giza trong thung lũng lăng mộ của Ai Cập có nhiều kim tự tháp, trong đó đại kim tự tháp là kim tự tháp lớn nhất, nhiều ngôi mộ nhỏ, nhiều đền đài và tượng đài nhân sư.",
+        "reference": "cao nguyên giza hay khu lăng mộ giza trong thung lũng lăng mộ của ai cập có nhiều kim tự tháp trong đó đại kim tự tháp là kim tự tháp lớn nhất nhiều ngôi mộ nhỏ nhiều đền đài và tượng đại nhân sư",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 76,
+        "language": "vi",
+        "duration": 16.56,
+        "error_rate": 0.044444444444444446,
+        "error_details": {
+          "wer": 0.044444444444444446,
+          "ref_len": 45,
+          "hyp_len": 46,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.83,
+        "hypothesis": "Ca Nguyên Giza hay Khu Lăng Mộ Giza trong thung lũng lăng mộ của Ai Cập có rất nhiều kim tự tháp, trong đó Đại Kim tự tháp là kim tự tháp lớn nhất, nhiều ngôi mộ nhỏ, nhiều đền đài và tượng đại nhân sư.",
+        "reference": "cao nguyên giza hay khu lăng mộ giza trong thung lũng lăng mộ của ai cập có nhiều kim tự tháp trong đó đại kim tự tháp là kim tự tháp lớn nhất nhiều ngôi mộ nhỏ nhiều đền đài và tượng đại nhân sư",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 77,
+        "language": "vi",
+        "duration": 15.12,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 5,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.83,
+        "hypothesis": "Cao nguyên Gizà hay khu lăng mộ Gizà trong thung lũng lăng mộ có hai cặp có nhiều kim tự tháp, trong đó đại kim tự tháp là kim tự tháp lớn nhất, nhiều ngôi mộ nhỏ, nhiều đền đài và tượng đại nhân sư.",
+        "reference": "cao nguyên giza hay khu lăng mộ giza trong thung lũng lăng mộ của ai cập có nhiều kim tự tháp trong đó đại kim tự tháp là kim tự tháp lớn nhất nhiều ngôi mộ nhỏ nhiều đền đài và tượng đại nhân sư",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 78,
+        "language": "vi",
+        "duration": 12.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.56,
+        "hypothesis": "Ví dụ, định dạng chụp ảnh tĩnh phổ biến nhất trên thế giới là 35mm. Kích cỡ phim thịnh hành trước khi kết thúc thời đại phim analog.",
+        "reference": "ví dụ định dạng chụp ảnh tĩnh phổ biến nhất trên thế giới là 35mm kích cỡ phim thịnh hành trước khi kết thúc thời đại phim analog",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 79,
+        "language": "vi",
+        "duration": 10.92,
+        "error_rate": 0.07142857142857142,
+        "error_details": {
+          "wer": 0.07142857142857142,
+          "ref_len": 28,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.54,
+        "hypothesis": "Ví dụ, định dạng chụp ảnh tĩnh phổ biến nhất trên thế giới là 35 mm kích cỡ phim thịnh hành trước khi kết thúc thời đại phim analog.",
+        "reference": "ví dụ định dạng chụp ảnh tĩnh phổ biến nhất trên thế giới là 35mm kích cỡ phim thịnh hành trước khi kết thúc thời đại phim analog",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 80,
+        "language": "vi",
+        "duration": 14.28,
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "wer": 0.21428571428571427,
+          "ref_len": 28,
+          "hyp_len": 29,
+          "substitutions": 5,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.64,
+        "hypothesis": "Ví dụ, định dạng chụp ảnh tĩnh phổ biến nhất trên thế giới là 35mm. Kết cả ở phim tĩnh thành trước khi kết thúc thời đẩy phim analog.",
+        "reference": "ví dụ định dạng chụp ảnh tĩnh phổ biến nhất trên thế giới là 35mm kích cỡ phim thịnh hành trước khi kết thúc thời đại phim analog",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 81,
+        "language": "vi",
+        "duration": 11.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.63,
+        "hypothesis": "sự căng thẳng càng giảm bớt, thì sinh lực tích cực càng hiện hữu. tất cả mọi người đều có tiềm năng tìm được sự yên bình và mãn nguyện tuyệt đối.",
+        "reference": "sự căng thẳng càng giảm bớt thì sinh lực tích cực càng hiện hữu tất cả mọi người đều có tiềm năng tìm được sự yên bình và mãn nguyện tuyệt đối",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 82,
+        "language": "vi",
+        "duration": 11.64,
+        "error_rate": 0.03125,
+        "error_details": {
+          "wer": 0.03125,
+          "ref_len": 32,
+          "hyp_len": 32,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.59,
+        "hypothesis": "sự căng thẳng càng giảm bớt, thì sinh lực tích cực càng hiện hữu. Tất cả mọi người đều có tiềm năng tìm được sự yên bình và bản nguyện tuyệt đối.",
+        "reference": "sự căng thẳng càng giảm bớt thì sinh lực tích cực càng hiện hữu tất cả mọi người đều có tiềm năng tìm được sự yên bình và mãn nguyện tuyệt đối",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 83,
+        "language": "vi",
+        "duration": 11.88,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.62,
+        "hypothesis": "do cấu trúc địa hình dưới nước, dòng chảy ngược tập trung tại một số khu vực sâu hơn và dòng chảy nhanh đến vùng nước sâu có thể hình thành ở đó.",
+        "reference": "do cấu trúc địa hình dưới nước dòng chảy ngược tập trung tại một số khu vực sâu hơn và dòng chảy nhanh đến vùng nước sâu có thể hình thành ở đó",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 84,
+        "language": "vi",
+        "duration": 12.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.62,
+        "hypothesis": "do cấu trúc địa hình dưới nước, dòng chảy ngược tập trung tại một số khu vực sâu hơn và dòng chảy nhanh đến vùng nước sâu có thể hình thành ở đó.",
+        "reference": "do cấu trúc địa hình dưới nước dòng chảy ngược tập trung tại một số khu vực sâu hơn và dòng chảy nhanh đến vùng nước sâu có thể hình thành ở đó",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 85,
+        "language": "vi",
+        "duration": 16.56,
+        "error_rate": 0.15789473684210525,
+        "error_details": {
+          "wer": 0.15789473684210525,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 4,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.048,
+        "elapsed": 0.79,
+        "hypothesis": "Sáng hôm qua, một ống bơm cài trong xe hơi đã phát nổ tại trụ sở cảnh sát ở Ga Siantepe, Thổ Nhĩ Kỳ, làm hai cảnh sát viên thiệt mạng và hơn 20 người khác bị thương.",
+        "reference": "sáng hôm qua một quả bom cài trong xe hơi đã phát nổ tại trụ sở cảnh sát ở gaziantep thổ nhĩ kỳ làm hai cảnh sát viên thiệt mạng và hơn hai mươi người khác bị thương",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 86,
+        "language": "vi",
+        "duration": 15.54,
+        "error_rate": 0.13157894736842105,
+        "error_details": {
+          "wer": 0.13157894736842105,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.051,
+        "elapsed": 0.8,
+        "hypothesis": "Sáng hôm qua, một quả bơm cài trong xe hơi đã phát nổ tại trụ sở cảnh sát ở Gazi Antep, thổ Nhĩ Kỳ, làm hai cảnh sát viên thiệt mạng và hơn 20 người khác bị thương.",
+        "reference": "sáng hôm qua một quả bom cài trong xe hơi đã phát nổ tại trụ sở cảnh sát ở gaziantep thổ nhĩ kỳ làm hai cảnh sát viên thiệt mạng và hơn hai mươi người khác bị thương",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 87,
+        "language": "vi",
+        "duration": 12.9,
+        "error_rate": 0.05263157894736842,
+        "error_details": {
+          "wer": 0.05263157894736842,
+          "ref_len": 38,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.053,
+        "elapsed": 0.69,
+        "hypothesis": "Sáng hôm qua, một quả bom cài trong xe hơi đã phát nổ tại trụ sở cảnh sát ở Gaziantep, Thổ Nhĩ Kỳ, làm hai cảnh sát viên thiệt mạng và hơn 20 người khác bị thương.",
+        "reference": "sáng hôm qua một quả bom cài trong xe hơi đã phát nổ tại trụ sở cảnh sát ở gaziantep thổ nhĩ kỳ làm hai cảnh sát viên thiệt mạng và hơn hai mươi người khác bị thương",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 88,
+        "language": "vi",
+        "duration": 11.52,
+        "error_rate": 0.08333333333333333,
+        "error_details": {
+          "wer": 0.08333333333333333,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.53,
+        "hypothesis": "Phòng quản lý tình trạng khẩn cấp miền bắc Magianat cho biết không có báo cáo nào về tụng thất ở quốc gia này.",
+        "reference": "phòng quản lý tình trạng khẩn cấp miền bắc marianas cho biết không có báo cáo nào về tổn thất ở quốc gia này",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 89,
+        "language": "vi",
+        "duration": 12.42,
+        "error_rate": 0.041666666666666664,
+        "error_details": {
+          "wer": 0.041666666666666664,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 0.49,
+        "hypothesis": "Phòng quản lý tình trạng khẩn cấp miền Bắc, Mariana cho biết không có báo cáo nào về tổn thất ở quốc gia này.",
+        "reference": "phòng quản lý tình trạng khẩn cấp miền bắc marianas cho biết không có báo cáo nào về tổn thất ở quốc gia này",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 90,
+        "language": "vi",
+        "duration": 10.74,
+        "error_rate": 0.041666666666666664,
+        "error_details": {
+          "wer": 0.041666666666666664,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.48,
+        "hypothesis": "Phòng quản lý tình trạng khẩn cấp miền Bắc, Mariana, cho biết không có báo cáo nào về tổn thất ở quốc gia này.",
+        "reference": "phòng quản lý tình trạng khẩn cấp miền bắc marianas cho biết không có báo cáo nào về tổn thất ở quốc gia này",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 91,
+        "language": "vi",
+        "duration": 17.4,
+        "error_rate": 0.1891891891891892,
+        "error_details": {
+          "wer": 0.1891891891891892,
+          "ref_len": 37,
+          "hyp_len": 39,
+          "substitutions": 5,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.82,
+        "hypothesis": "không có cảnh báo chấm thẳng nào được đưa ra và theo cơ quan địa vật lý Jakarta sẽ không có cảnh báo chấm thẳng vì cơn địa chấn chưa đạt tới tiêu chuẩn sao chấn năng độ richter.",
+        "reference": "không có cảnh báo sóng thần nào được đưa ra và theo cơ quan địa vật lý jakarta sẽ không có cảnh báo sóng thần vì cơn địa chấn chưa đạt tới tiêu chuẩn 6.5 độ richter",
+        "metric_type": "wer",
+        "n_inferences": 7
+      },
+      {
+        "index": 92,
+        "language": "vi",
+        "duration": 14.58,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "wer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.7,
+        "hypothesis": "Không có cảnh báo sóng thần nào được đưa ra và theo cơ quan địa vật lý Sagada sẽ không có cảnh báo sóng thần vì cơn địa chấn chưa đạt tới tiêu chuẩn 6,5 độ Richter.",
+        "reference": "không có cảnh báo sóng thần nào được đưa ra và theo cơ quan địa vật lý jakarta sẽ không có cảnh báo sóng thần vì cơn địa chấn chưa đạt tới tiêu chuẩn 6.5 độ richter",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 93,
+        "language": "vi",
+        "duration": 15.24,
+        "error_rate": 0.05405405405405406,
+        "error_details": {
+          "wer": 0.05405405405405406,
+          "ref_len": 37,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.73,
+        "hypothesis": "Không có cảnh báo sóng thần nào được đưa ra và theo cơ quan địa vật lý, Sa Kaka sẽ không có cảnh báo sóng thần vì cơn địa chấn chưa đạt tới tiêu chuẩn 6,5 độ Richter.",
+        "reference": "không có cảnh báo sóng thần nào được đưa ra và theo cơ quan địa vật lý jakarta sẽ không có cảnh báo sóng thần vì cơn địa chấn chưa đạt tới tiêu chuẩn 6.5 độ richter",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 94,
+        "language": "vi",
+        "duration": 15.12,
+        "error_rate": 0.23076923076923078,
+        "error_details": {
+          "wer": 0.23076923076923078,
+          "ref_len": 26,
+          "hyp_len": 24,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.045,
+        "elapsed": 0.68,
+        "hypothesis": "Quần đảo nằm cách bán đảo 120 km phía bắc Benisola. Đảo lớn nhất là Kingriu với sự hiện diện của làng Villalat, Estelaz.",
+        "reference": "quần đảo nằm cách bán đảo 120 km phía bắc peninsula đảo lớn nhất là king george với sự hiện diện của làng villa las estrellas",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 95,
+        "language": "vi",
+        "duration": 16.74,
+        "error_rate": 0.23076923076923078,
+        "error_details": {
+          "wer": 0.23076923076923078,
+          "ref_len": 26,
+          "hyp_len": 24,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.042,
+        "elapsed": 0.71,
+        "hypothesis": "Quần đảo nằm cách bán đảo 120 km phía bắc Borneo. Đảo lớn nhất là Kinjao, với sự hiện diện của làng Villalat, Atalat.",
+        "reference": "quần đảo nằm cách bán đảo 120 km phía bắc peninsula đảo lớn nhất là king george với sự hiện diện của làng villa las estrellas",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 96,
+        "language": "vi",
+        "duration": 15.72,
+        "error_rate": 0.19230769230769232,
+        "error_details": {
+          "wer": 0.19230769230769232,
+          "ref_len": 26,
+          "hyp_len": 24,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.043,
+        "elapsed": 0.67,
+        "hypothesis": "Quần đảo nằm cách bán đảo 120 km phía bắc Peninsula. Đảo lớn nhất là Canary với sự hiện diện của làng Villalaz, Esla.",
+        "reference": "quần đảo nằm cách bán đảo 120 km phía bắc peninsula đảo lớn nhất là king george với sự hiện diện của làng villa las estrellas",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 97,
+        "language": "vi",
+        "duration": 18.6,
+        "error_rate": 0.0851063829787234,
+        "error_details": {
+          "wer": 0.0851063829787234,
+          "ref_len": 47,
+          "hyp_len": 47,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.86,
+        "hypothesis": "Lóc cũng có thể giúp cải thiện khả năng viết lách của học sinh. Khi bắt đầu viết lóc, những học sinh này thường mắc lỗi ngữ pháp và chính tả do cổ thải. Sự hiện diện của độc giả, nhìn chung làm thay đổi điều đó.",
+        "reference": "blog cũng có thể giúp cải thiện khả năng viết lách của học sinh khi bắt đầu viết blog những học sinh này thường mắc lỗi ngữ pháp và chính tả do cẩu thả sự hiện diện của độc giả nhìn chung làm thay đổi điều đó",
+        "metric_type": "wer",
+        "n_inferences": 7
+      },
+      {
+        "index": 98,
+        "language": "vi",
+        "duration": 12.6,
+        "error_rate": 0.04,
+        "error_details": {
+          "wer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.54,
+        "hypothesis": "Độ ẩm trên tay của bạn sẽ phản ứng với các lớp bên ngoài tạo cảm giác là lạ và nặng thành một loại vỏ.",
+        "reference": "độ ẩm trên tay của bạn sẽ phản ứng với các lớp bên ngoài tạo cảm giác là lạ và nặn thành một loại vỏ",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 99,
+        "language": "vi",
+        "duration": 9.84,
+        "error_rate": 0.04,
+        "error_details": {
+          "wer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.51,
+        "hypothesis": "Độ ẩm trên tay của bạn sẽ phản ứng với các lớp bên ngoài, tạo cảm giác là lạ và nặng thành một loại vỏ.",
+        "reference": "độ ẩm trên tay của bạn sẽ phản ứng với các lớp bên ngoài tạo cảm giác là lạ và nặn thành một loại vỏ",
+        "metric_type": "wer",
+        "n_inferences": 4
+      }
+    ]
+  }
+}

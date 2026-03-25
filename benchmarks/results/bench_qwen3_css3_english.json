@@ -1,0 +1,44 @@
+{
+  "LS-clean-100|css=2.0 (current EN default)": {
+    "wer": 2.085561497326203,
+    "rtf": 0.05301167034245081,
+    "errors": 39,
+    "total": 1870,
+    "css": 2.0
+  },
+  "LS-clean-100|css=3.0 (current CJK default)": {
+    "wer": 2.13903743315508,
+    "rtf": 0.04360619085434489,
+    "errors": 40,
+    "total": 1870,
+    "css": 3.0
+  },
+  "LS-clean-100|css=4.0 (longer)": {
+    "wer": 2.13903743315508,
+    "rtf": 0.035447274829592444,
+    "errors": 40,
+    "total": 1870,
+    "css": 4.0
+  },
+  "LS-other-100|css=2.0 (current EN default)": {
+    "wer": 4.3837357052096575,
+    "rtf": 0.057840526383641025,
+    "errors": 69,
+    "total": 1574,
+    "css": 2.0
+  },
+  "LS-other-100|css=3.0 (current CJK default)": {
+    "wer": 4.3837357052096575,
+    "rtf": 0.04547670586723234,
+    "errors": 69,
+    "total": 1574,
+    "css": 3.0
+  },
+  "LS-other-100|css=4.0 (longer)": {
+    "wer": 4.3837357052096575,
+    "rtf": 0.03598780261495669,
+    "errors": 69,
+    "total": 1574,
+    "css": 4.0
+  }
+}

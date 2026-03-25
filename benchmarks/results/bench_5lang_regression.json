@@ -1,0 +1,3054 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "model_size": "1.7b",
+  "quantization": "fp8",
+  "n_samples": 30,
+  "mode": "streaming",
+  "languages": [
+    "en",
+    "ko",
+    "zh",
+    "vi",
+    "ja"
+  ],
+  "en_streaming": {
+    "micro_wer": 7.31,
+    "overall_rtf": 0.041,
+    "total_audio_s": 269.3,
+    "total_elapsed_s": 11.0,
+    "results": [
+      {
+        "index": 0,
+        "language": "en",
+        "duration": 12.64,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.031,
+        "elapsed": 0.4,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 1,
+        "language": "en",
+        "duration": 7.92,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.038,
+        "elapsed": 0.3,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 2,
+        "language": "en",
+        "duration": 5.88,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.033,
+        "elapsed": 0.2,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation: hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed",
+        "metric_type": "wer",
+        "n_inferences": 2
+      },
+      {
+        "index": 3,
+        "language": "en",
+        "duration": 6.96,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.043,
+        "elapsed": 0.3,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation, hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 4,
+        "language": "en",
+        "duration": 8.94,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.38,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 5,
+        "language": "en",
+        "duration": 11.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.5,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 6,
+        "language": "en",
+        "duration": 9.14,
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "wer": 0.21428571428571427,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.03,
+        "elapsed": 0.27,
+        "hypothesis": "Police Superintendent Shandra Shankar Solansky said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 7,
+        "language": "en",
+        "duration": 7.2,
+        "error_rate": 0.07142857142857142,
+        "error_details": {
+          "wer": 0.07142857142857142,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.29,
+        "hypothesis": "Police Superintendent Chandra Shikar Solanki said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 8,
+        "language": "en",
+        "duration": 6.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.32,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 9,
+        "language": "en",
+        "duration": 6.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.32,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 10,
+        "language": "en",
+        "duration": 10.38,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.5,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 11,
+        "language": "en",
+        "duration": 9.3,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.037,
+        "elapsed": 0.34,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 12,
+        "language": "en",
+        "duration": 13.34,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.51,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 13,
+        "language": "en",
+        "duration": 12.12,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.54,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 14,
+        "language": "en",
+        "duration": 9.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 0.38,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the streets and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 15,
+        "language": "en",
+        "duration": 7.92,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.39,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the street and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 16,
+        "language": "en",
+        "duration": 10.08,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.51,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 17,
+        "language": "en",
+        "duration": 10.68,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.51,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 18,
+        "language": "en",
+        "duration": 19.56,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "wer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.029,
+        "elapsed": 0.58,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernández de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometres (31 miles) away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 19,
+        "language": "en",
+        "duration": 12.12,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "wer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.55,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernández de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometers (31 miles) away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 20,
+        "language": "en",
+        "duration": 4.56,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.035,
+        "elapsed": 0.16,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers",
+        "metric_type": "wer",
+        "n_inferences": 2
+      },
+      {
+        "index": 21,
+        "language": "en",
+        "duration": 7.26,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.25,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 22,
+        "language": "en",
+        "duration": 8.54,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.32,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 23,
+        "language": "en",
+        "duration": 10.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.46,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 24,
+        "language": "en",
+        "duration": 5.64,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.033,
+        "elapsed": 0.19,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed",
+        "metric_type": "wer",
+        "n_inferences": 2
+      },
+      {
+        "index": 25,
+        "language": "en",
+        "duration": 6.6,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.31,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 26,
+        "language": "en",
+        "duration": 6.6,
+        "error_rate": 0.047619047619047616,
+        "error_details": {
+          "wer": 0.047619047619047616,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.056,
+        "elapsed": 0.37,
+        "hypothesis": "All nouns, alongside the word \"see\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 27,
+        "language": "en",
+        "duration": 8.76,
+        "error_rate": 0.09523809523809523,
+        "error_details": {
+          "wer": 0.09523809523809523,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.037,
+        "elapsed": 0.33,
+        "hypothesis": "All nouns, alongside the words \"say\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 28,
+        "language": "en",
+        "duration": 5.76,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.031,
+        "elapsed": 0.18,
+        "hypothesis": "The cabbage juice changes color depending on how acidic, basic, alkaline the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is",
+        "metric_type": "wer",
+        "n_inferences": 2
+      },
+      {
+        "index": 29,
+        "language": "en",
+        "duration": 6.72,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.3,
+        "hypothesis": "The cabbage juice changes colors depending on how acidic or basic (alkaline) the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is",
+        "metric_type": "wer",
+        "n_inferences": 3
+      }
+    ]
+  },
+  "ko_streaming": {
+    "micro_cer": 2.52,
+    "overall_rtf": 0.048,
+    "total_audio_s": 396.2,
+    "total_elapsed_s": 19.1,
+    "results": [
+      {
+        "index": 0,
+        "language": "ko",
+        "duration": 14.16,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.71,
+        "hypothesis": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다.",
+        "reference": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 1,
+        "language": "ko",
+        "duration": 14.7,
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.048,
+        "elapsed": 0.7,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다.",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 2,
+        "language": "ko",
+        "duration": 16.08,
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.042,
+        "elapsed": 0.67,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다.",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 3,
+        "language": "ko",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.061,
+        "elapsed": 0.57,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 4,
+        "language": "ko",
+        "duration": 9.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.057,
+        "elapsed": 0.55,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 5,
+        "language": "ko",
+        "duration": 19.08,
+        "error_rate": 0.05555555555555555,
+        "error_details": {
+          "cer": 0.05555555555555555,
+          "ref_len": 72,
+          "hyp_len": 73,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.83,
+        "hypothesis": "올리버 세克斯는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그의 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 6,
+        "language": "ko",
+        "duration": 18.42,
+        "error_rate": 0.041666666666666664,
+        "error_details": {
+          "cer": 0.041666666666666664,
+          "ref_len": 72,
+          "hyp_len": 73,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.87,
+        "hypothesis": "올리버 세克斯는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 7,
+        "language": "ko",
+        "duration": 16.14,
+        "error_rate": 0.03636363636363636,
+        "error_details": {
+          "cer": 0.03636363636363636,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.77,
+        "hypothesis": "어제 아침 터키 가지안 태프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 두 명이 죽고 20명 이상의 다른 사람들이 다쳤습니다.",
+        "reference": "어제 아침 터키 가지안테프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 8,
+        "language": "ko",
+        "duration": 15.3,
+        "error_rate": 0.015151515151515152,
+        "error_details": {
+          "cer": 0.015151515151515152,
+          "ref_len": 66,
+          "hyp_len": 66,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.79,
+        "hypothesis": "이들의 시대에는 빛 공예가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다.",
+        "reference": "이들의 시대에는 빛 공해가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 9,
+        "language": "ko",
+        "duration": 12.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.61,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 10,
+        "language": "ko",
+        "duration": 10.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.059,
+        "elapsed": 0.59,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 11,
+        "language": "ko",
+        "duration": 13.56,
+        "error_rate": 0.2,
+        "error_details": {
+          "cer": 0.2,
+          "ref_len": 35,
+          "hyp_len": 35,
+          "substitutions": 7,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.52,
+        "hypothesis": "집권당인 사하프리카 인민기구 (SWAPO)도 의회 선거에서 과반수를 유지했습니다.",
+        "reference": "집권당인 서아프리카 인민 기구swapo도 의회 선거에서 과반수를 유지했습니다",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 12,
+        "language": "ko",
+        "duration": 15.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.75,
+        "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 13,
+        "language": "ko",
+        "duration": 17.34,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.78,
+        "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 14,
+        "language": "ko",
+        "duration": 17.46,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.82,
+        "hypothesis": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다. 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다.",
+        "reference": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 15,
+        "language": "ko",
+        "duration": 17.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.8,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 16,
+        "language": "ko",
+        "duration": 16.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.72,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 17,
+        "language": "ko",
+        "duration": 5.88,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.074,
+        "elapsed": 0.43,
+        "hypothesis": "지각은 가까운 쪽이 약 70km, 먼 쪽이 약 100km 두께입니다.",
+        "reference": "지각은 가까운 쪽이 약 70km 먼 쪽이 약 100km 두께입니다",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 18,
+        "language": "ko",
+        "duration": 13.62,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.66,
+        "hypothesis": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤 늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요.",
+        "reference": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 19,
+        "language": "ko",
+        "duration": 12.6,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.57,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 20,
+        "language": "ko",
+        "duration": 9.9,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.057,
+        "elapsed": 0.56,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 21,
+        "language": "ko",
+        "duration": 4.68,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "cer": 0.07692307692307693,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.23,
+        "hypothesis": "어느 날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다",
+        "metric_type": "cer",
+        "n_inferences": 2
+      },
+      {
+        "index": 22,
+        "language": "ko",
+        "duration": 8.46,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.059,
+        "elapsed": 0.5,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 23,
+        "language": "ko",
+        "duration": 7.56,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.36,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 24,
+        "language": "ko",
+        "duration": 10.86,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.53,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 25,
+        "language": "ko",
+        "duration": 13.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.59,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 26,
+        "language": "ko",
+        "duration": 13.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.57,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 27,
+        "language": "ko",
+        "duration": 13.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.59,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 28,
+        "language": "ko",
+        "duration": 17.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.91,
+        "hypothesis": "독일의 구운 식품 상당수에는 또한 아몬드, 헤이즐넛 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다.",
+        "reference": "독일의 구운 식품 상당수에는 또한 아몬드 헤이즐넛 및 다른 견과류가 포함되어 있습니다 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 29,
+        "language": "ko",
+        "duration": 13.2,
+        "error_rate": 0.024390243902439025,
+        "error_details": {
+          "cer": 0.024390243902439025,
+          "ref_len": 41,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.044,
+        "elapsed": 0.57,
+        "hypothesis": "사막 모래 영향으로 인해 1990년 팀북투는 위험에 처한 세계문화유산 목록에 추가되었습니다.",
+        "reference": "사막 모래의 영향으로 인해 1990년 팀북투는 위험에 처한 세계 문화유산 목록에 추가되었습니다",
+        "metric_type": "cer",
+        "n_inferences": 5
+      }
+    ]
+  },
+  "zh_streaming": {
+    "micro_cer": 2.59,
+    "overall_rtf": 0.039,
+    "total_audio_s": 344.3,
+    "total_elapsed_s": 13.6,
+    "results": [
+      {
+        "index": 0,
+        "language": "zh",
+        "duration": 15.16,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.032,
+        "elapsed": 0.49,
+        "hypothesis": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后，发表了声明。",
+        "reference": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安（Recep Tayyip Erdoğan）通话后发表了声明。",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 1,
+        "language": "zh",
+        "duration": 7.98,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.27,
+        "hypothesis": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后，发表了声明。",
+        "reference": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安（Recep Tayyip Erdoğan）通话后发表了声明。",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 2,
+        "language": "zh",
+        "duration": 8.64,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.47,
+        "hypothesis": "邓迪大学的 Pamela Ferguson 教授指出，记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。",
+        "reference": "邓迪大学（University of Dundee）的 Pamela Ferguson 教授指出：“记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。”",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 3,
+        "language": "zh",
+        "duration": 15.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.037,
+        "elapsed": 0.55,
+        "hypothesis": "邓迪大学的Pamela Ferguson教授指出：“记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。”",
+        "reference": "邓迪大学（University of Dundee）的 Pamela Ferguson 教授指出：“记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。”",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 4,
+        "language": "zh",
+        "duration": 10.74,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.41,
+        "hypothesis": "邓迪大学的 Pamela Ferguson 教授指出，记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。",
+        "reference": "邓迪大学（University of Dundee）的 Pamela Ferguson 教授指出：“记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。”",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 5,
+        "language": "zh",
+        "duration": 15.68,
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.038,
+        "elapsed": 0.59,
+        "hypothesis": "在昆达里尼瑜伽中，昆达里尼能量、启迪能量，通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "reference": "在昆达里尼瑜伽中，昆达里尼能量（启迪能量）通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 6,
+        "language": "zh",
+        "duration": 11.4,
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.049,
+        "elapsed": 0.56,
+        "hypothesis": "在昆达里尼瑜伽中，昆达里尼能量、启迪能量通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "reference": "在昆达里尼瑜伽中，昆达里尼能量（启迪能量）通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 7,
+        "language": "zh",
+        "duration": 11.88,
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.046,
+        "elapsed": 0.55,
+        "hypothesis": "在昆达里尼瑜伽中，昆达里尼能量、启迪能量通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "reference": "在昆达里尼瑜伽中，昆达里尼能量（启迪能量）通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 8,
+        "language": "zh",
+        "duration": 11.82,
+        "error_rate": 0.02564102564102564,
+        "error_details": {
+          "cer": 0.02564102564102564,
+          "ref_len": 39,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.5,
+        "hypothesis": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙讨探讨了贸易和恐怖主义问题。",
+        "reference": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 9,
+        "language": "zh",
+        "duration": 8.1,
+        "error_rate": 0.02564102564102564,
+        "error_details": {
+          "cer": 0.02564102564102564,
+          "ref_len": 39,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.057,
+        "elapsed": 0.46,
+        "hypothesis": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易的和恐怖主义问题。",
+        "reference": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 10,
+        "language": "zh",
+        "duration": 12.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.49,
+        "hypothesis": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "reference": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 11,
+        "language": "zh",
+        "duration": 14.16,
+        "error_rate": 0.02127659574468085,
+        "error_details": {
+          "cer": 0.02127659574468085,
+          "ref_len": 47,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.04,
+        "elapsed": 0.57,
+        "hypothesis": "当然，这个传统有其基督神学的解释，但它很可能是基督诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "reference": "当然，这个传统有其基督教神学的解释，但它很可能是基督诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 12,
+        "language": "zh",
+        "duration": 16.7,
+        "error_rate": 0.02127659574468085,
+        "error_details": {
+          "cer": 0.02127659574468085,
+          "ref_len": 47,
+          "hyp_len": 48,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.033,
+        "elapsed": 0.56,
+        "hypothesis": "当然，这个传统有其基督教神学的解释，但它很可能是基督教诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "reference": "当然，这个传统有其基督教神学的解释，但它很可能是基督诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 13,
+        "language": "zh",
+        "duration": 8.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.056,
+        "elapsed": 0.46,
+        "hypothesis": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "reference": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 14,
+        "language": "zh",
+        "duration": 7.84,
+        "error_rate": 0.041666666666666664,
+        "error_details": {
+          "cer": 0.041666666666666664,
+          "ref_len": 24,
+          "hyp_len": 23,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.033,
+        "elapsed": 0.26,
+        "hypothesis": "由于分离和重组，变异在每一代的两库之间来回变动。",
+        "reference": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 15,
+        "language": "zh",
+        "duration": 6.66,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.25,
+        "hypothesis": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "reference": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 16,
+        "language": "zh",
+        "duration": 17.08,
+        "error_rate": 0.04081632653061224,
+        "error_details": {
+          "cer": 0.04081632653061224,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.036,
+        "elapsed": 0.61,
+        "hypothesis": "这些理论研究，为什么某些人想要做他们所做的事，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "reference": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 17,
+        "language": "zh",
+        "duration": 11.7,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.52,
+        "hypothesis": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "reference": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 18,
+        "language": "zh",
+        "duration": 9.84,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.45,
+        "hypothesis": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "reference": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 19,
+        "language": "zh",
+        "duration": 10.86,
+        "error_rate": 0.0784313725490196,
+        "error_details": {
+          "cer": 0.0784313725490196,
+          "ref_len": 51,
+          "hyp_len": 52,
+          "substitutions": 1,
+          "insertions": 2,
+          "deletions": 1
+        },
+        "rtf": 0.042,
+        "elapsed": 0.46,
+        "hypothesis": "虽然有一种试验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止还没有明确证明任何药物都适合治疗现有的感染。",
+        "reference": "虽然有一种实验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止，还没明确证明任何药物适合治疗现有的感染。",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 20,
+        "language": "zh",
+        "duration": 11.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 51,
+          "hyp_len": 51,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.53,
+        "hypothesis": "虽然有一种实验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止，还没明确证明任何药物适合治疗现有的感染。",
+        "reference": "虽然有一种实验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止，还没明确证明任何药物适合治疗现有的感染。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 21,
+        "language": "zh",
+        "duration": 15.46,
+        "error_rate": 0.06382978723404255,
+        "error_details": {
+          "cer": 0.06382978723404255,
+          "ref_len": 47,
+          "hyp_len": 48,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.65,
+        "hypothesis": "它的长下颚上布满了七十多颗剃刀般锋利的牙齿，上颚上还有一排。这意味着，任何与它相遇的东西都无路可逃。",
+        "reference": "它的长下颚上布满了 70 多颗剃刀般锋利的牙齿，上颚上还有一排。这意味着任何与它相遇的东西都无路可逃。",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 22,
+        "language": "zh",
+        "duration": 20.5,
+        "error_rate": 0.0851063829787234,
+        "error_details": {
+          "cer": 0.0851063829787234,
+          "ref_len": 47,
+          "hyp_len": 48,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.7,
+        "hypothesis": "它的上下颚上布满了七十多颗剃刀般锋利的牙齿，上颚上还有一排，这意味着任何与它相遇的东西都无路可逃。",
+        "reference": "它的长下颚上布满了 70 多颗剃刀般锋利的牙齿，上颚上还有一排。这意味着任何与它相遇的东西都无路可逃。",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 23,
+        "language": "zh",
+        "duration": 8.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.4,
+        "hypothesis": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "reference": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 24,
+        "language": "zh",
+        "duration": 11.34,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.038,
+        "elapsed": 0.43,
+        "hypothesis": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "reference": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 25,
+        "language": "zh",
+        "duration": 12.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.03,
+        "elapsed": 0.39,
+        "hypothesis": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "reference": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 26,
+        "language": "zh",
+        "duration": 7.74,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "cer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.031,
+        "elapsed": 0.24,
+        "hypothesis": "它没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "reference": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 27,
+        "language": "zh",
+        "duration": 9.84,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.33,
+        "hypothesis": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "reference": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 28,
+        "language": "zh",
+        "duration": 10.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.027,
+        "elapsed": 0.27,
+        "hypothesis": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "reference": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 29,
+        "language": "zh",
+        "duration": 4.86,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.029,
+        "elapsed": 0.14,
+        "hypothesis": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "reference": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "metric_type": "cer",
+        "n_inferences": 2
+      }
+    ]
+  },
+  "vi_streaming": {
+    "micro_wer": 4.33,
+    "overall_rtf": 0.049,
+    "total_audio_s": 340.4,
+    "total_elapsed_s": 16.7,
+    "results": [
+      {
+        "index": 0,
+        "language": "vi",
+        "duration": 9.42,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.5,
+        "hypothesis": "mặt khác, băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm, giao thông gần như không bị gián đoạn.",
+        "reference": "mặt khác băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 1,
+        "language": "vi",
+        "duration": 9.3,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.51,
+        "hypothesis": "mặt khác, băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn.",
+        "reference": "mặt khác băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 2,
+        "language": "vi",
+        "duration": 8.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.058,
+        "elapsed": 0.5,
+        "hypothesis": "Mặt khác, băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn.",
+        "reference": "mặt khác băng và tuyết là hiện tượng bình thường ở nhiều nước và quanh năm giao thông gần như không bị gián đoạn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 3,
+        "language": "vi",
+        "duration": 7.2,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.036,
+        "elapsed": 0.26,
+        "hypothesis": "Đây là cách rất quan trọng để phân biệt giữa động từ và từ ngữ.",
+        "reference": "đây là cách rất quan trọng để phân biệt giữa động từ và tân ngữ",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 4,
+        "language": "vi",
+        "duration": 5.88,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.29,
+        "hypothesis": "Đây là cách rất quan trọng để phân biệt giữa động từ và tên ngữ.",
+        "reference": "đây là cách rất quan trọng để phân biệt giữa động từ và tân ngữ",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 5,
+        "language": "vi",
+        "duration": 25.38,
+        "error_rate": 0.15384615384615385,
+        "error_details": {
+          "wer": 0.15384615384615385,
+          "ref_len": 39,
+          "hyp_len": 37,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.038,
+        "elapsed": 0.97,
+        "hypothesis": "Công viên quốc gia Litsviket có khu rừng rậm đặc, chủ yếu là cây sồi, cây vân sam, cây linh sam và cùng với sự pha trộn thẩm thực vật của vùng áp và địa trung hải.",
+        "reference": "công viên quốc gia plitvice lakes có khu rừng rậm rạp chủ yếu là cây sồi cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng alps và địa trung hải",
+        "metric_type": "wer",
+        "n_inferences": 9
+      },
+      {
+        "index": 6,
+        "language": "vi",
+        "duration": 20.52,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "wer": 0.07692307692307693,
+          "ref_len": 39,
+          "hyp_len": 38,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.046,
+        "elapsed": 0.94,
+        "hypothesis": "Công viên quốc gia Isvaylak có khu rừng rậm rạp chủ yếu là cây sồi, cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng on và địa trung hải.",
+        "reference": "công viên quốc gia plitvice lakes có khu rừng rậm rạp chủ yếu là cây sồi cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng alps và địa trung hải",
+        "metric_type": "wer",
+        "n_inferences": 8
+      },
+      {
+        "index": 7,
+        "language": "vi",
+        "duration": 16.68,
+        "error_rate": 0.05128205128205128,
+        "error_details": {
+          "wer": 0.05128205128205128,
+          "ref_len": 39,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.043,
+        "elapsed": 0.72,
+        "hypothesis": "Công viên quốc gia Plitvice có khu rừng rậm rạp chủ yếu là cây sồi, cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng ôn và địa trung hải.",
+        "reference": "công viên quốc gia plitvice lakes có khu rừng rậm rạp chủ yếu là cây sồi cây vân sam và cây linh sam và cùng với sự pha trộn thảm thực vật của vùng alps và địa trung hải",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 8,
+        "language": "vi",
+        "duration": 9.18,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.41,
+        "hypothesis": "số Rossby càng nhỏ, ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường.",
+        "reference": "số rossby càng nhỏ ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 9,
+        "language": "vi",
+        "duration": 8.1,
+        "error_rate": 0.11764705882352941,
+        "error_details": {
+          "wer": 0.11764705882352941,
+          "ref_len": 17,
+          "hyp_len": 18,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.44,
+        "hypothesis": "số robot bay càng nhỏ, ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường.",
+        "reference": "số rossby càng nhỏ ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 10,
+        "language": "vi",
+        "duration": 9.18,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.38,
+        "hypothesis": "Số Rossby càng nhỏ, ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường.",
+        "reference": "số rossby càng nhỏ ngôi sao càng ít hoạt động liên quan tới nghịch đảo từ trường",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 11,
+        "language": "vi",
+        "duration": 9.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.51,
+        "hypothesis": "Chuyến đi thực tế là một phần quan trọng trong lớp học. Giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn.",
+        "reference": "chuyến đi thực tế là một phần quan trọng trong lớp học giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 12,
+        "language": "vi",
+        "duration": 11.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.63,
+        "hypothesis": "Chuyến đi thực tế là một phần quan trọng trong lớp học. Giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn.",
+        "reference": "chuyến đi thực tế là một phần quan trọng trong lớp học giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 13,
+        "language": "vi",
+        "duration": 10.08,
+        "error_rate": 0.06060606060606061,
+        "error_details": {
+          "wer": 0.06060606060606061,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.53,
+        "hypothesis": "Chuyến đi thực tế là một phần quan trọng trong lớp học. Giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi sẽ biết không phải là lựa chọn.",
+        "reference": "chuyến đi thực tế là một phần quan trọng trong lớp học giáo viên khá thường xuyên đưa học sinh tới những nơi mà việc đi xe buýt không phải là lựa chọn",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 14,
+        "language": "vi",
+        "duration": 14.16,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.72,
+        "hypothesis": "Theo quy tắc này, vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang. Xem ví dụ.",
+        "reference": "theo quy tắc này vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang xem ví dụ",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 15,
+        "language": "vi",
+        "duration": 14.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.72,
+        "hypothesis": "Theo quy tắc này, vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang. Xem ví dụ.",
+        "reference": "theo quy tắc này vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang xem ví dụ",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 16,
+        "language": "vi",
+        "duration": 16.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.7,
+        "hypothesis": "theo quy tắc này, vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang. Xem ví dụ.",
+        "reference": "theo quy tắc này vị trí hữu hiệu nhất dành cho chủ thể chính là giao điểm của các đường phân chia hình ảnh thành ba phần theo chiều dọc và chiều ngang xem ví dụ",
+        "metric_type": "wer",
+        "n_inferences": 6
+      },
+      {
+        "index": 17,
+        "language": "vi",
+        "duration": 10.32,
+        "error_rate": 0.04,
+        "error_details": {
+          "wer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.54,
+        "hypothesis": "Quân đoàn công binh Hoa Kỳ ước tính 6 in nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước.",
+        "reference": "quân đoàn công binh hoa kỳ ước tính 6 inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 18,
+        "language": "vi",
+        "duration": 9.48,
+        "error_rate": 0.16,
+        "error_details": {
+          "wer": 0.16,
+          "ref_len": 25,
+          "hyp_len": 24,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.055,
+        "elapsed": 0.53,
+        "hypothesis": "Quân đoàn công binh Hoa Kỳ ước tính sáu In-Nước mơ có thể làm vỡ những đoạn đê đã bị hư tổn từ trước.",
+        "reference": "quân đoàn công binh hoa kỳ ước tính 6 inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 19,
+        "language": "vi",
+        "duration": 10.62,
+        "error_rate": 0.04,
+        "error_details": {
+          "wer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 0.49,
+        "hypothesis": "Quân đoàn công binh Hoa Kỳ ước tính sáu inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước.",
+        "reference": "quân đoàn công binh hoa kỳ ước tính 6 inch nước mưa có thể làm vỡ những đoạn đê đã bị hư tổn từ trước",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 20,
+        "language": "vi",
+        "duration": 17.4,
+        "error_rate": 0.075,
+        "error_details": {
+          "wer": 0.075,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.91,
+        "hypothesis": "Nó liên quan, nhưng thường không bao gồm kiểu dạo chơi hay kiểu leo núi sử dụng ván trượt tuyết, kiểu on-bike, kiểu sao được thực hiện ở địa hình dốc và cần ván trượt và dày cứng hơn nhiều.",
+        "reference": "nó liên quan nhưng thường không bao gồm kiểu dạo chơi hay kiểu leo núi sử dụng ván trượt tuyết kiểu alpes kiểu sau được thực hiện ở địa hình dốc và cần ván trượt và giày cứng hơn nhiều",
+        "metric_type": "wer",
+        "n_inferences": 7
+      },
+      {
+        "index": 21,
+        "language": "vi",
+        "duration": 11.64,
+        "error_rate": 0.11428571428571428,
+        "error_details": {
+          "wer": 0.11428571428571428,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.055,
+        "elapsed": 0.64,
+        "hypothesis": "Nếu vượt biển Bắc băng tuyết vào mùa đông, hãy kiểm tra lại bồn ngủ, vì khi tàu phá băng sẽ tạo ra những tiếng nổ kinh khủng mà không phải ai cũng chịu đựng được.",
+        "reference": "nếu vượt biển bắc baltic vào mùa đông hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 22,
+        "language": "vi",
+        "duration": 13.8,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "wer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.65,
+        "hypothesis": "nếu vượt biển Bắc băng tuyết vào mùa đông, hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được.",
+        "reference": "nếu vượt biển bắc baltic vào mùa đông hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 23,
+        "language": "vi",
+        "duration": 12.66,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "wer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.053,
+        "elapsed": 0.67,
+        "hypothesis": "Nếu vượt biển Bắc Băng Tích vào mùa đông, hãy kiểm tra lại buồng ngủ, vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được.",
+        "reference": "nếu vượt biển bắc baltic vào mùa đông hãy kiểm tra lại buồng ngủ vì khi tàu phá băng sẽ tạo ra những tiếng ồn kinh khủng mà không phải ai cũng chịu đựng được",
+        "metric_type": "wer",
+        "n_inferences": 5
+      },
+      {
+        "index": 24,
+        "language": "vi",
+        "duration": 9.9,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "wer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.054,
+        "elapsed": 0.54,
+        "hypothesis": "Quy trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực.",
+        "reference": "buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 25,
+        "language": "vi",
+        "duration": 7.92,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.051,
+        "elapsed": 0.4,
+        "hypothesis": "Buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực.",
+        "reference": "buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 26,
+        "language": "vi",
+        "duration": 8.28,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "wer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.065,
+        "elapsed": 0.54,
+        "hypothesis": "Bộ trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực.",
+        "reference": "buổi trình diễn âm thanh và ánh sáng trên kim tự tháp là một trong những điều thú vị nhất đối với trẻ nhỏ trong khu vực",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 27,
+        "language": "vi",
+        "duration": 8.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.41,
+        "hypothesis": "Mạng Internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân.",
+        "reference": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân",
+        "metric_type": "wer",
+        "n_inferences": 4
+      },
+      {
+        "index": 28,
+        "language": "vi",
+        "duration": 7.5,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 0.3,
+        "hypothesis": "Mạng Internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân.",
+        "reference": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân",
+        "metric_type": "wer",
+        "n_inferences": 3
+      },
+      {
+        "index": 29,
+        "language": "vi",
+        "duration": 7.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.32,
+        "hypothesis": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân.",
+        "reference": "mạng internet kết hợp những yếu tố của cả giao tiếp cộng đồng và giao tiếp cá nhân",
+        "metric_type": "wer",
+        "n_inferences": 3
+      }
+    ]
+  },
+  "ja_streaming": {
+    "micro_cer": 3.96,
+    "overall_rtf": 0.045,
+    "total_audio_s": 457.2,
+    "total_elapsed_s": 20.5,
+    "results": [
+      {
+        "index": 0,
+        "language": "ja",
+        "duration": 22.62,
+        "error_rate": 0.07272727272727272,
+        "error_details": {
+          "cer": 0.07272727272727272,
+          "ref_len": 110,
+          "hyp_len": 111,
+          "substitutions": 7,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.046,
+        "elapsed": 1.03,
+        "hypothesis": "技術決定論のほとんどの解釈は、二つの一般論を共有しています。一つは技術の発展自体が文化的・政治的な影響を大きく超えた道をたたんでいること、もう一つは技術が社会的に条件付けられたものではなく、むしろ内在する社会に影響を与えることです。",
+        "reference": "技術決定論のほとんどの解釈は 2つの一般論を共有しています 1つは技術の発展自体が文化的 政治的な影響を大きく超えた道をたどっていること もう1つは技術が社会的に条件づけられたものではなく むしろ内在する社会に 影響 を与えることです",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 1,
+        "language": "ja",
+        "duration": 10.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.44,
+        "hypothesis": "地殻が薄いため、近い方には海が多くなることがあります。溶岩が浮上しやすくなっていました。",
+        "reference": "地殻が薄いため 近い方には海が多くなることがあります 溶岩が浮上しやすくなっていました",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 2,
+        "language": "ja",
+        "duration": 17.4,
+        "error_rate": 0.030303030303030304,
+        "error_details": {
+          "cer": 0.030303030303030304,
+          "ref_len": 66,
+          "hyp_len": 65,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.043,
+        "elapsed": 0.75,
+        "hypothesis": "都市はモロッコのスルタンによってダルルバリアとして再建され、貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました。",
+        "reference": "都市はモロッコのスルタンによってダルル バディアとして再建され 貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 3,
+        "language": "ja",
+        "duration": 14.04,
+        "error_rate": 0.030303030303030304,
+        "error_details": {
+          "cer": 0.030303030303030304,
+          "ref_len": 66,
+          "hyp_len": 65,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.055,
+        "elapsed": 0.78,
+        "hypothesis": "都市はモロッコのスルタンによってダルルバリアとして再建され、貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました。",
+        "reference": "都市はモロッコのスルタンによってダルル バディアとして再建され 貿易拠点を設立したスペイン人貿易商によってカサブランカと名付けられました",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 4,
+        "language": "ja",
+        "duration": 14.34,
+        "error_rate": 0.03508771929824561,
+        "error_details": {
+          "cer": 0.03508771929824561,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.047,
+        "elapsed": 0.67,
+        "hypothesis": "上空の澄んだ美しい空と周囲の多くの山々以外には何も見えません。洞窟の中からは下界はほとんど見えず、下界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 5,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.03508771929824561,
+        "error_details": {
+          "cer": 0.03508771929824561,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.045,
+        "elapsed": 0.61,
+        "hypothesis": "上空の澄んだ美しい空と周囲の多くの山々以外には何も見えません。洞窟の中からは下界はほとんど見えず、下界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 6,
+        "language": "ja",
+        "duration": 17.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.074,
+        "elapsed": 1.29,
+        "hypothesis": "上空の澄んだ美しい空と周囲の多くの山々以外には何も見えません。洞窟の中からは外界はほとんど見えず、外界の音も聞こえません。",
+        "reference": "上空の澄んだ美しい空と 周囲の多くの山々以外には何も見えません 洞窟の中からは 外界はほとんど見えず 外界の音も聞こえません",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 7,
+        "language": "ja",
+        "duration": 14.58,
+        "error_rate": 0.10526315789473684,
+        "error_details": {
+          "cer": 0.10526315789473684,
+          "ref_len": 38,
+          "hyp_len": 36,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.04,
+        "elapsed": 0.59,
+        "hypothesis": "北マリアナ諸島の気管率（EMO）によると、全国的に被害は報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 8,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.02631578947368421,
+        "error_details": {
+          "cer": 0.02631578947368421,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.041,
+        "elapsed": 0.44,
+        "hypothesis": "北マリアナ諸島の危機管理室 EMO によると、全国的に被害を報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 9,
+        "language": "ja",
+        "duration": 11.1,
+        "error_rate": 0.02631578947368421,
+        "error_details": {
+          "cer": 0.02631578947368421,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.05,
+        "elapsed": 0.55,
+        "hypothesis": "北マリアナ諸島の危機管理室（EMO）によると、全国的に被害を報告されていないとのことです。",
+        "reference": "北マリアナ諸島の危機管理室emoによると 全国的に被害は報告されていないとのことです",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 10,
+        "language": "ja",
+        "duration": 10.62,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "cer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.035,
+        "elapsed": 0.38,
+        "hypothesis": "エアロ・スミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 11,
+        "language": "ja",
+        "duration": 9.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.037,
+        "elapsed": 0.37,
+        "hypothesis": "エアロスミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 12,
+        "language": "ja",
+        "duration": 6.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.31,
+        "hypothesis": "エアロスミスはツアーで予定していたコンサートを中止しました。",
+        "reference": "エアロスミスはツアーで予定していたコンサートを中止しました",
+        "metric_type": "cer",
+        "n_inferences": 3
+      },
+      {
+        "index": 13,
+        "language": "ja",
+        "duration": 13.08,
+        "error_rate": 0.04,
+        "error_details": {
+          "cer": 0.04,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.55,
+        "hypothesis": "これらはたまに混雑する家族向けのビーチで、海外にはさまざまな店舗が並んでいます。安全に親ぐことができます。",
+        "reference": "これらはたまに混雑する家族向けのビーチで 海岸にはさまざまな店舗が並んでいます 安全に泳ぐことができます",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 14,
+        "language": "ja",
+        "duration": 11.58,
+        "error_rate": 0.02,
+        "error_details": {
+          "cer": 0.02,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.052,
+        "elapsed": 0.6,
+        "hypothesis": "これらをたまに混雑する家族向けのビーチで、海岸にはさまざまな店舗が並んでいます。安全に泳ぐことができます。",
+        "reference": "これらはたまに混雑する家族向けのビーチで 海岸にはさまざまな店舗が並んでいます 安全に泳ぐことができます",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 15,
+        "language": "ja",
+        "duration": 10.2,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.44,
+        "hypothesis": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。",
+        "reference": "一部の路線では大企業は自社機を持っているが それ以外の路線や小規模企業では問題があった",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 16,
+        "language": "ja",
+        "duration": 13.5,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.034,
+        "elapsed": 0.46,
+        "hypothesis": "一部の路線では大企業は自社機を持っているが、それ以外の路線や小規模企業では問題があった。",
+        "reference": "一部の路線では大企業は自社機を持っているが それ以外の路線や小規模企業では問題があった",
+        "metric_type": "cer",
+        "n_inferences": 5
+      },
+      {
+        "index": 17,
+        "language": "ja",
+        "duration": 20.7,
+        "error_rate": 0.10843373493975904,
+        "error_details": {
+          "cer": 0.10843373493975904,
+          "ref_len": 83,
+          "hyp_len": 81,
+          "substitutions": 7,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.046,
+        "elapsed": 0.95,
+        "hypothesis": "文明ということは市民を意味するラテン語の形容詞 \"civis\" からきており、市民を意味するラテン語の名詞 \"civis\" と氏や年号を意味し、何らかの形で社会の規模を定義する \"civitas\" という名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 18,
+        "language": "ja",
+        "duration": 24.48,
+        "error_rate": 0.012048192771084338,
+        "error_details": {
+          "cer": 0.012048192771084338,
+          "ref_len": 83,
+          "hyp_len": 83,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.039,
+        "elapsed": 0.95,
+        "hypothesis": "文明という言葉は市民を意味するラテン語の形容詞 civis からきており、市民を意味するラテン語の名詞 civis、都市や都市国家を意味し、何らかの形で社会の規模を定義する civitas という名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer",
+        "n_inferences": 9
+      },
+      {
+        "index": 19,
+        "language": "ja",
+        "duration": 26.04,
+        "error_rate": 0.14457831325301204,
+        "error_details": {
+          "cer": 0.14457831325301204,
+          "ref_len": 83,
+          "hyp_len": 94,
+          "substitutions": 1,
+          "insertions": 11,
+          "deletions": 0
+        },
+        "rtf": 0.04,
+        "elapsed": 1.05,
+        "hypothesis": "文明という言葉は市民を意味するラテン語の形容詞シビリスからきており、市民を意味するラテン語の名詞シビス、都市や都市国家を意味し、何らかの形で社会の規模を定義するシビタスという名詞に関係しています。",
+        "reference": "文明という言葉は 市民を意味するラテン語の形容詞civilisから来ており 市民を意味するラテン語の名詞civis 都市や都市国家を意味し 何らかの形で社会の規模を定義するcivitasという名詞に関係しています",
+        "metric_type": "cer",
+        "n_inferences": 10
+      },
+      {
+        "index": 20,
+        "language": "ja",
+        "duration": 18.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.8,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 21,
+        "language": "ja",
+        "duration": 15.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.049,
+        "elapsed": 0.75,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 22,
+        "language": "ja",
+        "duration": 14.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 64,
+          "hyp_len": 64,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.048,
+        "elapsed": 0.69,
+        "hypothesis": "衛星はロケットで宇宙に送られました。科学者が宇宙で望遠鏡を使う理由は、地球の大気によって人間の視界に入る光や景色の一部が歪むからです。",
+        "reference": "衛星はロケットで宇宙に送られました 科学者が宇宙で望遠鏡を使う理由は 地球の大気によって人間の視界に入る光や景色の一部が歪むからです",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 23,
+        "language": "ja",
+        "duration": 16.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 62,
+          "hyp_len": 62,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.042,
+        "elapsed": 0.7,
+        "hypothesis": "ドイツの焼き菓子の多くは、アーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは、特に強いコーヒーとよく合います。",
+        "reference": "ドイツの焼き菓子の多くは アーモンドやヘーゼルナッツなどの木の実を使っています 人気のあるケーキは 特に強いコーヒーとよく合います",
+        "metric_type": "cer",
+        "n_inferences": 6
+      },
+      {
+        "index": 24,
+        "language": "ja",
+        "duration": 18.3,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 62,
+          "hyp_len": 62,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.043,
+        "elapsed": 0.79,
+        "hypothesis": "ドイツの焼き菓子の多くは、アーモンドやヘーゼルナッツなどの木の実を使っています。人気のあるケーキは特に強いコーヒーとよく合います。",
+        "reference": "ドイツの焼き菓子の多くは アーモンドやヘーゼルナッツなどの木の実を使っています 人気のあるケーキは 特に強いコーヒーとよく合います",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 25,
+        "language": "ja",
+        "duration": 17.88,
+        "error_rate": 0.046153846153846156,
+        "error_details": {
+          "cer": 0.046153846153846156,
+          "ref_len": 65,
+          "hyp_len": 63,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.047,
+        "elapsed": 0.85,
+        "hypothesis": "自動車の保有者増加は道路事故発生率の増加に繋がり、結果として負傷した体を治療するための新技術が医療分野で開発されることになります。",
+        "reference": "自動車の保有者増加は 道路事故発生率の増加につながり 結果として 負傷した身体を治療するための新技術が医療分野で開発されることになります",
+        "metric_type": "cer",
+        "n_inferences": 7
+      },
+      {
+        "index": 26,
+        "language": "ja",
+        "duration": 24.72,
+        "error_rate": 0.07446808510638298,
+        "error_details": {
+          "cer": 0.07446808510638298,
+          "ref_len": 94,
+          "hyp_len": 94,
+          "substitutions": 5,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.04,
+        "elapsed": 0.99,
+        "hypothesis": "社会科の重要性を示すために用いられる最も一般的な方法の一つは、育児放棄、不運、または恋の虐待によって成長過程で大人によって社会への適応が阻まれた子どもたちの数少ない不幸な事例を取り上げることです。",
+        "reference": "社会化の重要性を示すために用いられる最も一般的な方法の1つは 育児放棄 不運 または故意の虐待によって 成長過程で大人によって社会への適応が阻まれた子供たちの数少ない不幸な事例を取りあげることです",
+        "metric_type": "cer",
+        "n_inferences": 9
+      },
+      {
+        "index": 27,
+        "language": "ja",
+        "duration": 20.1,
+        "error_rate": 0.11702127659574468,
+        "error_details": {
+          "cer": 0.11702127659574468,
+          "ref_len": 94,
+          "hyp_len": 93,
+          "substitutions": 8,
+          "insertions": 1,
+          "deletions": 2
+        },
+        "rtf": 0.046,
+        "elapsed": 0.93,
+        "hypothesis": "社会化の重要性を示すために用いられる最も一般的な方法の一つは、育児放棄、不遇、または声の虐待によって成長過程で大人によって社会の適用が破られた子どもたちの数少ない不幸な事例を取り上げることです。",
+        "reference": "社会化の重要性を示すために用いられる最も一般的な方法の1つは 育児放棄 不運 または故意の虐待によって 成長過程で大人によって社会への適応が阻まれた子供たちの数少ない不幸な事例を取りあげることです",
+        "metric_type": "cer",
+        "n_inferences": 8
+      },
+      {
+        "index": 28,
+        "language": "ja",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.41,
+        "hypothesis": "しかし、そうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer",
+        "n_inferences": 4
+      },
+      {
+        "index": 29,
+        "language": "ja",
+        "duration": 9.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 42,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.044,
+        "elapsed": 0.41,
+        "hypothesis": "しかし、そうではありませんでした。裏面に何か書かれていますが、宝の地図ではありませんでした。",
+        "reference": "しかし そうではありませんでした 裏面に何か書かれていますが宝の地図ではありませんでした",
+        "metric_type": "cer",
+        "n_inferences": 4
+      }
+    ]
+  }
+}

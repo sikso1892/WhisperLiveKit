@@ -1,0 +1,1918 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "model_size": "1.7b",
+  "quantization": "fp8",
+  "n_samples": 100,
+  "mode": "batch",
+  "languages": [
+    "zh"
+  ],
+  "zh_batch": {
+    "micro_cer": 2.89,
+    "overall_rtf": 0.013,
+    "total_audio_s": 1117.6,
+    "total_elapsed_s": 14.2,
+    "results": [
+      {
+        "index": 0,
+        "language": "zh",
+        "duration": 15.16,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "elapsed": 0.14,
+        "hypothesis": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后，发表了声明。",
+        "reference": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安（Recep Tayyip Erdoğan）通话后发表了声明。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 1,
+        "language": "zh",
+        "duration": 7.98,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.13,
+        "hypothesis": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安通话后，发表了声明。",
+        "reference": "特朗普与土耳其总统雷杰普·塔伊普·埃尔多安（Recep Tayyip Erdoğan）通话后发表了声明。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 2,
+        "language": "zh",
+        "duration": 8.64,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.15,
+        "hypothesis": "邓迪大学的 Pamela Ferguson 教授指出，记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。",
+        "reference": "邓迪大学（University of Dundee）的 Pamela Ferguson 教授指出：“记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。”",
+        "metric_type": "cer"
+      },
+      {
+        "index": 3,
+        "language": "zh",
+        "duration": 15.08,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.15,
+        "hypothesis": "邓迪大学的 Pamela Ferguson 教授指出，记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。",
+        "reference": "邓迪大学（University of Dundee）的 Pamela Ferguson 教授指出：“记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。”",
+        "metric_type": "cer"
+      },
+      {
+        "index": 4,
+        "language": "zh",
+        "duration": 10.74,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.16,
+        "hypothesis": "邓迪大学的 Pamela Ferguson 教授指出，记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。",
+        "reference": "邓迪大学（University of Dundee）的 Pamela Ferguson 教授指出：“记者如果公布嫌疑人的照片等信息的话，似乎确实存在危害性。”",
+        "metric_type": "cer"
+      },
+      {
+        "index": 5,
+        "language": "zh",
+        "duration": 15.68,
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.011,
+        "elapsed": 0.17,
+        "hypothesis": "在昆达里尼瑜伽中，昆达里尼能量、启迪能量通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "reference": "在昆达里尼瑜伽中，昆达里尼能量（启迪能量）通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 6,
+        "language": "zh",
+        "duration": 11.4,
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.016,
+        "elapsed": 0.18,
+        "hypothesis": "在昆达里尼瑜伽中，昆达里尼能量、启迪能量通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "reference": "在昆达里尼瑜伽中，昆达里尼能量（启迪能量）通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 7,
+        "language": "zh",
+        "duration": 11.88,
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.014,
+        "elapsed": 0.17,
+        "hypothesis": "在昆达里尼瑜伽中，昆达里尼能量、启迪能量通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "reference": "在昆达里尼瑜伽中，昆达里尼能量（启迪能量）通过瑜伽姿势、呼吸练习、念语和视觉形象被唤醒。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 8,
+        "language": "zh",
+        "duration": 11.82,
+        "error_rate": 0.02564102564102564,
+        "error_details": {
+          "cer": 0.02564102564102564,
+          "ref_len": 39,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.15,
+        "hypothesis": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙讨探讨了贸易和恐怖主义问题。",
+        "reference": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 9,
+        "language": "zh",
+        "duration": 8.1,
+        "error_rate": 0.02564102564102564,
+        "error_details": {
+          "cer": 0.02564102564102564,
+          "ref_len": 39,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.15,
+        "hypothesis": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易的和恐怖主义问题。",
+        "reference": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 10,
+        "language": "zh",
+        "duration": 12.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.15,
+        "hypothesis": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "reference": "他受到了新加坡副总理黄根成的欢迎，并与新加坡总理李显龙探讨了贸易和恐怖主义问题。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 11,
+        "language": "zh",
+        "duration": 14.16,
+        "error_rate": 0.02127659574468085,
+        "error_details": {
+          "cer": 0.02127659574468085,
+          "ref_len": 47,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.012,
+        "elapsed": 0.17,
+        "hypothesis": "当然，这个传统有其基督神学的解释，但它很可能是基督诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "reference": "当然，这个传统有其基督教神学的解释，但它很可能是基督诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 12,
+        "language": "zh",
+        "duration": 16.7,
+        "error_rate": 0.02127659574468085,
+        "error_details": {
+          "cer": 0.02127659574468085,
+          "ref_len": 47,
+          "hyp_len": 48,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.18,
+        "hypothesis": "当然，这个传统有其基督教神学的解释，但它很可能是基督教诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "reference": "当然，这个传统有其基督教神学的解释，但它很可能是基督诞生以前就存在的一种庆祝春天、祈求丰收的仪式。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 13,
+        "language": "zh",
+        "duration": 8.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.11,
+        "hypothesis": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "reference": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 14,
+        "language": "zh",
+        "duration": 7.84,
+        "error_rate": 0.041666666666666664,
+        "error_details": {
+          "cer": 0.041666666666666664,
+          "ref_len": 24,
+          "hyp_len": 23,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.11,
+        "hypothesis": "由于分离和重组，变异在每一代的两库之间来回变动。",
+        "reference": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 15,
+        "language": "zh",
+        "duration": 6.66,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.11,
+        "hypothesis": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "reference": "由于分离和重组，变异在每一代的两个库之间来回变动。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 16,
+        "language": "zh",
+        "duration": 17.08,
+        "error_rate": 0.04081632653061224,
+        "error_details": {
+          "cer": 0.04081632653061224,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.01,
+        "elapsed": 0.17,
+        "hypothesis": "这些理论研究，为什么某些人想要做他们所做的事，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "reference": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 17,
+        "language": "zh",
+        "duration": 11.7,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.16,
+        "hypothesis": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "reference": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 18,
+        "language": "zh",
+        "duration": 9.84,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 49,
+          "hyp_len": 49,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.16,
+        "hypothesis": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "reference": "这些理论研究为什么某些人想要做他们所做的事情，以及他们所处的环境中哪些事情会让他们做或不做某些事情。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 19,
+        "language": "zh",
+        "duration": 10.86,
+        "error_rate": 0.0784313725490196,
+        "error_details": {
+          "cer": 0.0784313725490196,
+          "ref_len": 51,
+          "hyp_len": 52,
+          "substitutions": 1,
+          "insertions": 2,
+          "deletions": 1
+        },
+        "rtf": 0.015,
+        "elapsed": 0.16,
+        "hypothesis": "虽然有一种试验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止还没有明确证明任何药物都适合治疗现有的感染。",
+        "reference": "虽然有一种实验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止，还没明确证明任何药物适合治疗现有的感染。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 20,
+        "language": "zh",
+        "duration": 11.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 51,
+          "hyp_len": 51,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.16,
+        "hypothesis": "虽然有一种实验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止，还没明确证明任何药物适合治疗现有的感染。",
+        "reference": "虽然有一种实验性疫苗看似能够降低埃博拉病毒的死亡率，但迄今为止，还没明确证明任何药物适合治疗现有的感染。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 21,
+        "language": "zh",
+        "duration": 15.46,
+        "error_rate": 0.06382978723404255,
+        "error_details": {
+          "cer": 0.06382978723404255,
+          "ref_len": 47,
+          "hyp_len": 48,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.2,
+        "hypothesis": "它的长下颚上布满了七十多颗剃刀般锋利的牙齿，上颚上还有一排。这意味着，任何与它相遇的东西都无路可逃。",
+        "reference": "它的长下颚上布满了 70 多颗剃刀般锋利的牙齿，上颚上还有一排。这意味着任何与它相遇的东西都无路可逃。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 22,
+        "language": "zh",
+        "duration": 20.5,
+        "error_rate": 0.0851063829787234,
+        "error_details": {
+          "cer": 0.0851063829787234,
+          "ref_len": 47,
+          "hyp_len": 48,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.2,
+        "hypothesis": "它的上下颚上布满了七十多颗剃刀般锋利的牙齿，上颚上还有一排。这意味着，任何与它相遇的东西都无路可逃。",
+        "reference": "它的长下颚上布满了 70 多颗剃刀般锋利的牙齿，上颚上还有一排。这意味着任何与它相遇的东西都无路可逃。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 23,
+        "language": "zh",
+        "duration": 8.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.12,
+        "hypothesis": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "reference": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 24,
+        "language": "zh",
+        "duration": 11.34,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.13,
+        "hypothesis": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "reference": "因此，一个组织在共同努力克服障碍的过程中，往往会带来新的创新流程，以满足客户的需求。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 25,
+        "language": "zh",
+        "duration": 12.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "elapsed": 0.11,
+        "hypothesis": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "reference": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 26,
+        "language": "zh",
+        "duration": 7.74,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "cer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.11,
+        "hypothesis": "它没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "reference": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 27,
+        "language": "zh",
+        "duration": 9.84,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.11,
+        "hypothesis": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "reference": "他没有设定削减数额，只是表示将根据中国的经济产出来决定数额。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 28,
+        "language": "zh",
+        "duration": 10.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.008,
+        "elapsed": 0.08,
+        "hypothesis": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "reference": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 29,
+        "language": "zh",
+        "duration": 4.86,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.08,
+        "hypothesis": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "reference": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 30,
+        "language": "zh",
+        "duration": 5.94,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.09,
+        "hypothesis": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "reference": "场景在金字塔上展示，不同的金字塔被点亮。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 31,
+        "language": "zh",
+        "duration": 15.54,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 47,
+          "hyp_len": 47,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.18,
+        "hypothesis": "早先于全球发布的华硕EPC个人笔记本，因成本节约及功能性因素，成为2007年台北IT资讯月备受瞩目的话题。",
+        "reference": "早先于全球发布的华硕 Eee PC 个人笔记本，因成本节约及功能性因素，成为 2007 年台北 IT 资讯月备受瞩目的话题。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 32,
+        "language": "zh",
+        "duration": 12.12,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 47,
+          "hyp_len": 47,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.18,
+        "hypothesis": "早先于全球发布的华硕EPC个人笔记本，因成本节约及功能性因素，成为2007年台北IT资讯月备受瞩目的话题。",
+        "reference": "早先于全球发布的华硕 Eee PC 个人笔记本，因成本节约及功能性因素，成为 2007 年台北 IT 资讯月备受瞩目的话题。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 33,
+        "language": "zh",
+        "duration": 13.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 47,
+          "hyp_len": 47,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.18,
+        "hypothesis": "早先于全球发布的华硕EPC个人笔记本，因成本节约及功能性因素，成为2007年台北IT资讯月备受瞩目的话题。",
+        "reference": "早先于全球发布的华硕 Eee PC 个人笔记本，因成本节约及功能性因素，成为 2007 年台北 IT 资讯月备受瞩目的话题。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 34,
+        "language": "zh",
+        "duration": 12.06,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 27,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.01,
+        "elapsed": 0.12,
+        "hypothesis": "咖喱饭菜是一道以香草和香料为主的菜肴，并配肉类或蔬菜。",
+        "reference": "咖喱饭菜是一道以香草和香料为主的菜肴，并配以肉类或蔬菜。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 35,
+        "language": "zh",
+        "duration": 5.76,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.12,
+        "hypothesis": "咖喱饭菜是一道以香草和香料为主的菜肴，并配以肉类或蔬菜。",
+        "reference": "咖喱饭菜是一道以香草和香料为主的菜肴，并配以肉类或蔬菜。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 36,
+        "language": "zh",
+        "duration": 12.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.12,
+        "hypothesis": "咖喱饭菜是一道以香草和香料为主的菜肴，并配以肉类或蔬菜。",
+        "reference": "咖喱饭菜是一道以香草和香料为主的菜肴，并配以肉类或蔬菜。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 37,
+        "language": "zh",
+        "duration": 8.7,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.1,
+        "hypothesis": "除了周三的比赛，卡帕内多还参加了锦标赛的两项个人竞赛。",
+        "reference": "除了周三的比赛，卡帕内多（Carpanedo）还参加了锦标赛的两项个人竞赛。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 38,
+        "language": "zh",
+        "duration": 7.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.1,
+        "hypothesis": "除了周三的比赛，卡帕内多还参加了锦标赛的两项个人竞赛。",
+        "reference": "除了周三的比赛，卡帕内多（Carpanedo）还参加了锦标赛的两项个人竞赛。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 39,
+        "language": "zh",
+        "duration": 14.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.008,
+        "elapsed": 0.11,
+        "hypothesis": "除了周三的比赛，卡帕内多还参加了锦标赛的两项个人竞赛。",
+        "reference": "除了周三的比赛，卡帕内多（Carpanedo）还参加了锦标赛的两项个人竞赛。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 40,
+        "language": "zh",
+        "duration": 11.94,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.16,
+        "hypothesis": "同理，有了申根签证，你就不必分别向每个申根成员国申请签证，从而节省了时间、金钱和手续。",
+        "reference": "同理，有了申根签证，你就不必分别向每个申根成员国申请签证，从而节省了时间、金钱和手续。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 41,
+        "language": "zh",
+        "duration": 10.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.16,
+        "hypothesis": "同理，有了申根签证，你就不必分别向每个申根成员国申请签证，从而节省了时间、金钱和手续。",
+        "reference": "同理，有了申根签证，你就不必分别向每个申根成员国申请签证，从而节省了时间、金钱和手续。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 42,
+        "language": "zh",
+        "duration": 9.84,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.16,
+        "hypothesis": "同理，有了申根签证，你就不必分别向每个申根成员国申请签证，从而节省了时间、金钱和手续。",
+        "reference": "同理，有了申根签证，你就不必分别向每个申根成员国申请签证，从而节省了时间、金钱和手续。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 43,
+        "language": "zh",
+        "duration": 16.2,
+        "error_rate": 0.024390243902439025,
+        "error_details": {
+          "cer": 0.024390243902439025,
+          "ref_len": 41,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.17,
+        "hypothesis": "一名观察者形容，比什凯克正在陷入无政府状态，成群的人们在街上游荡，掠夺商店里的消费品。",
+        "reference": "一名观察者形容比什凯克（Bishkek）正在陷入“无政府“ 状态，成群的人们在街上游荡，掠夺商店里的消费品。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 44,
+        "language": "zh",
+        "duration": 19.32,
+        "error_rate": 0.024390243902439025,
+        "error_details": {
+          "cer": 0.024390243902439025,
+          "ref_len": 41,
+          "hyp_len": 42,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "elapsed": 0.17,
+        "hypothesis": "一名观察者形容，比什凯克正在陷入无政府状态，成群的人们在街上游荡，掠夺商店里的消费品。",
+        "reference": "一名观察者形容比什凯克（Bishkek）正在陷入“无政府“ 状态，成群的人们在街上游荡，掠夺商店里的消费品。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 45,
+        "language": "zh",
+        "duration": 11.76,
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.16,
+        "hypothesis": "一名观察者形容彼时凯克正在陷入无政府状态，成群的人们在街上游荡，掠夺商店里的消费品。",
+        "reference": "一名观察者形容比什凯克（Bishkek）正在陷入“无政府“ 状态，成群的人们在街上游荡，掠夺商店里的消费品。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 46,
+        "language": "zh",
+        "duration": 14.2,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.008,
+        "elapsed": 0.12,
+        "hypothesis": "对于在圣彼得广场举行的葬礼，出席者太多了，因此不可能每个人都能进入。",
+        "reference": "对于在圣彼得广场举行的葬礼，出席者太多了，因此不可能每个人都能进入。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 47,
+        "language": "zh",
+        "duration": 6.96,
+        "error_rate": 0.030303030303030304,
+        "error_details": {
+          "cer": 0.030303030303030304,
+          "ref_len": 33,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.017,
+        "elapsed": 0.12,
+        "hypothesis": "对于在圣彼得广场举行的葬礼，出席者太多了，因此不可能每个人都进入。",
+        "reference": "对于在圣彼得广场举行的葬礼，出席者太多了，因此不可能每个人都能进入。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 48,
+        "language": "zh",
+        "duration": 8.58,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 33,
+          "hyp_len": 33,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.12,
+        "hypothesis": "对于在圣彼得广场举行的葬礼，出席者太多了，因此不可能每个人都能进入。",
+        "reference": "对于在圣彼得广场举行的葬礼，出席者太多了，因此不可能每个人都能进入。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 49,
+        "language": "zh",
+        "duration": 11.76,
+        "error_rate": 0.1,
+        "error_details": {
+          "cer": 0.1,
+          "ref_len": 50,
+          "hyp_len": 51,
+          "substitutions": 4,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.18,
+        "hypothesis": "昨日上午，土耳其加济安纳普的警察总部发生了一起汽车爆炸弹爆炸事件，该事件导致两名警察死亡，二十余人受伤。",
+        "reference": "昨日上午，土耳其加齐安泰普（Gaziantep）的警察总部发生了一起汽车炸弹爆炸事件，该事件导致两名警察死亡，20 余人受伤。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 50,
+        "language": "zh",
+        "duration": 16.66,
+        "error_rate": 0.08,
+        "error_details": {
+          "cer": 0.08,
+          "ref_len": 50,
+          "hyp_len": 48,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.011,
+        "elapsed": 0.18,
+        "hypothesis": "昨日上午，土耳其加齐安泰普的警察总部发生了一起汽车爆炸事件，该事件导致两名警察死亡，二十余人受伤。",
+        "reference": "昨日上午，土耳其加齐安泰普（Gaziantep）的警察总部发生了一起汽车炸弹爆炸事件，该事件导致两名警察死亡，20 余人受伤。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 51,
+        "language": "zh",
+        "duration": 13.14,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.19,
+        "hypothesis": "上周，日本经济产业省（METI）宣布，苹果公司向该部门通报另外34起过热造成的事故，尽管该公司称这些事故并不严重。",
+        "reference": "上周，日本经济产业省 (METI) 宣布，苹果公司向该部门通报另外 34 起过热造成的事故，尽管该公司称这些事故“并不严重”。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 52,
+        "language": "zh",
+        "duration": 15.32,
+        "error_rate": 0.08,
+        "error_details": {
+          "cer": 0.08,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.011,
+        "elapsed": 0.17,
+        "hypothesis": "上周，日本经济产业省宣布，苹果公司向该部门通报另外三十四起过热造成的事故。尽管该公司称这些事故并不严重。",
+        "reference": "上周，日本经济产业省 (METI) 宣布，苹果公司向该部门通报另外 34 起过热造成的事故，尽管该公司称这些事故“并不严重”。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 53,
+        "language": "zh",
+        "duration": 10.32,
+        "error_rate": 0.03333333333333333,
+        "error_details": {
+          "cer": 0.03333333333333333,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.13,
+        "hypothesis": "美国陆军工兵部队估计，六英寸的降雨量就可能冲垮之前损坏的堤坝。",
+        "reference": "美国陆军工兵部队估计，6 英寸的降雨量就可能冲垮之前损坏的堤坝。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 54,
+        "language": "zh",
+        "duration": 13.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.13,
+        "hypothesis": "美国陆军工兵部队估计，6英寸的降雨量就可能冲垮之前损坏的堤坝。",
+        "reference": "美国陆军工兵部队估计，6 英寸的降雨量就可能冲垮之前损坏的堤坝。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 55,
+        "language": "zh",
+        "duration": 12.2,
+        "error_rate": 0.03333333333333333,
+        "error_details": {
+          "cer": 0.03333333333333333,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.13,
+        "hypothesis": "美国陆军工兵部队估计，六英寸的降雨量就可能冲垮之前损坏的堤坝。",
+        "reference": "美国陆军工兵部队估计，6 英寸的降雨量就可能冲垮之前损坏的堤坝。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 56,
+        "language": "zh",
+        "duration": 7.98,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "cer": 0.09090909090909091,
+          "ref_len": 33,
+          "hyp_len": 34,
+          "substitutions": 2,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.13,
+        "hypothesis": "然而，事实并非如此。虽然这份文件的背面写了一些东西，但并不是一份藏宝图。",
+        "reference": "然而事实并非如此。虽然这份文件的背面写了一些东西，但并是不一份藏宝图。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 57,
+        "language": "zh",
+        "duration": 9.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 23,
+          "hyp_len": 23,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.1,
+        "hypothesis": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。",
+        "reference": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 58,
+        "language": "zh",
+        "duration": 10.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 23,
+          "hyp_len": 23,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.1,
+        "hypothesis": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。",
+        "reference": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 59,
+        "language": "zh",
+        "duration": 5.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 23,
+          "hyp_len": 23,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.1,
+        "hypothesis": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。",
+        "reference": "空中铁匠乐队已经取消了他们巡回演唱会的剩余场次。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 60,
+        "language": "zh",
+        "duration": 6.0,
+        "error_rate": 0.05555555555555555,
+        "error_details": {
+          "cer": 0.05555555555555555,
+          "ref_len": 18,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.015,
+        "elapsed": 0.09,
+        "hypothesis": "州长办公室表示，伤者中十九人是警察。",
+        "reference": "州长办公室表示，伤者中有十九人是警察。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 61,
+        "language": "zh",
+        "duration": 7.02,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "cer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.1,
+        "hypothesis": "州长办公室表示，伤者中有19人是警察。",
+        "reference": "州长办公室表示，伤者中有十九人是警察。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 62,
+        "language": "zh",
+        "duration": 5.88,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "cer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.1,
+        "hypothesis": "州长办公室表示，伤者中有19人是警察。",
+        "reference": "州长办公室表示，伤者中有十九人是警察。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 63,
+        "language": "zh",
+        "duration": 15.98,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "elapsed": 0.14,
+        "hypothesis": "詹卡洛·费斯切拉因失去了对赛车的把控，在比赛开始后不久就退出了。",
+        "reference": "詹卡洛·费斯切拉因失去了对赛车的把控，在比赛开始后不久就退出了。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 64,
+        "language": "zh",
+        "duration": 9.6,
+        "error_rate": 0.1,
+        "error_details": {
+          "cer": 0.1,
+          "ref_len": 30,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.14,
+        "hypothesis": "张卡勒费斯切拉因失去对赛车的把控，在比赛开始后不久就退出了。",
+        "reference": "詹卡洛·费斯切拉因失去了对赛车的把控，在比赛开始后不久就退出了。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 65,
+        "language": "zh",
+        "duration": 13.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.14,
+        "hypothesis": "詹卡洛·费斯切拉因失去了对赛车的把控，在比赛开始后不久就退出了。",
+        "reference": "詹卡洛·费斯切拉因失去了对赛车的把控，在比赛开始后不久就退出了。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 66,
+        "language": "zh",
+        "duration": 6.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.1,
+        "hypothesis": "强烈建议旅客注意所在地的恶劣天气风险，它们可能会影响旅行计划。",
+        "reference": "强烈建议旅客注意所在地的恶劣天气风险，它们可能会影响旅行计划。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 67,
+        "language": "zh",
+        "duration": 9.18,
+        "error_rate": 0.03333333333333333,
+        "error_details": {
+          "cer": 0.03333333333333333,
+          "ref_len": 30,
+          "hyp_len": 31,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.11,
+        "hypothesis": "强烈建议旅旅客注意所在地的恶劣天气风险，它们可能会影响旅行计划。",
+        "reference": "强烈建议旅客注意所在地的恶劣天气风险，它们可能会影响旅行计划。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 68,
+        "language": "zh",
+        "duration": 7.74,
+        "error_rate": 0.03333333333333333,
+        "error_details": {
+          "cer": 0.03333333333333333,
+          "ref_len": 30,
+          "hyp_len": 31,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.11,
+        "hypothesis": "强烈建议旅客注意所在地的恶劣天气风险，它们很可能会影响旅行计划。",
+        "reference": "强烈建议旅客注意所在地的恶劣天气风险，它们可能会影响旅行计划。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 69,
+        "language": "zh",
+        "duration": 6.84,
+        "error_rate": 0.13793103448275862,
+        "error_details": {
+          "cer": 0.13793103448275862,
+          "ref_len": 29,
+          "hyp_len": 27,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.016,
+        "elapsed": 0.11,
+        "hypothesis": "文明是一种由共同生活、共同工作的人群社会所共享的单一文化。",
+        "reference": "文明是一种由共同生活、合作工作的人群（社会）所共享的单一文化。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 70,
+        "language": "zh",
+        "duration": 7.86,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "cer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.014,
+        "elapsed": 0.11,
+        "hypothesis": "文明是一种由共同生活、合作工作的人群社会所共享的单一文化。",
+        "reference": "文明是一种由共同生活、合作工作的人群（社会）所共享的单一文化。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 71,
+        "language": "zh",
+        "duration": 8.76,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "cer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.013,
+        "elapsed": 0.11,
+        "hypothesis": "文明是一种由共同生活、合作、工作的人群社会所共享的单一文化。",
+        "reference": "文明是一种由共同生活、合作工作的人群（社会）所共享的单一文化。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 72,
+        "language": "zh",
+        "duration": 13.56,
+        "error_rate": 0.08823529411764706,
+        "error_details": {
+          "cer": 0.08823529411764706,
+          "ref_len": 34,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.15,
+        "hypothesis": "水下的地形造成回流集中几处与几处较深的区域，那里可能会形成流向深水的急流。",
+        "reference": "水下的地形造成回流集中于几处较深的区域，那里可能会形成流向深水的急流。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 73,
+        "language": "zh",
+        "duration": 15.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.15,
+        "hypothesis": "水下的地形造成回流集中于几处较深的区域，那里可能会形成流向深水的急流。",
+        "reference": "水下的地形造成回流集中于几处较深的区域，那里可能会形成流向深水的急流。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 74,
+        "language": "zh",
+        "duration": 16.46,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "elapsed": 0.15,
+        "hypothesis": "水下的地形造成回流集中于几处较深的区域，那里可能会形成流向深水的急流。",
+        "reference": "水下的地形造成回流集中于几处较深的区域，那里可能会形成流向深水的急流。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 75,
+        "language": "zh",
+        "duration": 8.22,
+        "error_rate": 0.06060606060606061,
+        "error_details": {
+          "cer": 0.06060606060606061,
+          "ref_len": 33,
+          "hyp_len": 35,
+          "substitutions": 0,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.14,
+        "hypothesis": "植物在自然环境中状态最好，因此要抵住诱惑，不要去摘掉植物，哪怕只是一株。",
+        "reference": "植物在自然环境中状态最好。因此要抵住诱惑，不去摘掉植物，哪怕“只是一株”。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 76,
+        "language": "zh",
+        "duration": 14.62,
+        "error_rate": 0.06060606060606061,
+        "error_details": {
+          "cer": 0.06060606060606061,
+          "ref_len": 33,
+          "hyp_len": 34,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.14,
+        "hypothesis": "植物在自然环境中状态最好，因此要抵住诱惑，不要摘掉植物，哪怕只是一株。",
+        "reference": "植物在自然环境中状态最好。因此要抵住诱惑，不去摘掉植物，哪怕“只是一株”。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 77,
+        "language": "zh",
+        "duration": 13.46,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "cer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.15,
+        "hypothesis": "裂变原子弹的工作原理如下：把一颗原子核和许多质子及中子聚在一起，需要能量。",
+        "reference": "裂变原子弹的工作原理如下：把一个原子核和许多质子及中子聚在一起需要能量。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 78,
+        "language": "zh",
+        "duration": 8.22,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "cer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.14,
+        "hypothesis": "裂变原子弹的工作原理如下：把一个原子核和许多质子及中子聚集在一起，需要能量。",
+        "reference": "裂变原子弹的工作原理如下：把一个原子核和许多质子及中子聚在一起需要能量。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 79,
+        "language": "zh",
+        "duration": 7.92,
+        "error_rate": 0.02857142857142857,
+        "error_details": {
+          "cer": 0.02857142857142857,
+          "ref_len": 35,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.14,
+        "hypothesis": "裂变原子弹的工作原理如下：把一个原子核和许多质子及中子聚集在一起需要能量。",
+        "reference": "裂变原子弹的工作原理如下：把一个原子核和许多质子及中子聚在一起需要能量。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 80,
+        "language": "zh",
+        "duration": 6.3,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.11,
+        "hypothesis": "随着希腊知识的衰落，西方脱离了其希腊哲学和科学根源。",
+        "reference": "随着希腊知识的衰落，西方脱离了其希腊哲学和科学根源。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 81,
+        "language": "zh",
+        "duration": 5.58,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.11,
+        "hypothesis": "随着希腊知识的衰落，西方脱离了其希腊哲学和科学根源。",
+        "reference": "随着希腊知识的衰落，西方脱离了其希腊哲学和科学根源。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 82,
+        "language": "zh",
+        "duration": 6.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.11,
+        "hypothesis": "随着希腊知识的衰落，西方脱离了其希腊哲学和科学根源。",
+        "reference": "随着希腊知识的衰落，西方脱离了其希腊哲学和科学根源。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 83,
+        "language": "zh",
+        "duration": 14.86,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "cer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 30,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.14,
+        "hypothesis": "阿皮亚是萨摩亚的首都，该城镇位于乌波卢岛上，人口数量不足四万。",
+        "reference": "阿皮亚是萨摩亚的首都。该城镇位于乌波卢（Upolu）岛上，人口数量不足 4 万。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 84,
+        "language": "zh",
+        "duration": 5.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.1,
+        "hypothesis": "植物能制造人类吸入的氧气，吸收人类呼出的二氧化碳。",
+        "reference": "植物能制造人类吸入的氧气，吸收人类呼出的二氧化碳。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 85,
+        "language": "zh",
+        "duration": 6.06,
+        "error_rate": 0.08333333333333333,
+        "error_details": {
+          "cer": 0.08333333333333333,
+          "ref_len": 24,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.1,
+        "hypothesis": "植物能制造人类吸入吸入的氧气，吸收人类呼出的二氧化碳。",
+        "reference": "植物能制造人类吸入的氧气，吸收人类呼出的二氧化碳。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 86,
+        "language": "zh",
+        "duration": 6.54,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.1,
+        "hypothesis": "植物能制造人类吸入的氧气，吸收人类呼出的二氧化碳。",
+        "reference": "植物能制造人类吸入的氧气，吸收人类呼出的二氧化碳。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 87,
+        "language": "zh",
+        "duration": 10.68,
+        "error_rate": 0.05660377358490566,
+        "error_details": {
+          "cer": 0.05660377358490566,
+          "ref_len": 53,
+          "hyp_len": 53,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.18,
+        "hypothesis": "由于其在全盛时期的光污染还不像现在这么严重，所以天文台通常建立在城区或校园内，比现在修建的天文台更容易到达。",
+        "reference": "由于在其全盛时期的光污染还不像现在这么严重，所以天文台通常建立在城区或校园内，比现代修建的天文台更容易到达。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 88,
+        "language": "zh",
+        "duration": 13.38,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 53,
+          "hyp_len": 53,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.18,
+        "hypothesis": "由于在其全盛时期的光污染还不像现在这么严重，所以天文台通常建立在城区或校园内，比现代修建的天文台更容易到达。",
+        "reference": "由于在其全盛时期的光污染还不像现在这么严重，所以天文台通常建立在城区或校园内，比现代修建的天文台更容易到达。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 89,
+        "language": "zh",
+        "duration": 12.66,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "elapsed": 0.16,
+        "hypothesis": "早年，该节目仅在运营已久的互联网广播网站 TalkNet Radio 上播出。TalkNet Radio 是一个专注于谈话广播的网站。",
+        "reference": "早年，该节目仅在运营已久的互联网广播网站TogiNet Radio上播出，TogiNet Radio是一个专注于谈话广播的网站。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 90,
+        "language": "zh",
+        "duration": 10.32,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.016,
+        "elapsed": 0.16,
+        "hypothesis": "早年，该节目仅在运营已久的互联网广播网站 TGnet Radio 上播出。TGnet Radio 是一个专注于谈话广播的网站。",
+        "reference": "早年，该节目仅在运营已久的互联网广播网站TogiNet Radio上播出，TogiNet Radio是一个专注于谈话广播的网站。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 91,
+        "language": "zh",
+        "duration": 10.32,
+        "error_rate": 0.05405405405405406,
+        "error_details": {
+          "cer": 0.05405405405405406,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 1
+        },
+        "rtf": 0.017,
+        "elapsed": 0.18,
+        "hypothesis": "早年，该节目仅在运营已久的互联网广播网站上（TuneIn Radio）上播出。TuneIn Radio是一个专注于谈话广播的网站。",
+        "reference": "早年，该节目仅在运营已久的互联网广播网站TogiNet Radio上播出，TogiNet Radio是一个专注于谈话广播的网站。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 92,
+        "language": "zh",
+        "duration": 18.54,
+        "error_rate": 0.022222222222222223,
+        "error_details": {
+          "cer": 0.022222222222222223,
+          "ref_len": 90,
+          "hyp_len": 89,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.016,
+        "elapsed": 0.29,
+        "hypothesis": "来自美国普林斯顿大学和瑞典乌普萨拉大学的研究人员报告称，由于当地特有的达尔文雀中的永地雀和外来的仙人掌大嘴地雀之间的繁殖，这个新物种进化了两代，尽管人们认为这一过程需要更长的时间。",
+        "reference": "来自美国普林斯顿大学和瑞典乌普萨拉大学的研究人员报告称，由于当地特有的达尔文雀中的勇地雀和外来的仙人掌大嘴地雀之间的繁殖，这个新物种只进化了两代，尽管人们认为这一过程需要更长的时间。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 93,
+        "language": "zh",
+        "duration": 20.7,
+        "error_rate": 0.022222222222222223,
+        "error_details": {
+          "cer": 0.022222222222222223,
+          "ref_len": 90,
+          "hyp_len": 89,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.29,
+        "hypothesis": "来自美国普林斯顿大学和瑞典乌普萨拉大学的研究人员报告称，由于当地特有的达尔文雀的永地雀和外来的仙人掌大嘴地雀之间的繁殖，这个新物种只进化了两代，尽管人们认为这一过程需要更长的时间。",
+        "reference": "来自美国普林斯顿大学和瑞典乌普萨拉大学的研究人员报告称，由于当地特有的达尔文雀中的勇地雀和外来的仙人掌大嘴地雀之间的繁殖，这个新物种只进化了两代，尽管人们认为这一过程需要更长的时间。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 94,
+        "language": "zh",
+        "duration": 21.96,
+        "error_rate": 0.011111111111111112,
+        "error_details": {
+          "cer": 0.011111111111111112,
+          "ref_len": 90,
+          "hyp_len": 90,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.3,
+        "hypothesis": "来自美国普林斯顿大学和瑞典乌普萨拉大学的研究人员报告称，由于当地特有的达尔文雀中的永地雀和外来的仙人掌大嘴地雀之间的繁殖，这个新物种只进化了两代，尽管人们认为这一过程需要更长的时间。",
+        "reference": "来自美国普林斯顿大学和瑞典乌普萨拉大学的研究人员报告称，由于当地特有的达尔文雀中的勇地雀和外来的仙人掌大嘴地雀之间的繁殖，这个新物种只进化了两代，尽管人们认为这一过程需要更长的时间。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 95,
+        "language": "zh",
+        "duration": 10.98,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "cer": 0.027777777777777776,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.14,
+        "hypothesis": "研究该疾病的联合国专家丹尼尔·拉塔涅表示，疫情爆发很可能是由维和人员引起的。",
+        "reference": "研究该疾病的联合国专家丹妮尔·拉塔涅 (Danielle Lantagne) 表示，疫情爆发很可能是由维和人员引起的。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 96,
+        "language": "zh",
+        "duration": 17.12,
+        "error_rate": 0.05555555555555555,
+        "error_details": {
+          "cer": 0.05555555555555555,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.008,
+        "elapsed": 0.14,
+        "hypothesis": "研究该疾病的联合国专家丹尼尔·拉塔涅表示：“疫情爆发很可能是由维和人员引起的。”",
+        "reference": "研究该疾病的联合国专家丹妮尔·拉塔涅 (Danielle Lantagne) 表示，疫情爆发很可能是由维和人员引起的。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 97,
+        "language": "zh",
+        "duration": 9.42,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "cer": 0.027777777777777776,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.14,
+        "hypothesis": "研究该疾病的联合国专家丹尼尔·拉塔涅表示，疫情爆发很可能是由维和人员引起的。",
+        "reference": "研究该疾病的联合国专家丹妮尔·拉塔涅 (Danielle Lantagne) 表示，疫情爆发很可能是由维和人员引起的。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 98,
+        "language": "zh",
+        "duration": 11.62,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 31,
+          "hyp_len": 31,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.13,
+        "hypothesis": "毋庸置疑的是，如果你会讲一门罗曼语，那么学习葡萄牙语会更加容易。",
+        "reference": "毋庸置疑的是，如果你会讲一门罗曼语，那么学习葡萄牙语会更加容易。",
+        "metric_type": "cer"
+      },
+      {
+        "index": 99,
+        "language": "zh",
+        "duration": 8.7,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 31,
+          "hyp_len": 31,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.13,
+        "hypothesis": "毋庸置疑的是，如果你会讲一门罗曼语，那么学习葡萄牙语会更加容易。",
+        "reference": "毋庸置疑的是，如果你会讲一门罗曼语，那么学习葡萄牙语会更加容易。",
+        "metric_type": "cer"
+      }
+    ]
+  }
+}

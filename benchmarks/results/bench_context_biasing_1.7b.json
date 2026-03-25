@@ -1,0 +1,3119 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "quantization": "fp8",
+  "n_samples": 30,
+  "ko_baseline": {
+    "condition": "baseline",
+    "language": "ko",
+    "micro_cer": 2.1,
+    "avg_rtf": 0.017,
+    "n_samples": 30,
+    "per_sample": [
+      {
+        "index": 0,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다.",
+        "reference": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다"
+      },
+      {
+        "index": 1,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.015,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+      },
+      {
+        "index": 2,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.014,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+      },
+      {
+        "index": 3,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+      },
+      {
+        "index": 4,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+      },
+      {
+        "index": 5,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "cer": 0.027777777777777776,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그의 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+      },
+      {
+        "index": 6,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.013888888888888888,
+        "error_details": {
+          "cer": 0.013888888888888888,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+      },
+      {
+        "index": 7,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.01818181818181818,
+        "error_details": {
+          "cer": 0.01818181818181818,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "어제 아침 터키 가지안 태프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다.",
+        "reference": "어제 아침 터키 가지안테프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다"
+      },
+      {
+        "index": 8,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.015151515151515152,
+        "error_details": {
+          "cer": 0.015151515151515152,
+          "ref_len": 66,
+          "hyp_len": 66,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "이들의 시대에는 빛 공예가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다.",
+        "reference": "이들의 시대에는 빛 공해가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다"
+      },
+      {
+        "index": 9,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+      },
+      {
+        "index": 10,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+      },
+      {
+        "index": 11,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.2,
+        "error_details": {
+          "cer": 0.2,
+          "ref_len": 35,
+          "hyp_len": 35,
+          "substitutions": 7,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "집권당인 사하프리카 인민기구 (SWAPO)도 의회 선거에서 과반수를 유지했습니다.",
+        "reference": "집권당인 서아프리카 인민 기구swapo도 의회 선거에서 과반수를 유지했습니다"
+      },
+      {
+        "index": 12,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "예를 들어, 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+      },
+      {
+        "index": 13,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "예를 들어, 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+      },
+      {
+        "index": 14,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다. 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다.",
+        "reference": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다"
+      },
+      {
+        "index": 15,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+      },
+      {
+        "index": 16,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+      },
+      {
+        "index": 17,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.03,
+        "hypothesis": "지각은 가까운 쪽이 약 70km, 먼 쪽이 약 100km 두께입니다.",
+        "reference": "지각은 가까운 쪽이 약 70km 먼 쪽이 약 100km 두께입니다"
+      },
+      {
+        "index": 18,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤 늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요.",
+        "reference": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요"
+      },
+      {
+        "index": 19,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상에 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+      },
+      {
+        "index": 20,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+      },
+      {
+        "index": 21,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "cer": 0.07692307692307693,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.032,
+        "hypothesis": "어느 날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 22,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 23,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 24,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+      },
+      {
+        "index": 25,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+      },
+      {
+        "index": 26,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+      },
+      {
+        "index": 27,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+      },
+      {
+        "index": 28,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "독일의 구운 식품 상당수에는 또한 아몬드, 헤이즐넛 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다.",
+        "reference": "독일의 구운 식품 상당수에는 또한 아몬드 헤이즐넛 및 다른 견과류가 포함되어 있습니다 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다"
+      },
+      {
+        "index": 29,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.024390243902439025,
+        "error_details": {
+          "cer": 0.024390243902439025,
+          "ref_len": 41,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "hypothesis": "사막 모래 영향으로 인해 1990년 팀북투는 위험에 처한 세계문화유산 목록에 추가되었습니다.",
+        "reference": "사막 모래의 영향으로 인해 1990년 팀북투는 위험에 처한 세계 문화유산 목록에 추가되었습니다"
+      }
+    ]
+  },
+  "ko_oracle": {
+    "condition": "oracle",
+    "language": "ko",
+    "micro_cer": 2.17,
+    "avg_rtf": 0.016,
+    "n_samples": 30,
+    "per_sample": [
+      {
+        "index": 0,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다.",
+        "reference": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다"
+      },
+      {
+        "index": 1,
+        "condition": "oracle",
+        "system_msg": "Context keywords: bishkek",
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.014,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+      },
+      {
+        "index": 2,
+        "condition": "oracle",
+        "system_msg": "Context keywords: bishkek",
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.013,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+      },
+      {
+        "index": 3,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+      },
+      {
+        "index": 4,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+      },
+      {
+        "index": 5,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "cer": 0.027777777777777776,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그의 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+      },
+      {
+        "index": 6,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.013888888888888888,
+        "error_details": {
+          "cer": 0.013888888888888888,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+      },
+      {
+        "index": 7,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 2, 20",
+        "error_rate": 0.01818181818181818,
+        "error_details": {
+          "cer": 0.01818181818181818,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "어제 아침 터키 가지안 태프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다.",
+        "reference": "어제 아침 터키 가지안테프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다"
+      },
+      {
+        "index": 8,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.015151515151515152,
+        "error_details": {
+          "cer": 0.015151515151515152,
+          "ref_len": 66,
+          "hyp_len": 66,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "이들의 시대에는 빛 공예가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다.",
+        "reference": "이들의 시대에는 빛 공해가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다"
+      },
+      {
+        "index": 9,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 100",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+      },
+      {
+        "index": 10,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 100",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+      },
+      {
+        "index": 11,
+        "condition": "oracle",
+        "system_msg": "Context keywords: swapo",
+        "error_rate": 0.2,
+        "error_details": {
+          "cer": 0.2,
+          "ref_len": 35,
+          "hyp_len": 35,
+          "substitutions": 7,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "hypothesis": "집권 당인 사하프리카 인민기구 (SWAPO)도 의회 선거에서 과반수를 유지했습니다.",
+        "reference": "집권당인 서아프리카 인민 기구swapo도 의회 선거에서 과반수를 유지했습니다"
+      },
+      {
+        "index": 12,
+        "condition": "oracle",
+        "system_msg": "Context keywords: mm, 35",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+      },
+      {
+        "index": 13,
+        "condition": "oracle",
+        "system_msg": "Context keywords: mm, 35",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+      },
+      {
+        "index": 14,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다. 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다.",
+        "reference": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다"
+      },
+      {
+        "index": 15,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+      },
+      {
+        "index": 16,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+      },
+      {
+        "index": 17,
+        "condition": "oracle",
+        "system_msg": "Context keywords: km, km, 70, 100",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.027,
+        "hypothesis": "지각은 가까운 쪽이 약 70km, 먼 쪽이 약 100km 두께입니다.",
+        "reference": "지각은 가까운 쪽이 약 70km 먼 쪽이 약 100km 두께입니다"
+      },
+      {
+        "index": 18,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤 늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요.",
+        "reference": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요"
+      },
+      {
+        "index": 19,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상에 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+      },
+      {
+        "index": 20,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+      },
+      {
+        "index": 21,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "cer": 0.07692307692307693,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.028,
+        "hypothesis": "어느 날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 22,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 23,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 24,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+      },
+      {
+        "index": 25,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+      },
+      {
+        "index": 26,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+      },
+      {
+        "index": 27,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+      },
+      {
+        "index": 28,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "독일의 구운 식품 상당수에는 또한 아몬드, 헤이즐넛 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다.",
+        "reference": "독일의 구운 식품 상당수에는 또한 아몬드 헤이즐넛 및 다른 견과류가 포함되어 있습니다 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다"
+      },
+      {
+        "index": 29,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 1990",
+        "error_rate": 0.04878048780487805,
+        "error_details": {
+          "cer": 0.04878048780487805,
+          "ref_len": 41,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "hypothesis": "사막 모래 영양으로 인해 1990년 팀북투는 위험에 처한 세계문화유산 목록에 추가되었습니다.",
+        "reference": "사막 모래의 영향으로 인해 1990년 팀북투는 위험에 처한 세계 문화유산 목록에 추가되었습니다"
+      }
+    ]
+  },
+  "ko_generic": {
+    "condition": "generic",
+    "language": "ko",
+    "micro_cer": 2.24,
+    "avg_rtf": 0.016,
+    "n_samples": 30,
+    "per_sample": [
+      {
+        "index": 0,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다.",
+        "reference": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다"
+      },
+      {
+        "index": 1,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.014,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+      },
+      {
+        "index": 2,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.013,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다."
+      },
+      {
+        "index": 3,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+      },
+      {
+        "index": 4,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다"
+      },
+      {
+        "index": 5,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "cer": 0.027777777777777776,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그의 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+      },
+      {
+        "index": 6,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.013888888888888888,
+        "error_details": {
+          "cer": 0.013888888888888888,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다"
+      },
+      {
+        "index": 7,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.03636363636363636,
+        "error_details": {
+          "cer": 0.03636363636363636,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "어제 아침 터키 가지안 태프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 두 명이 죽고 20명 이상의 다른 사람들이 다쳤습니다.",
+        "reference": "어제 아침 터키 가지안테프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다"
+      },
+      {
+        "index": 8,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.015151515151515152,
+        "error_details": {
+          "cer": 0.015151515151515152,
+          "ref_len": 66,
+          "hyp_len": 66,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "이들의 시대에는 빛 공예가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다.",
+        "reference": "이들의 시대에는 빛 공해가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다"
+      },
+      {
+        "index": 9,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+      },
+      {
+        "index": 10,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다"
+      },
+      {
+        "index": 11,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.2,
+        "error_details": {
+          "cer": 0.2,
+          "ref_len": 35,
+          "hyp_len": 35,
+          "substitutions": 7,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "hypothesis": "집권당인 사하프리카 인민기구 SWAPO도 의회 선거에서 과반수를 유지했습니다.",
+        "reference": "집권당인 서아프리카 인민 기구swapo도 의회 선거에서 과반수를 유지했습니다"
+      },
+      {
+        "index": 12,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+      },
+      {
+        "index": 13,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다"
+      },
+      {
+        "index": 14,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다. 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다.",
+        "reference": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다"
+      },
+      {
+        "index": 15,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+      },
+      {
+        "index": 16,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다"
+      },
+      {
+        "index": 17,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.027,
+        "hypothesis": "지각은 가까운 쪽이 약 70km, 먼 쪽이 약 100km 두께입니다.",
+        "reference": "지각은 가까운 쪽이 약 70km 먼 쪽이 약 100km 두께입니다"
+      },
+      {
+        "index": 18,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤 늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요.",
+        "reference": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요"
+      },
+      {
+        "index": 19,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+      },
+      {
+        "index": 20,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라"
+      },
+      {
+        "index": 21,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "cer": 0.07692307692307693,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.028,
+        "hypothesis": "어느 날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 22,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 23,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다"
+      },
+      {
+        "index": 24,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+      },
+      {
+        "index": 25,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다"
+      },
+      {
+        "index": 26,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+      },
+      {
+        "index": 27,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다"
+      },
+      {
+        "index": 28,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "독일의 구운 식품 상당수에는 또한 아몬드, 헤이즐넛 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다.",
+        "reference": "독일의 구운 식품 상당수에는 또한 아몬드 헤이즐넛 및 다른 견과류가 포함되어 있습니다 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다"
+      },
+      {
+        "index": 29,
+        "condition": "generic",
+        "system_msg": "이 오디오는 뉴스, 역사, 과학, 문화 등 다양한 주제의 한국어 음성입니다.",
+        "error_rate": 0.024390243902439025,
+        "error_details": {
+          "cer": 0.024390243902439025,
+          "ref_len": 41,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "hypothesis": "사막 모래 영향으로 인해 1990년 팀 북투는 위험에 처한 세계문화유산 목록에 추가되었습니다.",
+        "reference": "사막 모래의 영향으로 인해 1990년 팀북투는 위험에 처한 세계 문화유산 목록에 추가되었습니다"
+      }
+    ]
+  },
+  "en_baseline": {
+    "condition": "baseline",
+    "language": "en",
+    "micro_wer": 7.48,
+    "avg_rtf": 0.017,
+    "n_samples": 30,
+    "per_sample": [
+      {
+        "index": 0,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.01,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty"
+      },
+      {
+        "index": 1,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.016,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty"
+      },
+      {
+        "index": 2,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.021,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation: hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed"
+      },
+      {
+        "index": 3,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.018,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation, hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed"
+      },
+      {
+        "index": 4,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night"
+      },
+      {
+        "index": 5,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night"
+      },
+      {
+        "index": 6,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "wer": 0.21428571428571427,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "Police Superintendent Shandra Shankar Solansky said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces"
+      },
+      {
+        "index": 7,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.14285714285714285,
+        "error_details": {
+          "wer": 0.14285714285714285,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "Police Superintendent Chandra Shikar Solanke said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces"
+      },
+      {
+        "index": 8,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects"
+      },
+      {
+        "index": 9,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects"
+      },
+      {
+        "index": 10,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing"
+      },
+      {
+        "index": 11,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing"
+      },
+      {
+        "index": 12,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride"
+      },
+      {
+        "index": 13,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride"
+      },
+      {
+        "index": 14,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the streets and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods"
+      },
+      {
+        "index": 15,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the street and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods"
+      },
+      {
+        "index": 16,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation"
+      },
+      {
+        "index": 17,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation"
+      },
+      {
+        "index": 18,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "wer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernández de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 km (31 miles) away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires"
+      },
+      {
+        "index": 19,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "wer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernández de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometers (31 miles) away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires"
+      },
+      {
+        "index": 20,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers"
+      },
+      {
+        "index": 21,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers"
+      },
+      {
+        "index": 22,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map"
+      },
+      {
+        "index": 23,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map"
+      },
+      {
+        "index": 24,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.023,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed"
+      },
+      {
+        "index": 25,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed"
+      },
+      {
+        "index": 26,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.047619047619047616,
+        "error_details": {
+          "wer": 0.047619047619047616,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.023,
+        "hypothesis": "All nouns, alongside the word \"see\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence"
+      },
+      {
+        "index": 27,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.09523809523809523,
+        "error_details": {
+          "wer": 0.09523809523809523,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "All nouns, alongside the words \"say\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence"
+      },
+      {
+        "index": 28,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.019,
+        "hypothesis": "The cabbage juice changes color depending on how acidic, basic, alkaline the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is"
+      },
+      {
+        "index": 29,
+        "condition": "baseline",
+        "system_msg": null,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "The cabbage juice changes colors depending on how acidic or basic (alkaline) the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is"
+      }
+    ]
+  },
+  "en_oracle": {
+    "condition": "oracle",
+    "language": "en",
+    "micro_wer": 7.14,
+    "avg_rtf": 0.015,
+    "n_samples": 30,
+    "per_sample": [
+      {
+        "index": 0,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.009,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty"
+      },
+      {
+        "index": 1,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty"
+      },
+      {
+        "index": 2,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.018,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation: hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed"
+      },
+      {
+        "index": 3,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.015,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation, hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed"
+      },
+      {
+        "index": 4,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night"
+      },
+      {
+        "index": 5,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night"
+      },
+      {
+        "index": 6,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "wer": 0.21428571428571427,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "hypothesis": "Police Superintendent Shandra Shankar Solansky said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces"
+      },
+      {
+        "index": 7,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.14285714285714285,
+        "error_details": {
+          "wer": 0.14285714285714285,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "Police Superintendent Chandra Shikar Solanke said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces"
+      },
+      {
+        "index": 8,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects"
+      },
+      {
+        "index": 9,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects"
+      },
+      {
+        "index": 10,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 1",
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing"
+      },
+      {
+        "index": 11,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 1",
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing"
+      },
+      {
+        "index": 12,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 500",
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride"
+      },
+      {
+        "index": 13,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 500",
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride"
+      },
+      {
+        "index": 14,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the streets and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods"
+      },
+      {
+        "index": 15,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the street and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods"
+      },
+      {
+        "index": 16,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation"
+      },
+      {
+        "index": 17,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation"
+      },
+      {
+        "index": 18,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 50, 31",
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "wer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernandez de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometres (31 miles) away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires"
+      },
+      {
+        "index": 19,
+        "condition": "oracle",
+        "system_msg": "Context keywords: 50, 31",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernandez de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometers, 31 miles away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires"
+      },
+      {
+        "index": 20,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers"
+      },
+      {
+        "index": 21,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers"
+      },
+      {
+        "index": 22,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map"
+      },
+      {
+        "index": 23,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map"
+      },
+      {
+        "index": 24,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed"
+      },
+      {
+        "index": 25,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed"
+      },
+      {
+        "index": 26,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.047619047619047616,
+        "error_details": {
+          "wer": 0.047619047619047616,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "hypothesis": "All nouns, alongside the word \"see\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence"
+      },
+      {
+        "index": 27,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.09523809523809523,
+        "error_details": {
+          "wer": 0.09523809523809523,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "All nouns, alongside the words \"say\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence"
+      },
+      {
+        "index": 28,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.017,
+        "hypothesis": "The cabbage juice changes color depending on how acidic, basic, alkaline the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is"
+      },
+      {
+        "index": 29,
+        "condition": "oracle",
+        "system_msg": null,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "The cabbage juice changes colors depending on how acidic or basic (alkaline) the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is"
+      }
+    ]
+  },
+  "en_generic": {
+    "condition": "generic",
+    "language": "en",
+    "micro_wer": 6.29,
+    "avg_rtf": 0.015,
+    "n_samples": 30,
+    "per_sample": [
+      {
+        "index": 0,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.009,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty"
+      },
+      {
+        "index": 1,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty"
+      },
+      {
+        "index": 2,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "20th century research has shown that there are two pools of genetic variation, hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed"
+      },
+      {
+        "index": 3,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.015,
+        "hypothesis": "Twentieth-century research has shown that there are two pools of genetic variation, hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed"
+      },
+      {
+        "index": 4,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night"
+      },
+      {
+        "index": 5,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night"
+      },
+      {
+        "index": 6,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "wer": 0.21428571428571427,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "hypothesis": "Police Superintendent Shandra Shankar Solansky said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces"
+      },
+      {
+        "index": 7,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.07142857142857142,
+        "error_details": {
+          "wer": 0.07142857142857142,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "Police Superintendent Chandra Shikar Solanki said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces"
+      },
+      {
+        "index": 8,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects"
+      },
+      {
+        "index": 9,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects"
+      },
+      {
+        "index": 10,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing"
+      },
+      {
+        "index": 11,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing"
+      },
+      {
+        "index": 12,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride"
+      },
+      {
+        "index": 13,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride"
+      },
+      {
+        "index": 14,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the streets and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods"
+      },
+      {
+        "index": 15,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the street and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods"
+      },
+      {
+        "index": 16,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.17391304347826086,
+        "error_details": {
+          "wer": 0.17391304347826086,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 2,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "During the Revolutionary War, the thirteen states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation"
+      },
+      {
+        "index": 17,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.17391304347826086,
+        "error_details": {
+          "wer": 0.17391304347826086,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 2,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "During the Revolutionary War, the Thirteen States first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation"
+      },
+      {
+        "index": 18,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.009,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernandez de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometers, 31 miles away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires"
+      },
+      {
+        "index": 19,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernandez de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometers, 31 miles away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires"
+      },
+      {
+        "index": 20,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers"
+      },
+      {
+        "index": 21,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers"
+      },
+      {
+        "index": 22,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map"
+      },
+      {
+        "index": 23,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map"
+      },
+      {
+        "index": 24,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and others several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed"
+      },
+      {
+        "index": 25,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and others several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed"
+      },
+      {
+        "index": 26,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.047619047619047616,
+        "error_details": {
+          "wer": 0.047619047619047616,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "hypothesis": "All nouns, alongside the word \"see\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence"
+      },
+      {
+        "index": 27,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.09523809523809523,
+        "error_details": {
+          "wer": 0.09523809523809523,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "hypothesis": "All nouns, alongside the words say for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence"
+      },
+      {
+        "index": 28,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.017,
+        "hypothesis": "The cabbage juice changes color depending on how acidic, basic, alkaline the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is"
+      },
+      {
+        "index": 29,
+        "condition": "generic",
+        "system_msg": "This audio contains English speech about news, history, science, culture, and various topics.",
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "hypothesis": "The cabbage juice changes colors depending on how acidic or basic, alkaline, the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is"
+      }
+    ]
+  }
+}

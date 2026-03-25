@@ -1,0 +1,3827 @@
+{
+  "model": "Qwen/Qwen3-ASR-1.7B",
+  "model_size": "1.7b",
+  "quantization": "fp8",
+  "n_samples": 100,
+  "mode": "batch",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "en_batch": {
+    "micro_wer": 5.15,
+    "overall_rtf": 0.016,
+    "total_audio_s": 956.3,
+    "total_elapsed_s": 15.3,
+    "results": [
+      {
+        "index": 0,
+        "language": "en",
+        "duration": 12.64,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.011,
+        "elapsed": 0.14,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty",
+        "metric_type": "wer"
+      },
+      {
+        "index": 1,
+        "language": "en",
+        "duration": 7.92,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.016,
+        "elapsed": 0.13,
+        "hypothesis": "Unfortunately, studying traffic flow is difficult because driver behavior cannot be predicted with 100% certainty.",
+        "reference": "unfortunately studying traffic flow is difficult because driver behavior cannot be predicted with one-hundred percent certainty",
+        "metric_type": "wer"
+      },
+      {
+        "index": 2,
+        "language": "en",
+        "duration": 5.88,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.021,
+        "elapsed": 0.12,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation: hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed",
+        "metric_type": "wer"
+      },
+      {
+        "index": 3,
+        "language": "en",
+        "duration": 6.96,
+        "error_rate": 0.125,
+        "error_details": {
+          "wer": 0.125,
+          "ref_len": 16,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.018,
+        "elapsed": 0.12,
+        "hypothesis": "20th-century research has shown that there are two pools of genetic variation, hidden and expressed.",
+        "reference": "twentieth century research has shown that there are two pools of genetic variation hidden and expressed",
+        "metric_type": "wer"
+      },
+      {
+        "index": 4,
+        "language": "en",
+        "duration": 8.94,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.17,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night",
+        "metric_type": "wer"
+      },
+      {
+        "index": 5,
+        "language": "en",
+        "duration": 11.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.17,
+        "hypothesis": "Remember that even though music on the main stages may have finished, there may be sections of the festival that will keep playing music until late into the night.",
+        "reference": "remember that even though music on the main stages may have finished there may be sections of the festival that will keep playing music until late into the night",
+        "metric_type": "wer"
+      },
+      {
+        "index": 6,
+        "language": "en",
+        "duration": 9.14,
+        "error_rate": 0.21428571428571427,
+        "error_details": {
+          "wer": 0.21428571428571427,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.12,
+        "hypothesis": "Police Superintendent Shandra Shankar Solansky said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces",
+        "metric_type": "wer"
+      },
+      {
+        "index": 7,
+        "language": "en",
+        "duration": 7.2,
+        "error_rate": 0.14285714285714285,
+        "error_details": {
+          "wer": 0.14285714285714285,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.12,
+        "hypothesis": "Police Superintendent Chandra Shikar Solanke said the accused appeared in court with covered faces.",
+        "reference": "police superintendent chandra shekhar solanki said the accused appeared in court with covered faces",
+        "metric_type": "wer"
+      },
+      {
+        "index": 8,
+        "language": "en",
+        "duration": 6.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.12,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects",
+        "metric_type": "wer"
+      },
+      {
+        "index": 9,
+        "language": "en",
+        "duration": 6.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.13,
+        "hypothesis": "The term \"bug\" is used by entomologists in a formal sense for this group of insects.",
+        "reference": "the term bug is used by entomologists in a formal sense for this group of insects",
+        "metric_type": "wer"
+      },
+      {
+        "index": 10,
+        "language": "en",
+        "duration": 10.38,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.17,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing",
+        "metric_type": "wer"
+      },
+      {
+        "index": 11,
+        "language": "en",
+        "duration": 9.3,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "wer": 0.1111111111111111,
+          "ref_len": 18,
+          "hyp_len": 19,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.16,
+        "hypothesis": "Popular sports include football, basketball, volleyball, water polo, fencing, rugby, cycling, ice hockey, roller hockey, and F1 motor racing.",
+        "reference": "popular sports include football basketball volleyball water-polo fencing rugby cycling ice hockey roller hockey and f1 motor racing",
+        "metric_type": "wer"
+      },
+      {
+        "index": 12,
+        "language": "en",
+        "duration": 13.34,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.19,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride",
+        "metric_type": "wer"
+      },
+      {
+        "index": 13,
+        "language": "en",
+        "duration": 12.12,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.18,
+        "hypothesis": "You can use Boda Boda motorcycle taxi to get around Goma. The normal local price is 500 Congolese francs for the short ride.",
+        "reference": "you can use boda-boda motorcycle taxi to get around goma. the normal local price is ~500 congolese francs for the short ride",
+        "metric_type": "wer"
+      },
+      {
+        "index": 14,
+        "language": "en",
+        "duration": 9.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.18,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the streets and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods",
+        "metric_type": "wer"
+      },
+      {
+        "index": 15,
+        "language": "en",
+        "duration": 7.92,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "elapsed": 0.17,
+        "hypothesis": "Bishkek was described as sinking into a state of anarchy by one observer, as gangs of people roamed the street and plundered stores of consumer goods.",
+        "reference": "bishkek was described as sinking into a state of anarchy by one observer as gangs of people roamed the streets and plundered stores of consumer goods",
+        "metric_type": "wer"
+      },
+      {
+        "index": 16,
+        "language": "en",
+        "duration": 10.08,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.17,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 17,
+        "language": "en",
+        "duration": 10.68,
+        "error_rate": 0.21739130434782608,
+        "error_details": {
+          "wer": 0.21739130434782608,
+          "ref_len": 23,
+          "hyp_len": 25,
+          "substitutions": 3,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.17,
+        "hypothesis": "During the Revolutionary War, the 13 states first formed a weak central government, with the Congress being its only component under the Articles of Confederation.",
+        "reference": "during the revolutionary war the thirteen states first formed a weak central government-with the congress being its only component-under the articles of confederation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 18,
+        "language": "en",
+        "duration": 19.56,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "wer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.21,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernández de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 km (31 miles) away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires",
+        "metric_type": "wer"
+      },
+      {
+        "index": 19,
+        "language": "en",
+        "duration": 12.12,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "wer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.2,
+        "hypothesis": "Current senator and Argentine first lady Cristina Fernández de Kirchner announced her presidential candidacy yesterday evening in La Plata, a city 50 kilometers (31 miles) away from Buenos Aires.",
+        "reference": "current senator and argentine first lady cristina fernandez de kirchner announced her presidential candidacy yesterday evening in la plata a city 50 kilometers 31 miles away from buenos aires",
+        "metric_type": "wer"
+      },
+      {
+        "index": 20,
+        "language": "en",
+        "duration": 4.56,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "elapsed": 0.1,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers",
+        "metric_type": "wer"
+      },
+      {
+        "index": 21,
+        "language": "en",
+        "duration": 7.26,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 11,
+          "hyp_len": 11,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.1,
+        "hypothesis": "The governor's office said 19 of the injured were police officers.",
+        "reference": "the governor's office said nineteen of the injured were police officers",
+        "metric_type": "wer"
+      },
+      {
+        "index": 22,
+        "language": "en",
+        "duration": 8.54,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.15,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map",
+        "metric_type": "wer"
+      },
+      {
+        "index": 23,
+        "language": "en",
+        "duration": 10.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.15,
+        "hypothesis": "However, that is not true. Although there is something written on the back of the document, it is not a treasure map.",
+        "reference": "however that is not true although there is something written on the back of the document it is not a treasure map",
+        "metric_type": "wer"
+      },
+      {
+        "index": 24,
+        "language": "en",
+        "duration": 5.64,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "elapsed": 0.12,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed",
+        "metric_type": "wer"
+      },
+      {
+        "index": 25,
+        "language": "en",
+        "duration": 6.6,
+        "error_rate": 0.0625,
+        "error_details": {
+          "wer": 0.0625,
+          "ref_len": 16,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.12,
+        "hypothesis": "In some areas, boiling water for a minute is enough, and in others, several minutes are needed.",
+        "reference": "in some areas boiling water for a minute is enough in others several minutes are needed",
+        "metric_type": "wer"
+      },
+      {
+        "index": 26,
+        "language": "en",
+        "duration": 6.6,
+        "error_rate": 0.047619047619047616,
+        "error_details": {
+          "wer": 0.047619047619047616,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "elapsed": 0.15,
+        "hypothesis": "All nouns, alongside the word \"see\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence",
+        "metric_type": "wer"
+      },
+      {
+        "index": 27,
+        "language": "en",
+        "duration": 8.76,
+        "error_rate": 0.09523809523809523,
+        "error_details": {
+          "wer": 0.09523809523809523,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.15,
+        "hypothesis": "All nouns, alongside the words \"say\" for you, always begin with a capital letter, even in the middle of a sentence.",
+        "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence",
+        "metric_type": "wer"
+      },
+      {
+        "index": 28,
+        "language": "en",
+        "duration": 5.76,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.019,
+        "elapsed": 0.11,
+        "hypothesis": "The cabbage juice changes color depending on how acidic, basic, alkaline the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is",
+        "metric_type": "wer"
+      },
+      {
+        "index": 29,
+        "language": "en",
+        "duration": 6.72,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.12,
+        "hypothesis": "The cabbage juice changes colors depending on how acidic or basic (alkaline) the chemical is.",
+        "reference": "the cabbage juice changes color depending on how acidic or basic alkaline the chemical is",
+        "metric_type": "wer"
+      },
+      {
+        "index": 30,
+        "language": "en",
+        "duration": 13.18,
+        "error_rate": 0.08695652173913043,
+        "error_details": {
+          "wer": 0.08695652173913043,
+          "ref_len": 23,
+          "hyp_len": 24,
+          "substitutions": 1,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.16,
+        "hypothesis": "In its early days, the show was featured solely at the long-running internet radio site Tokyo Net Radio, a site focused on talk radio.",
+        "reference": "in its early days the show was featured solely at the long-running internet radio site toginet radio a site focused on talk radio",
+        "metric_type": "wer"
+      },
+      {
+        "index": 31,
+        "language": "en",
+        "duration": 11.22,
+        "error_rate": 0.043478260869565216,
+        "error_details": {
+          "wer": 0.043478260869565216,
+          "ref_len": 23,
+          "hyp_len": 23,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.16,
+        "hypothesis": "In its early days, the show was featured solely at the long-running internet radio site Toggenback Radio, a site focused on talk radio.",
+        "reference": "in its early days the show was featured solely at the long-running internet radio site toginet radio a site focused on talk radio",
+        "metric_type": "wer"
+      },
+      {
+        "index": 32,
+        "language": "en",
+        "duration": 7.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.026,
+        "elapsed": 0.2,
+        "hypothesis": "Four skiers in the women's sitting group failed to finish their runs, and 45 of the 117 total skiers in the giant slalom failed to rank in the race.",
+        "reference": "four skiers in the women's sitting group failed to finish their runs and 45 of the 117 total skiers in the giant slalom failed to rank in the race",
+        "metric_type": "wer"
+      },
+      {
+        "index": 33,
+        "language": "en",
+        "duration": 12.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.21,
+        "hypothesis": "Four skiers in the women's sitting group failed to finish their runs, and 45 of the 117 total skiers in the giant slalom failed to rank in the race.",
+        "reference": "four skiers in the women's sitting group failed to finish their runs and 45 of the 117 total skiers in the giant slalom failed to rank in the race",
+        "metric_type": "wer"
+      },
+      {
+        "index": 34,
+        "language": "en",
+        "duration": 10.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.17,
+        "hypothesis": "Apia is the capital of Samoa. The town is on the island of Upolu and has a population of just under 40,000.",
+        "reference": "apia is the capital of samoa the town is on the island of upolu and has a population of just under 40,000",
+        "metric_type": "wer"
+      },
+      {
+        "index": 35,
+        "language": "en",
+        "duration": 9.96,
+        "error_rate": 0.045454545454545456,
+        "error_details": {
+          "wer": 0.045454545454545456,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.17,
+        "hypothesis": "Apia is the capital of Samoa. The town is on the island of Apulu and has a population of just under 40,000.",
+        "reference": "apia is the capital of samoa the town is on the island of upolu and has a population of just under 40,000",
+        "metric_type": "wer"
+      },
+      {
+        "index": 36,
+        "language": "en",
+        "duration": 12.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.26,
+        "hypothesis": "Perry stated that he would return to Texas to assess the results of tonight's caucus, determine whether there is a path forward for myself in this race, but later said that he would remain in the race and compete in the January 21 South Carolina primary.",
+        "reference": "perry stated that he would return to texas to assess the results of tonight's caucus determine whether there is a path forward for myself in this race but later said that he would remain in the race and compete in the january 21 south carolina primary",
+        "metric_type": "wer"
+      },
+      {
+        "index": 37,
+        "language": "en",
+        "duration": 13.8,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.26,
+        "hypothesis": "Perry stated that he would return to Texas to assess the results of tonight's caucus, determine whether there is a path forward for myself in this race, but later said that he would remain in the race and compete in the January 21 South Carolina primary.",
+        "reference": "perry stated that he would return to texas to assess the results of tonight's caucus determine whether there is a path forward for myself in this race but later said that he would remain in the race and compete in the january 21 south carolina primary",
+        "metric_type": "wer"
+      },
+      {
+        "index": 38,
+        "language": "en",
+        "duration": 6.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.13,
+        "hypothesis": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+        "reference": "he did not set a figure for the cuts saying they will be made based on china's economic output",
+        "metric_type": "wer"
+      },
+      {
+        "index": 39,
+        "language": "en",
+        "duration": 6.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.13,
+        "hypothesis": "He did not set a figure for the cuts, saying they will be made based on China's economic output.",
+        "reference": "he did not set a figure for the cuts saying they will be made based on china's economic output",
+        "metric_type": "wer"
+      },
+      {
+        "index": 40,
+        "language": "en",
+        "duration": 6.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "elapsed": 0.14,
+        "hypothesis": "After the dam was built in 1963, the seasonal floods that would spread sediment throughout the river were halted.",
+        "reference": "after the dam was built in 1963 the seasonal floods that would spread sediment throughout the river were halted",
+        "metric_type": "wer"
+      },
+      {
+        "index": 41,
+        "language": "en",
+        "duration": 9.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.14,
+        "hypothesis": "After the dam was built in 1963, the seasonal floods that would spread sediment throughout the river were halted.",
+        "reference": "after the dam was built in 1963 the seasonal floods that would spread sediment throughout the river were halted",
+        "metric_type": "wer"
+      },
+      {
+        "index": 42,
+        "language": "en",
+        "duration": 10.98,
+        "error_rate": 0.029411764705882353,
+        "error_details": {
+          "wer": 0.029411764705882353,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.21,
+        "hypothesis": "Its long jaws were studded with more than 70 razor-sharp teeth, along with an extra set in the roof of its mouth, meaning that it was no escape for anything that crossed its path.",
+        "reference": "its long jaws were studded with more than 70 razor-sharp teeth along with an extra set in the roof of its mouth meaning that there was no escape for anything that crossed its path",
+        "metric_type": "wer"
+      },
+      {
+        "index": 43,
+        "language": "en",
+        "duration": 16.2,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.22,
+        "hypothesis": "Its long jaws were studded with more than 70 razor-sharp teeth, along with an extra set in the roof of its mouth, meaning that there was no escape for anything that crossed its path.",
+        "reference": "its long jaws were studded with more than 70 razor-sharp teeth along with an extra set in the roof of its mouth meaning that there was no escape for anything that crossed its path",
+        "metric_type": "wer"
+      },
+      {
+        "index": 44,
+        "language": "en",
+        "duration": 10.2,
+        "error_rate": 0.08,
+        "error_details": {
+          "wer": 0.08,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.21,
+        "hypothesis": "The Sundarbans are the largest litoral mangrove belt in the world, stretching 80 km (50 miles) into the Bangladeshi and Indian hinterland from the coast.",
+        "reference": "the sundarbans are the largest littoral mangrove belt in the world stretching 80 km 50 mi into the bangladeshi and indian hinterland from the coast",
+        "metric_type": "wer"
+      },
+      {
+        "index": 45,
+        "language": "en",
+        "duration": 12.24,
+        "error_rate": 0.04,
+        "error_details": {
+          "wer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.21,
+        "hypothesis": "The Sundarbans are the largest littoral mangrove belt in the world, stretching 80 km (50 miles) into the Bangladeshi and Indian hinterland from the coast.",
+        "reference": "the sundarbans are the largest littoral mangrove belt in the world stretching 80 km 50 mi into the bangladeshi and indian hinterland from the coast",
+        "metric_type": "wer"
+      },
+      {
+        "index": 46,
+        "language": "en",
+        "duration": 20.4,
+        "error_rate": 0.10204081632653061,
+        "error_details": {
+          "wer": 0.10204081632653061,
+          "ref_len": 49,
+          "hyp_len": 50,
+          "substitutions": 4,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.33,
+        "hypothesis": "Researchers from Princeton University in the United States and Uppsala University in Sweden reported the new species evolved in just two generations, though this process has the ability to take much longer due to the breeding between an endemic Darwin finch, Geospiza fortis, and the immigrant cactus finch, Geospiza conirostris.",
+        "reference": "researchers from princeton university in the united states and uppsala university in sweden reported the new species evolved in just two generations though this process had been believed to take much longer due to breeding between an endemic darwin finch geospiza fortes and the immigrant cactus finch geospiza conirostris",
+        "metric_type": "wer"
+      },
+      {
+        "index": 47,
+        "language": "en",
+        "duration": 13.98,
+        "error_rate": 0.19047619047619047,
+        "error_details": {
+          "wer": 0.19047619047619047,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.21,
+        "hypothesis": "Australia's Mitchell Goorley finished 11th in the men's standing super-G. Czech competitor Oldrich Doležel finished 16th in the men's sitting super-G.",
+        "reference": "australia's mitchell gourley finished eleventh in the men's standing super-g czech competitor oldrich jelinek finished sixteenth in the men's sitting super-g",
+        "metric_type": "wer"
+      },
+      {
+        "index": 48,
+        "language": "en",
+        "duration": 15.6,
+        "error_rate": 0.2857142857142857,
+        "error_details": {
+          "wer": 0.2857142857142857,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 6,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.22,
+        "hypothesis": "Australia's Mitchell Gowrie finished 11th in the men's standing super-G. Chet's competitor Ulrich Juklun finished 16th in the men's sitting super-G.",
+        "reference": "australia's mitchell gourley finished eleventh in the men's standing super-g czech competitor oldrich jelinek finished sixteenth in the men's sitting super-g",
+        "metric_type": "wer"
+      },
+      {
+        "index": 49,
+        "language": "en",
+        "duration": 7.86,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.11,
+        "hypothesis": "First, most riders wear riding boots with a heel and a smooth, quite narrow sole.",
+        "reference": "first most riders wear riding boots with a heel and a smooth quite narrow sole",
+        "metric_type": "wer"
+      },
+      {
+        "index": 50,
+        "language": "en",
+        "duration": 4.68,
+        "error_rate": 0.06666666666666667,
+        "error_details": {
+          "wer": 0.06666666666666667,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.024,
+        "elapsed": 0.11,
+        "hypothesis": "First, most riders were riding boots with a heel and a smooth, quite narrow sole.",
+        "reference": "first most riders wear riding boots with a heel and a smooth quite narrow sole",
+        "metric_type": "wer"
+      },
+      {
+        "index": 51,
+        "language": "en",
+        "duration": 7.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 23,
+          "hyp_len": 23,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.14,
+        "hypothesis": "Hong Kong Island gives the territory of Hong Kong its name and is the place that many tourists regard as the main focus.",
+        "reference": "hong kong island gives the territory of hong kong its name and is the place that many tourists regard as the main focus",
+        "metric_type": "wer"
+      },
+      {
+        "index": 52,
+        "language": "en",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 23,
+          "hyp_len": 23,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.14,
+        "hypothesis": "Hong Kong Island gives the territory of Hong Kong its name, and is the place that many tourists regard as the main focus.",
+        "reference": "hong kong island gives the territory of hong kong its name and is the place that many tourists regard as the main focus",
+        "metric_type": "wer"
+      },
+      {
+        "index": 53,
+        "language": "en",
+        "duration": 6.6,
+        "error_rate": 0.2,
+        "error_details": {
+          "wer": 0.2,
+          "ref_len": 20,
+          "hyp_len": 21,
+          "substitutions": 3,
+          "insertions": 1,
+          "deletions": 0
+        },
+        "rtf": 0.023,
+        "elapsed": 0.15,
+        "hypothesis": "Cubs are made up of one of two, three related adult males, along with as many as 30 females and cubs.",
+        "reference": "prides are made up of one to three related adult males along with as many as thirty females and cubs",
+        "metric_type": "wer"
+      },
+      {
+        "index": 54,
+        "language": "en",
+        "duration": 6.78,
+        "error_rate": 0.05,
+        "error_details": {
+          "wer": 0.05,
+          "ref_len": 20,
+          "hyp_len": 20,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.15,
+        "hypothesis": "Prides are made up of one to three related adult males, along with as many as 30 females and cubs.",
+        "reference": "prides are made up of one to three related adult males along with as many as thirty females and cubs",
+        "metric_type": "wer"
+      },
+      {
+        "index": 55,
+        "language": "en",
+        "duration": 9.72,
+        "error_rate": 0.10344827586206896,
+        "error_details": {
+          "wer": 0.10344827586206896,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.18,
+        "hypothesis": "Leighton had asked for changes to the Conservatives' environmental bill during the meeting with the PM, asking for a thorough and complete rewriting of the Conservatives' party environmental bill.",
+        "reference": "layton had asked for changes to the conservatives' environmental bill during the meeting with the pm asking for a thorough and complete rewriting of the conservative party's environmental bill",
+        "metric_type": "wer"
+      },
+      {
+        "index": 56,
+        "language": "en",
+        "duration": 11.28,
+        "error_rate": 0.06896551724137931,
+        "error_details": {
+          "wer": 0.06896551724137931,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.18,
+        "hypothesis": "Leighton had asked for changes to the Conservative environmental bill during the meeting with the PM, asking for a thorough and complete rewriting of the Conservative Party's environmental bill.",
+        "reference": "layton had asked for changes to the conservatives' environmental bill during the meeting with the pm asking for a thorough and complete rewriting of the conservative party's environmental bill",
+        "metric_type": "wer"
+      },
+      {
+        "index": 57,
+        "language": "en",
+        "duration": 9.76,
+        "error_rate": 0.045454545454545456,
+        "error_details": {
+          "wer": 0.045454545454545456,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.16,
+        "hypothesis": "Vatican City population is around 800. It is the smallest independent country in the world, and the country with the lowest population.",
+        "reference": "vatican city's population is around 800 it is the smallest independent country in the world and the country with the lowest population",
+        "metric_type": "wer"
+      },
+      {
+        "index": 58,
+        "language": "en",
+        "duration": 10.74,
+        "error_rate": 0.22727272727272727,
+        "error_details": {
+          "wer": 0.22727272727272727,
+          "ref_len": 22,
+          "hyp_len": 18,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 4
+        },
+        "rtf": 0.014,
+        "elapsed": 0.15,
+        "hypothesis": "Vatican City population is around 800. It is the smallest independent country in the world, and the population.",
+        "reference": "vatican city's population is around 800 it is the smallest independent country in the world and the country with the lowest population",
+        "metric_type": "wer"
+      },
+      {
+        "index": 59,
+        "language": "en",
+        "duration": 6.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.1,
+        "hypothesis": "In the warm climate of the Middle East, the house was not so important.",
+        "reference": "in the warm climate of the middle east the house was not so important",
+        "metric_type": "wer"
+      },
+      {
+        "index": 60,
+        "language": "en",
+        "duration": 6.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.1,
+        "hypothesis": "In the warm climate of the Middle East, the house was not so important.",
+        "reference": "in the warm climate of the middle east the house was not so important",
+        "metric_type": "wer"
+      },
+      {
+        "index": 61,
+        "language": "en",
+        "duration": 4.38,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.025,
+        "elapsed": 0.11,
+        "hypothesis": "This seems sensible because the Earth doesn't feel as if it's moving, does it?",
+        "reference": "this seems sensible because the earth doesn't feel as if it's moving does it",
+        "metric_type": "wer"
+      },
+      {
+        "index": 62,
+        "language": "en",
+        "duration": 5.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.11,
+        "hypothesis": "This seems sensible because the Earth doesn't feel as if it's moving, does it?",
+        "reference": "this seems sensible because the earth doesn't feel as if it's moving does it",
+        "metric_type": "wer"
+      },
+      {
+        "index": 63,
+        "language": "en",
+        "duration": 12.94,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.17,
+        "hypothesis": "Ancient China had a unique way of showing different time periods. Each stage of China, or each family that was in power, was a distinctive dynasty.",
+        "reference": "ancient china had a unique way of showing different time periods each stage of china or each family that was in power was a distinctive dynasty",
+        "metric_type": "wer"
+      },
+      {
+        "index": 64,
+        "language": "en",
+        "duration": 12.24,
+        "error_rate": 0.038461538461538464,
+        "error_details": {
+          "wer": 0.038461538461538464,
+          "ref_len": 26,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "elapsed": 0.17,
+        "hypothesis": "Ancient China had a unique way of showing different periods. Each stage of China, or each family that was in power, was a distinctive dynasty.",
+        "reference": "ancient china had a unique way of showing different time periods each stage of china or each family that was in power was a distinctive dynasty",
+        "metric_type": "wer"
+      },
+      {
+        "index": 65,
+        "language": "en",
+        "duration": 9.58,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 20,
+          "hyp_len": 20,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.14,
+        "hypothesis": "In the north, the region is bounded by the Sahel, and in the south and west by the Atlantic Ocean.",
+        "reference": "in the north the region is bounded by the sahel and in the south and west by the atlantic ocean",
+        "metric_type": "wer"
+      },
+      {
+        "index": 66,
+        "language": "en",
+        "duration": 7.14,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 20,
+          "hyp_len": 20,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.14,
+        "hypothesis": "In the north, the region is bounded by the Sahel, and in the south and west by the Atlantic Ocean.",
+        "reference": "in the north the region is bounded by the sahel and in the south and west by the atlantic ocean",
+        "metric_type": "wer"
+      },
+      {
+        "index": 67,
+        "language": "en",
+        "duration": 9.24,
+        "error_rate": 0.13636363636363635,
+        "error_details": {
+          "wer": 0.13636363636363635,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.16,
+        "hypothesis": "Duvall, who was married to two adult children, did not leave a big impression on Millard, to whom the story was related.",
+        "reference": "duvall who is married with two adult children did not leave a big impression on miller to whom the story was related",
+        "metric_type": "wer"
+      },
+      {
+        "index": 68,
+        "language": "en",
+        "duration": 6.24,
+        "error_rate": 0.09090909090909091,
+        "error_details": {
+          "wer": 0.09090909090909091,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.024,
+        "elapsed": 0.15,
+        "hypothesis": "Duval, who was married with two adult children, did not leave a big impression on Miller, to whom the story was related.",
+        "reference": "duvall who is married with two adult children did not leave a big impression on miller to whom the story was related",
+        "metric_type": "wer"
+      },
+      {
+        "index": 69,
+        "language": "en",
+        "duration": 13.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.17,
+        "hypothesis": "Although AI has a strong connotation of science fiction, AI forms a very important branch of computer science, dealing with behavior learning and intelligent adaptation in a machine.",
+        "reference": "although ai has a strong connotation of science fiction ai forms a very important branch of computer science dealing with behavior learning and intelligent adaptation in a machine",
+        "metric_type": "wer"
+      },
+      {
+        "index": 70,
+        "language": "en",
+        "duration": 16.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.011,
+        "elapsed": 0.18,
+        "hypothesis": "Although AI has a strong connotation of science fiction, AI forms a very important branch of computer science, dealing with behavior, learning, and intelligent adaptation in a machine.",
+        "reference": "although ai has a strong connotation of science fiction ai forms a very important branch of computer science dealing with behavior learning and intelligent adaptation in a machine",
+        "metric_type": "wer"
+      },
+      {
+        "index": 71,
+        "language": "en",
+        "duration": 6.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.11,
+        "hypothesis": "After the accident occurred, Gibson was transported to a hospital, but died shortly afterwards.",
+        "reference": "after the accident occurred gibson was transported to a hospital but died shortly afterwards",
+        "metric_type": "wer"
+      },
+      {
+        "index": 72,
+        "language": "en",
+        "duration": 5.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.11,
+        "hypothesis": "People now write messages on computer screens, never having to come close to a sharpener.",
+        "reference": "people now write messages on computer screens never having to come close to a sharpener",
+        "metric_type": "wer"
+      },
+      {
+        "index": 73,
+        "language": "en",
+        "duration": 8.8,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.11,
+        "hypothesis": "People now write messages on computer screens, never having to come close to a sharpener.",
+        "reference": "people now write messages on computer screens never having to come close to a sharpener",
+        "metric_type": "wer"
+      },
+      {
+        "index": 74,
+        "language": "en",
+        "duration": 11.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.18,
+        "hypothesis": "Muhammad was deeply interested in matters beyond this mundane life. He used to frequent a cave that became known as Hira on the mountain of Noor Light for contemplation.",
+        "reference": "muhammad was deeply interested in matters beyond this mundane life. he used to frequent a cave that became known as  hira‘” on the mountain of  noor” light for contemplation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 75,
+        "language": "en",
+        "duration": 14.52,
+        "error_rate": 0.034482758620689655,
+        "error_details": {
+          "wer": 0.034482758620689655,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.19,
+        "hypothesis": "Muhammad was deeply interested in matters beyond his mundane life. He used to frequent a cave that became known as Hira on the mountain of Noor Light for contemplation.",
+        "reference": "muhammad was deeply interested in matters beyond this mundane life. he used to frequent a cave that became known as  hira‘” on the mountain of  noor” light for contemplation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 76,
+        "language": "en",
+        "duration": 7.74,
+        "error_rate": 0.07142857142857142,
+        "error_details": {
+          "wer": 0.07142857142857142,
+          "ref_len": 28,
+          "hyp_len": 27,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.021,
+        "elapsed": 0.17,
+        "hypothesis": "Some people thought he was right, but many people believed the opposite—that the solar system moved around the Earth, including the Sun and even the other stars.",
+        "reference": "some people thought he was right but many people believed the opposite; that the solar system moved around the earth including the sun and even the other stars",
+        "metric_type": "wer"
+      },
+      {
+        "index": 77,
+        "language": "en",
+        "duration": 7.92,
+        "error_rate": 0.10714285714285714,
+        "error_details": {
+          "wer": 0.10714285714285714,
+          "ref_len": 28,
+          "hyp_len": 26,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 2
+        },
+        "rtf": 0.02,
+        "elapsed": 0.16,
+        "hypothesis": "Some people thought he was right, but many people believed the opposite—that the solar system moved around the Earth, including the Sun and even other stars.",
+        "reference": "some people thought he was right but many people believed the opposite; that the solar system moved around the earth including the sun and even the other stars",
+        "metric_type": "wer"
+      },
+      {
+        "index": 78,
+        "language": "en",
+        "duration": 5.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.024,
+        "elapsed": 0.13,
+        "hypothesis": "Swirl the two dry powders together, and then with clean, wet hands, squeeze them into a ball.",
+        "reference": "swirl the two dry powders together and then with clean wet hands squeeze them into a ball",
+        "metric_type": "wer"
+      },
+      {
+        "index": 79,
+        "language": "en",
+        "duration": 8.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.13,
+        "hypothesis": "Swirl the two dry powders together, and then with clean, wet hands, squeeze them into a ball.",
+        "reference": "swirl the two dry powders together and then with clean wet hands squeeze them into a ball",
+        "metric_type": "wer"
+      },
+      {
+        "index": 80,
+        "language": "en",
+        "duration": 9.18,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 19,
+          "hyp_len": 19,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.13,
+        "hypothesis": "When all available resources are effectively used across the functional departments of an organization, creativity and ingenuity can transpire.",
+        "reference": "when all available resources are effectively used across the functional departments of an organization creativity and ingenuity can transpire",
+        "metric_type": "wer"
+      },
+      {
+        "index": 81,
+        "language": "en",
+        "duration": 8.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.13,
+        "hypothesis": "The moisture on your hands will react with the outer layers, which will feel funny and form a sort of shell.",
+        "reference": "the moisture on your hands will react with the outer layers which will feel funny and form a sort of shell",
+        "metric_type": "wer"
+      },
+      {
+        "index": 82,
+        "language": "en",
+        "duration": 8.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 21,
+          "hyp_len": 21,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.13,
+        "hypothesis": "The moisture on your hands will react with the outer layers, which will feel funny and form a sort of shell.",
+        "reference": "the moisture on your hands will react with the outer layers which will feel funny and form a sort of shell",
+        "metric_type": "wer"
+      },
+      {
+        "index": 83,
+        "language": "en",
+        "duration": 9.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.13,
+        "hypothesis": "During this period of European history, the Catholic Church, which had become rich and powerful, came under scrutiny.",
+        "reference": "during this period of european history the catholic church which had become rich and powerful came under scrutiny",
+        "metric_type": "wer"
+      },
+      {
+        "index": 84,
+        "language": "en",
+        "duration": 11.4,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.13,
+        "hypothesis": "During this period of European history, the Catholic Church, which had become rich and powerful, came under scrutiny.",
+        "reference": "during this period of european history the catholic church which had become rich and powerful came under scrutiny",
+        "metric_type": "wer"
+      },
+      {
+        "index": 85,
+        "language": "en",
+        "duration": 7.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 12,
+          "hyp_len": 12,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.1,
+        "hypothesis": "In the archipelagos and lakes, you do not necessarily need a yacht.",
+        "reference": "in the archipelagos and lakes you do not necessarily need a yacht",
+        "metric_type": "wer"
+      },
+      {
+        "index": 86,
+        "language": "en",
+        "duration": 7.1,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 12,
+          "hyp_len": 12,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.1,
+        "hypothesis": "In the archipelagos and lakes, you do not necessarily need a yacht.",
+        "reference": "in the archipelagos and lakes you do not necessarily need a yacht",
+        "metric_type": "wer"
+      },
+      {
+        "index": 87,
+        "language": "en",
+        "duration": 7.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.13,
+        "hypothesis": "In particular, it is claimed that one can detect whether a person is lying by interpreting micro-expressions correctly.",
+        "reference": "in particular it is claimed that one can detect whether a person is lying by interpreting micro-expressions correctly",
+        "metric_type": "wer"
+      },
+      {
+        "index": 88,
+        "language": "en",
+        "duration": 6.12,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 18,
+          "hyp_len": 18,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.13,
+        "hypothesis": "In particular, it is claimed that one can detect whether a person is lying by interpreting microexpressions correctly.",
+        "reference": "in particular it is claimed that one can detect whether a person is lying by interpreting micro-expressions correctly",
+        "metric_type": "wer"
+      },
+      {
+        "index": 89,
+        "language": "en",
+        "duration": 12.54,
+        "error_rate": 0.32142857142857145,
+        "error_details": {
+          "wer": 0.32142857142857145,
+          "ref_len": 28,
+          "hyp_len": 29,
+          "substitutions": 6,
+          "insertions": 2,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.18,
+        "hypothesis": "During the struggle for independence organized by the Mao movement, a peaceful gathering in the town resulted in the killing of Paramount Chief Tuba Tuba Sia II the Third.",
+        "reference": "during the struggle for independence organised by the mau movement a peaceful gathering in the town resulted in the killing of the paramount chief tupua tamasese lealofi iii",
+        "metric_type": "wer"
+      },
+      {
+        "index": 90,
+        "language": "en",
+        "duration": 12.12,
+        "error_rate": 0.10714285714285714,
+        "error_details": {
+          "wer": 0.10714285714285714,
+          "ref_len": 28,
+          "hyp_len": 28,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.2,
+        "hypothesis": "During the struggle for independence organized by the Ma'ohi movement, a peaceful gathering in the town resulted in the killing of the paramount chief Tupua Tamasese Leolofi III.",
+        "reference": "during the struggle for independence organised by the mau movement a peaceful gathering in the town resulted in the killing of the paramount chief tupua tamasese lealofi iii",
+        "metric_type": "wer"
+      },
+      {
+        "index": 91,
+        "language": "en",
+        "duration": 10.8,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.11,
+        "hypothesis": "The Northern Marianas Emergency Management Office said that there were no damages reported in the nation.",
+        "reference": "the northern marianas emergency management office said that there were no damages reported in the nation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 92,
+        "language": "en",
+        "duration": 11.1,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 16,
+          "hyp_len": 16,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.11,
+        "hypothesis": "The Northern Marianas Emergency Management Office said that there were no damages reported in the nation.",
+        "reference": "the northern marianas emergency management office said that there were no damages reported in the nation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 93,
+        "language": "en",
+        "duration": 11.22,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.11,
+        "hypothesis": "Segregation and recombination shuffle variation back and forth between the two pools with each generation.",
+        "reference": "segregation and recombination shuffle variation back and forth between the two pools with each generation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 94,
+        "language": "en",
+        "duration": 11.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 15,
+          "hyp_len": 15,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.01,
+        "elapsed": 0.11,
+        "hypothesis": "Segregation and recombination shuffle variation back and forth between the two pools with each generation.",
+        "reference": "segregation and recombination shuffle variation back and forth between the two pools with each generation",
+        "metric_type": "wer"
+      },
+      {
+        "index": 95,
+        "language": "en",
+        "duration": 10.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 22,
+          "hyp_len": 22,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.15,
+        "hypothesis": "He added that they should not, however, be asked to take on obligations that go beyond their development stage, responsibility, and capabilities.",
+        "reference": "he added that they should not however be asked to take on obligations that go beyond their development stage responsibility and capabilities",
+        "metric_type": "wer"
+      },
+      {
+        "index": 96,
+        "language": "en",
+        "duration": 12.22,
+        "error_rate": 0.045454545454545456,
+        "error_details": {
+          "wer": 0.045454545454545456,
+          "ref_len": 22,
+          "hyp_len": 21,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.013,
+        "elapsed": 0.16,
+        "hypothesis": "He added, \"They should not, however, be asked to take on obligations that go beyond their development stage, responsibility, and capabilities.\"",
+        "reference": "he added that they should not however be asked to take on obligations that go beyond their development stage responsibility and capabilities",
+        "metric_type": "wer"
+      },
+      {
+        "index": 97,
+        "language": "en",
+        "duration": 7.58,
+        "error_rate": 0.07142857142857142,
+        "error_details": {
+          "wer": 0.07142857142857142,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.12,
+        "hypothesis": "Regional and seasonal severe weather phenomena include blizzards, storms, ice storms, and dust storms.",
+        "reference": "regional and seasonal severe weather phenomena include blizzards snowstorms ice storms and dust storms",
+        "metric_type": "wer"
+      },
+      {
+        "index": 98,
+        "language": "en",
+        "duration": 7.8,
+        "error_rate": 0.0,
+        "error_details": {
+          "wer": 0.0,
+          "ref_len": 14,
+          "hyp_len": 14,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.13,
+        "hypothesis": "Regional and seasonal severe weather phenomena include blizzards, snowstorms, ice storms, and dust storms.",
+        "reference": "regional and seasonal severe weather phenomena include blizzards snowstorms ice storms and dust storms",
+        "metric_type": "wer"
+      },
+      {
+        "index": 99,
+        "language": "en",
+        "duration": 14.28,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "wer": 0.027777777777777776,
+          "ref_len": 36,
+          "hyp_len": 35,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.018,
+        "elapsed": 0.25,
+        "hypothesis": "Dr. Malar Balasubramanian 29 was found in Blue Ash, Ohio, a suburb approximately 15 miles north of Cincinnati, lying on the ground beside the road in a t-shirt and underwear in apparently heavily medicated state.",
+        "reference": "dr malar balasubramanian 29 was found in blue ash ohio a suburb approximately 15 miles north of cincinnati lying on the ground beside the road in a t-shirt and underwear in an apparently heavily medicated state",
+        "metric_type": "wer"
+      }
+    ]
+  },
+  "ko_batch": {
+    "micro_cer": 2.78,
+    "overall_rtf": 0.017,
+    "total_audio_s": 1254.7,
+    "total_elapsed_s": 21.5,
+    "results": [
+      {
+        "index": 0,
+        "language": "ko",
+        "duration": 14.16,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.22,
+        "hypothesis": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다.",
+        "reference": "재입국 충격은 신혼 단계가 없기 때문에 문화 충격보다 빠르게 발생하며 더 오래 지속하고 더 극심할 수 있습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 1,
+        "language": "ko",
+        "duration": 14.7,
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.015,
+        "elapsed": 0.22,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다.",
+        "metric_type": "cer"
+      },
+      {
+        "index": 2,
+        "language": "ko",
+        "duration": 16.08,
+        "error_rate": 0.1076923076923077,
+        "error_details": {
+          "cer": 0.1076923076923077,
+          "ref_len": 65,
+          "hyp_len": 58,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 7
+        },
+        "rtf": 0.014,
+        "elapsed": 0.23,
+        "hypothesis": "한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크가 무정부 상태로 빠지고 있다고 묘사하였습니다.",
+        "reference": "\"한 목격자는 사람들이 무리를 이루어 거리를 배회하고 물품을 약탈하는 것으로 보아 비슈케크bishkek가 \"무정부\"\"상태로 빠지고 있다고 묘사하였습니다.",
+        "metric_type": "cer"
+      },
+      {
+        "index": 3,
+        "language": "ko",
+        "duration": 9.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.18,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 4,
+        "language": "ko",
+        "duration": 9.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.17,
+        "hypothesis": "적대적 환경 코스에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다.",
+        "reference": "적대적 환경 코스'에 대한 인터넷 검색 결과가 아마도 현지 회사 주소를 제공해 줄 것입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 5,
+        "language": "ko",
+        "duration": 19.08,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "cer": 0.027777777777777776,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.29,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그의 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 6,
+        "language": "ko",
+        "duration": 18.42,
+        "error_rate": 0.013888888888888888,
+        "error_details": {
+          "cer": 0.013888888888888888,
+          "ref_len": 72,
+          "hyp_len": 72,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.29,
+        "hypothesis": "올리버 섹스는 그가 집필한 대통령의 연설에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다.",
+        "reference": "올리버 색스는 그가 집필한 대통령의 연설'에서 뇌 손상으로 인해 연설을 알아듣지 못함에도 불구하고 사람들이 그에 담긴 성실성을 정확하게 받아들였음에 대하여 나타냈습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 7,
+        "language": "ko",
+        "duration": 16.14,
+        "error_rate": 0.01818181818181818,
+        "error_details": {
+          "cer": 0.01818181818181818,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.27,
+        "hypothesis": "어제 아침 터키 가지안 태프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다.",
+        "reference": "어제 아침 터키 가지안테프에 있는 경찰서에서 폭발한 차량 폭탄으로 인해 경찰관 2명이 죽고 20명 이상의 다른 사람들이 다쳤습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 8,
+        "language": "ko",
+        "duration": 15.3,
+        "error_rate": 0.015151515151515152,
+        "error_details": {
+          "cer": 0.015151515151515152,
+          "ref_len": 66,
+          "hyp_len": 66,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.27,
+        "hypothesis": "이들의 시대에는 빛 공예가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다.",
+        "reference": "이들의 시대에는 빛 공해가 오늘날과 같은 수준이 아니었기 때문에 이들은 오늘날의 관측대와 달리 도시나 캠퍼스와 같이 쉽게 접근할 수 있는 장소에 위치했습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 9,
+        "language": "ko",
+        "duration": 12.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.2,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 10,
+        "language": "ko",
+        "duration": 10.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.2,
+        "hypothesis": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다.",
+        "reference": "불행히도 운전자의 행동이 100% 확실하다고 예측할 수 없기 때문에 교통 흐름을 연구하기란 어렵다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 11,
+        "language": "ko",
+        "duration": 13.56,
+        "error_rate": 0.2,
+        "error_details": {
+          "cer": 0.2,
+          "ref_len": 35,
+          "hyp_len": 35,
+          "substitutions": 7,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.17,
+        "hypothesis": "집권당인 사하프리카 인민기구 (SWAPO)도 의회 선거에서 과반수를 유지했습니다.",
+        "reference": "집권당인 서아프리카 인민 기구swapo도 의회 선거에서 과반수를 유지했습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 12,
+        "language": "ko",
+        "duration": 15.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.26,
+        "hypothesis": "예를 들어, 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 13,
+        "language": "ko",
+        "duration": 17.34,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.26,
+        "hypothesis": "예를 들어, 세계에서 가장 일반적인 정지 화상 사진 포맷은 35mm인데, 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다.",
+        "reference": "예를 들어 세계에서 가장 일반적인 정지 화상 사진 포맷은 35 mm인데 이는 아날로그 필름 시대 끝 무렵에 주로 쓰인 필름 사이즈였습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 14,
+        "language": "ko",
+        "duration": 17.46,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.25,
+        "hypothesis": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다. 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다.",
+        "reference": "긴장을 적게 할수록 인생엔 긍정적인 에너지가 더 생겨날 것이다 모든 사람은 절대적인 평화와 만족을 찾을 수 있는 능력을 지니고 있다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 15,
+        "language": "ko",
+        "duration": 17.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.25,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 16,
+        "language": "ko",
+        "duration": 16.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 59,
+          "hyp_len": 59,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.25,
+        "hypothesis": "인공위성은 로켓으로 우주에 발사되었습니다. 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다.",
+        "reference": "인공위성은 로켓으로 우주에 발사되었습니다 과학자들은 지구의 대기가 우리의 빛과 시야를 왜곡시키기 때문에 우주에서 망원경을 사용합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 17,
+        "language": "ko",
+        "duration": 5.88,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.03,
+        "elapsed": 0.18,
+        "hypothesis": "지각은 가까운 쪽이 약 70km, 먼 쪽이 약 100km 두께입니다.",
+        "reference": "지각은 가까운 쪽이 약 70km 먼 쪽이 약 100km 두께입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 18,
+        "language": "ko",
+        "duration": 13.62,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.24,
+        "hypothesis": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤 늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요.",
+        "reference": "비록 중앙 무대에서 연주하는 곡은 끝날 수 있지만 축제 곳곳에서는 밤늦게까지 음악을 연주할 수도 있다는 것을 잊지 마세요",
+        "metric_type": "cer"
+      },
+      {
+        "index": 19,
+        "language": "ko",
+        "duration": 12.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.19,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상에 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라",
+        "metric_type": "cer"
+      },
+      {
+        "index": 20,
+        "language": "ko",
+        "duration": 9.9,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.19,
+        "hypothesis": "합금은 기본적으로 금속 두 개 이상의 혼합물이다. 주기율표상의 원소가 많이 있다는 것을 잊지 마라.",
+        "reference": "합금은 기본적으로 금속 두 개 이상의 혼합물이다 주기율표 상에 원소가 많이 있다는 것을 잊지 마라",
+        "metric_type": "cer"
+      },
+      {
+        "index": 21,
+        "language": "ko",
+        "duration": 4.68,
+        "error_rate": 0.07692307692307693,
+        "error_details": {
+          "cer": 0.07692307692307693,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.032,
+        "elapsed": 0.15,
+        "hypothesis": "어느 날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 22,
+        "language": "ko",
+        "duration": 8.46,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.15,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 23,
+        "language": "ko",
+        "duration": 7.56,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 26,
+          "hyp_len": 26,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.14,
+        "hypothesis": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다.",
+        "reference": "오늘날 날개를 접을 수 없는 곤충은 잠자리와 파리밖에 없습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 24,
+        "language": "ko",
+        "duration": 10.86,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "elapsed": 0.24,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 25,
+        "language": "ko",
+        "duration": 13.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 46,
+          "hyp_len": 46,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.19,
+        "hypothesis": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다.",
+        "reference": "결과적으로 무대에서 공연자들이 마리화나 담배를 피우고 극장 자체에서 관객들에게 참여하도록 독려하고 있다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 26,
+        "language": "ko",
+        "duration": 13.74,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.22,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 27,
+        "language": "ko",
+        "duration": 13.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 43,
+          "hyp_len": 43,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.22,
+        "hypothesis": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다.",
+        "reference": "왕과 왕비는 마차를 타고 자신들에게 소리를 지르고 위협을 하는 군중들에게 둘러싸인 채 파리로 돌아갔다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 28,
+        "language": "ko",
+        "duration": 17.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.3,
+        "hypothesis": "독일의 구운 식품 상당수에는 또한 아몬드, 헤이즐넛 및 다른 견과류가 포함되어 있습니다. 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다.",
+        "reference": "독일의 구운 식품 상당수에는 또한 아몬드 헤이즐넛 및 다른 견과류가 포함되어 있습니다 인기 있는 케이크류는 특히 진하게 내린 커피와 특히 잘 어울립니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 29,
+        "language": "ko",
+        "duration": 13.2,
+        "error_rate": 0.024390243902439025,
+        "error_details": {
+          "cer": 0.024390243902439025,
+          "ref_len": 41,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.014,
+        "elapsed": 0.19,
+        "hypothesis": "사막 모래 영향으로 인해 1990년 팀북투는 위험에 처한 세계문화유산 목록에 추가되었습니다.",
+        "reference": "사막 모래의 영향으로 인해 1990년 팀북투는 위험에 처한 세계 문화유산 목록에 추가되었습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 30,
+        "language": "ko",
+        "duration": 10.32,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.2,
+        "hypothesis": "홍콩 섬은 홍콩 영토에 홍콩이라는 이름을 부여한 곳이자 많은 관광객들이 주안점으로 여기는 곳이다.",
+        "reference": "홍콩 섬은 홍콩 영토에 홍콩이라는 이름을 부여한 곳이자 많은 관광객들이 주안점으로 여기는 곳이다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 31,
+        "language": "ko",
+        "duration": 12.06,
+        "error_rate": 0.25396825396825395,
+        "error_details": {
+          "cer": 0.25396825396825395,
+          "ref_len": 63,
+          "hyp_len": 49,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 14
+        },
+        "rtf": 0.02,
+        "elapsed": 0.24,
+        "hypothesis": "하지만 적도에서 몇 도 정도에 위치한 고열대 지방에 놓이게 되면 높은 기온과 강한 태양의 내리쬐밀 상대해야 할 것입니다.",
+        "reference": "\"하지만 적도에서 몇 도 정도에 위치한 \"고열대\" 지방에 놓이게 되면 높은 기온항상 높음과 강한 태양의 내리쬠드물지만 하늘이 맑을 때을 상대해야 할 것입니다.",
+        "metric_type": "cer"
+      },
+      {
+        "index": 32,
+        "language": "ko",
+        "duration": 13.26,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.19,
+        "hypothesis": "고대 문명과 부족들은 우유, 털, 고기와 가죽을 손쉽게 이용하기 위해 그것들을 지키기 시작했다.",
+        "reference": "고대 문명과 부족들은 우유 털 고기와 가죽을 손쉽게 이용하기 위해 그것들을 지키기 시작했다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 33,
+        "language": "ko",
+        "duration": 17.52,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 67,
+          "hyp_len": 67,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.28,
+        "hypothesis": "중세 말기 서유럽은 고유의 스타일을 발전시키기 시작한다. 십자군의 결과로 그 당시 가장 큰 발전 중 하나는 사람들이 버튼을 이용하여 옷을 잠그기 시작했다는 것이다.",
+        "reference": "중세 말기 서유럽은 고유의 스타일을 발전시키기 시작한다 십자군의 결과로 그 당시 가장 큰 발전 중 하나는 사람들이 버튼을 이용하여 옷을 잠그기 시작했다는 것이다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 34,
+        "language": "ko",
+        "duration": 11.7,
+        "error_rate": 0.2,
+        "error_details": {
+          "cer": 0.2,
+          "ref_len": 60,
+          "hyp_len": 54,
+          "substitutions": 6,
+          "insertions": 0,
+          "deletions": 6
+        },
+        "rtf": 0.022,
+        "elapsed": 0.26,
+        "hypothesis": "초기에 해당 프로는 토크 라디오에 중점을 둔 사이트이자 장기 인터넷 라디오 사이트인 토진넷 라디오에서 단독으로 진행되었습니다.",
+        "reference": "초기에 해당 프로는 토크 라디오에 중점을 둔 사이트이자 장기 인터넷 라디오 사이트인 toginet radio에서 단독으로 진행되었습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 35,
+        "language": "ko",
+        "duration": 13.56,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.28,
+        "hypothesis": "한 실험용 백신이 에볼라 사망률을 줄일 수 있을 것처럼 보이지만, 지금까지 어떤 약도 기존의 감염을 치료하는 데 적합하다고 명확하게 입증되지 않았습니다.",
+        "reference": "한 실험용 백신이 에볼라 사망률을 줄일 수 있을 것처럼 보이지만 지금까지 어떤 약도 기존의 감염을 치료하는데 적합하다고 명확하게 입증되지 않았습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 36,
+        "language": "ko",
+        "duration": 17.58,
+        "error_rate": 0.05194805194805195,
+        "error_details": {
+          "cer": 0.05194805194805195,
+          "ref_len": 77,
+          "hyp_len": 77,
+          "substitutions": 4,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.32,
+        "hypothesis": "미국 체조 대표팀과 USOC는 같은 목표를 가지고 있습니다. 선수들이 안전하고 긍정적이며 격려받는 환경에서 꿈을 좇을 수 있도록 체조 등의 스포츠를 가능한 한 안전하게 만드는 것입니다.",
+        "reference": "미국 체조 대표팀과 usoc는 같은 목표를 가지고 있습니다 선수들이 안전하고 긍정적이며 격려 받는 환경에서 꿈을 좇을 수 있도록 체조 등의 스포츠를 가능한 한 안전하게 만드는 것입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 37,
+        "language": "ko",
+        "duration": 16.8,
+        "error_rate": 0.05263157894736842,
+        "error_details": {
+          "cer": 0.05263157894736842,
+          "ref_len": 57,
+          "hyp_len": 57,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.27,
+        "hypothesis": "거기는 BC 프랑스의 지배를 받았다. 이들은 1940년 독일과 강화를 택한 프랑스인들로 침략자들의 맞서 싸우기보다 동조한 사람들이다.",
+        "reference": "\"거기는 \"비시\" 프랑스의 지배를 받았다. 이들은 1940년 독일과 강화를 택한 프랑스인들로 침략자들에 맞서 싸우기보다 동조한 사람들이다.",
+        "metric_type": "cer"
+      },
+      {
+        "index": 38,
+        "language": "ko",
+        "duration": 13.08,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.23,
+        "hypothesis": "마찬가지로 생겐 비자를 소지하면 각 생겐 회원국에 개별적으로 비자를 신청할 필요가 없으므로 시간, 비용 및 서류 작업이 줄어듭니다.",
+        "reference": "마찬가지로 솅겐 비자를 소지하면 각 솅겐 회원국에 개별적으로 비자를 신청할 필요가 없으므로 시간 비용 및 서류 작업이 줄어듭니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 39,
+        "language": "ko",
+        "duration": 16.68,
+        "error_rate": 0.037037037037037035,
+        "error_details": {
+          "cer": 0.037037037037037035,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.25,
+        "hypothesis": "마찬가지로 셈겐 비자를 소지하면 각 셈겐 회원국에 개별적으로 비자를 신청할 필요가 없으므로 시간, 비용 및 서류 작업이 줄어듭니다.",
+        "reference": "마찬가지로 솅겐 비자를 소지하면 각 솅겐 회원국에 개별적으로 비자를 신청할 필요가 없으므로 시간 비용 및 서류 작업이 줄어듭니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 40,
+        "language": "ko",
+        "duration": 13.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 48,
+          "hyp_len": 48,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.22,
+        "hypothesis": "남자들을 단호히 거절하고 자신의 입장을 고수하는 것을 두려워하지 말라. 문화적 차이든 아니든 희롱은 간과될 수 없다.",
+        "reference": "남자들을 단호히 거절하고 자신의 입장을 고수하는 것을 두려워하지 말라문화적 차이든 아니든 희롱은 간과될 수 없다!",
+        "metric_type": "cer"
+      },
+      {
+        "index": 41,
+        "language": "ko",
+        "duration": 11.88,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 48,
+          "hyp_len": 48,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.22,
+        "hypothesis": "남자들을 단호히 거절하고 자신의 입장을 고수하는 것을 두려워하지 말라. 문화적 차이든 아니든 희롱은 간과될 수 없다.",
+        "reference": "남자들을 단호히 거절하고 자신의 입장을 고수하는 것을 두려워하지 말라문화적 차이든 아니든 희롱은 간과될 수 없다!",
+        "metric_type": "cer"
+      },
+      {
+        "index": 42,
+        "language": "ko",
+        "duration": 7.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.023,
+        "elapsed": 0.16,
+        "hypothesis": "식물들은 태양을 이용한 광합성을 통해 자신들의 음식을 만들고 또한 그늘을 제공합니다.",
+        "reference": "식물들은 태양을 이용한 광합성을 통해 자신들의 음식을 만들고 또한 그늘을 제공합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 43,
+        "language": "ko",
+        "duration": 12.54,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.23,
+        "hypothesis": "겨울에 북 발트해를 건널 경우에는 빙판을 통과하면서 꽤 끔찍한 소음이 발생하기 때문에 객실의 위치를 확인하는 것이 좋다.",
+        "reference": "겨울에 북발트해를 건널 경우에는 빙판을 통과하면서 꽤 끔찍한 소음이 발생하기 때문에 객실의 위치를 확인하는 것이 좋다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 44,
+        "language": "ko",
+        "duration": 10.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.15,
+        "hypothesis": "이 병은 돼지에 의해 옮겨진 다음 모기를 통해 인간에게 옮겨집니다.",
+        "reference": "이 병은 돼지에 의해 옮겨진 다음 모기를 통해 인간에게 옮겨집니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 45,
+        "language": "ko",
+        "duration": 10.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 27,
+          "hyp_len": 27,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.14,
+        "hypothesis": "이 병은 돼지에 의해 옮겨진 다음 모기를 통해 인간에게 옮겨집니다.",
+        "reference": "이 병은 돼지에 의해 옮겨진 다음 모기를 통해 인간에게 옮겨집니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 46,
+        "language": "ko",
+        "duration": 18.36,
+        "error_rate": 0.016129032258064516,
+        "error_details": {
+          "cer": 0.016129032258064516,
+          "ref_len": 62,
+          "hyp_len": 62,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.28,
+        "hypothesis": "젖은 옷을 다림질하는 것은 옷을 빨리 마르는 것을 도울 수 있다. 많은 호텔들은 객실에는 구비해 놓지 않더라도 대여가 가능한 다리미와 다리미판을 가지고.",
+        "reference": "젖은 옷을 다림질하는 것은 옷을 빨리 마르는 것을 도울 수 있다 많은 호텔들은 객실에는 구비해 놓지 않더라도 대여가 가능한 다리마와 다리미판을 가지고",
+        "metric_type": "cer"
+      },
+      {
+        "index": 47,
+        "language": "ko",
+        "duration": 15.66,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.27,
+        "hypothesis": "환불 규정은 상이하지만, 3월 말 현재 코로나 바이러스로 인한 환불 규정은 대부분 2020년 7월 올림픽 기간까지 연장되어 있지 않다.",
+        "reference": "환불 규정은 상이하지만 3월 말 현재 코로나 바이러스로 인한 환불 규정은 대부분 2020년 7월 올림픽 기간까지 연장되어 있지 않다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 48,
+        "language": "ko",
+        "duration": 16.14,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.27,
+        "hypothesis": "환불 규정은 상이하지만, 3월 말 현재 코로나 바이러스로 인한 환불 규정은 대부분 2020년 7월 올림픽 기간까지 연장되어 있지 않다.",
+        "reference": "환불 규정은 상이하지만 3월 말 현재 코로나 바이러스로 인한 환불 규정은 대부분 2020년 7월 올림픽 기간까지 연장되어 있지 않다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 49,
+        "language": "ko",
+        "duration": 12.72,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.19,
+        "hypothesis": "좀 더 작은 섬의 대부분은 독립 국가이거나 프랑스와 관련이 있고 호화로운 비치 리조트로 알려져 있다.",
+        "reference": "좀 더 작은 섬의 대부분은 독립 국가이거나 프랑스와 관련이 있고 호화로운 비치 리조트로 알려져 있다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 50,
+        "language": "ko",
+        "duration": 13.08,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 41,
+          "hyp_len": 41,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.19,
+        "hypothesis": "좀 더 작은 섬의 대부분은 독립 국가이거나 프랑스와 관련이 있고 호화로운 비치 리조트로 알려져 있다.",
+        "reference": "좀 더 작은 섬의 대부분은 독립 국가이거나 프랑스와 관련이 있고 호화로운 비치 리조트로 알려져 있다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 51,
+        "language": "ko",
+        "duration": 9.0,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.12,
+        "hypothesis": "사자는 무리지어 사는 가장 사회적인 고양이과 동물입니다.",
+        "reference": "사자는 무리 지어 사는 가장 사회적인 고양이과 동물입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 52,
+        "language": "ko",
+        "duration": 14.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 52,
+          "hyp_len": 52,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.27,
+        "hypothesis": "마지막으로 곤충, 설치류, 도마뱀, 새와 같은 훨씬 더 많은 작은 먹이를 먹는 작은 고양이들, 풀어놓은 애완용 고양이 포함이 많이 있다.",
+        "reference": "마지막으로 곤충 설치류 도마뱀 새와 같은 훨씬 더 많은 작은 먹이를 먹는 작은 고양이들풀어놓은 애완용 고양이 포함이 많이 있다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 53,
+        "language": "ko",
+        "duration": 8.94,
+        "error_rate": 0.044444444444444446,
+        "error_details": {
+          "cer": 0.044444444444444446,
+          "ref_len": 45,
+          "hyp_len": 44,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.023,
+        "elapsed": 0.2,
+        "hypothesis": "유엔 질병 전문가인 다니엘 란타뉴는 이러한 급격한 증가는 평화 유지군에 의해 발생될 것이라고 말했습니다.",
+        "reference": "유엔 질병 전문가인 다니엘 란타뉴는 이러한 급격한 증가는 평화 유지군에 의해 발생했을 것이라고 말했습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 54,
+        "language": "ko",
+        "duration": 7.32,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.13,
+        "hypothesis": "파리 사람들은 자기중심적이고 무례하고 오만하다는 평판이 있습니다.",
+        "reference": "파리 사람들은 자기중심적이고 무례하고 오만하다는 평판이 있습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 55,
+        "language": "ko",
+        "duration": 11.04,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 29,
+          "hyp_len": 29,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.13,
+        "hypothesis": "파리 사람들은 자기중심적이고 무례하고 오만하다는 평판이 있습니다.",
+        "reference": "파리 사람들은 자기중심적이고 무례하고 오만하다는 평판이 있습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 56,
+        "language": "ko",
+        "duration": 14.16,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 70,
+          "hyp_len": 70,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.022,
+        "elapsed": 0.31,
+        "hypothesis": "키르치네르 여사는 2005년 부에노스아이레스 지방 대표단의 일원으로 상원 의원 선거 운동을 시작할 때와 같은 장소인 아르헨티나 극장에서 대통령 출마 의사를 밝혔다.",
+        "reference": "키르치네르 여사는 2005년 부에노스아이레스 지방 대표단의 일원으로 상원 의원 선거운동을 시작할 때와 같은 장소인 아르헨티나 극장에서 대통령 출마 의사를 밝혔다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 57,
+        "language": "ko",
+        "duration": 7.5,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 45,
+          "hyp_len": 45,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.028,
+        "elapsed": 0.21,
+        "hypothesis": "핵분열 폭탄은 많은 양성자와 중성자를 가진 핵을 합치기 위해서는 많은 에너지가 필요하다는 원리에 기반하다.",
+        "reference": "핵분열 폭탄은 많은 양성자와 중성자를 가진 핵을 합치기 위해서는 많은 에너지가 필요하다는 원리에 기반하다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 58,
+        "language": "ko",
+        "duration": 6.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 24,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.14,
+        "hypothesis": "소방 구조 대원들이 결국 오후 11시 35분까지 불을 껐다.",
+        "reference": "소방 구조 대원들이 결국 오후 11시 35분까지 불을 껐다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 59,
+        "language": "ko",
+        "duration": 15.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 51,
+          "hyp_len": 51,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.013,
+        "elapsed": 0.2,
+        "hypothesis": "사실 이게 존재한다는 사실을 아는 사람이 있다고 해도 찾는 것조차 쉽지 않습니다. 일단 동굴 안에 들어가면 완전한 고립입니다.",
+        "reference": "사실 이게 존재한다는 사실을 아는 사람이 있다고 해도 찾는 것조차 쉽지 않습니다 일단 동굴 안에 들어가면 완전한 고립입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 60,
+        "language": "ko",
+        "duration": 12.3,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 51,
+          "hyp_len": 51,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.2,
+        "hypothesis": "사실 이게 존재한다는 사실을 아는 사람이 있다고 해도 찾는 것조차 쉽지 않습니다. 일단 동굴 안에 들어가면 완전한 고립입니다.",
+        "reference": "사실 이게 존재한다는 사실을 아는 사람이 있다고 해도 찾는 것조차 쉽지 않습니다 일단 동굴 안에 들어가면 완전한 고립입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 61,
+        "language": "ko",
+        "duration": 6.72,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "cer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 2,
+          "deletions": 0
+        },
+        "rtf": 0.026,
+        "elapsed": 0.17,
+        "hypothesis": "당연한 말이지만, 당신이 로맨스어를 안다면 포르투갈어를 배우는 것이 매우 쉬울 것입니다.",
+        "reference": "당연한 말이지만 당신이 로맨스어를 안다면 포르투갈어를 배우는 것이 쉬울 것입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 62,
+        "language": "ko",
+        "duration": 11.1,
+        "error_rate": 0.05714285714285714,
+        "error_details": {
+          "cer": 0.05714285714285714,
+          "ref_len": 35,
+          "hyp_len": 34,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.015,
+        "elapsed": 0.17,
+        "hypothesis": "당연한 말이지만, 당신이 로맨서를 안다면 포르투갈어를 배우는 것이 쉬울 것입니다.",
+        "reference": "당연한 말이지만 당신이 로맨스어를 안다면 포르투갈어를 배우는 것이 쉬울 것입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 63,
+        "language": "ko",
+        "duration": 9.96,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.17,
+        "hypothesis": "여행자들은 여행 계획에 차질이 생기지 않도록 현지 날씨에 대해 미리 찾아보고 가야 한다.",
+        "reference": "여행자들은 여행 계획에 차질이 생기지 않도록 현지 날씨에 대해 미리 찾아보고 가야 한다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 64,
+        "language": "ko",
+        "duration": 4.68,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 25,
+          "hyp_len": 25,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.025,
+        "elapsed": 0.12,
+        "hypothesis": "하지만 여전히 새에는 공룡처럼 보이게 하는 것들이 많습니다.",
+        "reference": "하지만 여전히 새에는 공룡처럼 보이게 하는 것들이 많습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 65,
+        "language": "ko",
+        "duration": 10.2,
+        "error_rate": 0.04,
+        "error_details": {
+          "cer": 0.04,
+          "ref_len": 25,
+          "hyp_len": 24,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 1
+        },
+        "rtf": 0.012,
+        "elapsed": 0.12,
+        "hypothesis": "하지만 여전히 새는 공룡처럼 보이게 하는 것들이 많습니다.",
+        "reference": "하지만 여전히 새에는 공룡처럼 보이게 하는 것들이 많습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 66,
+        "language": "ko",
+        "duration": 13.32,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.21,
+        "hypothesis": "겨우 이 주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다.",
+        "reference": "겨우 2주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 67,
+        "language": "ko",
+        "duration": 12.48,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.21,
+        "hypothesis": "겨우 이 주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다.",
+        "reference": "겨우 2주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 68,
+        "language": "ko",
+        "duration": 11.04,
+        "error_rate": 0.025,
+        "error_details": {
+          "cer": 0.025,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.21,
+        "hypothesis": "겨우 이 주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다.",
+        "reference": "겨우 2주 만에 미군과 자유 프랑스군은 프랑스 남부를 해방시키고 독일로 진격 방향을 틀고 있었다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 69,
+        "language": "ko",
+        "duration": 9.78,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.16,
+        "hypothesis": "원단이 너무 뜨거워지지 않도록 주의하세요. 원단이 수축하거나 그을릴 수 있습니다.",
+        "reference": "원단이 너무 뜨거워지지 않도록 주의하세요원단이 수축하거나 그을릴 수 있습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 70,
+        "language": "ko",
+        "duration": 11.46,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 34,
+          "hyp_len": 34,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.16,
+        "hypothesis": "원단이 너무 뜨거워지지 않도록 주의하세요. 원단이 수축하거나 그을릴 수 있습니다.",
+        "reference": "원단이 너무 뜨거워지지 않도록 주의하세요원단이 수축하거나 그을릴 수 있습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 71,
+        "language": "ko",
+        "duration": 9.9,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 38,
+          "hyp_len": 38,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.16,
+        "hypothesis": "문명은 사람들이 협력해서 일하고 살아가는 매우 큰 집단, 즉 사회가 공유하는 단일 문화입니다.",
+        "reference": "문명은 사람들이 협력해서 일하고 살아가는 매우 큰 집단 즉 사회가 공유하는 단일 문화입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 72,
+        "language": "ko",
+        "duration": 10.14,
+        "error_rate": 0.05660377358490566,
+        "error_details": {
+          "cer": 0.05660377358490566,
+          "ref_len": 53,
+          "hyp_len": 53,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.026,
+        "elapsed": 0.27,
+        "hypothesis": "플리프 비치 호수 국립 공원은 대개 너도밤나무, 가문비나무, 전나무 그리고 알프스와 지중해성 식물로 울창하게 삼림이 우거져 있다.",
+        "reference": "플리트비체 호수 국립공원은 대게 너도밤나무 가문비나무 전나무 그리고 알프스와 지중해성 식물로 울창하게 삼림이 우거져 있다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 73,
+        "language": "ko",
+        "duration": 13.2,
+        "error_rate": 0.05454545454545454,
+        "error_details": {
+          "cer": 0.05454545454545454,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.26,
+        "hypothesis": "아이티 정의와 민주주의 연구소는 네팔의 유엔 평화유지부대가 의도치 않게 아이티의 질병을 전파시켰다는 독립적인 연구를 언급했다.",
+        "reference": "아이티 정의와 민주주의 연구소는 네팔의 un 평화 유지 부대가 의도치 않게 아이티에 질병을 전파시켰다는 독립적인 연구를 언급했다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 74,
+        "language": "ko",
+        "duration": 12.6,
+        "error_rate": 0.05454545454545454,
+        "error_details": {
+          "cer": 0.05454545454545454,
+          "ref_len": 55,
+          "hyp_len": 55,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.26,
+        "hypothesis": "아이티 정의와 민주주의 연구소는 네팔의 유엔 평화유지부대가 의도치 않게 아이티의 질병을 전파시켰다는 독립적인 연구를 언급했다.",
+        "reference": "아이티 정의와 민주주의 연구소는 네팔의 un 평화 유지 부대가 의도치 않게 아이티에 질병을 전파시켰다는 독립적인 연구를 언급했다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 75,
+        "language": "ko",
+        "duration": 12.42,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.21,
+        "hypothesis": "또한 이탈리아어는 종교 의식에서 자주 사용하는 라틴어와 달리 그 주에서 일하는 대부분의 사람들이 사용하는 일상어이다.",
+        "reference": "또한 이탈리아어는 종교 의식에서 자주 사용하는 라틴어와 달리 그 주에서 일하는 대부분의 사람들이 사용하는 일상어이다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 76,
+        "language": "ko",
+        "duration": 15.24,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 50,
+          "hyp_len": 50,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.21,
+        "hypothesis": "또한 이탈리아어는 종교 의식에서 자주 사용하는 라틴어와 달리 그 주에서 일하는 대부분의 사람들이 사용하는 일상어이다.",
+        "reference": "또한 이탈리아어는 종교 의식에서 자주 사용하는 라틴어와 달리 그 주에서 일하는 대부분의 사람들이 사용하는 일상어이다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 77,
+        "language": "ko",
+        "duration": 18.36,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 54,
+          "hyp_len": 54,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.012,
+        "elapsed": 0.22,
+        "hypothesis": "또한 혁명 이후 직업들은 모든 남성 지원자에게 개방되어 가장 야망 있고 성공 지향적인 사람들이 성공할 수 있는 길을 열어주었습니다.",
+        "reference": "또한 혁명 이후 직업들은 모든 남성 지원자에게 개방되어 가장 야망있고 성공 지향적인 사람들이 성공할 수 있는 길을 열어 주었습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 78,
+        "language": "ko",
+        "duration": 14.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.27,
+        "hypothesis": "다른 주제로는 세계에 남아있는 숲을 구하고, 개발 도상국들이 오염이 덜한 방법으로 성장할 수 있도록 돕는 기술을 공유하는 것이 발리 아젠다에 포함됩니다.",
+        "reference": "다른 주제로는 세계에 남아 있는 숲을 구하고 개발도상국들이 오염이 덜한 방법으로 성장할 수 있도록 돕는 기술을 공유하는 것이 발리 아젠다에 포함됩니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 79,
+        "language": "ko",
+        "duration": 12.42,
+        "error_rate": 0.09523809523809523,
+        "error_details": {
+          "cer": 0.09523809523809523,
+          "ref_len": 63,
+          "hyp_len": 63,
+          "substitutions": 6,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.021,
+        "elapsed": 0.26,
+        "hypothesis": "다른 주제로는 세계에 남아있는 서피브하고 개발 동상국들의 오염이 덜한 방법으로 성장할 수 있도록 돕는 기술을 공유하는 것이 발리아든다에 포함됩니다.",
+        "reference": "다른 주제로는 세계에 남아 있는 숲을 구하고 개발도상국들이 오염이 덜한 방법으로 성장할 수 있도록 돕는 기술을 공유하는 것이 발리 아젠다에 포함됩니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 80,
+        "language": "ko",
+        "duration": 13.62,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 53,
+          "hyp_len": 53,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.017,
+        "elapsed": 0.23,
+        "hypothesis": "도널드 트럼프 미국 대통령은 늦은 일요일 시간대에 대변인을 통해 발표한 성명에서 미군이 시리아에서 철수할 것이라고 발표했다.",
+        "reference": "도널드 트럼프 미국 대통령은 늦은 일요일 시간대에 대변인을 통해 발표한 성명에서 미군이 시리아에서 철수할 것이라고 발표했다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 81,
+        "language": "ko",
+        "duration": 18.0,
+        "error_rate": 0.03571428571428571,
+        "error_details": {
+          "cer": 0.03571428571428571,
+          "ref_len": 56,
+          "hyp_len": 56,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.014,
+        "elapsed": 0.25,
+        "hypothesis": "철로를 고장하기 위해서 침목은 상당히 일찍 도입되었습니다. 그러나 점차 철로가 철제 침목 위에 있으면 더 효율적이란 것이 드러났습니다.",
+        "reference": "선로를 고정하기 위해서 침목은 상당히 일찍 도입되었습니다 그러나 점차 철로가 철제 침목 위에 있으면 더 효율적이란 것이 드러났습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 82,
+        "language": "ko",
+        "duration": 12.12,
+        "error_rate": 0.019230769230769232,
+        "error_details": {
+          "cer": 0.019230769230769232,
+          "ref_len": 52,
+          "hyp_len": 52,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.02,
+        "elapsed": 0.25,
+        "hypothesis": "홍콩의 스카이라인을 이루는 빌딩 행렬은 빅토리아 항구의 수면에 선명이 비치는 모습 때문에 반짝이는 막대 그래프에 비유된다.",
+        "reference": "홍콩의 스카이라인을 이루는 빌딩 행렬은 빅토리아 항구의 수면에 선명히 비치는 모습 때문에 반짝이는 막대그래프에 비유된다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 83,
+        "language": "ko",
+        "duration": 6.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.028,
+        "elapsed": 0.18,
+        "hypothesis": "야생 아동은 버려지거나 도망치기 전에 심한 아동학대나 트라우마를 경험했을 수 있습니다.",
+        "reference": "야생 아동은 버려지거나 도망치기 전에 심한 아동학대나 트라우마를 경험했을 수 있습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 84,
+        "language": "ko",
+        "duration": 10.26,
+        "error_rate": 0.02702702702702703,
+        "error_details": {
+          "cer": 0.02702702702702703,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.18,
+        "hypothesis": "야생 아동은 버려지거나 도망치기 전엔 심한 아동학대나 트라우마를 경험했을 수 있습니다.",
+        "reference": "야생 아동은 버려지거나 도망치기 전에 심한 아동학대나 트라우마를 경험했을 수 있습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 85,
+        "language": "ko",
+        "duration": 9.84,
+        "error_rate": 0.16666666666666666,
+        "error_details": {
+          "cer": 0.16666666666666666,
+          "ref_len": 48,
+          "hyp_len": 43,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 5
+        },
+        "rtf": 0.019,
+        "elapsed": 0.19,
+        "hypothesis": "10월에 시작된 광범위한 반정권 프로테스트에 대한 멀토이의 대응 차원에서 위원회가 마련되었습니다.",
+        "reference": "10월에 시작된 광범위한 반정권 프로테스트에 대한 martelly의 대응 차원에서 위원회가 마련되었습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 86,
+        "language": "ko",
+        "duration": 9.84,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 37,
+          "hyp_len": 37,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.16,
+        "hypothesis": "1920년대 대부분의 시민과 국가에서 우세했던 성향은 평화주의와 고립주의였습니다.",
+        "reference": "1920년대 대부분의 시민과 국가에서 우세했던 성향은 평화주의와 고립주의였습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 87,
+        "language": "ko",
+        "duration": 8.28,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.12,
+        "hypothesis": "폭탄 한 발이 총독 집무실 밖에서 폭발했다.",
+        "reference": "폭탄 한 발이 총독 집무실 밖에서 폭발했다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 88,
+        "language": "ko",
+        "duration": 6.42,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 17,
+          "hyp_len": 17,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.12,
+        "hypothesis": "폭탄 한 발이 총독 집무실 밖에서 폭발했다.",
+        "reference": "폭탄 한 발이 총독 집무실 밖에서 폭발했다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 89,
+        "language": "ko",
+        "duration": 18.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 67,
+          "hyp_len": 67,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.015,
+        "elapsed": 0.27,
+        "hypothesis": "또한 각 왕조 사이에는 여러 지방으로 분열되어 불안한 시대가 있었습니다. 가장 잘 알려진 시대로는 한나라와 진나라 사이 60년에 해당하는 시기인 삼국 시대입니다.",
+        "reference": "또한 각 왕조 사이에는 여러 지방으로 분열되어 불안한 시대가 있었습니다 가장 잘 알려진 시대로는 한나라와 진나라 사이 60년에 해당하는 시기인 삼국 시대입니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 90,
+        "language": "ko",
+        "duration": 18.78,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 65,
+          "hyp_len": 65,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.29,
+        "hypothesis": "미국 체조 협회는 미국 올림픽 위원회의 서한을 지지하며, 미국의 전 운동 선수가 안전한 환경을 가질 수 있도록 돕는 올림픽 관계자의 절대적 필요성을 인정합니다.",
+        "reference": "미국 체조 협회는 미국 올림픽 위원회의 서한을 지지하며 미국의 전 운동선수가 안전한 환경을 가질 수 있도록 돕는 올림픽 관계자의 절대적 필요성을 인정합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 91,
+        "language": "ko",
+        "duration": 15.6,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 65,
+          "hyp_len": 65,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.29,
+        "hypothesis": "미국 체조 협회는 미국 올림픽 위원회의 서한을 지지하며, 미국의 전 운동 선수가 안전한 환경을 가질 수 있도록 돕는 올림픽 관계자의 절대적 필요성을 인정합니다.",
+        "reference": "미국 체조 협회는 미국 올림픽 위원회의 서한을 지지하며 미국의 전 운동선수가 안전한 환경을 가질 수 있도록 돕는 올림픽 관계자의 절대적 필요성을 인정합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 92,
+        "language": "ko",
+        "duration": 24.06,
+        "error_rate": 0.028846153846153848,
+        "error_details": {
+          "cer": 0.028846153846153848,
+          "ref_len": 104,
+          "hyp_len": 104,
+          "substitutions": 3,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.43,
+        "hypothesis": "연예뉴스 웹사이트인 TMZ는 사진사가 세풀베다 대로 맞은편에 차를 세워두고 길을 건너기 전에 계속해서 경찰서 사진을 찍으려 시도하였으며, 이에 교통 정리를 하던 캘리포니아 고속도로 경찰이 두 번이나 물러나도록 명령했던 것에 대해 시인하였습니다.",
+        "reference": "연예 뉴스 웹사이트인 tmz는 사진사가 세풀베다 대로 맞은편에 차를 세워 두고 길을 건너기 전에 계속해서 경찰서 사진을 찍으려 시도하였으며 이에 교통정리를 하던 캘리포니아 고속도로 경찰이 두 번이나 물러나도록 명령했던 것에 대해 시인하였습니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 93,
+        "language": "ko",
+        "duration": 12.18,
+        "error_rate": 0.1111111111111111,
+        "error_details": {
+          "cer": 0.1111111111111111,
+          "ref_len": 36,
+          "hyp_len": 32,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 4
+        },
+        "rtf": 0.014,
+        "elapsed": 0.17,
+        "hypothesis": "양배추 주스는 화학 물질이 얼마나 산성 혹은 염기성인지에 따라 색이 변합니다.",
+        "reference": "양배추 주스는 화학 물질이 얼마나 산성 혹은 염기성 알카리성인지에 따라 색이 변합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 94,
+        "language": "ko",
+        "duration": 10.26,
+        "error_rate": 0.027777777777777776,
+        "error_details": {
+          "cer": 0.027777777777777776,
+          "ref_len": 36,
+          "hyp_len": 36,
+          "substitutions": 1,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.018,
+        "elapsed": 0.19,
+        "hypothesis": "양배추 주스는 화학 물질이 얼마나 산성 혹은 염기성, 알칼리성인지에 따라 색이 변합니다.",
+        "reference": "양배추 주스는 화학 물질이 얼마나 산성 혹은 염기성 알카리성인지에 따라 색이 변합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 95,
+        "language": "ko",
+        "duration": 16.14,
+        "error_rate": 0.234375,
+        "error_details": {
+          "cer": 0.234375,
+          "ref_len": 64,
+          "hyp_len": 51,
+          "substitutions": 2,
+          "insertions": 0,
+          "deletions": 13
+        },
+        "rtf": 0.015,
+        "elapsed": 0.25,
+        "hypothesis": "코차무 벨리. 남아메리카의 요세미티 계곡으로 알려진 칠레 최고의 등반지이며, 큰 화강암 벽과 바위산이 다양하게 존재합니다.",
+        "reference": "코차모 밸리cochamó valley - 남아메리카의 요세미티 계곡으로 알려진 칠레 최고의 등반지이며 큰 화강암 벽과 바위산이 다양하게 존재합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 96,
+        "language": "ko",
+        "duration": 12.48,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 40,
+          "hyp_len": 40,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.23,
+        "hypothesis": "1960년대에 걸쳐 브레진스키는 케네디의 고문으로 근무한 후 린든 존슨 행정부에서 근무했다.",
+        "reference": "1960년대에 걸쳐 브레진스키는 케네디의 고문으로 근무한 후 린든 존슨 행정부에서 근무했다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 97,
+        "language": "ko",
+        "duration": 7.02,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.027,
+        "elapsed": 0.19,
+        "hypothesis": "그래도 관계자의 조언을 듣고 모든 표지판을 지키고 안전 경고에 세심한 주의를 기울여야 합니다.",
+        "reference": "그래도 관계자의 조언을 듣고 모든 표지판을 지키고 안전 경고에 세심한 주의를 기울여야 합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 98,
+        "language": "ko",
+        "duration": 9.66,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 39,
+          "hyp_len": 39,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.019,
+        "elapsed": 0.19,
+        "hypothesis": "그래도 관계자의 조언을 듣고 모든 표지판을 지키고 안전 경고에 세심한 주의를 기울여야 합니다.",
+        "reference": "그래도 관계자의 조언을 듣고 모든 표지판을 지키고 안전 경고에 세심한 주의를 기울여야 합니다",
+        "metric_type": "cer"
+      },
+      {
+        "index": 99,
+        "language": "ko",
+        "duration": 8.64,
+        "error_rate": 0.0,
+        "error_details": {
+          "cer": 0.0,
+          "ref_len": 30,
+          "hyp_len": 30,
+          "substitutions": 0,
+          "insertions": 0,
+          "deletions": 0
+        },
+        "rtf": 0.016,
+        "elapsed": 0.14,
+        "hypothesis": "이건 작별 인사가 아닙니다. 이것은 한 장의 끝이며 새로운 장의 시작입니다.",
+        "reference": "\"\"\"이건 작별 인사가 아닙니다. 이것은 한 장의 끝이며 새로운 장의 시작입니다.\"\"",
+        "metric_type": "cer"
+      }
+    ]
+  }
+}
