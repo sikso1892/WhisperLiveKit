@@ -385,6 +385,8 @@ async def _dispatch_translation(
     engine,
 ):
     """Translate a finalized transcript and send finish event(s)."""
+    from whisperlivekit.rtt_protocol import RTTProtocol
+
     data = transcript_end_msg.get("data", {})
     transcript_id = data.get("transcript_id", "")
     src_text = data.get("text", "")
