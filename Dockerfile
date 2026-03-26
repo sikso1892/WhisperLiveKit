@@ -46,8 +46,8 @@ RUN set -eux; \
 # but works fine at runtime. Install with pip to avoid uv's strict resolver.
 ARG INSTALL_DIARIZATION=false
 RUN if [ "$INSTALL_DIARIZATION" = "true" ]; then \
-  /app/.venv/bin/pip install --no-deps "nemo-toolkit[asr]>=2.4" && \
-  /app/.venv/bin/pip install "protobuf>=5.29,<6" ; \
+  uv pip install "nemo-toolkit[asr]>=2.4" && \
+  uv pip install "protobuf>=5.29,<6" ; \
   fi
 
 # --- MARK: Runtime Stage 
