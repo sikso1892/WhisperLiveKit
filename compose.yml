@@ -4,8 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        EXTRAS: ${GPU_EXTRAS:-cu129,qwen3-streaming}
-    image: wlk:gpu-qwen3
+        EXTRAS: ${GPU_EXTRAS:-cu129,qwen3-streaming,diarization-sortformer}
+    image: wlk:gpu-qwen3-diar
     container_name: wlk
     deploy:
       resources:
@@ -32,6 +32,9 @@ services:
       - "--gpu-memory-utilization"
       - "0.35"
       - "--pcm-input"
+      - "--diarization"
+      - "--diarization-backend"
+      - "sortformer"
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 30s
