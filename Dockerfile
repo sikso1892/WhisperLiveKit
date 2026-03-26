@@ -41,6 +41,15 @@ RUN set -eux; \
   done; \
   uv sync --frozen --no-editable --no-cache "$@"
 
+# Optional: install diarization-sortformer via pip (bypasses uv conflict resolution)
+# nemo-toolkit requires protobuf 5.x which conflicts with vllm's 6.x in uv,
+# but works fine at runtime. Install with pip to avoid uv's strict resolver.
+ARG INSTALL_DIARIZATION=false
+RUN if [ "$INSTALL_DIARIZATION" = "true" ]; then \
+  /app/.venv/bin/pip install --no-deps "nemo-toolkit[asr]>=2.4" && \
+  /app/.venv/bin/pip install "protobuf>=5.29,<6" ; \
+  fi
+
 # --- MARK: Runtime Stage 
 FROM nvidia/cuda:12.9.1-cudnn-runtime-ubuntu24.04
 
