@@ -62,6 +62,7 @@ class RTTProtocol:
         # Current partial state
         self._current_transcript_id = str(uuid.uuid4())
         self._current_text = ""
+        self._current_speaker = "1"
         self._detected_language = ""
 
     def process_update(
@@ -76,6 +77,13 @@ class RTTProtocol:
         handled asynchronously by the caller after transcript_end.
         """
         messages: List[Dict[str, Any]] = []
+
+        # Extract speaker from FrontData lines
+        lines = front_data_dict.get("lines", [])
+        for line in lines:
+            spk = line.get("speaker")
+            if spk is not None and spk >= 0:
+                self._current_speaker = str(spk)
 
         # Delegate to UtteranceTracker for boundary detection
         utterance_msgs = self._tracker.process_update(front_data_dict, is_silence)
@@ -140,17 +148,14 @@ class RTTProtocol:
     # Internal helpers
     # ------------------------------------------------------------------
 
-    def _extract_text_and_language(self, msg: Dict[str, Any]) -> tuple:
-        """Extract text and language from an UtteranceTracker message."""
-        text = ""
+    def _extract_text(self, msg: Dict[str, Any]) -> str:
+        """Extract text from an UtteranceTracker message."""
         alts = msg.get("alternatives", [])
-        if alts:
-            text = alts[0].get("text", "")
-        return text
+        return alts[0].get("text", "") if alts else ""
 
     def _make_transcript(self, utterance_msg: Dict[str, Any]) -> Dict[str, Any]:
         """Convert UtteranceTracker partial to RTT transcript event."""
-        text = self._extract_text_and_language(utterance_msg)
+        text = self._extract_text(utterance_msg)
         self._current_text = text
 
         # Determine language from hints or detected
@@ -170,13 +175,13 @@ class RTTProtocol:
                 "non_final_text": text,
                 "duration": 0,
                 "language_code": lang_code,
-                "speaker": "1",
+                "speaker": self._current_speaker,
             },
         }
 
     def _make_transcript_end(self, utterance_msg: Dict[str, Any]) -> Dict[str, Any]:
         """Convert UtteranceTracker final to RTT transcript_end event."""
-        text = self._extract_text_and_language(utterance_msg)
+        text = self._extract_text(utterance_msg)
         if not text:
             text = self._current_text
 
@@ -198,7 +203,7 @@ class RTTProtocol:
                 "offset_ms": offset_ms,
                 "duration": duration_ms,
                 "language_code": lang_code,
-                "speaker": "1",
+                "speaker": self._current_speaker,
             },
         }
 
